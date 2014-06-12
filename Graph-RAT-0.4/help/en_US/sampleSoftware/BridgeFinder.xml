@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<!DOCTYPE Config [
+  <!ELEMENT Config (Scheduler,Graph,DataAquisition,Algorithm*)>
+  <!ELEMENT Scheduler (class,property*)>
+  <!ELEMENT Graph (class,property*)>
+  <!ELEMENT DataAquisition (class,property*)>
+  <!ELEMENT Algorithm (class,pattern,property*)>
+  <!ELEMENT class (#PCDATA)>
+  <!ELEMENT pattern (#PCDATA)>
+  <!ELEMENT property (name,value)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT value (#PCDATA)>
+]>
+
+<Config>
+  <Scheduler>
+    <class>basic</class>
+  </Scheduler>
+  <Graph>
+    <class>MemGraph</class>
+    <property>
+      <name>GraphID</name>
+      <value>Root</value>
+    </property>
+  </Graph>
+  <DataAquisition>
+    <class>Load Bibliography And Class</class>
+    <property>
+      <name>fileLocation</name>
+      <value>/media/080220_1228/3_clusters.xml</value>
+    </property>
+    <property>
+      <name>classLabelFile</name>
+      <value>/media/080220_1228/idLabel.xml</value>
+    </property>
+  </DataAquisition>
+  <Algorithm>
+    <class>ScalablePageRankPrestige</class>
+    <pattern>.*</pattern>
+    <property>
+      <name>relation</name>
+      <value>References</value>
+    </property>
+    <property>
+      <name>actorSourceType</name>
+      <value>Paper</value>
+    </property>
+    <property>
+        <name>tolerance</name>
+        <value>1e-50</value>
+    </property>
+  </Algorithm>
+  <Algorithm>
+    <class>ScalablePageRankPrestige</class>
+    <pattern>[^R].*</pattern>
+    <property>
+      <name>relation</name>
+      <value>References</value>
+    </property>
+    <property>
+      <name>actorSourceType</name>
+      <value>Paper</value>
+    </property>
+   <property>
+      <name>name</name>
+      <value>ScalableSubGraphPageRank</value>
+    </property>
+    <property>
+      <name>propertyName</name>
+      <value>SubGraph PageRank</value>
+    </property>
+    <property>
+        <name>tolerance</name>
+        <value>1e-50</value>
+    </property>
+  </Algorithm>
+  <Algorithm>
+    <class>RankingProperties</class>
+    <pattern>.*</pattern>
+    <property>
+      <name>outputProperty</name>
+      <value>Global PageRank Ranking</value>
+    </property>
+  </Algorithm>
+  <Algorithm>
+    <class>RankingProperties</class>
+    <pattern>[^R].*</pattern>
+    <property>
+      <name>name</name>
+      <value>Global PageRank Ranking in Cluster</value>
+    </property>
+    <property>
+      <name>inputProperty</name>
+      <value>Global PageRank Ranking</value>
+    </property>
+    <property>
+      <name>outputProperty</name>
+      <value>Global PageRank in Cluster</value>
+    </property>
+  </Algorithm>
+  <Algorithm>
+    <class>RankingProperties</class>
+    <pattern>[^R].*</pattern>
+    <property>
+      <name>name</name>
+      <value>Local PageRank</value>
+    </property>
+    <property>
+      <name>inputProperty</name>
+      <value>SubGraph PageRank</value>
+    </property>
+    <property>
+      <name>outputProperty</name>
+      <value>Local PageRank</value>
+    </property>
+  </Algorithm>
+  <Algorithm>
+    <class>Difference</class>
+    <pattern>.*</pattern>
+    <property>
+      <name>rightProperty</name>
+      <value>Local PageRank</value>
+    </property>
+    <property>
+      <name>leftProperty</name>
+      <value>Global PageRank in Cluster</value>
+    </property>
+    <property>
+      <name>outputProperty</name>
+      <value>Difference</value>
+    </property>
+  </Algorithm>
+  <Algorithm>
+    <class>OutputDifference</class>
+    <pattern>[^R].*</pattern>
+    <property>
+      <name>OutputDifference</name>
+      <value>/research/bridgeFinder.xml</value>
+    </property>
+    <property>
+      <name>property1</name>
+      <value>Difference</value>
+    </property>
+    <property>
+      <name>property2</name>
+      <value>Local PageRank</value>
+    </property>
+    <property>
+      <name>property3</name>
+      <value>Global PageRank in Cluster</value>
+    </property>
+  </Algorithm>
+</Config>

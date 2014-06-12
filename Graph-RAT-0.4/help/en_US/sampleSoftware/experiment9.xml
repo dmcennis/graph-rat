@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE Config [
+  <!ELEMENT Config (Scheduler,Graph,DataAquisition,Algorithm*)>
+  <!ELEMENT Scheduler (class,property*)>
+  <!ELEMENT Graph (class,property*)>
+  <!ELEMENT DataAquisition (class,property*)>
+  <!ELEMENT Algorithm (class,property*)>
+  <!ELEMENT class (#PCDATA)>
+  <!ELEMENT property (name,value)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT value (#PCDATA)>
+]>
+
+<Config>
+  <Scheduler>
+    <class>basic</class>
+  </Scheduler>
+  <Graph>
+    <class>MemGraph</class>
+  </Graph>
+  <DataAquisition>
+    <class>File Reader 2 Pass</class>
+    <property>
+      <name>foafDirectory</name>
+      <value>/Users/mcennis/data/LiveJournalMini</value>
+    </property>
+    <property>
+      <name>anonymzing</name>
+      <value>true</value>
+    </property>
+  </DataAquisition>
+  <Algorithm>
+    <class>ScalableHITSPrestige</class>
+    <property>
+      <name>normalize</name>
+      <value>true</value>
+    </property>
+  </Algorithm>
+  <Algorithm>
+    <class>AddBasicInterestLink</class>
+    <property>
+      <name>adjustorPropertyType</name>
+      <value>Knows HITS Authority</value>
+    </property>
+  </Algorithm>
+  <Algorithm>
+    <class>AddMusicReferences</class>
+    <property>
+      <name>decider</name>
+      <value>basic</value>
+    </property>
+    <property>
+      <name>artistListLocation</name>
+      <value>/Users/mcennis/artist.txt</value>
+    </property>
+  </Algorithm>
+  <Algorithm>
+    <class>AddMusicLinks</class>
+    <property>
+      <name>adjustorPropertyType</name>
+      <value>Knows HITS Authority</value>
+    </property>
+  </Algorithm>
+  <Algorithm>
+    <class>AddMusicRecommendations</class>
+    <property>
+      <name>adjustorPropertyType</name>
+      <value>Knows HITS Authority</value>
+    </property>
+  </Algorithm>
+  <Algorithm>
+      <class>Evaluation</class>
+  </Algorithm>
+</Config>

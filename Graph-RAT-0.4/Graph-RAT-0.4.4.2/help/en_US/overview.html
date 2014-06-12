@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Graph-RAT Overview</title>
+</head>
+<body>
+<h1>Graph-RAT Overview</h1>
+<p>Graph-RAT is unique in the way that it unifies a number of different analysis
+techniques and methods into a single high-level analysis language. 
+The graph consists of three distinct levels of abstraction. The lowest level is
+the data structure. The next higher level of abstraction is the graph-view tree.
+The final level of abstraction is the algorithm pipe.
+</p>
+<h2>Data Structure</h2>
+<p>The building blocks of graphs are properties. Each property is a (possibly multivalued)
+variable that contains a Java object. Every property exists within a
+context. This context is defined by vertices (actors) and edges (links). Each
+vertices has a class (mode) as does each edge (a relation). Graphs themselves
+can also have typed properties. Any Java class is an acceptable property type,
+provided the appropriate serialization routines are provided. A collection of
+actors and links are collected within a graph, indexing them.</p>
+<p>Actors are created using an ActorFactory singleton which uses a java.util.Properties
+object to specify the parameters to create the Actor. See the Javadoc of Actor-
+Factory for a list of all actor types, their properties, and what these properties
+influence. Likewise, Links are created from a LinkFactory, and Graphs from a
+GraphFactory.</p>
+<h3>View Tree</h3>
+<p>The set of all actors and links form the root view of a graph. All graphs can
+have an arbitrary number of child graphs which contain a strict subset of the
+root graph’s actors and links. This forms an acyclic hierarchy of subsets of the
+original data in the form of a B-Tree. This tree can be queried using a regular
+expression for which the set of closest-to-root graphs whose ID matches the
+expression is returned.</p>
+<p>Subgraphs are either created manually by adding existing actors and links
+to a new graph object or by use of the getSubGraph() method of the Graph
+interface. Once actors and links are added, the graph can be listed as a child
+of a graph by registering it with the addChild() method of the Graph interface.
+Similarly, getSubGraph creates a graph which can be added with the addChild()
+method.</p>
+<h3>Language Structure</h3>
+<p>A Graph-RAT program consists of three components: A graph declaration,
+a sequence of data acquisition modules, and a sequence of algorithm—view
+expression pairs.</p>
+<p>The graph declaration that determines which graph implementation will be
+used during execution. The parameters are fed to a factory which generates
+the base graph of the given type. For SQL-backed graphs, this may load a
+pre-existing graph without data acquisition modules.</p>
+<p>The next component is a sequence of data acquisition algorithms that add
+properties to the graph. Each data acquisition algorithm entry must have a
+unique ID and is executed sequentially using the parameters provided.
+The third component is a sequence of view expression—algorithm pairs.
+For each pair, the expression is used to obtain a sequence of graphs. The
+given algorithm is then executed with each graph sequentially using the declared
+parameters. Missing parameters are filled with the default value.</p>
+<h2>Algorithm Types</h2>
+<p>Graph-RAT algorithms can be divided into three primary types—propositional
+algorithms, clustering algorithms, and analytical algorithms.</p>
+<p>The most basic building block algorithms are the propositional algorithms.
+These algorithms transform properties into weka Instance objects and move
+these properties into different parts of the graph using aggregator functions.
+Ultimately, one can propositionalize the entire data set using only these methods.</p>
+<p>Clustering algorithms take a given set and alter the graph view tree based
+on the content of the data. The only properties created during this process are
+those that declare the graph ID of the new sub-tree an actor or link has been
+assigned to.</p>
+<p>Analytical algorithms take a set of graph data and construct new actors or
+links which are added back to the graph. These algorithms include link-based
+analysis such as prestige analysis and actor based analysis such as machinelearning
+algorithms.</p>
+</body>
+</html>

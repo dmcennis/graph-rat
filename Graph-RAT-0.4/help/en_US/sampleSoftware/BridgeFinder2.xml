@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE Config [
+  <!ELEMENT Config (Scheduler,Graph,DataAquisition,Algorithm*)>
+  <!ELEMENT Scheduler (class,property*)>
+  <!ELEMENT Graph (class,property*)>
+  <!ELEMENT DataAquisition (class,property*)>
+  <!ELEMENT Algorithm (class,pattern,property*)>
+  <!ELEMENT class (#PCDATA)>
+  <!ELEMENT pattern (#PCDATA)>
+  <!ELEMENT property (name,value)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT value (#PCDATA)>
+]>
+
+<Config>
+  <Scheduler>
+    <class>basic</class>
+  </Scheduler>
+  <Graph>
+    <class>MemGraph</class>
+    <property>
+      <name>GraphID</name>
+      <value>Root</value>
+    </property>
+  </Graph>
+  <DataAquisition>
+    <class>Load BibliographyXML</class>
+    <property>
+      <name>fileLocation</name>
+      <value>/media/080220_1228/DataWithClusterID_3.xml</value>
+    </property>
+  </DataAquisition>
+  <Algorithm>
+    <pattern>.*</pattern>
+    <class>Identify Bridges</class>
+    <property>
+	<name>IncomingOutgoing</name>
+	<value>Incoming</value>
+    </property>
+  </Algorithm>
+  <Algorithm>
+    <class>Output Bridges By Cluster</class>
+    <pattern>.*</pattern>
+    <property>
+      <name>outputFile</name>
+      <value>/home/dm75/public/bridgeResults/bridgeByIncomingLink-Data3.xml</value>
+    </property>
+  </Algorithm>
+</Config>

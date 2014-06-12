@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Loading from XML</title>
+</head>
+<body>
+<h1>Loading from XML</h1>
+<p>Create an xml file using the doctype below.  Then read this into Graph-RAT using <a href="">readMemgraphXMLFile</a>.
+e only parameters needing to be set are the location of the file to be read and whether the file is gzipped or not.</p>
+<p>
+Since the doctype is a little daunting, a small walkthrough.  The encompassing tag 
+is 'dataObject' that contain graph tags.</p>
+<p>Graphs have classes: MemGraph is the only one supported by the Reader.  Graphs
+have graphProperties with gClass - use "Basic", gValueClass  - the class 
+of the objects in the property, gType - the name of the property on the graph,
+and gValue - the values for the property.  users are the set of all nodes on the graph
+and userLink are the set of all links between nodes.  subGraphs are also listed.  Nodes
+and links listed in sub-graphs and in a parent end up references to the sames 
+node and links. pathSet is obsolete and should be ignored.
+</p>
+<p>Users have a mode - userClass, a unique ID - ID, and properties. Properties are handled
+much like graphs, except without the leading g in the tag names.  pages can be safely
+ignored.</p>
+<p>userLink - name their beginning and end by naming mode (uSourcetype, uDestinationType)
+and id (uSourceID, uDestinationID) as a unique id.  This reader is one pass, so users must be defined before the links
+occur in the file.  uClass is  "Basic", uStrength is a double describing link strength. It also
+has properties with a u prefix, handled exactly like graph properties.</p>
+<p>Complete description:
+<pre>
+  &lt;!DOCTYPE dataObject [
+    &lt;!ELEMENT dataObject (graph)&gt;
+    &lt;!ELEMENT graph (graphClass,graphName,graphProperties*,pathSet*,user*,userLink*,graph*)&gt;
+    &lt;!ELEMENT graphClass (#PCDATA)&gt;
+    &lt;!ELEMENT graphName (#PCDATA)&gt;
+    &lt;!ELEMENT graphProperties (gClass,gValueClass,gType,gValue+)&gt;
+    &lt;!ELEMENT gClass (#PCDATA)&gt;
+    &lt;!ELEMENT gValueClass (#PCDATA)&gt;
+    &lt;!ELEMENT gType (#PCDATA)&gt;
+    &lt;!ELEMENT gValue (#PCDATA)&gt;
+    &lt;!ELEMENT pathSet (path+)&gt;
+    &lt;!ELEMENT path (actor+)&gt;
+    &lt;!ELEMENT actor (actorType,actorID)&gt;
+    &lt;!ELEMENT actorType (#PCDATA)&gt;
+    &lt;!ELEMENT actorID (#PCDATA)&gt;
+    &lt;!ELEMENT user (userClass,ID,properties*,page*)&gt;
+    &lt;!ELEMENT ID (#PCDATA)&gt;
+    &lt;!ELEMENT properties (propertiesClass,valueClass,type,value*)&gt;
+    &lt;!ELEMENT type (#PCDATA)&gt;
+    &lt;!ELEMENT value (#PCDATA)&gt;
+    &lt;!ELEMENT valueClass (#PCDATA)&gt;
+    &lt;!ELEMENT userLink (uClass,uStrength,uSourceType,uSourceID,uDestinationType,uDestinationID,uProperties)&gt;
+    &lt;!ELEMENT uClass (#PCDATA)&gt;
+    &lt;!ELEMENT uSourceType (#PCDATA)&gt;
+    &lt;!ELEMENT uSourceID (#PCDATA)&gt;
+    &lt;!ELEMENT uStrength (#PCDATA)&gt;
+    &lt;!ELEMENT uDestinationType (#PCDATA)&gt;
+    &lt;!ELEMENT uDestinationID (#PCDATA)&gt;
+    &lt;!ELEMENT uProperties (uPropertiesClass,uValueClass,uPropertiesType,uPropertiesValue+)&gt;
+    &lt;!ELEMENT uPropertiesClass (#PCDATA)&gt;
+    &lt;!ELEMENT uPropertiesValueClass (#PCDATA)&gt;
+    &lt;!ELEMENT uPropertiesType (#PCDATA)&gt;
+    &lt;!ELEMENT uPropertiesValue (#PCDATA)&gt;
+    &lt;!ELEMENT page (#PCDATA)&gt;
+  ]&gt;
+</pre>
+</p>
+</body>

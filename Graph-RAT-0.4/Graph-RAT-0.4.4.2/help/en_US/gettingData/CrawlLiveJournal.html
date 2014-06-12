@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Crawling for data</title>
+</head>
+<body>
+<h1>Crawling using CrawlLiveJournal</h1>
+<p>
+CrawlLiveJournal is the easiest to use.  Download a FOAF page from Livejournal.
+Any journal will do.  The pages are located at 'http://<username>.livejournal.com/data/foaf'
+Add CrawlLivejournal without any algorithms.  Edit CrawlLiveJournal:</p>
+<img src="CrawlLiveJournalSnapshot.png" alt="Screenshot of Edit Screen">
+<p>Unless you are behind a proxy, the only change needed is to set the directory to
+find your seed foaf file under 'foafDirectory'.  Other than changing the stop
+count to a different value, there is nothing else that needs to be changed.
+</p>
+<p>After the process is finished, use FileReader2Pass to read the files into memory.</p>
+<img src="FileReader2Snapshot.png">
+<p>Once again, the foaf directory is the only parameter than needs to be changed to match the
+directory created earlier.  Now you have a MemGraph loaded into memory ready for analysis.</p>
+</body>
+</html>

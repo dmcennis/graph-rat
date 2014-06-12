@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>Loading From a Database</title>
+</head>
+<body>
+<h1>Loading from an external Database</h1>
+<p>Here is the complete SQL initialization code for a Postgresql database. It should be executed on a new database.</p>
+<pre>
+CREATE TABLE Graph (
+	id integer SERIAL),
+        name varchar(256) not null,
+        primary key(id)
+)
+
+CREATE TABLE SubGraph (
+	parent integer not null,
+	child integer not null,
+	FOREIGN KEY (parent) REFERENCES Graph(id),
+	FOREIGN KEY (child) REFERENCES Graph(id),
+	PRIMARY KEY(parent,child)
+)
+
+CREATE TABLE Actor (
+	id integer SERIAL,
+	type VARCHAR(64) not null,
+	name VARCHAR(256) not null,
+	PRIMARY KEY(id)
+)
+CREATE INDEX actor_type ON Actor(type)
+CREATE INDEX actor_name ON Actor(name)
+CREATE INDEX actor_type_name ON Actor(type,name)
+
+CREATE TABLE ActorGraph (
+	graph integer not null,
+	actor integer not null,
+	FOREIGN KEY (graph) REFERENCES Graph(id),
+	FOREIGN KEY (actor) REFERENCES Actor(id),
+	PRIMARY KEY (graph,actor)
+)
+
+CREATE TABLE ActorProperties(
+	id integer not null,
+	type VARCHAR(256) ,
+	class VARCHAR(256) ,
+	value VARCHAR(256) ,
+	FOREIGN KEY(id) REFERENCES Actor(id),
+	PRIMARY KEY(id,type,value)
+)
+
+CREATE INDEX actorProperties_id_type ON ActorProperties(id,type)
+
+CREATE TABLE GraphProperties (
+	id integer not null
+	type VARCHAR(256) ,
+	class VARCHAR(256) ,
+	value VARCHAR(256) ,
+	FOREIGN KEY(id) REFERENCES Graph(id),
+	PRIMARY KEY(id,type,value)
+)
+CREATE INDEX graphProperties_id_type ON GraphProperties(id,type)
+
+CREATE TABLE Link (
+	id integer SERIAL,
+	type VARchar(256),
+	start integer,
+	finish integer,
+	cost double,
+	FOREIGN KEY (start) REFERENCES Actor(id),
+	FOREIGN KEY (finish) REFERENCES Actor(id),
+	PRIMARY KEY (id)
+)
+CREATE INDEX Link_type ON Link(type)
+CREATE INDEX Link_type_source ON Link(type,start)
+CREATE INDEX Link_type_dest ON Link(type,finish)
+CREATE INDEX Link_start_finish ON Link(type,start,finish)
+
+CREATE TABLE LinkProperties (
+	id integer not null,
+	type VARCHAR(256) ,
+	class VARCHAR(256) ,
+	value VARCHAR(256) ,
+	FOREIGN KEY(id) REFERENCES Graph(id),
+	PRIMARY KEY(id,type,value)
+)
+CREATE INDEX LinkProperties_id_type ON LinkProperties(id,type)
+
+CREATE Table LinkGraph (
+	graph integer not null,
+	link integer not null,
+	FOREIGN KEY (link) REFERENCES Link(id),
+	FOREIGN KEY (graph) REFERENCES Graph(id),
+	PRIMARY KEY (link,graph)
+)
+
+CREATE TABLE PathSet (
+	id integer SERIAL,
+	name VARchar(256) not null unique, 
+	PRIMARY KEY (id)
+)
+
+CREATE TABLE Path (
+	id integer SERIAL,
+	name VARchar(256) not null, 
+	cost double,
+	PRIMARY KEY (id)
+)
+
+CREATE TABLE PathActor (
+	path integer not null,
+	actor integer not null, 
+	index integer not null,
+	FOREIGN KEY(path) REFERENCES Path(id),
+	FOREIGN KEY(actor) REFERENCES Actor(id),
+	PRIMARY KEY (path,actor)
+)
+
+CREATE TABLE PathSetPath (
+	pathSet integer not null,
+	path integer not null,
+	FOREIGN KEY (path) REFERENCES Path(id), 
+	FOREIGN KEY (pathSet) REFERENCES PathSet(id),
+	PRIMARY KEY (pathSet,path)
+)
+</pre>
+<p>
+Since the database description is a little daunting, a small walkthrough:</p>
+<p>Graphs
+have graph properties with class  - the class 
+of the objects in the property, type - the name of the property on the graph,
+and value - the values for the property.  users are the set of all nodes on the graph
+and links are the set of all links between nodes.  subGraphs are also listed as a relationship table.  
+Path sets can be safely ignored.
+</p>
+<p>Users have a mode - type, a unique ID - name, and properties. Properties are handled
+much like graphs.  pages can be safely
+ignored.</p>
+<p>link - name their actor by unique id.  It also has strength and properties 
+handled exactly like graph properties.</p>
+<p>See <a href="../graphTypes/postgresql.html">PostgresqlDB</a>
+for the options for using the DerbyDB or PostgresqlDB graphs that read datbases of this type.  Omit the DataAquisition module
+in the GUI to use the pre-loaded database.  Graph-RAT will complain, but still pass directly to executing algorithms.
+</body>

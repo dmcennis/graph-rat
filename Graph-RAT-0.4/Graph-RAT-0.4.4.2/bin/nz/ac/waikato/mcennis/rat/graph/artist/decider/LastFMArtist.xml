@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<similarartists artist="The Beatles" streamable="1" picture="http://panther1.last.fm/proposedimages/sidebar/6/1000113/610363.jpg" mbid="b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d">
+<artist>
+    <name>The Rolling Stones</name>
+    <mbid>b071f9fa-14b0-4217-8e97-eb41da73f598</mbid>
+    <match>100</match>
+    <url>http://www.last.fm/music/The+Rolling+Stones</url>
+    <image_small>http://static3.last.fm/storable/image/199106/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/606/597724.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Who</name>
+    <mbid>9fdaa16b-a6c4-4831-b87c-bc9ca8ce7eaa</mbid>
+    <match>92.26</match>
+    <url>http://www.last.fm/music/The+Who</url>
+    <image_small>http://static3.last.fm/storable/image/199408/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1235281/588084.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>John Lennon</name>
+    <mbid>4d5447d7-c61c-4120-ba1b-d7f471d385b9</mbid>
+    <match>90.6</match>
+    <url>http://www.last.fm/music/John+Lennon</url>
+    <image_small>http://static3.last.fm/storable/image/198729/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1000054/599966.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Led Zeppelin</name>
+    <mbid>678d88b2-87b0-403b-b63d-5da7465aecc3</mbid>
+    <match>89.08</match>
+    <url>http://www.last.fm/music/Led+Zeppelin</url>
+    <image_small>http://static3.last.fm/storable/image/197755/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1394/597232.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Queen</name>
+    <mbid>0383dadf-2a4e-4d10-a46a-e9e041da8eb3</mbid>
+    <match>87.76</match>
+    <url>http://www.last.fm/music/Queen</url>
+    <image_small>http://static3.last.fm/storable/image/197296/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1270/599761.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Beach Boys</name>
+    <mbid>ebfc1398-8d96-47e3-82c3-f782abcdb13d</mbid>
+    <match>87.07</match>
+    <url>http://www.last.fm/music/The+Beach+Boys</url>
+    <image_small>http://static3.last.fm/storable/image/199115/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1002457/577406.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Doors</name>
+    <mbid>9efff43b-3b29-4082-824e-bc82f646f93d</mbid>
+    <match>84.99</match>
+    <url>http://www.last.fm/music/The+Doors</url>
+    <image_small>http://static3.last.fm/storable/image/198605/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/344/596880.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>David Bowie</name>
+    <mbid>5441c29d-3602-4898-b1a1-b77fa23b8e50</mbid>
+    <match>84.5</match>
+    <url>http://www.last.fm/music/David+Bowie</url>
+    <image_small>http://static3.last.fm/storable/image/199224/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/313/611111.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Kinks</name>
+    <mbid>17b53d9f-5c63-4a09-a593-dde4608e0db9</mbid>
+    <match>82.76</match>
+    <url>http://www.last.fm/music/The+Kinks</url>
+    <image_small>http://static3.last.fm/storable/image/177388/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1303/526350.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Pink Floyd</name>
+    <mbid>83d91898-7763-47d7-b03b-b92132375c47</mbid>
+    <match>76.59</match>
+    <url>http://www.last.fm/music/Pink+Floyd</url>
+    <image_small>http://static3.last.fm/storable/image/198145/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/82/606156.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Jimi Hendrix</name>
+    <mbid>06fb1c8b-566e-4cb2-985b-b467c90781d4</mbid>
+    <match>75.87</match>
+    <url>http://www.last.fm/music/Jimi+Hendrix</url>
+    <image_small>http://static3.last.fm/storable/image/199374/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1223/604567.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Elton John</name>
+    <mbid>b83bc61f-8451-4a5d-8b8e-7e9ed295e822</mbid>
+    <match>73.16</match>
+    <url>http://www.last.fm/music/Elton+John</url>
+    <image_small>http://static3.last.fm/storable/image/198977/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1002470/546464.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Velvet Underground</name>
+    <mbid>94b0fb9d-a066-4823-b2ec-af1d324bcfcf</mbid>
+    <match>70.72</match>
+    <url>http://www.last.fm/music/The+Velvet+Underground</url>
+    <image_small>http://static3.last.fm/storable/image/195829/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/2178/598529.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>U2</name>
+    <mbid>a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432</mbid>
+    <match>70.25</match>
+    <url>http://www.last.fm/music/U2</url>
+    <image_small>http://static3.last.fm/storable/image/194083/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1205/578365.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Simon &amp; Garfunkel</name>
+    <mbid>5d02f264-e225-41ff-83f7-d9b1f0b1874a</mbid>
+    <match>66.69</match>
+    <url>http://www.last.fm/music/Simon%2B%2526%2BGarfunkel</url>
+    <image_small>http://static3.last.fm/storable/image/188545/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/4569/557277.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Creedence Clearwater Revival</name>
+    <mbid>109958eb-a335-4c5e-907e-597ff4c6af46</mbid>
+    <match>66.67</match>
+    <url>http://www.last.fm/music/Creedence+Clearwater+Revival</url>
+    <image_small>http://static3.last.fm/storable/image/195879/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1001861/537562.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Eagles</name>
+    <mbid>f46bd570-5768-462e-b84c-c7c993bbf47e</mbid>
+    <match>64.86</match>
+    <url>http://www.last.fm/music/Eagles</url>
+    <image_small>http://static3.last.fm/storable/image/135969/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/3292/252523.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Bob Dylan</name>
+    <mbid>72c536dc-7137-4477-a521-567eeb840fa8</mbid>
+    <match>63.16</match>
+    <url>http://www.last.fm/music/Bob+Dylan</url>
+    <image_small>http://static3.last.fm/storable/image/191278/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/793/581929.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Paul McCartney</name>
+    <mbid>ba550d0e-adac-4864-b88b-407cab5e76af</mbid>
+    <match>63.03</match>
+    <url>http://www.last.fm/music/Paul+McCartney</url>
+    <image_small>http://static3.last.fm/storable/image/198476/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/3985/601356.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Police</name>
+    <mbid>9e0e2b01-41db-4008-bd8b-988977d6019a</mbid>
+    <match>61.78</match>
+    <url>http://www.last.fm/music/The+Police</url>
+    <image_small>http://static3.last.fm/storable/image/199661/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/3150/580303.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Eric Clapton</name>
+    <mbid>618b6900-0618-4f1e-b835-bccb17f84294</mbid>
+    <match>61.58</match>
+    <url>http://www.last.fm/music/Eric+Clapton</url>
+    <image_small>http://static3.last.fm/storable/image/198161/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1428/559747.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Elvis Presley</name>
+    <mbid>01809552-4f87-45b0-afff-2c6f0730a3be</mbid>
+    <match>60.43</match>
+    <url>http://www.last.fm/music/Elvis+Presley</url>
+    <image_small>http://static3.last.fm/storable/image/199425/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1196/585722.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Cream</name>
+    <mbid>04cd0cfd-bfd1-4c36-bc38-95c35e2c045f</mbid>
+    <match>60.05</match>
+    <url>http://www.last.fm/music/Cream</url>
+    <image_small>http://static3.last.fm/storable/image/199126/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1000055/534821.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>George Harrison</name>
+    <mbid>42a8f507-8412-4611-854f-926571049fa0</mbid>
+    <match>58.95</match>
+    <url>http://www.last.fm/music/George+Harrison</url>
+    <image_small>http://static3.last.fm/storable/image/189350/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1001452/550523.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Fleetwood Mac</name>
+    <mbid>bd13909f-1c29-4c27-a874-d4aaf27c5b1a</mbid>
+    <match>58.85</match>
+    <url>http://www.last.fm/music/Fleetwood+Mac</url>
+    <image_small>http://static3.last.fm/storable/image/194346/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/4246/558756.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Billy Joel</name>
+    <mbid>64b94289-9474-4d43-8c93-918ccc1920d1</mbid>
+    <match>58.52</match>
+    <url>http://www.last.fm/music/Billy+Joel</url>
+    <image_small>http://static3.last.fm/storable/image/157521/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1003159/252087.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Aerosmith</name>
+    <mbid>3d2b98e5-556f-4451-a3ff-c50ea18d57cb</mbid>
+    <match>56.46</match>
+    <url>http://www.last.fm/music/Aerosmith</url>
+    <image_small>http://static3.last.fm/storable/image/180056/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1000010/505716.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Neil Young</name>
+    <mbid>75167b8b-44e4-407b-9d35-effe87b223cf</mbid>
+    <match>55.3</match>
+    <url>http://www.last.fm/music/Neil+Young</url>
+    <image_small>http://static3.last.fm/storable/image/169220/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/153/478921.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>R.E.M.</name>
+    <mbid>ea4dfa26-f633-4da6-a52a-f49ea4897b58</mbid>
+    <match>55.08</match>
+    <url>http://www.last.fm/music/R.E.M.</url>
+    <image_small>http://static3.last.fm/storable/image/179813/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1275996/532338.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Van Morrison</name>
+    <mbid>a41ac10f-0a56-4672-9161-b83f9b223559</mbid>
+    <match>53.45</match>
+    <url>http://www.last.fm/music/Van+Morrison</url>
+    <image_small>http://static3.last.fm/storable/image/192247/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/553/459071.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Bruce Springsteen</name>
+    <mbid>70248960-cb53-4ea4-943a-edb18f7d336f</mbid>
+    <match>53.26</match>
+    <url>http://www.last.fm/music/Bruce+Springsteen</url>
+    <image_small>http://static3.last.fm/storable/image/187883/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1000522/547527.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Dire Straits</name>
+    <mbid>614e3804-7d34-41ba-857f-811bad7c2b7a</mbid>
+    <match>52.85</match>
+    <url>http://www.last.fm/music/Dire+Straits</url>
+    <image_small>http://static3.last.fm/storable/image/167813/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1000188/484549.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Coldplay</name>
+    <mbid>cc197bad-dc9c-440d-a5b5-d52ba2e14234</mbid>
+    <match>52.74</match>
+    <url>http://www.last.fm/music/Coldplay</url>
+    <image_small>http://static3.last.fm/storable/image/198331/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1177/598835.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Animals</name>
+    <mbid>4d8afa16-4018-4ca8-8b5e-ede8f9314562</mbid>
+    <match>52.74</match>
+    <url>http://www.last.fm/music/The+Animals</url>
+    <image_small>http://static3.last.fm/storable/image/6916/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1001368/21384.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Oasis</name>
+    <mbid>39ab1aed-75e0-4140-bd47-540276886b60</mbid>
+    <match>52.68</match>
+    <url>http://www.last.fm/music/Oasis</url>
+    <image_small>http://static3.last.fm/storable/image/197646/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1259/587809.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Zombies</name>
+    <mbid>230ca093-1d00-4c57-9235-147942f66930</mbid>
+    <match>51.84</match>
+    <url>http://www.last.fm/music/The+Zombies</url>
+    <image_small>http://static3.last.fm/storable/image/171690/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1234431/421245.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Lynyrd Skynyrd</name>
+    <mbid>c544ed4d-2390-4442-a83e-1ea2883b09c8</mbid>
+    <match>51.27</match>
+    <url>http://www.last.fm/music/Lynyrd+Skynyrd</url>
+    <image_small>http://static3.last.fm/storable/image/138235/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1000028/328983.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Electric Light Orchestra</name>
+    <mbid>0c502791-4ee9-4c5f-9696-0602b721ff3b</mbid>
+    <match>50.7</match>
+    <url>http://www.last.fm/music/Electric+Light+Orchestra</url>
+    <image_small>http://static3.last.fm/storable/image/152882/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1192/340763.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Jefferson Airplane</name>
+    <mbid>39c2a93d-9afa-4a22-9bba-c087ab056e1c</mbid>
+    <match>50.54</match>
+    <url>http://www.last.fm/music/Jefferson+Airplane</url>
+    <image_small>http://static3.last.fm/storable/image/198615/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1001607/584754.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Tom Petty and the Heartbreakers</name>
+    <mbid>f93dbc64-6f08-4033-bcc7-8a0bb4689849</mbid>
+    <match>49.66</match>
+    <url>http://www.last.fm/music/Tom+Petty+and+the+Heartbreakers</url>
+    <image_small>http://static3.last.fm/storable/image/8680/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1006620/33346.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Jimi Hendrix Experience</name>
+    <mbid>665e63e9-cf0c-49c7-b98d-0d42ff9c50de</mbid>
+    <match>49.45</match>
+    <url>http://www.last.fm/music/The+Jimi+Hendrix+Experience</url>
+    <image_small>http://static3.last.fm/storable/image/180487/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/5687/466995.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Byrds</name>
+    <mbid>2819834e-4e08-47b0-a2c4-b7672318e8f0</mbid>
+    <match>49.28</match>
+    <url>http://www.last.fm/music/The+Byrds</url>
+    <image_small>http://static3.last.fm/storable/image/125455/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1410/236563.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Lou Reed</name>
+    <mbid>9d1ebcfe-4c15-4d18-95d3-d919898638a1</mbid>
+    <match>49.18</match>
+    <url>http://www.last.fm/music/Lou+Reed</url>
+    <image_small>http://static3.last.fm/storable/image/172802/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/425/471836.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Grateful Dead</name>
+    <mbid>6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6</mbid>
+    <match>49.11</match>
+    <url>http://www.last.fm/music/Grateful+Dead</url>
+    <image_small>http://static3.last.fm/storable/image/2780/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1000653/9559.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Mamas &amp; The Papas</name>
+    <mbid>ff294730-0315-440d-a543-54005779c15b</mbid>
+    <match>48.82</match>
+    <url>http://www.last.fm/music/The%2BMamas%2B%2526%2BThe%2BPapas</url>
+    <image_small>http://static3.last.fm/storable/image/146526/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1238128/382588.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Tom Petty</name>
+    <mbid>5ca3f318-d028-4151-ac73-78e2b2d6cdcc</mbid>
+    <match>48.73</match>
+    <url>http://www.last.fm/music/Tom+Petty</url>
+    <image_small>http://static3.last.fm/storable/image/4777/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1006906/21380.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Steve Miller Band</name>
+    <mbid>e57f0cac-4f56-473c-8d7e-d93f753fd586</mbid>
+    <match>48.46</match>
+    <url>http://www.last.fm/music/Steve+Miller+Band</url>
+    <image_small>http://static3.last.fm/storable/image/234/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1002382/595.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Rod Stewart</name>
+    <mbid>a35237a0-4f47-40a6-b6f3-1e786db23402</mbid>
+    <match>48.45</match>
+    <url>http://www.last.fm/music/Rod+Stewart</url>
+    <image_small>http://static3.last.fm/storable/image/190822/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1621/537584.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Red Hot Chili Peppers</name>
+    <mbid>8bfac288-ccc5-448d-9573-c33ea2aa5c30</mbid>
+    <match>47.96</match>
+    <url>http://www.last.fm/music/Red+Hot+Chili+Peppers</url>
+    <image_small>http://static3.last.fm/storable/image/195250/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1274/561624.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Monkees</name>
+    <mbid>b8549efe-f4fd-4dc0-8ef1-226e9c400233</mbid>
+    <match>46.06</match>
+    <url>http://www.last.fm/music/The+Monkees</url>
+    <image_small>http://static3.last.fm/storable/image/184983/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/4006/490752.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Guns N' Roses</name>
+    <mbid>eeb1195b-f213-4ce1-b28c-8565211f8e43</mbid>
+    <match>45.07</match>
+    <url>http://www.last.fm/music/Guns+N%27+Roses</url>
+    <image_small>http://static3.last.fm/storable/image/197118/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1000323/588603.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Santana</name>
+    <mbid>9a3bf45c-347d-4630-894d-7cf3e8e0b632</mbid>
+    <match>44.76</match>
+    <url>http://www.last.fm/music/Santana</url>
+    <image_small>http://static3.last.fm/storable/image/197606/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/2085/442686.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Journey</name>
+    <mbid>abd506e1-6f2b-4d6f-b937-92c267f6f88b</mbid>
+    <match>44.51</match>
+    <url>http://www.last.fm/music/Journey</url>
+    <image_small>http://static3.last.fm/storable/image/197359/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1007004/510009.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>AC/DC</name>
+    <mbid>66c662b6-6e2f-4930-8610-912e24c63ed1</mbid>
+    <match>44.45</match>
+    <url>http://www.last.fm/music/AC%252FDC</url>
+    <image_small>http://static3.last.fm/storable/image/193239/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1000157/519452.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Paul McCartney &amp; Wings</name>
+    <mbid>31f49c01-b8e0-40ba-b1aa-3754f6fa78d5</mbid>
+    <match>43.46</match>
+    <url>http://www.last.fm/music/Paul%2BMcCartney%2B%2526%2BWings</url>
+    <image_small>http://static3.last.fm/storable/image/177696/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/5698/402575.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Janis Joplin</name>
+    <mbid>76c9a186-75bd-436a-85c0-823e3efddb7f</mbid>
+    <match>43.42</match>
+    <url>http://www.last.fm/music/Janis+Joplin</url>
+    <image_small>http://static3.last.fm/storable/image/176728/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/4302/519446.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Steppenwolf</name>
+    <mbid>12ff8858-bfcb-4812-a8dd-7e9debf0cbee</mbid>
+    <match>42.89</match>
+    <url>http://www.last.fm/music/Steppenwolf</url>
+    <image_small>http://static3.last.fm/storable/image/161090/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1003731/297127.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Boston</name>
+    <mbid>0d8b0d50-e4cf-4da4-965d-f24c58ec3268</mbid>
+    <match>42.66</match>
+    <url>http://www.last.fm/music/Boston</url>
+    <image_small>http://static3.last.fm/storable/image/178786/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1002577/413412.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Band</name>
+    <mbid>8c90ad8c-9150-4c51-a1eb-342232e99d06</mbid>
+    <match>42.04</match>
+    <url>http://www.last.fm/music/The+Band</url>
+    <image_small>http://static3.last.fm/storable/image/179395/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1233717/427613.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Crosby, Stills, Nash &amp; Young</name>
+    <mbid>46a782ea-4308-476b-abd1-a91b197f3037</mbid>
+    <match>41.86</match>
+    <url>http://www.last.fm/music/Crosby%252C%2BStills%252C%2BNash%2B%2526%2BYoung</url>
+    <image_small>http://static3.last.fm/storable/image/175115/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1002080/456327.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Foo Fighters</name>
+    <mbid>67f66c07-6e61-4026-ade5-7e782fad3a5d</mbid>
+    <match>41.58</match>
+    <url>http://www.last.fm/music/Foo+Fighters</url>
+    <image_small>http://static3.last.fm/storable/image/100984/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1000062/233544.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Sting</name>
+    <mbid>7944ed53-2a58-4035-9b93-140a71e41c34</mbid>
+    <match>41.5</match>
+    <url>http://www.last.fm/music/Sting</url>
+    <image_small>http://static3.last.fm/storable/image/192263/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1570/560156.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Supertramp</name>
+    <mbid>d2ff6b6b-fc30-48dc-8952-06f9d8fc64f8</mbid>
+    <match>41.49</match>
+    <url>http://www.last.fm/music/Supertramp</url>
+    <image_small>http://static3.last.fm/storable/image/169114/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1296/356780.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Deep Purple</name>
+    <mbid>79491354-3d83-40e3-9d8e-7592d58d790a</mbid>
+    <match>41.25</match>
+    <url>http://www.last.fm/music/Deep+Purple</url>
+    <image_small>http://static3.last.fm/storable/image/178956/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/2897/513310.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Chicago</name>
+    <mbid>3f5be744-e867-42fb-8913-5fd69e4099b5</mbid>
+    <match>40.79</match>
+    <url>http://www.last.fm/music/Chicago</url>
+    <image_small>http://static3.last.fm/storable/image/191053/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1000433/269686.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Hollies</name>
+    <mbid>d4305549-6b4e-4a57-b24d-8af0743fe191</mbid>
+    <match>40.47</match>
+    <url>http://www.last.fm/music/The+Hollies</url>
+    <image_small>http://static3.last.fm/storable/image/196984/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1234850/267630.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>T. Rex</name>
+    <mbid>c842d29f-a297-48cd-bb71-4f77fd672b16</mbid>
+    <match>40.33</match>
+    <url>http://www.last.fm/music/T.+Rex</url>
+    <image_small>http://static3.last.fm/storable/image/193947/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1003342/562322.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Styx</name>
+    <mbid>835a6d9c-fea0-4a71-ae52-9c4da946433a</mbid>
+    <match>39.37</match>
+    <url>http://www.last.fm/music/Styx</url>
+    <image_small>http://static3.last.fm/storable/image/195925/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/4464/402710.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Buffalo Springfield</name>
+    <mbid>22dc19af-d085-4c9b-adfb-22ec256251f1</mbid>
+    <match>39.12</match>
+    <url>http://www.last.fm/music/Buffalo+Springfield</url>
+    <image_small>http://static3.last.fm/storable/image/176609/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1004088/187044.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Allman Brothers Band</name>
+    <mbid>72359492-22be-4ed9-aaa0-efa434fb2b01</mbid>
+    <match>38.43</match>
+    <url>http://www.last.fm/music/The+Allman+Brothers+Band</url>
+    <image_small>http://static3.last.fm/storable/image/147133/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1004241/325536.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Bon Jovi</name>
+    <mbid>5dcdb5eb-cb72-4e6e-9e63-b7bace604965</mbid>
+    <match>37.99</match>
+    <url>http://www.last.fm/music/Bon+Jovi</url>
+    <image_small>http://static3.last.fm/storable/image/190423/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1000597/502175.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Blue Öyster Cult</name>
+    <mbid>c7423e0c-ab3e-4ab4-be10-cdff5a9d3062</mbid>
+    <match>37.64</match>
+    <url>http://www.last.fm/music/Blue+%C3%96yster+Cult</url>
+    <image_small>http://static3.last.fm/storable/image/159837/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1014531/269316.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Phil Collins</name>
+    <mbid>401c3991-b76b-499d-8082-9f2df958ef78</mbid>
+    <match>37.41</match>
+    <url>http://www.last.fm/music/Phil+Collins</url>
+    <image_small>http://static3.last.fm/storable/image/174716/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/3083/429036.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Yardbirds</name>
+    <mbid>191de76f-a224-445d-b041-54df16d65bf7</mbid>
+    <match>37.4</match>
+    <url>http://www.last.fm/music/The+Yardbirds</url>
+    <image_small>http://static3.last.fm/storable/image/153562/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/3161/300360.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Elvis Costello</name>
+    <mbid>8a338e06-d182-46f2-bd16-30a09bc840ba</mbid>
+    <match>37.16</match>
+    <url>http://www.last.fm/music/Elvis+Costello</url>
+    <image_small>http://static3.last.fm/storable/image/195597/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1195/539377.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Three Dog Night</name>
+    <mbid>1a48176d-1414-4a18-9792-50ba585d4d59</mbid>
+    <match>37.15</match>
+    <url>http://www.last.fm/music/Three+Dog+Night</url>
+    <image_small>http://static3.last.fm/storable/image/19894/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1010670/42201.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Chuck Berry</name>
+    <mbid>592a3b6d-c42b-4567-99c9-ecf63bd66499</mbid>
+    <match>37.07</match>
+    <url>http://www.last.fm/music/Chuck+Berry</url>
+    <image_small>http://static3.last.fm/storable/image/198211/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1001855/494902.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Bryan Adams</name>
+    <mbid>4dbf5678-7a31-406a-abbe-232f8ac2cd63</mbid>
+    <match>36.78</match>
+    <url>http://www.last.fm/music/Bryan+Adams</url>
+    <image_small>http://static3.last.fm/storable/image/199210/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/3287/557640.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Counting Crows</name>
+    <mbid>a0327dc2-dc76-44d5-aec6-47cd2dff1469</mbid>
+    <match>36.78</match>
+    <url>http://www.last.fm/music/Counting+Crows</url>
+    <image_small>http://static3.last.fm/storable/image/196316/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1000088/590367.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Joe Cocker</name>
+    <mbid>32f2d6bd-c22b-42cf-a7bc-0c4b48cd2bcb</mbid>
+    <match>36.77</match>
+    <url>http://www.last.fm/music/Joe+Cocker</url>
+    <image_small>http://static3.last.fm/storable/image/157821/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1001470/289755.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Foreigner</name>
+    <mbid>160629ab-ec18-4931-8c95-02cb92d06186</mbid>
+    <match>36.63</match>
+    <url>http://www.last.fm/music/Foreigner</url>
+    <image_small>http://static3.last.fm/storable/image/196398/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1001525/483768.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Jet</name>
+    <mbid>4efa55ba-93cf-497f-baf3-2ca9da7e193e</mbid>
+    <match>36.53</match>
+    <url>http://www.last.fm/music/Jet</url>
+    <image_small>http://static3.last.fm/storable/image/197486/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1160349/546577.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Doobie Brothers</name>
+    <mbid>588dea29-eea3-456b-a815-3ee04f75c8e7</mbid>
+    <match>36.46</match>
+    <url>http://www.last.fm/music/The+Doobie+Brothers</url>
+    <image_small>http://static3.last.fm/storable/image/9047/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/5798/29845.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Maroon 5</name>
+    <mbid>0ab49580-c84f-44d4-875f-d83760ea2cfe</mbid>
+    <match>36.33</match>
+    <url>http://www.last.fm/music/Maroon+5</url>
+    <image_small>http://static3.last.fm/storable/image/198212/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1007903/606577.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>No Doubt</name>
+    <mbid>fbd2a255-1d57-4d31-ac11-65b671c19958</mbid>
+    <match>36.14</match>
+    <url>http://www.last.fm/music/No+Doubt</url>
+    <image_small>http://static3.last.fm/storable/image/198198/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/3656/598983.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Steely Dan</name>
+    <mbid>e01c3376-15fa-40d7-b747-5f219bdefdd7</mbid>
+    <match>35.91</match>
+    <url>http://www.last.fm/music/Steely+Dan</url>
+    <image_small>http://static3.last.fm/storable/image/139525/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1001920/222256.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Van Halen</name>
+    <mbid>b665b768-0d83-4363-950c-31ed39317c15</mbid>
+    <match>35.82</match>
+    <url>http://www.last.fm/music/Van+Halen</url>
+    <image_small>http://static3.last.fm/storable/image/153797/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1162/438905.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Brian Wilson</name>
+    <mbid>634fe78e-fc6b-4b2a-ba83-c8c66e13a8aa</mbid>
+    <match>35.8</match>
+    <url>http://www.last.fm/music/Brian+Wilson</url>
+    <image_small>http://static3.last.fm/storable/image/178827/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1007453/374635.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Lovin' Spoonful</name>
+    <mbid>abc08d4f-4e3c-4b5a-b1e8-d324cd6a2f92</mbid>
+    <match>35.71</match>
+    <url>http://www.last.fm/music/The+Lovin%27+Spoonful</url>
+    <image_small>http://static3.last.fm/storable/image/6639/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1239287/14468.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Moody Blues</name>
+    <mbid>774666d2-2064-4d6c-856c-f8cda0aaf9f0</mbid>
+    <match>35.4</match>
+    <url>http://www.last.fm/music/The+Moody+Blues</url>
+    <image_small>http://static3.last.fm/storable/image/6462/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1001383/27168.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Roy Orbison</name>
+    <mbid>0bbbc496-c7b5-4b3f-bb6d-bd312827d6e5</mbid>
+    <match>35.24</match>
+    <url>http://www.last.fm/music/Roy+Orbison</url>
+    <image_small>http://static3.last.fm/storable/image/4058/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1001805/15537.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>America</name>
+    <mbid>34cf95c7-4be9-4efd-a48a-c2ea4a0bb114</mbid>
+    <match>35</match>
+    <url>http://www.last.fm/music/America</url>
+    <image_small>http://static3.last.fm/storable/image/11653/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1001297/29841.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>ZZ Top</name>
+    <mbid>a81259a0-a2f5-464b-866e-71220f2739f1</mbid>
+    <match>34.66</match>
+    <url>http://www.last.fm/music/ZZ+Top</url>
+    <image_small>http://static3.last.fm/storable/image/1856/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1003168/15570.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Cheap Trick</name>
+    <mbid>9f870653-72b0-4c6d-8c59-439a95963e09</mbid>
+    <match>34.39</match>
+    <url>http://www.last.fm/music/Cheap+Trick</url>
+    <image_small>http://static3.last.fm/storable/image/197036/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1000931/514062.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Darkness</name>
+    <mbid>81df2271-03a1-46a3-bb30-cce187235312</mbid>
+    <match>34.34</match>
+    <url>http://www.last.fm/music/The+Darkness</url>
+    <image_small>http://static3.last.fm/storable/image/2043/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1002216/9622.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Iggy Pop</name>
+    <mbid>f37b3f31-b1f8-4b88-8cb5-b34f709b17d7</mbid>
+    <match>34.15</match>
+    <url>http://www.last.fm/music/Iggy+Pop</url>
+    <image_small>http://static3.last.fm/storable/image/130023/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/18/320787.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Lenny Kravitz</name>
+    <mbid>0ef3f425-9bd2-4216-9dd2-219d2fe90f1f</mbid>
+    <match>34.03</match>
+    <url>http://www.last.fm/music/Lenny+Kravitz</url>
+    <image_small>http://static3.last.fm/storable/image/184917/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1194/535163.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>The Cars</name>
+    <mbid>092b603f-eb4c-4958-b10e-02420de5885b</mbid>
+    <match>33.97</match>
+    <url>http://www.last.fm/music/The+Cars</url>
+    <image_small>http://static3.last.fm/storable/image/6588/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1001529/23996.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Paul Simon</name>
+    <mbid>05517043-ff78-4988-9c22-88c68588ebb9</mbid>
+    <match>33.58</match>
+    <url>http://www.last.fm/music/Paul+Simon</url>
+    <image_small>http://static3.last.fm/storable/image/153774/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1003557/227463.jpg</image>
+    <streamable>1</streamable>
+</artist>
+<artist>
+    <name>Derek and The Dominos</name>
+    <mbid>2155a81a-f0c6-417a-9b16-2f86f98bb8bc</mbid>
+    <match>33.48</match>
+    <url>http://www.last.fm/music/Derek+and+The+Dominos</url>
+    <image_small>http://static3.last.fm/storable/image/3189/small.jpg</image_small>
+    <image>http://panther1.last.fm/proposedimages/sidebar/6/1007347/10815.jpg</image>
+    <streamable>1</streamable>
+</artist>
+</similarartists>

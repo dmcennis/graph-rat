@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1">
+        <file>
+            <url>src/nz/ac/waikato/mcennis/rat/dataAquisition/ReadLastFMProfileFile.java</url>
+            <line>7</line>
+        </file>
+        <file>
+            <url>src/nz/ac/waikato/mcennis/rat/graph/Graph.java</url>
+            <line>0</line>
+        </file>
+        <file>
+            <url>src/nz/ac/waikato/mcennis/rat/graph/algorithm/similarity/HierarchyByCooccurance.java</url>
+            <line>559</line>
+        </file>
+        <file>
+            <url>src/nz/ac/waikato/mcennis/rat/dataAquisition/CrawlLastFM.java</url>
+            <line>165</line>
+        </file>
+    </editor-bookmarks>
+</project-private>

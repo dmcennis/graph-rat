@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Graph-RAT 0.4: Algorithms</title>
+</head>
+<body>
+<h1>Algorithms</h1>
+<p>Algorithms execute over a set of graphs.  For each graph, algorithms execute 
+over actor modes and link relations.  Modes are usually nouns describing all 
+actors of a particular class such as artists, songs, and users.  Relations are 
+usually verbs describing classes of relationships between actors such as 
+ListensTo, Wrote, or Friend.  These are set as parameters.
+</p>
+<p>
+The example is the PageRank algorithm using parameter mode set to ‘User’, 
+parameter relation set to ‘Friend’, and output parameter set to ‘prestige’
+</p>
+<img src=””>
+<p>
+One then chains algorithm by choosing as the input the output created by an 
+earlier algorithm.  In this example, an algorithm, such as AggregateByLink, 
+will use the Property prestige created on actors of mode ‘User’ to perform more 
+calculations such as creating a Weka Instance in preperation for using machine 
+learning to predict more ListensTo relations.</p>
+</p>
+</body>
+</html>
