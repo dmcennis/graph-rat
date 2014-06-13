@@ -1,5 +1,5 @@
 /*
- * Copyright Daniel McEnnis, see license.txt
+ * Copyright Daniel McEnnis under BSD license
  */
 package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores;
 
