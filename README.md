@@ -1,7 +1,8 @@
 graph-rat
 =========
 
-<img src="Graph-RATLogo2.png" height="128" weight="128" alt="Graph-RAT Logo"/> # Graph-RAT Programming Environment</h1>
+<img src="Graph-RATLogo2.png" height="128" weight="128" alt="Graph-RAT Logo"/> 
+# Graph-RAT Programming Environment</h1>
 
 ## General Description
 
