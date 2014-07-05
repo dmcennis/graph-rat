@@ -8,15 +8,13 @@ package nz.ac.waikato.mcennis.rat.graph.algorithm;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.similarity.HierarchyByCooccurance;
 import java.util.Properties;
 import junit.framework.TestCase;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.MemGraph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.collaborativefiltering.AssociativeMining;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.InputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.OutputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.Parameter;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.SettableParameter;
+import org.dynamicfactory.descriptors.InputDescriptor;
+import org.dynamicfactory.descriptors.OutputDescriptor;
+import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
 

@@ -12,16 +12,16 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.DataVe
 import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.DoubleArrayDataVector;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.DistanceFactory;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.DistanceFunction;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.DescriptorFactory;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.InputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.OutputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.Parameter;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.ParameterInternal;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.SettableParameter;
+import org.dynamicfactory.descriptors.DescriptorFactory;
+import org.dynamicfactory.descriptors.InputDescriptor;
+import org.dynamicfactory.descriptors.OutputDescriptor;
+import org.dynamicfactory.descriptors.Parameter;
+import org.dynamicfactory.descriptors.ParameterInternal;
+import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.graph.property.Property;
+import org.dynamicfactory.property.Property;
 
 /**
  * Calculates similarity between actors via a double[] describing a vector property

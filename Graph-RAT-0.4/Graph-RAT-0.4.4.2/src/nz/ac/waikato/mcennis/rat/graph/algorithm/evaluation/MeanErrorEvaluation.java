@@ -3,8 +3,6 @@
  */
 package nz.ac.waikato.mcennis.rat.graph.algorithm.evaluation;
 
-import java.util.HashMap;
-
 import java.util.Properties;
 
 import java.util.logging.Level;
@@ -13,28 +11,28 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
-import nz.ac.waikato.mcennis.rat.graph.descriptors.DescriptorFactory;
+import org.dynamicfactory.descriptors.DescriptorFactory;
 
-import nz.ac.waikato.mcennis.rat.graph.descriptors.InputDescriptor;
+import org.dynamicfactory.descriptors.InputDescriptor;
 
-import nz.ac.waikato.mcennis.rat.graph.descriptors.InputDescriptorInternal;
+import org.dynamicfactory.descriptors.InputDescriptorInternal;
 
-import nz.ac.waikato.mcennis.rat.graph.descriptors.OutputDescriptor;
+import org.dynamicfactory.descriptors.OutputDescriptor;
 
-import nz.ac.waikato.mcennis.rat.graph.descriptors.OutputDescriptorInternal;
+import org.dynamicfactory.descriptors.OutputDescriptorInternal;
 
-import nz.ac.waikato.mcennis.rat.graph.descriptors.Parameter;
+import org.dynamicfactory.descriptors.Parameter;
 
-import nz.ac.waikato.mcennis.rat.graph.descriptors.ParameterInternal;
+import org.dynamicfactory.descriptors.ParameterInternal;
 
-import nz.ac.waikato.mcennis.rat.graph.descriptors.SettableParameter;
+import org.dynamicfactory.descriptors.SettableParameter;
 
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
-import nz.ac.waikato.mcennis.rat.graph.property.InvalidObjectTypeException;
-import nz.ac.waikato.mcennis.rat.graph.property.Property;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
 
-import nz.ac.waikato.mcennis.rat.graph.property.PropertyFactory;
+import org.dynamicfactory.property.PropertyFactory;
 
 import java.util.Iterator;
 

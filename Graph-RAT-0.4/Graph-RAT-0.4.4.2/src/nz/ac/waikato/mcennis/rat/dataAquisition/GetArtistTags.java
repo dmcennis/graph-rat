@@ -5,25 +5,23 @@
  */
 package nz.ac.waikato.mcennis.rat.dataAquisition;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.LineNumberReader;
 import java.io.FileReader;
 import java.io.UnsupportedEncodingException;
-import java.util.LinkedList;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.crawler.Authenticator;
 import nz.ac.waikato.mcennis.rat.crawler.CrawlerBase;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.DescriptorFactory;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.InputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.OutputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.Parameter;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.ParameterInternal;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.SettableParameter;
+import org.dynamicfactory.descriptors.DescriptorFactory;
+import org.dynamicfactory.descriptors.InputDescriptor;
+import org.dynamicfactory.descriptors.OutputDescriptor;
+import org.dynamicfactory.descriptors.Parameter;
+import org.dynamicfactory.descriptors.ParameterInternal;
+import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.parser.Parser;
 import nz.ac.waikato.mcennis.rat.parser.ParserFactory;

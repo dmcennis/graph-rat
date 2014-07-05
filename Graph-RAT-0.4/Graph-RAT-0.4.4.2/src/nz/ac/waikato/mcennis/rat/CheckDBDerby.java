@@ -11,7 +11,7 @@ package nz.ac.waikato.mcennis.rat;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.GraphFactory;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.property.Property;
+import org.dynamicfactory.property.Property;
 
 /**
  *

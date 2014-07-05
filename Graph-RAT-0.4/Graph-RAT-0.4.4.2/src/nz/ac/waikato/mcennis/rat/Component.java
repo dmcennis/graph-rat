@@ -9,10 +9,10 @@
 package nz.ac.waikato.mcennis.rat;
 
 import java.util.Properties;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.InputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.OutputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.Parameter;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.SettableParameter;
+import org.dynamicfactory.descriptors.InputDescriptor;
+import org.dynamicfactory.descriptors.OutputDescriptor;
+import org.dynamicfactory.descriptors.Parameter;
+import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.model.Model;
 
 /**
@@ -31,7 +31,7 @@ public interface Component extends Model{
      * guaranteed to be fixed if structural parameters are not modified.  This
      * is an empty array if there is no input.
      * 
-     * @see nz.ac.waikato.mcennis.rat.graph.descriptors.InputDescriptor
+     * @see org.dynamicfactory.descriptors.InputDescriptor
      *
      * @return InputDescriptor array for this component
      */
@@ -43,7 +43,7 @@ public interface Component extends Model{
      * guaranteed to be fixed if structural parameters are not modified. This is
      * an empty array if there is no output.
      * 
-     * @see nz.ac.waikato.mcennis.rat.graph.descriptors.OutputDescriptor
+     * @see org.dynamicfactory.descriptors.OutputDescriptor
      * 
      * @return OutputDescriptor array for this component
      */

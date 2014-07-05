@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="aidaref2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../jaudio-git/extras/help/en_US/jaudio10/javadoc/hep/aida/ref/doc-files/aidaref.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

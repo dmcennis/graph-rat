@@ -17,10 +17,9 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
-import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
-import nz.ac.waikato.mcennis.rat.graph.property.InvalidObjectTypeException;
-import nz.ac.waikato.mcennis.rat.graph.property.Property;
-import nz.ac.waikato.mcennis.rat.graph.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
 import nz.ac.waikato.mcennis.rat.parser.xmlHandler.Handler;
 import org.xml.sax.Attributes;
@@ -329,7 +328,7 @@ public class ParseBibliographyXML extends Handler {
             props.setProperty("PropertyClass", "java.lang.String");
             props.setProperty("PropertyID", "abstract");
             props.setProperty("PropertyType", "Basic");
-            nz.ac.waikato.mcennis.rat.graph.property.Property property = nz.ac.waikato.mcennis.rat.graph.property.PropertyFactory.newInstance().create(props);
+            org.dynamicfactory.property.Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create(props);
             try {
                 property.add(abstractContent);
             } catch (InvalidObjectTypeException ex) {
@@ -386,7 +385,7 @@ public class ParseBibliographyXML extends Handler {
             props.setProperty("PropertyClass", "java.lang.String");
             props.setProperty("PropertyID", "year");
             props.setProperty("PropertyType", "Basic");
-            nz.ac.waikato.mcennis.rat.graph.property.Property property = nz.ac.waikato.mcennis.rat.graph.property.PropertyFactory.newInstance().create(props);
+            org.dynamicfactory.property.Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create(props);
             try {
                 property.add(str);
             } catch (InvalidObjectTypeException ex) {
@@ -398,7 +397,7 @@ public class ParseBibliographyXML extends Handler {
             props.setProperty("PropertyClass", "java.lang.String");
             props.setProperty("PropertyID", "file");
             props.setProperty("PropertyType", "Basic");
-            nz.ac.waikato.mcennis.rat.graph.property.Property property = nz.ac.waikato.mcennis.rat.graph.property.PropertyFactory.newInstance().create(props);
+            org.dynamicfactory.property.Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create(props);
             try {
                 property.add(str);
             } catch (InvalidObjectTypeException ex) {
@@ -410,7 +409,7 @@ public class ParseBibliographyXML extends Handler {
             props.setProperty("PropertyClass", "java.lang.String");
             props.setProperty("PropertyID", "type");
             props.setProperty("PropertyType", "Basic");
-            nz.ac.waikato.mcennis.rat.graph.property.Property property = nz.ac.waikato.mcennis.rat.graph.property.PropertyFactory.newInstance().create(props);
+            org.dynamicfactory.property.Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create(props);
             try {
                 property.add(str);
             } catch (InvalidObjectTypeException ex) {
@@ -422,7 +421,7 @@ public class ParseBibliographyXML extends Handler {
             props.setProperty("PropertyClass", "java.lang.String");
             props.setProperty("PropertyID", "journal");
             props.setProperty("PropertyType", "Basic");
-            nz.ac.waikato.mcennis.rat.graph.property.Property property = nz.ac.waikato.mcennis.rat.graph.property.PropertyFactory.newInstance().create(props);
+            org.dynamicfactory.property.Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create(props);
             try {
                 property.add(str);
             } catch (InvalidObjectTypeException ex) {
@@ -472,7 +471,7 @@ public class ParseBibliographyXML extends Handler {
             props.setProperty("PropertyClass", "java.lang.String");
             props.setProperty("PropertyID", "cluster");
             props.setProperty("PropertyType", "Basic");
-            nz.ac.waikato.mcennis.rat.graph.property.Property property = nz.ac.waikato.mcennis.rat.graph.property.PropertyFactory.newInstance().create(props);
+            org.dynamicfactory.property.Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create(props);
             try {
                 property.add(str);
             } catch (InvalidObjectTypeException ex) {
@@ -488,7 +487,7 @@ public class ParseBibliographyXML extends Handler {
             props.setProperty("PropertyClass", "java.lang.String");
             props.setProperty("PropertyID", "title");
             props.setProperty("PropertyType", "Basic");
-            nz.ac.waikato.mcennis.rat.graph.property.Property property = nz.ac.waikato.mcennis.rat.graph.property.PropertyFactory.newInstance().create(props);
+            org.dynamicfactory.property.Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create(props);
             try {
                 property.add(str);
             } catch (InvalidObjectTypeException ex) {

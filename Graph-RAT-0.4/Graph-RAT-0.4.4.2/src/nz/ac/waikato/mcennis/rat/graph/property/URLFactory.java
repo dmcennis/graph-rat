@@ -3,7 +3,7 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.property;
+package org.dynamicfactory.property;
 
 import java.net.MalformedURLException;
 import java.net.URL;

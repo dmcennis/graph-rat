@@ -2,7 +2,7 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.property;
+package org.dynamicfactory.property;
 
 /**
  * Error thrown when a new value is added to a property that is not assignable

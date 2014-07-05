@@ -3,14 +3,10 @@
  */
 package nz.ac.waikato.mcennis.rat.graph.algorithm.clustering;
 
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Properties;
-import java.util.SortedMap;
-import java.util.TreeMap;
-import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
@@ -19,15 +15,14 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.prestige.OptimizedLinkBetweeness;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.FindStronglyConnectedComponentsCore;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.OptimizedLinkBetweenessCore;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.DescriptorFactory;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.InputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.OutputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.Parameter;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.ParameterInternal;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.SettableParameter;
+import org.dynamicfactory.descriptors.DescriptorFactory;
+import org.dynamicfactory.descriptors.InputDescriptor;
+import org.dynamicfactory.descriptors.OutputDescriptor;
+import org.dynamicfactory.descriptors.Parameter;
+import org.dynamicfactory.descriptors.ParameterInternal;
+import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.graph.path.PathNode;
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
 import nz.ac.waikato.mcennis.rat.util.Duples;
 

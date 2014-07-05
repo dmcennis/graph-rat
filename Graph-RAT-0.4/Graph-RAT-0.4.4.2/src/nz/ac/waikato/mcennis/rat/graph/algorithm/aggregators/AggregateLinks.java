@@ -4,11 +4,9 @@
  */
 package nz.ac.waikato.mcennis.rat.graph.algorithm.aggregators;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.Properties;
 import java.util.Set;
 import java.util.TreeSet;
@@ -22,21 +20,19 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator.Aggreg
 import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator.AggregatorFunctionFactory;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator.FirstItemAggregatorFunction;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator.SumAggregator;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.DescriptorFactory;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.InputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.InputDescriptorInternal;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.OutputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.OutputDescriptorInternal;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.Parameter;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.ParameterInternal;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.SettableParameter;
+import org.dynamicfactory.descriptors.DescriptorFactory;
+import org.dynamicfactory.descriptors.InputDescriptor;
+import org.dynamicfactory.descriptors.InputDescriptorInternal;
+import org.dynamicfactory.descriptors.OutputDescriptor;
+import org.dynamicfactory.descriptors.OutputDescriptorInternal;
+import org.dynamicfactory.descriptors.Parameter;
+import org.dynamicfactory.descriptors.ParameterInternal;
+import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.graph.property.InvalidObjectTypeException;
-import nz.ac.waikato.mcennis.rat.graph.property.Property;
-import nz.ac.waikato.mcennis.rat.graph.property.PropertyFactory;
-import nz.ac.waikato.mcennis.rat.util.Duples;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 import weka.core.Attribute;
 import weka.core.FastVector;
 import weka.core.Instance;

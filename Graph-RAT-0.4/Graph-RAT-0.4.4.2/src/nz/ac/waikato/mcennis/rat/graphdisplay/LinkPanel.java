@@ -19,7 +19,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.graph.property.Property;
+import org.dynamicfactory.property.Property;
 import prefuse.util.ColorLib;
 import prefuse.visual.VisualItem;
 

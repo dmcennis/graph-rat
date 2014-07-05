@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package nz.ac.waikato.mcennis.rat.graph.property;
+package org.dynamicfactory.property;
 
 import java.util.Enumeration;
 import junit.framework.TestCase;

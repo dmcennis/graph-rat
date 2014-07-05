@@ -161,7 +161,7 @@ Interface representing a social network.  Users are the individuals consuming
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/Graph.html#add(nz.ac.waikato.mcennis.rat.graph.property.Property)">add</A></B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/property/Property.html" title="interface in nz.ac.waikato.mcennis.rat.graph.property">Property</A>&nbsp;prop)</CODE>
+<TD><CODE><B><A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/Graph.html#add(org.dynamicfactory.property.Property)">add</A></B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/property/Property.html" title="interface in org.dynamicfactory.property">Property</A>&nbsp;prop)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a property to this graph.</TD>
@@ -338,7 +338,7 @@ Interface representing a social network.  Users are the individuals consuming
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/descriptors/Parameter.html" title="interface in nz.ac.waikato.mcennis.rat.graph.descriptors">Parameter</A>[]</CODE></FONT></TD>
+<CODE>&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/descriptors/Parameter.html" title="interface in org.dynamicfactory.descriptors">Parameter</A>[]</CODE></FONT></TD>
 <TD><CODE><B><A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/Graph.html#getParameters()">getParameters</A></B>()</CODE>
 
 <BR>
@@ -371,7 +371,7 @@ Interface representing a social network.  Users are the individuals consuming
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/property/Property.html" title="interface in nz.ac.waikato.mcennis.rat.graph.property">Property</A>[]</CODE></FONT></TD>
+<CODE>&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/property/Property.html" title="interface in org.dynamicfactory.property">Property</A>[]</CODE></FONT></TD>
 <TD><CODE><B><A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/Graph.html#getProperty()">getProperty</A></B>()</CODE>
 
 <BR>
@@ -380,7 +380,7 @@ Interface representing a social network.  Users are the individuals consuming
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/property/Property.html" title="interface in nz.ac.waikato.mcennis.rat.graph.property">Property</A></CODE></FONT></TD>
+<CODE>&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/property/Property.html" title="interface in org.dynamicfactory.property">Property</A></CODE></FONT></TD>
 <TD><CODE><B><A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/Graph.html#getProperty(java.lang.String)">getProperty</A></B>(java.lang.String&nbsp;type)</CODE>
 
 <BR>
@@ -777,7 +777,7 @@ void <B>setSubGraph</B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/gra
 <A NAME="getProperty()"><!-- --></A><H3>
 getProperty</H3>
 <PRE>
-<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/property/Property.html" title="interface in nz.ac.waikato.mcennis.rat.graph.property">Property</A>[] <B>getProperty</B>()</PRE>
+<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/property/Property.html" title="interface in org.dynamicfactory.property">Property</A>[] <B>getProperty</B>()</PRE>
 <DL>
 <DD>Returns an array of all properties associated with this object or null if
  none exist
@@ -795,7 +795,7 @@ getProperty</H3>
 <A NAME="getProperty(java.lang.String)"><!-- --></A><H3>
 getProperty</H3>
 <PRE>
-<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/property/Property.html" title="interface in nz.ac.waikato.mcennis.rat.graph.property">Property</A> <B>getProperty</B>(java.lang.String&nbsp;type)</PRE>
+<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/property/Property.html" title="interface in org.dynamicfactory.property">Property</A> <B>getProperty</B>(java.lang.String&nbsp;type)</PRE>
 <DL>
 <DD>Return a property named by the given string or null if no property by 
  this name exists
@@ -810,10 +810,10 @@ getProperty</H3>
 </DL>
 <HR>
 
-<A NAME="add(nz.ac.waikato.mcennis.rat.graph.property.Property)"><!-- --></A><H3>
+<A NAME="add(org.dynamicfactory.property.Property)"><!-- --></A><H3>
 add</H3>
 <PRE>
-void <B>add</B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/property/Property.html" title="interface in nz.ac.waikato.mcennis.rat.graph.property">Property</A>&nbsp;prop)</PRE>
+void <B>add</B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/property/Property.html" title="interface in org.dynamicfactory.property">Property</A>&nbsp;prop)</PRE>
 <DL>
 <DD>Add a property to this graph.  If a property by this name already exists, it
  is overwritten with the given property.
@@ -1095,7 +1095,7 @@ getGraphs</H3>
 <A NAME="getParameters()"><!-- --></A><H3>
 getParameters</H3>
 <PRE>
-<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/descriptors/Parameter.html" title="interface in nz.ac.waikato.mcennis.rat.graph.descriptors">Parameter</A>[] <B>getParameters</B>()</PRE>
+<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/descriptors/Parameter.html" title="interface in org.dynamicfactory.descriptors">Parameter</A>[] <B>getParameters</B>()</PRE>
 <DL>
 <DD>Obtain a computer-readable description of the parameters and options this
  graph supports

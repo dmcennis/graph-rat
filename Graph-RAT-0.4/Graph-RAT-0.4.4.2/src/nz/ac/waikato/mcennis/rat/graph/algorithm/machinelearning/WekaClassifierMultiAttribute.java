@@ -4,7 +4,6 @@
  */
 package nz.ac.waikato.mcennis.rat.graph.algorithm.machinelearning;
 
-import java.util.LinkedList;
 import java.util.Properties;
 import java.util.Vector;
 import java.util.logging.Level;
@@ -13,16 +12,16 @@ import nz.ac.waikato.mcennis.rat.ArtistList;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.DescriptorFactory;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.InputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.OutputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.Parameter;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.ParameterInternal;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.SettableParameter;
+import org.dynamicfactory.descriptors.DescriptorFactory;
+import org.dynamicfactory.descriptors.InputDescriptor;
+import org.dynamicfactory.descriptors.OutputDescriptor;
+import org.dynamicfactory.descriptors.Parameter;
+import org.dynamicfactory.descriptors.ParameterInternal;
+import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.graph.property.Property;
+import org.dynamicfactory.property.Property;
 import weka.classifiers.Classifier;
 import weka.classifiers.trees.J48;
 import weka.core.Attribute;

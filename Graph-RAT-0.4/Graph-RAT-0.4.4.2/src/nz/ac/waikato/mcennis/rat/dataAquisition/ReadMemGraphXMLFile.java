@@ -6,8 +6,6 @@
  */
 package nz.ac.waikato.mcennis.rat.dataAquisition;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -17,17 +15,15 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.zip.GZIPInputStream;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.DescriptorFactory;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.InputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.OutputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.Parameter;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.ParameterInternal;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.SettableParameter;
+import org.dynamicfactory.descriptors.DescriptorFactory;
+import org.dynamicfactory.descriptors.InputDescriptor;
+import org.dynamicfactory.descriptors.OutputDescriptor;
+import org.dynamicfactory.descriptors.Parameter;
+import org.dynamicfactory.descriptors.ParameterInternal;
+import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.parser.Parser;
 import nz.ac.waikato.mcennis.rat.parser.XMLParser;
 import nz.ac.waikato.mcennis.rat.parser.xmlHandler.GraphReader;
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.LastFMUserExpansion;
 
 /**
  * Class for reading an arbitrary MemGraph XML file.  Uses the GraphReader XML 

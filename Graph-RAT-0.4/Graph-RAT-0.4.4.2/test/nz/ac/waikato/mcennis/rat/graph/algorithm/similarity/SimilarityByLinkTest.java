@@ -16,10 +16,9 @@ import nz.ac.waikato.mcennis.rat.graph.actor.BasicUser;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.MapDataVector;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.CosineDistance;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.EuclideanDistance;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.InputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.OutputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.Parameter;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.SettableParameter;
+import org.dynamicfactory.descriptors.InputDescriptor;
+import org.dynamicfactory.descriptors.OutputDescriptor;
+import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.link.BasicUserLink;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 

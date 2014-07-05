@@ -16,9 +16,9 @@ import nz.ac.waikato.mcennis.rat.graph.model.Listener;
 import nz.ac.waikato.mcennis.rat.graph.model.Model;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.graph.page.Page;
-import nz.ac.waikato.mcennis.rat.graph.property.InvalidObjectTypeException;
-import nz.ac.waikato.mcennis.rat.graph.property.Property;
-import nz.ac.waikato.mcennis.rat.graph.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 /**
  * Class that implemnts a link backed by a DerbyDB database.  Fixes problems

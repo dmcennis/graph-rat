@@ -6,8 +6,6 @@
 package nz.ac.waikato.mcennis.rat.parser.xmlHandler;
 
 import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,9 +14,9 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
-import nz.ac.waikato.mcennis.rat.graph.property.InvalidObjectTypeException;
-import nz.ac.waikato.mcennis.rat.graph.property.Property;
-import nz.ac.waikato.mcennis.rat.graph.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
 import nz.ac.waikato.mcennis.rat.parser.ToFileParser;
 import org.xml.sax.Attributes;

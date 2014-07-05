@@ -14,24 +14,15 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import junit.framework.*;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.PreparedStatement;
-import java.sql.Connection;
-import java.sql.ResultSet;
 import java.util.Iterator;
-import java.util.Vector;
+
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
-import nz.ac.waikato.mcennis.rat.graph.path.NotConstructedError;
-import nz.ac.waikato.mcennis.rat.graph.path.Path;
-import nz.ac.waikato.mcennis.rat.graph.path.PathFactory;
-import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
-import nz.ac.waikato.mcennis.rat.graph.path.PathSetFactory;
-import nz.ac.waikato.mcennis.rat.graph.property.InvalidObjectTypeException;
-import nz.ac.waikato.mcennis.rat.graph.property.Property;
-import nz.ac.waikato.mcennis.rat.graph.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.Query;
 
 /**

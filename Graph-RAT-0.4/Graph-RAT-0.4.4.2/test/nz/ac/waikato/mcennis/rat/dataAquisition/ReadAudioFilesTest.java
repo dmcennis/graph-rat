@@ -8,12 +8,10 @@ package nz.ac.waikato.mcennis.rat.dataAquisition;
 import jAudioFeatureExtractor.ACE.DataTypes.Batch;
 import java.util.Properties;
 import junit.framework.TestCase;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.MemGraph;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.InputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.OutputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.Parameter;
-import nz.ac.waikato.mcennis.rat.graph.descriptors.SettableParameter;
+import org.dynamicfactory.descriptors.InputDescriptor;
+import org.dynamicfactory.descriptors.OutputDescriptor;
+import org.dynamicfactory.descriptors.SettableParameter;
 
 /**
  *

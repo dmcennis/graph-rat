@@ -9,19 +9,13 @@ package nz.ac.waikato.mcennis.rat.graphdisplay;
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Dimension;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-import javax.swing.JTextPane;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.PlainDocument;
-import javax.swing.text.StyledDocument;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.property.Property;
+
+import org.dynamicfactory.property.Property;
 
 /**
  * JFrame object for displaying the contents of strings from a property
