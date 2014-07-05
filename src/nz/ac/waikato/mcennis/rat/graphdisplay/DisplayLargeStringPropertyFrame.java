@@ -14,6 +14,8 @@ package nz.ac.waikato.mcennis.rat.graphdisplay;
 
 
 
+import org.dynamicfactory.property.Property;
+
 import java.awt.BorderLayout;
 
 import java.awt.Container;

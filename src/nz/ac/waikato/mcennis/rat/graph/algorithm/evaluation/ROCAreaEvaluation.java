@@ -14,6 +14,10 @@ import java.util.logging.Logger;
 
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
@@ -292,7 +296,7 @@ public class ROCAreaEvaluation extends ModelShell implements Algorithm {
 
                 }
 
-                Property precisionProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String) parameter.get("DestinationProperty").get()), Double.class);
+                Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String) parameter.get("DestinationProperty").get()), Double.class);
 
                 precisionProperty.add(new Double(roc));
 
@@ -309,10 +313,10 @@ public class ROCAreaEvaluation extends ModelShell implements Algorithm {
             double sd = ((n * rocSquaredSum) - rocSum * rocSum) / n;
 
             double mean = rocSum / n;
-            Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String) parameter.get("DestinationProperty").get() + " Standard Deviation"), Double.class);
+            Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String) parameter.get("DestinationProperty").get() + " Standard Deviation"), Double.class);
             property.add(new Double(sd));
             g.add(property);
-            property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String) parameter.get("DestinationProperty").get() + " Mean"), Double.class);
+            property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String) parameter.get("DestinationProperty").get() + " Mean"), Double.class);
 
 
 

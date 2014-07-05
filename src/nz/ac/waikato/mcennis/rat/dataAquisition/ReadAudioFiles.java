@@ -20,6 +20,10 @@ import jAudioFeatureExtractor.ACE.XMLParsers.XMLDocumentParser;
 import jAudioFeatureExtractor.Aggregators.AggregatorContainer;
 
 import jAudioFeatureExtractor.DataModel;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import java.io.ByteArrayOutputStream;
 
@@ -270,7 +274,7 @@ public class ReadAudioFiles extends ModelShell implements DataAquisition {
 
         globalInstances.setClassIndex(attributes.size() - 1);
 
-        Property prop = PropertyFactory.newInstance().create((String)properties.get("PropertyID").get(),Instances.class);
+        Property prop = PropertyFactory.newInstance().create((String)PropertyFactory.newInstance().getClassParameter().getValue().iterator().next(),(String)properties.get("PropertyID").get(),Instances.class);
 
         try {
 
@@ -335,7 +339,7 @@ public class ReadAudioFiles extends ModelShell implements DataAquisition {
         //attach instance to new actor.
 
         Actor song = ActorFactory.newInstance().create((String)properties.get("Mode").get(),ID);
-        Property prop = PropertyFactory.newInstance().create((String)properties.get("PropertyID").get(),Instances.class);
+        Property prop = PropertyFactory.newInstance().create((String)PropertyFactory.newInstance().getClassParameter().getValue().iterator().next(),(String)properties.get("PropertyID").get(),Instances.class);
 
         try {
 

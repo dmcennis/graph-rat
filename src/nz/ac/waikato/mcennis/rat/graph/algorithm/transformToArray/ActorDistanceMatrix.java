@@ -25,6 +25,10 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;
 import nz.ac.waikato.mcennis.rat.reusablecores.ActorDistanceMatrixCore;
@@ -159,7 +163,7 @@ public class ActorDistanceMatrix extends ModelShell implements Algorithm {
 
             if ((Boolean) parameter.get("Store2DMatrix").get()) {
 
-                Property graphProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),DoubleMatrix2D.class);
+                Property graphProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),DoubleMatrix2D.class);
 
                 try {
 
@@ -186,7 +190,7 @@ public class ActorDistanceMatrix extends ModelShell implements Algorithm {
                         Actor actor = actors.next();
                         try {
 
-                            Property actorProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),DoubleMatrix2D.class);
+                            Property actorProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),DoubleMatrix2D.class);
 
                             actorProperty.add(base.getActorMatrix().viewColumn(base.getColumn(actor)));
 

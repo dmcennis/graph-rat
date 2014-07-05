@@ -23,6 +23,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import org.dynamicfactory.descriptors.IODescriptor;
@@ -328,13 +332,13 @@ public class ScalableHitsPrestige extends ModelShell implements Algorithm {
 
             fireChange(Scheduler.SET_ALGORITHM_PROGRESS,2);
             for (int i = 0; i < a.length; ++i) {
-                Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Hubs"),Double.class);
+                Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Hubs"),Double.class);
 
                 property.add(new Double(hubVector.get(i)));
 
                 a[i].add(property);
 
-                property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Authorities"),Double.class);
+                property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Authorities"),Double.class);
 
                 property.add(new Double(authorityVector.get(i)));
 

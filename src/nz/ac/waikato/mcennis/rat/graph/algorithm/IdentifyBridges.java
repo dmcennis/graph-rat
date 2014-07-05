@@ -24,6 +24,10 @@ import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import org.dynamicfactory.descriptors.IODescriptorFactory;
 import org.dynamicfactory.descriptors.IODescriptor;
@@ -230,9 +234,9 @@ public class IdentifyBridges extends ModelShell implements Algorithm {
 
                     Iterator<String> cluster_it = actorBridgeValue.keySet().iterator();
 
-                    Property bridgeTo = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" ID"),String.class);
+                    Property bridgeTo = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" ID"),String.class);
 
-                    Property magnitude = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Value"),Double.class);
+                    Property magnitude = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Value"),Double.class);
 
                     double totalPercent = 0.0;
 

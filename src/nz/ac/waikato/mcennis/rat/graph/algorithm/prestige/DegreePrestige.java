@@ -22,6 +22,10 @@ import org.dynamicfactory.descriptors.IODescriptor;
 import org.dynamicfactory.descriptors.IODescriptor.Type;
 import org.dynamicfactory.descriptors.IODescriptorFactory;
 import org.dynamicfactory.descriptors.IODescriptorInternal;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 
@@ -195,7 +199,7 @@ public class DegreePrestige extends ModelShell implements Algorithm {
             i=0;
             while (userList.hasNext()) {
 
-                Property prestige = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" DegreePrestige"),Double.class);
+                Property prestige = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" DegreePrestige"),Double.class);
 
                 prestige.add(new Double(prestigeValue[i]));
 
@@ -274,7 +278,7 @@ public class DegreePrestige extends ModelShell implements Algorithm {
             i=0;
             while (userList.hasNext()) {
 
-                Property prestige = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" DegreeCentrality"),Double.class);
+                Property prestige = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" DegreeCentrality"),Double.class);
 
                 prestige.add(new Double(prestigeValue[i]));
 

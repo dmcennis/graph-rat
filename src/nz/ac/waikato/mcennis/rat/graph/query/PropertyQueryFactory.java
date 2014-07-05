@@ -7,12 +7,10 @@ package nz.ac.waikato.mcennis.rat.graph.query;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.AbstractFactory;
-import nz.ac.waikato.mcennis.rat.graph.query.property.PropertyQuery;
-import nz.ac.waikato.mcennis.rat.graph.query.property.DataVectorQuery;
-import nz.ac.waikato.mcennis.rat.graph.query.property.NullPropertyQuery;
-import nz.ac.waikato.mcennis.rat.graph.query.property.NumericQuery;
-import nz.ac.waikato.mcennis.rat.graph.query.property.StringQuery;
+import org.dynamicfactory.AbstractFactory;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.propertyQuery.*;
+
 /**
  *
  * @author Daniel McEnnis

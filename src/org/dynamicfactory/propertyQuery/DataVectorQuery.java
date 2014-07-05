@@ -17,6 +17,7 @@ import nz.ac.waikato.mcennis.rat.reusablecores.datavector.InstanceDataVector;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.CosineDistance;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.DistanceFunction;
 import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+import org.dynamicfactory.property.Property;
 import weka.core.Instance;
 
 /**

@@ -23,12 +23,10 @@ import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import org.dynamicfactory.descriptors.IODescriptor;
+import org.dynamicfactory.descriptors.*;
 
 
 import org.dynamicfactory.descriptors.IODescriptor.Type;
-import org.dynamicfactory.descriptors.IODescriptorFactory;
-import org.dynamicfactory.descriptors.IODescriptorInternal;
 
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
@@ -41,6 +39,9 @@ import nz.ac.waikato.mcennis.rat.graph.query.LinkQueryFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.actor.ActorByMode;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByRelation;
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 /**
  * Calcuates the PageRank of an actor using the PageRank algorithm as defined
@@ -290,7 +291,7 @@ public class PageRankPrestige extends ModelShell implements Algorithm {
 
             Logger.getLogger(PageRankPrestige.class.getName()).log(Level.FINER, "pageRank - "+a[i].getID()+":"+pageRank.get(i));
 
-                Property rank = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
+                Property rank = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
 
                 rank.add(new Double(pageRank.get(i)));
 
@@ -310,7 +311,7 @@ public class PageRankPrestige extends ModelShell implements Algorithm {
 
             }
             if((Boolean)parameter.get("StoreMatrix").get()){
-                Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),DoubleMatrix2D.class);
+                Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),DoubleMatrix2D.class);
                 property.add(eigenVectors);
                 g.add(property);
             }

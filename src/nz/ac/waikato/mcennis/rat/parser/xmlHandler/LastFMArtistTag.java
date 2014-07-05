@@ -34,6 +34,9 @@ import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
 
 import nz.ac.waikato.mcennis.rat.parser.ToFileParser;
 
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 import org.xml.sax.Attributes;
 
 import org.xml.sax.Locator;
@@ -246,7 +249,7 @@ public class LastFMArtistTag extends Handler {
 
                     try {
 
-                        Property property = PropertyFactory.newInstance().create("URL",URL.class);
+                        Property property = PropertyFactory.newInstance().create("BasicProperty","URL",URL.class);
 
                         property.add(new URL(content));
 

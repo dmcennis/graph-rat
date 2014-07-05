@@ -13,6 +13,10 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 

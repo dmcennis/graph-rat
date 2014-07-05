@@ -18,6 +18,10 @@ import java.util.logging.Level;
 
 import java.util.logging.Logger;
 
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.GraphFactory;
@@ -214,7 +218,7 @@ public class WekaClassifierClusterer extends ModelShell implements Algorithm {
 
                     }
 
-                    Property clusterProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String) parameter.get("DestinationProperty").get()), Integer.class);
+                    Property clusterProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String) parameter.get("DestinationProperty").get()), Integer.class);
 
                     clusterProperty.add(new Integer(cluster));
 

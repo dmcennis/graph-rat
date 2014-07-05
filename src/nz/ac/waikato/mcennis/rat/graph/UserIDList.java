@@ -17,6 +17,8 @@ import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
 
 /**
  * Class that records only those users that initiate links.  All other forms of adding

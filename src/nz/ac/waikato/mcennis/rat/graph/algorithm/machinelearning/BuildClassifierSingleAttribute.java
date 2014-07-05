@@ -31,6 +31,10 @@ import weka.core.Attribute;
 import weka.core.FastVector;
 import weka.core.Instance;
 import weka.core.Instances;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 /**
  *
@@ -226,12 +230,14 @@ public class BuildClassifierSingleAttribute extends ModelShell implements Algori
             try {
                 classifier.buildClassifier(dataSet);
                 Property classifierProperty = PropertyFactory.newInstance().create(
-                    AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("ClassifierProperty").get()),weka.classifiers.Classifier.class);
+                        "BasicProperty",
+                        AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("ClassifierProperty").get()),weka.classifiers.Classifier.class);
                 classifierProperty.add(classifier);
                 g.add(classifierProperty);
 
                 Property instancesProperty = PropertyFactory.newInstance().create(
-                    AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("InstancesProperty").get()),weka.core.Instances.class);
+                        "BasicProperty",
+                        AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("InstancesProperty").get()),weka.core.Instances.class);
                 instancesProperty.add(classifier);
                 g.add(instancesProperty);
             } catch (Exception ex) {

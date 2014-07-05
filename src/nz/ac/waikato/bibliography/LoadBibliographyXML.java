@@ -28,6 +28,8 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import org.dynamicfactory.descriptors.IODescriptor;
 import org.dynamicfactory.descriptors.IODescriptor.Type;
 import org.dynamicfactory.descriptors.IODescriptorFactory;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
 
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 

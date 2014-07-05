@@ -30,11 +30,7 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;
-import org.dynamicfactory.descriptors.IODescriptorFactory;
-
-import org.dynamicfactory.descriptors.IODescriptor;
-
-import org.dynamicfactory.descriptors.IODescriptorInternal;
+import org.dynamicfactory.descriptors.*;
 
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 
@@ -42,7 +38,7 @@ import nz.ac.waikato.mcennis.rat.graph.query.actor.ActorByMode;
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
 
 import nz.ac.waikato.mcennis.rat.util.Duples;
-
+import org.dynamicfactory.property.Property;
 
 
 /**

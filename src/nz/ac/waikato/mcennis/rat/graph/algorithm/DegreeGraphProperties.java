@@ -14,9 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import org.dynamicfactory.descriptors.IODescriptor;
-import org.dynamicfactory.descriptors.IODescriptorFactory;
-import org.dynamicfactory.descriptors.IODescriptorInternal;
+import org.dynamicfactory.descriptors.*;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQuery;
@@ -27,6 +25,9 @@ import nz.ac.waikato.mcennis.rat.graph.query.Query;
 import nz.ac.waikato.mcennis.rat.graph.query.actor.ActorByMode;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByRelation;
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 /**
  * Add basic degree-based properties for actors and graphs.
@@ -182,7 +183,7 @@ public class DegreeGraphProperties extends ModelShell implements Algorithm {
             Actor actor = actorIt.next();
             LinkedList<Actor> source = new LinkedList<Actor>();
             source.add(actor);
-            Property inDegree = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter,g,(String) parameter.get("PropertyPrefix").get() + (String) parameter.get("InDegreeSuffix").get()), Double.class);
+            Property inDegree = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter,g,(String) parameter.get("PropertyPrefix").get() + (String) parameter.get("InDegreeSuffix").get()), Double.class);
             Iterator<Link> links = AlgorithmMacros.filterLink(parameter, g, relation, source, null, null);
             while (links.hasNext()) {
                 try {
@@ -211,7 +212,7 @@ public class DegreeGraphProperties extends ModelShell implements Algorithm {
             Actor actor = actorIt.next();
             LinkedList<Actor> source = new LinkedList<Actor>();
             source.add(actor);
-            Property inDegree = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter,g,(String) parameter.get("PropertyPrefix").get() + (String) parameter.get("OutDegreeSuffix").get()), Double.class);
+            Property inDegree = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter,g,(String) parameter.get("PropertyPrefix").get() + (String) parameter.get("OutDegreeSuffix").get()), Double.class);
             Iterator<Link> links = AlgorithmMacros.filterLink(parameter, g, relation, source, null, null);
 	    while(links.hasNext()){
 		try {    
@@ -258,7 +259,7 @@ public class DegreeGraphProperties extends ModelShell implements Algorithm {
                     }
 
                     linkStrength /= actorCount * (actorCount - 1);
-                    density = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter,g,(String) parameter.get("DestinationProperty").get()+(String)parameter.get("AbsoluteDensityPropertySuffix").get()),Double.class);
+                    density = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter,g,(String) parameter.get("DestinationProperty").get()+(String)parameter.get("AbsoluteDensityPropertySuffix").get()),Double.class);
 
                     density.add(new Double(linkStrength));
 
@@ -308,7 +309,7 @@ public class DegreeGraphProperties extends ModelShell implements Algorithm {
                     }
 
                     linkStrength /= actorCount * (actorCount - 1);
-                    Property density = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter,g,(String) parameter.get("DestinationProperty").get()+(String)parameter.get("DensityPropertySuffix").get()),Double.class);
+                    Property density = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter,g,(String) parameter.get("DestinationProperty").get()+(String)parameter.get("DensityPropertySuffix").get()),Double.class);
 
                     density.add(new Double(linkStrength));
 

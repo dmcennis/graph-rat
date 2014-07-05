@@ -26,7 +26,8 @@ import nz.ac.waikato.bibliography.XMLParser.ParseBibliographyXML;
 
 import nz.ac.waikato.bibliography.XMLParser.ParseClassLabel;
 
-import nz.ac.waikato.mcennis.rat.AbstractFactory;
+import org.dynamicfactory.AbstractFactory;
+import org.dynamicfactory.descriptors.*;
 
 
 /**

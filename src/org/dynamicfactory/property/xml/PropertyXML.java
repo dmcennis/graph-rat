@@ -7,6 +7,7 @@ package org.dynamicfactory.property.xml;
 
 import java.io.IOException;
 import nz.ac.waikato.mcennis.rat.XMLParserObject;
+import org.dynamicfactory.property.Property;
 
 import java.io.Writer;
 

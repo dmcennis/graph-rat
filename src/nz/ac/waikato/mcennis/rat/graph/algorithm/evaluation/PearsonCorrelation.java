@@ -16,6 +16,10 @@ import java.util.logging.Logger;
 
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
@@ -378,7 +382,7 @@ public class PearsonCorrelation extends ModelShell implements Algorithm {
                     }
 
 
-                    Property precisionProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
+                    Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
                     precisionProperty.add(new Double(correlation));
                     actor.add(precisionProperty);
                     correlationSum += correlation;
@@ -398,10 +402,10 @@ public class PearsonCorrelation extends ModelShell implements Algorithm {
 
 
             double mean = correlationSum / n;
-            Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Standard Deviation"),Double.class);
+            Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Standard Deviation"),Double.class);
             property.add(new Double(sd));
             g.add(property);
-            property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean"),Double.class);
+            property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean"),Double.class);
             property.add(new Double(mean));
             g.add(property);
             Logger.getLogger(PearsonCorrelation.class.getName()).log(Level.INFO,"Pearsons Correlation\t" + mean);

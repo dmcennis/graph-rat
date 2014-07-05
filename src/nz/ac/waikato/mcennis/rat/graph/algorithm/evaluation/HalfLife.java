@@ -26,6 +26,10 @@ import org.dynamicfactory.descriptors.IODescriptor;
 
 
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -359,7 +363,7 @@ public class HalfLife extends ModelShell implements Algorithm {
                             rA = 0.0;
 
                         }
-                        Property precisionProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
+                        Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
 
                         precisionProperty.add(new Double(rA));
 
@@ -395,13 +399,13 @@ public class HalfLife extends ModelShell implements Algorithm {
 
             double mean = halfLifeSum / n;
 
-           Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Standard Deviation"),Double.class);
+           Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Standard Deviation"),Double.class);
             property.add(new Double(sd));
             g.add(property);
 
 
 
-            property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean"),Double.class);
+            property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean"),Double.class);
 
             property.add(new Double(mean));
 

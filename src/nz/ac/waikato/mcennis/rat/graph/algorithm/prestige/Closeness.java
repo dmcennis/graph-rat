@@ -28,6 +28,10 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import org.dynamicfactory.descriptors.IODescriptor.Type;
 import org.dynamicfactory.descriptors.IODescriptorFactory;
 import org.dynamicfactory.descriptors.IODescriptorInternal;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.path.PathNode;
 
@@ -238,7 +242,7 @@ public class Closeness extends OptimizedPathBase implements Algorithm{
         //create and set the properties defined
 
         for(int i=0;i<prestigeValue.length;++i){
-            Property prop = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Centrality"),Double.class);
+            Property prop = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Centrality"),Double.class);
 
             if(centralityValue[i]!=0.0){
 
@@ -254,7 +258,7 @@ public class Closeness extends OptimizedPathBase implements Algorithm{
 
             
 
-            prop = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Prestige"),Double.class);
+            prop = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Prestige"),Double.class);
 
             if(prestigeValue[i] != 0.0){
 
@@ -299,7 +303,7 @@ public class Closeness extends OptimizedPathBase implements Algorithm{
         centrality *= 2;
 
         centrality /= (centralityValue.length-1)*(centralityValue.length-1)*(centralityValue.length-2);
-            Property prop = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Centrality Mean"),Double.class);
+            Property prop = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Centrality Mean"),Double.class);
 
         prop.add(new Double(centrality));
 
@@ -323,7 +327,7 @@ public class Closeness extends OptimizedPathBase implements Algorithm{
 
         prestige /= (prestigeValue.length-1)*(prestigeValue.length-1)*(prestigeValue.length-2);
 
-            Property prop = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Prestige Mean"),Double.class);
+            Property prop = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Prestige Mean"),Double.class);
 
         prop.add(new Double(prestige));
 
@@ -352,7 +356,7 @@ public class Closeness extends OptimizedPathBase implements Algorithm{
         sd = centralityValue.length*centralitySquare-centralitySum*centralitySum;
 
         sd /= centralityValue.length;
-            Property prop = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Centrality Standard Deviation"),Double.class);
+            Property prop = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Centrality Standard Deviation"),Double.class);
 
         prop.add(new Double(sd));
 
@@ -383,7 +387,7 @@ public class Closeness extends OptimizedPathBase implements Algorithm{
         sd = (prestigeValue.length*prestigeSquare)-squareSum;
 
         sd /= prestigeValue.length;
-            Property prop = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Prestige Standard Deviation"),Double.class);
+            Property prop = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Prestige Standard Deviation"),Double.class);
         prop.add(new Double(sd));
 
         g.add(prop);

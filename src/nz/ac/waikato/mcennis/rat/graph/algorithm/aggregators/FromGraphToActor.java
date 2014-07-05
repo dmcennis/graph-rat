@@ -13,6 +13,10 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 import org.dynamicfactory.descriptors.IODescriptor;
 import org.dynamicfactory.descriptors.IODescriptor.Type;
 import org.dynamicfactory.descriptors.IODescriptorFactory;
@@ -104,7 +108,7 @@ public class FromGraphToActor extends ModelShell implements Algorithm {
         Iterator<Actor> actorIt = AlgorithmMacros.filterActor(parameter, g, (ActorQuery) parameter.get("Query").get(), null, null);
         Property property = g.getProperty(AlgorithmMacros.getSourceID(parameter,g, (String)parameter.get("SourceProperty").get()));
         if (property != null) {
-            Property destination = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter,g, (String)parameter.get("DestinationProperty").get()), property.getPropertyClass());
+            Property destination = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter,g, (String)parameter.get("DestinationProperty").get()), property.getPropertyClass());
             Iterator values = property.getValue().iterator();
             while (values.hasNext()) {
                 try {

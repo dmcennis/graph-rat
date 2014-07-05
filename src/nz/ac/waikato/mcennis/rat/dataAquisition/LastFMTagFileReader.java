@@ -20,6 +20,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import nz.ac.waikato.mcennis.rat.crawler.FileListCrawler;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
 
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 

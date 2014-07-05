@@ -27,10 +27,8 @@ import nz.ac.waikato.mcennis.rat.crawler.FileListCrawler;
 
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
-import org.dynamicfactory.descriptors.IODescriptorFactory;
+import org.dynamicfactory.descriptors.*;
 
-
-import org.dynamicfactory.descriptors.IODescriptor;
 
 import org.dynamicfactory.descriptors.IODescriptor.Type;
 
@@ -41,7 +39,6 @@ import nz.ac.waikato.mcennis.rat.parser.Parser;
 import nz.ac.waikato.mcennis.rat.parser.ParserFactory;
 
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
-
 
 
 /**

@@ -51,7 +51,8 @@ import nz.ac.waikato.mcennis.rat.graph.GraphFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.GraphQueryFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.graph.GraphByID;
 import nz.ac.waikato.mcennis.rat.scheduler.SchedulerFactory;
-
+import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.PropertiesFactory;
 
 
 /**

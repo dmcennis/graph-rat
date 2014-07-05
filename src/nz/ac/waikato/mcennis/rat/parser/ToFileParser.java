@@ -15,6 +15,10 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import java.io.File;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 
 

@@ -14,6 +14,10 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 import org.dynamicfactory.descriptors.IODescriptor;
 import org.dynamicfactory.descriptors.IODescriptor.Type;
 import org.dynamicfactory.descriptors.IODescriptorFactory;
@@ -151,7 +155,7 @@ public class AggregateToGraph extends ModelShell implements Algorithm {
                     result = outerAggregate.aggregate(instanceFromProperty.toArray(new Instance[]{}), weights);
                 }
 
-                Property aggregator = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter,g, (String)parameter.get("GraphProperty").get()),weka.core.Instance.class);
+                Property aggregator = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter,g, (String)parameter.get("GraphProperty").get()),weka.core.Instance.class);
                 for (int j = 0; j < result.length; ++j) {
                     try {
                         aggregator.add(result[j]);

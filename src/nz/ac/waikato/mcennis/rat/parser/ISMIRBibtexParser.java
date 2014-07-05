@@ -25,6 +25,10 @@ import java.util.Iterator;
 import java.util.regex.Matcher;
 
 import java.util.regex.Pattern;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.crawler.Crawler;
 
@@ -313,7 +317,7 @@ public class ISMIRBibtexParser extends AbstractParser {
 
                 URL url = new URL(fileM.group(1));
 
-                Property file = PropertyFactory.newInstance().create("FileLocation",URL.class);
+                Property file = PropertyFactory.newInstance().create("BasicProperty","FileLocation",URL.class);
 
                 file.add(url);
 
@@ -327,7 +331,7 @@ public class ISMIRBibtexParser extends AbstractParser {
 
             } else if (typeM.matches()) {
 
-                Property property = PropertyFactory.newInstance().create("Type",String.class);
+                Property property = PropertyFactory.newInstance().create("BasicProperty","Type",String.class);
 
                 property.add(typeM.group(1));
 

@@ -7,7 +7,7 @@ package nz.ac.waikato.mcennis.rat.graph.query;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.AbstractFactory;
+import org.dynamicfactory.AbstractFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.link.AndLinkQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByRelation;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByActor;
@@ -15,6 +15,7 @@ import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByProperty;
 import nz.ac.waikato.mcennis.rat.graph.query.link.NullLinkQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.link.OrLinkQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.link.XorLinkQuery;
+import org.dynamicfactory.descriptors.*;
 
 /**
  *

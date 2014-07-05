@@ -16,7 +16,8 @@ import java.util.logging.Level;
 
 import java.util.logging.Logger;
 
-import nz.ac.waikato.mcennis.rat.AbstractFactory;
+import org.dynamicfactory.AbstractFactory;
+import org.dynamicfactory.descriptors.*;
 
 
 /**

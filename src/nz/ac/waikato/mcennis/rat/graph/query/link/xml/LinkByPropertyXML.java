@@ -7,12 +7,11 @@ package nz.ac.waikato.mcennis.rat.graph.query.link.xml;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.query.property.xml.PropertyQueryXML;
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+import org.dynamicfactory.propertyQuery.PropertyQueryXML;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery.LinkEnd;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQueryXML;
-import nz.ac.waikato.mcennis.rat.graph.query.property.xml.PropertyQueryXMLFactory;
+import org.dynamicfactory.propertyQuery.PropertyQueryXMLFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByProperty;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

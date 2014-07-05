@@ -27,12 +27,10 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;
-import org.dynamicfactory.descriptors.IODescriptorFactory;
-import org.dynamicfactory.descriptors.IODescriptor;
+import org.dynamicfactory.descriptors.*;
 
 
 import org.dynamicfactory.descriptors.IODescriptor.Type;
-import org.dynamicfactory.descriptors.IODescriptorInternal;
 
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
@@ -44,6 +42,9 @@ import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQueryFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.actor.ActorByMode;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByRelation;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 import weka.core.Attribute;
 
 import weka.core.FastVector;
@@ -270,7 +271,7 @@ public class DirectedTriplesHistogram extends ModelShell implements Algorithm {
 
             value.setDataset(meta);
 
-            Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String) parameter.get("DestinationProperty").get()), Instance.class);
+            Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String) parameter.get("DestinationProperty").get()),(String)parameter.get("DestinationProperty").getType(), Instance.class);
 
             try {
 

@@ -20,7 +20,11 @@ package nz.ac.waikato.mcennis.rat.graph.link;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.AbstractFactory;
+import org.dynamicfactory.AbstractFactory;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 
 /**
@@ -109,7 +113,7 @@ public class LinkFactory extends AbstractFactory<Link>{
 
      * 
 
-     * @param props map of properties for creating a map
+     * @param relation map of properties for creating a map
 
      * @return a newly created Link
 

@@ -34,11 +34,9 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
-import org.dynamicfactory.descriptors.IODescriptorFactory;
-import org.dynamicfactory.descriptors.IODescriptor;
+import org.dynamicfactory.descriptors.*;
 
 import org.dynamicfactory.descriptors.IODescriptor.Type;
-import org.dynamicfactory.descriptors.IODescriptorInternal;
 
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 
@@ -47,7 +45,9 @@ import nz.ac.waikato.mcennis.rat.graph.query.ActorQueryFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.actor.ActorByMode;
 import nz.ac.waikato.mcennis.rat.util.Duples;
-
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 
 /**
@@ -270,7 +270,7 @@ public class PrincipalComponentsAnalysis extends ModelShell implements Algorithm
 
                 if ((Boolean) parameter.get("SaveTranspositionMatrix").get()) {
 
-                    Property transposition = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("TranspositionProperty").get()),DoubleMatrix2D.class);
+                    Property transposition = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("TranspositionProperty").get()),DoubleMatrix2D.class);
 
                     try {
 
@@ -301,7 +301,7 @@ public class PrincipalComponentsAnalysis extends ModelShell implements Algorithm
                         Collections.sort(actors);
 
                         for (int i = 0; i < actors.size(); ++i) {
-                            Property actorMatrixProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DistanceProperty").get()),DoubleMatrix1D.class);
+                            Property actorMatrixProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DistanceProperty").get()),DoubleMatrix1D.class);
 
                             try {
 
@@ -324,7 +324,7 @@ public class PrincipalComponentsAnalysis extends ModelShell implements Algorithm
 
 
                 if ((Boolean) parameter.get("SaveDistanceMatrix").get()) {
-                    Property actorMatrixProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DistanceProperty").get()),DoubleMatrix2D.class);
+                    Property actorMatrixProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DistanceProperty").get()),DoubleMatrix2D.class);
 
                     try {
 

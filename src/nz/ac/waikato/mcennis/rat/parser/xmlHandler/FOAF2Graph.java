@@ -17,6 +17,10 @@ import java.net.URL;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.crawler.Crawler;
 
@@ -563,7 +567,7 @@ public class FOAF2Graph extends Handler {
 
                     try {
 
-                        Property property = PropertyFactory.newInstance().create("foaf:title",String.class);
+                        Property property = PropertyFactory.newInstance().create((String)PropertyFactory.newInstance().getClassParameter().get(),"foaf:title",String.class);
 
                         property.add(title);
 
@@ -607,7 +611,7 @@ public class FOAF2Graph extends Handler {
 
                     try{
 
-                    Property props = PropertyFactory.newInstance().create("Homepage",URL.class);
+                    Property props = PropertyFactory.newInstance().create("BasicProperty","Homepage",URL.class);
 
                     props.add(new URL(homepage));
 
@@ -637,7 +641,7 @@ public class FOAF2Graph extends Handler {
 
                     try {
 
-                        Property property = PropertyFactory.newInstance().create("foaf:phone",String.class);
+                        Property property = PropertyFactory.newInstance().create("BasicProperty","foaf:phone",String.class);
 
                         property.add(phone);
 
@@ -657,7 +661,7 @@ public class FOAF2Graph extends Handler {
 
                     try{
 
-                    Property props = PropertyFactory.newInstance().create("WorkplaceHomePage",URL.class);
+                    Property props = PropertyFactory.newInstance().create("BasicProperty","WorkplaceHomePage",URL.class);
 
                     props.add(new URL(workplacehomepage));
 
@@ -689,7 +693,7 @@ public class FOAF2Graph extends Handler {
 
                     try{
 
-                    Property props = PropertyFactory.newInstance().create("WorkInfoHomePage",URL.class);
+                    Property props = PropertyFactory.newInstance().create("BasicProperty","WorkInfoHomePage",URL.class);
 
                     props.add(new URL(workinfohomepage));
 
@@ -719,7 +723,7 @@ public class FOAF2Graph extends Handler {
 
                     try{
 
-                    Property props = PropertyFactory.newInstance().create("SchoolHomePage",URL.class);
+                    Property props = PropertyFactory.newInstance().create("BasicProperty","SchoolHomePage",URL.class);
 
                     props.add(new URL(schoolhomepage));
 
@@ -765,7 +769,7 @@ public class FOAF2Graph extends Handler {
 
                     try {
 
-                        Property property = PropertyFactory.newInstance().create("Gender",String.class);
+                        Property property = PropertyFactory.newInstance().create("BasicProperty","Gender",String.class);
 
                         property.add(gender);
 
@@ -783,7 +787,7 @@ public class FOAF2Graph extends Handler {
 
                     try {
 
-                        Property property = PropertyFactory.newInstance().create("ya:country",String.class);
+                        Property property = PropertyFactory.newInstance().create("BasicProperty","ya:country",String.class);
 
                         property.add(country);
 
@@ -803,7 +807,7 @@ public class FOAF2Graph extends Handler {
 
                     try {
 
-                        Property property = PropertyFactory.newInstance().create("ya:city",String.class);
+                        Property property = PropertyFactory.newInstance().create("BasicProperty","ya:city",String.class);
 
                         property.add(city);
 
@@ -823,7 +827,7 @@ public class FOAF2Graph extends Handler {
 
                     try {
 
-                       Property property = PropertyFactory.newInstance().create("foaf:dateOfBirth",String.class);
+                       Property property = PropertyFactory.newInstance().create("BasicProperty","foaf:dateOfBirth",String.class);
 
                         property.add(dateOfBirth);
 
@@ -843,7 +847,7 @@ public class FOAF2Graph extends Handler {
 
                     try{
 
-                    Property props = PropertyFactory.newInstance().create("Document",URL.class);
+                    Property props = PropertyFactory.newInstance().create("BasicProperty","Document",URL.class);
 
                     props.add(new URL(document));
 
@@ -873,7 +877,7 @@ public class FOAF2Graph extends Handler {
 
                     try {
 
-                       Property property = PropertyFactory.newInstance().create("foaf:aimChatID",String.class);
+                       Property property = PropertyFactory.newInstance().create("BasicProperty","foaf:aimChatID",String.class);
 
                         property.add(aim);
 
@@ -893,7 +897,7 @@ public class FOAF2Graph extends Handler {
 
                     try {
 
-                       Property property = PropertyFactory.newInstance().create("foaf:msnChatID",String.class);
+                       Property property = PropertyFactory.newInstance().create("BasicProperty","foaf:msnChatID",String.class);
 
                         property.add(msn);
 
@@ -913,7 +917,7 @@ public class FOAF2Graph extends Handler {
 
                     try{
 
-                    Property props = PropertyFactory.newInstance().create("Weblog",URL.class);
+                    Property props = PropertyFactory.newInstance().create("BasicProperty","Weblog",URL.class);
 
                     props.add(new URL(weblog));
 
@@ -943,7 +947,7 @@ public class FOAF2Graph extends Handler {
 
                     try {
 
-                       Property property = PropertyFactory.newInstance().create("ya:bio",String.class);
+                       Property property = PropertyFactory.newInstance().create("BasicProperty","ya:bio",String.class);
 
                         property.add(bio);
 
@@ -965,7 +969,7 @@ public class FOAF2Graph extends Handler {
 
 //                    System.out.println("Added interest property");
 
-                interest = PropertyFactory.newInstance().create("interest",String.class);
+                interest = PropertyFactory.newInstance().create("BasicProperty","interest",String.class);
 
 //                }
 
@@ -1147,7 +1151,7 @@ public class FOAF2Graph extends Handler {
 
         document = null;
 
-        interest = PropertyFactory.newInstance().create("interest",String.class);
+        interest = PropertyFactory.newInstance().create("BasicProperty","interest",String.class);
 
     }
 

@@ -16,6 +16,7 @@ import nz.ac.waikato.mcennis.rat.graph.model.Listener;
 import nz.ac.waikato.mcennis.rat.graph.model.Model;
 import nz.ac.waikato.mcennis.rat.graph.query.GraphQuery;
 import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
+import org.dynamicfactory.descriptors.Properties;
 
 /**
  * Interface for a blackboard-style scheduler. It is created by a XML configuration

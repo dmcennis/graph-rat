@@ -25,6 +25,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import java.sql.SQLException;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import java.util.List;
 
@@ -42,6 +46,7 @@ import nz.ac.waikato.mcennis.rat.graph.model.Model;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 
 import org.dynamicfactory.property.PropertyValueDatabaseFactory;
+import org.dynamicfactory.property.database.IntegerDB;
 import org.dynamicfactory.property.database.PropertyValueDB;
 
 
@@ -240,7 +245,7 @@ public class DBLink extends ModelShell implements Link, Listener {
                 String propertyClassString = rs.getString("Property.class");
 //                if (PropertyValueDatabaseFactory.newInstance().getClassParameter().getValue().contains(propertyClassString)) {
                     PropertyValueDB factory = PropertyValueDatabaseFactory.newInstance().create(propertyClassString);
-                    Property item = PropertyFactory.newInstance().create(propertyType, factory.getValueClass());
+                    Property item = PropertyFactory.newInstance().create(propertyType, Integer.toString(propertyID), factory.getValueClass());
                     statGetPropertyValues.clearParameters();
                     statGetPropertyValues.setInt(1, propertyID);
                     rs2 = statGetPropertyValues.executeQuery();
@@ -294,7 +299,7 @@ public class DBLink extends ModelShell implements Link, Listener {
                 propertyClass = Class.forName(propertyClassString);
 //                if (PropertyValueDatabaseFactory.newInstance().getClassParameter().getValue().contains(propertyClass.getSimpleName())) {
                     PropertyValueDB factory = PropertyValueDatabaseFactory.newInstance().create(propertyClass);
-                    Property item = PropertyFactory.newInstance().create(propertyType, propertyClass);
+                    Property item = PropertyFactory.newInstance().create(propertyType, Integer.toString(propertyID), propertyClass);
                     statGetPropertyValues.clearParameters();
                     statGetPropertyValues.setInt(1, propertyID);
                     rs2 = statGetPropertyValues.executeQuery();

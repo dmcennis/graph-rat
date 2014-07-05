@@ -12,6 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.crawler.Crawler;
 import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
+import org.dynamicfactory.descriptors.*;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 

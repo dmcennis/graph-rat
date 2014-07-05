@@ -5,7 +5,7 @@
 
 package nz.ac.waikato.mcennis.rat.parser.xmlHandler;
 
-import nz.ac.waikato.mcennis.rat.AbstractFactory;
+import org.dynamicfactory.AbstractFactory;
 import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQueryXML;
 import nz.ac.waikato.mcennis.rat.graph.query.GraphQueryXML;

@@ -30,6 +30,10 @@ import java.util.List;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import java.util.zip.GZIPInputStream;
 

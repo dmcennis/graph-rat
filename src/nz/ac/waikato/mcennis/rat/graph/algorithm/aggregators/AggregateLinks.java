@@ -17,6 +17,10 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 import org.dynamicfactory.descriptors.IODescriptorFactory;
 import org.dynamicfactory.descriptors.IODescriptor;
 import org.dynamicfactory.descriptors.IODescriptor.Type;
@@ -226,7 +230,7 @@ public class AggregateLinks extends ModelShell implements Algorithm {
                 }
 
 
-                Property aggregator = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter,g, (String)parameter.get("DestinationProperty").get()),weka.core.Instance.class);
+                Property aggregator = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter,g, (String)parameter.get("DestinationProperty").get()),weka.core.Instance.class);
                 try {
                     aggregator.add(instance);
                 } catch (InvalidObjectTypeException ex) {

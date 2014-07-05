@@ -42,6 +42,9 @@ import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
 
 import nz.ac.waikato.mcennis.rat.parser.xmlHandler.Handler;
 
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 import org.xml.sax.Attributes;
 
 import org.xml.sax.SAXException;
@@ -585,7 +588,7 @@ public class ParseBibliographyXML extends Handler {
             // Create a new Author node
             currentActor = ActorFactory.newInstance().create(authorMode,authorID);
 
-            Property name = PropertyFactory.newInstance().create("name",String.class);
+            Property name = PropertyFactory.newInstance().create("BasicProperty","name",String.class);
 
             try {
 
@@ -627,7 +630,7 @@ public class ParseBibliographyXML extends Handler {
 
         } else if (state == State.ABSTRACT) {
 
-            Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create("abstract",String.class);
+            Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create("BasicProperty","abstract",String.class);
 
             try {
 
@@ -723,7 +726,7 @@ public class ParseBibliographyXML extends Handler {
             }
 
         } else if (state == State.YEAR) {
-            Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create("year",String.class);
+            Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create("BasicProperty","year",String.class);
 
             try {
 
@@ -738,7 +741,7 @@ public class ParseBibliographyXML extends Handler {
             currentActor.add(property);
 
         } else if (state == State.FILE) {
-            Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create("file",String.class);
+            Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create("BasicProperty","file",String.class);
 
             try {
 
@@ -753,7 +756,7 @@ public class ParseBibliographyXML extends Handler {
             currentActor.add(property);
 
         } else if (state == State.TYPE) {
-            Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create("type",String.class);
+            Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create("BasicProperty","type",String.class);
 
             try {
 
@@ -768,7 +771,7 @@ public class ParseBibliographyXML extends Handler {
             currentActor.add(property);
 
         } else if (state == State.JOURNAL) {
-            Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create("journal",String.class);
+            Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create("BasicProperty","journal",String.class);
 
             try {
 
@@ -842,7 +845,7 @@ public class ParseBibliographyXML extends Handler {
 
             }
 
-            Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create("cluster",String.class);
+            Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create("BasicProperty","cluster",String.class);
 
             try {
 
@@ -865,7 +868,7 @@ public class ParseBibliographyXML extends Handler {
             subgraph.get(str).add(currentActor);
 
         } else if (state == State.TITLE) {
-            Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create("title",String.class);
+            Property property = org.dynamicfactory.property.PropertyFactory.newInstance().create("BasicProperty","title",String.class);
 
             try {
 

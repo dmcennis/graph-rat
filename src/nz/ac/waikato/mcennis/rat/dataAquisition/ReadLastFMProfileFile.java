@@ -26,6 +26,10 @@ import java.io.File;
 import java.io.FileInputStream;
 
 import java.io.FileNotFoundException;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import java.io.IOException;
 import java.util.LinkedList;

@@ -23,15 +23,15 @@ import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
 
-
-
-
-
-import org.dynamicfactory.descriptors.IODescriptor;
+import org.dynamicfactory.descriptors.*;
 
 
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
@@ -49,7 +49,6 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;
 import org.dynamicfactory.descriptors.IODescriptor.Type;
-import org.dynamicfactory.descriptors.IODescriptorFactory;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQuery;
@@ -62,7 +61,9 @@ import nz.ac.waikato.mcennis.rat.graph.query.link.AndLinkQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByActor;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByRelation;
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
-
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 
 /**
@@ -436,7 +437,7 @@ public class KendallTau extends ModelShell implements Algorithm {
                         double tau = (c - d) / Math.sqrt((c + d + tr) * (c + d + tp));
 
                         if (!Double.isNaN(tau) && !Double.isInfinite(tau)) {
-                            Property precisionProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
+                            Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
 
                             precisionProperty.add(new Double(tau));
 
@@ -465,10 +466,10 @@ public class KendallTau extends ModelShell implements Algorithm {
 
 
             double mean = correlationSum / n;
-            Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Standard Deviation"),Double.class);
+            Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Standard Deviation"),Double.class);
             property.add(new Double(sd));
             g.add(property);
-            property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean"),Double.class);
+            property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean"),Double.class);
             property.add(new Double(mean));
             g.add(property);
             Logger.getLogger(KendallTau.class.getName()).log(Level.INFO,"Kendall Tau\t" + mean);

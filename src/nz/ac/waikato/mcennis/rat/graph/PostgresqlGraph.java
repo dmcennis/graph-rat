@@ -8,7 +8,10 @@
 package nz.ac.waikato.mcennis.rat.graph;
 
 import java.sql.SQLException;
-
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import java.sql.Statement;
 

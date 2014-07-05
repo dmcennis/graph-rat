@@ -13,6 +13,10 @@ import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 import org.dynamicfactory.descriptors.IODescriptor;
 import org.dynamicfactory.descriptors.IODescriptor.Type;
 import org.dynamicfactory.descriptors.IODescriptorFactory;
@@ -133,7 +137,7 @@ public class AggregateOnGraph extends ModelShell implements Algorithm {
                 meta[j] = result[j].dataset();
             }
             result = InstanceManipulation.normalizeFieldNames(result, meta);
-            Property aggregator = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter,g, (String)parameter.get("DestinationProperty").get()), weka.core.Instance.class);
+            Property aggregator = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter,g, (String)parameter.get("DestinationProperty").get()), weka.core.Instance.class);
             for (int i=0;i <result.length; ++i) {
                 try {
                     aggregator.add(result[i]);

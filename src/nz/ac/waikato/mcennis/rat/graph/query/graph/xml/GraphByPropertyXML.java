@@ -5,13 +5,12 @@
  */
 package nz.ac.waikato.mcennis.rat.graph.query.graph.xml;
 
-import nz.ac.waikato.mcennis.rat.graph.query.property.xml.NullPropertyQueryXML;
-import nz.ac.waikato.mcennis.rat.graph.query.property.xml.PropertyQueryXML;
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+import org.dynamicfactory.propertyQuery.NullPropertyQueryXML;
+import org.dynamicfactory.propertyQuery.PropertyQueryXML;
 import nz.ac.waikato.mcennis.rat.graph.query.GraphQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.GraphQueryXML;
 import nz.ac.waikato.mcennis.rat.graph.query.graph.GraphByProperty;
-import nz.ac.waikato.mcennis.rat.graph.query.property.xml.PropertyQueryXMLFactory;
+import org.dynamicfactory.propertyQuery.PropertyQueryXMLFactory;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 

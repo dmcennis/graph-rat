@@ -25,6 +25,10 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
 
@@ -124,7 +128,7 @@ try{        if(state == State.NAME){
 
                     try {
 
-                        userArtistTag = PropertyFactory.newInstance().create("Tags",String.class);
+                        userArtistTag = PropertyFactory.newInstance().create("BasicProperty","Tags",String.class);
 
                         userArtistTag.add(tagName);
 

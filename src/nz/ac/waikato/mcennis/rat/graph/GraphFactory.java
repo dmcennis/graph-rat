@@ -13,7 +13,8 @@ import java.io.Writer;
 import java.util.LinkedList;
 import java.util.logging.Logger;
 import java.util.logging.Level;
-import nz.ac.waikato.mcennis.rat.AbstractFactory;
+import org.dynamicfactory.AbstractFactory;
+import org.dynamicfactory.descriptors.*;
 
 /**
  * Create a Graph object of the given type with the given arguments
@@ -138,11 +139,15 @@ public class GraphFactory extends AbstractFactory<Graph>{
      *      </ul>
      * </ul>
      *
-     * @param args parameters for the new graph
+     * @param props parameters for the new graph
      *
      * @return newly created Graph object
      */
-    
+    public Graph create(Properties props){
+        return create(null,props);
+    }
+
+
     public Graph create(String id){
         return create(id, properties);
     }
@@ -174,10 +179,6 @@ public class GraphFactory extends AbstractFactory<Graph>{
         ret.init(parameters);
         
         return ret;
-    }
-    
-    public Graph create(Properties props){
-        return create(null,props);
     }
     
     public String[] getKnownGraphs(){

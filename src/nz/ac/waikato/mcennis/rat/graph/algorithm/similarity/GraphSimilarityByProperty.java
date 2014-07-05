@@ -25,6 +25,10 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;
 import org.dynamicfactory.descriptors.IODescriptor;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import org.dynamicfactory.descriptors.IODescriptor.Type;
 import org.dynamicfactory.descriptors.IODescriptorFactory;
@@ -153,7 +157,7 @@ public class GraphSimilarityByProperty extends ModelShell implements Algorithm {
 
             for (int i=0;i<data.length;++i) {
 
-                Property similarityProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter,g, (String)parameter.get("DestinationProperty").get()),Duples.class);
+                Property similarityProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter,g, (String)parameter.get("DestinationProperty").get()),Duples.class);
 
                 for (int j = 0; j < data.length; ++j) {
 

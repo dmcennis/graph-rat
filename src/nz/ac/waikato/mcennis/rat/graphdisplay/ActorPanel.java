@@ -40,6 +40,7 @@ import javax.swing.JScrollPane;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
+import org.dynamicfactory.property.Property;
 import prefuse.data.Node;
 
 import prefuse.util.ColorLib;

@@ -7,8 +7,13 @@ package nz.ac.waikato.mcennis.rat.graph.query.actor.xml;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.AbstractFactory;
+import org.dynamicfactory.AbstractFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQueryXML;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+
 
 /**
  *

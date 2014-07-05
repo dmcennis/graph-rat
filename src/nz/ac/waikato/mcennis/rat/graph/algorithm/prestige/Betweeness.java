@@ -25,11 +25,13 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.OptimizedPathBase;
 
+import org.dynamicfactory.descriptors.*;
 import org.dynamicfactory.descriptors.IODescriptor.Type;
-import org.dynamicfactory.descriptors.IODescriptorFactory;
-import org.dynamicfactory.descriptors.IODescriptorInternal;
 
 import nz.ac.waikato.mcennis.rat.graph.path.PathNode;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 
 /**
@@ -131,7 +133,7 @@ public class Betweeness extends OptimizedPathBase implements Algorithm {
 
 
             for (int i = 0; i < betweeness.length; ++i) {
-                Property prop = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
+                Property prop = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
 
                 prop.add(new Double(betweeness[i]));
 
@@ -205,7 +207,7 @@ public class Betweeness extends OptimizedPathBase implements Algorithm {
 
             between /= (betweeness.length - 1) * (betweeness.length - 1) * (betweeness.length - 2);
 
-            Property prop = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean"),Double.class);
+            Property prop = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean"),Double.class);
 
             prop.add(new Double(between));
 
@@ -243,7 +245,7 @@ public class Betweeness extends OptimizedPathBase implements Algorithm {
 
             sd /= betweeness.length;
 
-            Property prop = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Standard Deviation"),Double.class);
+            Property prop = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(super.parameter, g, (String)parameter.get("DestinationProperty").get()+" Standard Deviation"),Double.class);
 
             prop.add(new Double(sd));
 

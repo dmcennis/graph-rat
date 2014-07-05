@@ -22,6 +22,10 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;
 import org.dynamicfactory.descriptors.IODescriptorFactory;
@@ -198,7 +202,7 @@ public class WekaProbablisticClusterer extends ModelShell implements Algorithm {
 
                     }
 
-                    Property clusterProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String) parameter.get("DestinationProperty").get()), (new double[]{}).getClass());
+                    Property clusterProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String) parameter.get("DestinationProperty").get()), (new double[]{}).getClass());
 
                     clusterProperty.add(cluster);
 

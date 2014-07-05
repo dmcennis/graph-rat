@@ -13,7 +13,8 @@
  */
 package nz.ac.waikato.mcennis.rat.graph.actor;
 
-import nz.ac.waikato.mcennis.rat.AbstractFactory;
+import org.dynamicfactory.AbstractFactory;
+import org.dynamicfactory.descriptors.*;
 
 /**
 

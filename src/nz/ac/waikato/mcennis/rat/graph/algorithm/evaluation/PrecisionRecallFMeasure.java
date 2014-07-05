@@ -15,6 +15,10 @@ import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
@@ -309,7 +313,7 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
                     }
 
-                    Property precisionProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Precision"),Double.class);
+                    Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Precision"),Double.class);
 
                     precisionProperty.add(new Double(precision));
 
@@ -333,12 +337,12 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
             double sd = ((n * precisionSquaredSum) - precisionSum * precisionSum) / n;
 
             double mean = precisionSum / n;
-            Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Precision Standard Deviation"),Double.class);
+            Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Precision Standard Deviation"),Double.class);
 
             property.add(new Double(sd));
 
             g.add(property);
-            property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Precision Mean"),Double.class);
+            property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Precision Mean"),Double.class);
             property.add(new Double(mean));
 
             g.add(property);
@@ -418,7 +422,7 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
                 }
 
-                Property precisionProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Recall"),Double.class);
+                Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Recall"),Double.class);
 
                 precisionProperty.add(new Double(recall));
 
@@ -434,13 +438,13 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
             double sd = ((n * recallSquaredSum) - recallSum * recallSum) / n;
             double mean = recallSum / n;
-            Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Recall Standard Deviation"),Double.class);
+            Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Recall Standard Deviation"),Double.class);
 
             property.add(new Double(sd));
 
             g.add(property);
 
-            property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Recall Mean"),Double.class);
+            property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Recall Mean"),Double.class);
 
             property.add(new Double(mean));
 
@@ -552,7 +556,7 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
 
 
-                    Property precisionProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" FMeasure"),Double.class);
+                    Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" FMeasure"),Double.class);
 
                     precisionProperty.add(new Double(fMeasure));
 
@@ -573,10 +577,10 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
             double sd = ((n * fMeasureSquaredSum) - fMeasureSum * fMeasureSum) / n;
             double mean = fMeasureSum / n;
-                    Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" FMeasure Standard Deviation"),Double.class);
+                    Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" FMeasure Standard Deviation"),Double.class);
             property.add(new Double(sd));
             g.add(property);
-            property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" FMeasure Mean"),Double.class);
+            property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" FMeasure Mean"),Double.class);
             property.add(new Double(mean));
             g.add(property);
             Logger.getLogger(PrecisionRecallFMeasure.class.getName()).log(Level.INFO,"Positive FMeasure\t" + mean);
@@ -663,7 +667,7 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
                     }
 
-                    Property precisionProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative Precision"),Double.class);
+                    Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative Precision"),Double.class);
 
                     precisionProperty.add(new Double(precision));
 
@@ -687,12 +691,12 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
             double sd = ((n * precisionSquaredSum) - precisionSum * precisionSum) / n;
 
             double mean = precisionSum / n;
-            Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative Precision Standard Deviation"),Double.class);
+            Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative Precision Standard Deviation"),Double.class);
 
             property.add(new Double(sd));
 
             g.add(property);
-            property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative Precision Mean"),Double.class);
+            property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative Precision Mean"),Double.class);
             property.add(new Double(mean));
 
             g.add(property);
@@ -771,7 +775,7 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
                 }
 
-                Property precisionProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative Recall"),Double.class);
+                Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative Recall"),Double.class);
 
                 precisionProperty.add(new Double(recall));
 
@@ -787,13 +791,13 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
             double sd = ((n * recallSquaredSum) - recallSum * recallSum) / n;
             double mean = recallSum / n;
-            Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative Recall Standard Deviation"),Double.class);
+            Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative Recall Standard Deviation"),Double.class);
 
             property.add(new Double(sd));
 
             g.add(property);
 
-            property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative Recall Mean"),Double.class);
+            property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative Recall Mean"),Double.class);
 
             property.add(new Double(mean));
 
@@ -904,7 +908,7 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
 
 
-                    Property precisionProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative FMeasure"),Double.class);
+                    Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative FMeasure"),Double.class);
 
                     precisionProperty.add(new Double(fMeasure));
 
@@ -925,10 +929,10 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
             double sd = ((n * fMeasureSquaredSum) - fMeasureSum * fMeasureSum) / n;
             double mean = fMeasureSum / n;
-                    Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative FMeasure Standard Deviation"),Double.class);
+                    Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative FMeasure Standard Deviation"),Double.class);
             property.add(new Double(sd));
             g.add(property);
-            property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative FMeasure Mean"),Double.class);
+            property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Negative FMeasure Mean"),Double.class);
             property.add(new Double(mean));
             g.add(property);
             Logger.getLogger(PrecisionRecallFMeasure.class.getName()).log(Level.INFO,"Negative FMeasure\t" + mean);

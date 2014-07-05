@@ -30,6 +30,10 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;
 import org.dynamicfactory.descriptors.IODescriptor;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import org.dynamicfactory.descriptors.IODescriptor.Type;
 import org.dynamicfactory.descriptors.IODescriptorFactory;
@@ -219,7 +223,7 @@ public class LinkBetweeness extends ModelShell implements Algorithm, Listener {
         if(links != null){
 
         for(int i=0;i<links.length;++i) {
-            Property prop = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DesitnationProperty").get()),Double.class);
+            Property prop = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DesitnationProperty").get()),Double.class);
 
             double betweeness = 0.0;
 

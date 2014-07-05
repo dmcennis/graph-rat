@@ -22,8 +22,11 @@ import java.util.logging.Level;
 
 import java.util.logging.Logger;
 
-import nz.ac.waikato.mcennis.rat.AbstractFactory;
-
+import org.dynamicfactory.AbstractFactory;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 /**
 
@@ -108,6 +111,13 @@ public class SchedulerFactory extends AbstractFactory<Scheduler>{
      * @return newly constructed Scheduler
 
      */
+    @Override
+
+    public Scheduler create(Properties props){
+
+        return create(null,props);
+
+    }
 
     public String[] getKnownSchedulers(){
 
@@ -117,13 +127,6 @@ public class SchedulerFactory extends AbstractFactory<Scheduler>{
 
     
 
-    @Override 
-
-    public Scheduler create(Properties props){
-
-        return create(null,props);
-
-    }
 
     
 

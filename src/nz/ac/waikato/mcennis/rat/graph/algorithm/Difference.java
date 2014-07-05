@@ -23,6 +23,10 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
 import org.dynamicfactory.descriptors.IODescriptorFactory;
 
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import org.dynamicfactory.descriptors.IODescriptor;
 
@@ -147,7 +151,7 @@ public class Difference extends ModelShell implements Algorithm{
                                 double rightValue = ((Double) (right.getValue().get(0))).doubleValue();
 
                                 double answerValue = leftValue - rightValue;
-                                Property answer = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
+                                Property answer = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
 
                                 answer.add(new Double(answerValue));
 

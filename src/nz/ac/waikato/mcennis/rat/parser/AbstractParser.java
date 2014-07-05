@@ -7,6 +7,7 @@ package nz.ac.waikato.mcennis.rat.parser;
 
 import java.io.InputStream;
 import nz.ac.waikato.mcennis.rat.crawler.Crawler;
+import org.dynamicfactory.descriptors.*;
 
 /**
  *

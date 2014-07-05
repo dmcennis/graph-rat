@@ -25,6 +25,8 @@ import java.io.FileReader;
 import java.io.UnsupportedEncodingException;
 
 import java.util.LinkedList;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
 
 import java.util.List;
 import java.util.logging.Level;

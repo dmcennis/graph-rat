@@ -23,6 +23,10 @@ import javax.swing.JFrame;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;

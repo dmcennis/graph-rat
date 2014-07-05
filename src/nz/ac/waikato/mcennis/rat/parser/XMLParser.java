@@ -21,6 +21,10 @@ package nz.ac.waikato.mcennis.rat.parser;
 import java.io.InputStream;
 
 import nz.ac.waikato.mcennis.rat.crawler.Crawler;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 
 import nz.ac.waikato.mcennis.rat.parser.xmlHandler.Handler;

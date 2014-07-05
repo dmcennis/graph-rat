@@ -332,7 +332,7 @@ public class WebCrawler implements Crawler {
 
          *
 
-         * @param entry Site to be crawled
+         * @param site Site to be crawled
 
          */
 
@@ -578,7 +578,7 @@ public class WebCrawler implements Crawler {
 
          *
 
-         * @see nz.ac.waikato.mcennis.arm.crawler.Crawler#crawl(String)
+         * @see nz.ac.waikato.mcennis.rat.crawler.Crawler#crawl(String)
 
          */
 
@@ -630,7 +630,7 @@ public class WebCrawler implements Crawler {
 
          *
 
-         * @see nz.ac.waikato.mcennis.arm.crawler.Crawler#set(nz.ac.waikato.mcennis.arm.parser.Parser[])
+         * @see nz.ac.waikato.mcennis.rat.crawler.Crawler#set(nz.ac.waikato.mcennis.rat.parser.Parser[])
 
          */
 

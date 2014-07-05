@@ -94,11 +94,7 @@ import nz.ac.waikato.mcennis.rat.parser.XMLParser;
 
 
 import nz.ac.waikato.mcennis.rat.parser.xmlHandler.GraphReader;
-
-
-
-
-
+import org.dynamicfactory.property.Property;
 
 
 /**

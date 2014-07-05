@@ -24,6 +24,10 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import org.dynamicfactory.descriptors.IODescriptor;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import org.dynamicfactory.descriptors.IODescriptor.Type;
 import org.dynamicfactory.descriptors.IODescriptorFactory;
@@ -261,7 +265,7 @@ public class ScalablePageRankPrestige extends ModelShell implements Algorithm {
 
                     Logger.getLogger(ScalablePageRankPrestige.class.getName()).log(Level.FINE, "pageRank - " + a[i].getID() + ":" + pageRank.get(i));
 
-                Property rank = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
+                Property rank = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
 
                     rank.add(new Double(pageRank.get(i)));
                     Logger.getLogger(ScalablePageRankPrestige.class.getName()).log(Level.FINE, Double.toString(pageRank.get(i)));

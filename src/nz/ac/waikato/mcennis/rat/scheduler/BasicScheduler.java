@@ -45,7 +45,7 @@ import nz.ac.waikato.mcennis.rat.graph.model.Model;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 
 import nz.ac.waikato.mcennis.rat.graph.query.GraphQuery;
-
+import org.dynamicfactory.descriptors.*;
 
 
 /**

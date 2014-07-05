@@ -14,6 +14,10 @@ import cern.colt.matrix.DoubleMatrix1D;
 import cern.colt.matrix.DoubleMatrix2D;
 
 import cern.colt.matrix.linalg.EigenvalueDecomposition;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -278,13 +282,13 @@ public class HITSPrestige extends ModelShell implements Algorithm {
 
 
             for (int i = 0; i < a.length; ++i) {
-                Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Hub"),Double.class);
+                Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Hub"),Double.class);
 
                 property.add(new Double(hubEigenVector.get(i)));
 
                 a[i].add(property);
 
-                property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Authority"),Double.class);
+                property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Authority"),Double.class);
 
                 property.add(new Double(authoritiesEigenVector.get(i)));
 
@@ -293,10 +297,10 @@ public class HITSPrestige extends ModelShell implements Algorithm {
             }
 
             if((Boolean)parameter.get("StoreMatrix").get()){
-                Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Hub"),DoubleMatrix2D.class);
+                Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Hub"),DoubleMatrix2D.class);
                 property.add(hubsEigen.getV());
                 g.add(property);
-                property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Hub"),DoubleMatrix2D.class);
+                property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Hub"),DoubleMatrix2D.class);
                 property.add(authoritiesEigen.getV());
                 g.add(property);
             }

@@ -10,6 +10,8 @@ import java.io.Writer;
 import java.util.Iterator;
 import java.util.List;
 
+import org.dynamicfactory.property.BasicProperty;
+import org.dynamicfactory.property.Property;
 import org.dynamicfactory.property.PropertyValueXMLFactory;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

@@ -25,6 +25,10 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
 
@@ -212,7 +216,7 @@ public class LastFMProfile extends Handler {
 
                         URL url = new URL(string);
 
-                        Property urlProperty = PropertyFactory.newInstance().create("LastFM Homepage",URL.class);
+                        Property urlProperty = PropertyFactory.newInstance().create("BasicProperty","LastFM Homepage",URL.class);
 
                         urlProperty.add(url);
 
@@ -234,7 +238,7 @@ public class LastFMProfile extends Handler {
 
                         int age = Integer.parseInt(new String(ch, start, length));
 
-                        Property urlProperty = PropertyFactory.newInstance().create("Age",Integer.class);
+                        Property urlProperty = PropertyFactory.newInstance().create("BasicProperty","Age",Integer.class);
 
                         urlProperty.add(new Integer(age));
 
@@ -256,7 +260,7 @@ public class LastFMProfile extends Handler {
 
                         URL url = new URL(string);
 
-                        Property urlProperty = PropertyFactory.newInstance().create("Avatar",URL.class);
+                        Property urlProperty = PropertyFactory.newInstance().create("BasicProperty","Avatar",URL.class);
 
                         urlProperty.add(url);
 
@@ -278,7 +282,7 @@ public class LastFMProfile extends Handler {
 
                         String string = new String(ch, start, length);
 
-                        Property urlProperty = PropertyFactory.newInstance().create("Country",String.class);
+                        Property urlProperty = PropertyFactory.newInstance().create("BasicProperty","Country",String.class);
 
                         urlProperty.add(string);
 
@@ -298,7 +302,7 @@ public class LastFMProfile extends Handler {
 
                         String string = new String(ch, start, length);
 
-                        Property urlProperty = PropertyFactory.newInstance().create("Gender",String.class);
+                        Property urlProperty = PropertyFactory.newInstance().create("BasicProperty","Gender",String.class);
 
                         urlProperty.add(string);
 
@@ -318,7 +322,7 @@ public class LastFMProfile extends Handler {
 
                         URL url = new URL(string);
 
-                        Property urlProperty = PropertyFactory.newInstance().create("Icon",URL.class);
+                        Property urlProperty = PropertyFactory.newInstance().create("BasicProperty","Icon",URL.class);
 
                         urlProperty.add(url);
 
@@ -340,7 +344,7 @@ public class LastFMProfile extends Handler {
 
                         String string = new String(ch, start, length);
 
-                        Property urlProperty = PropertyFactory.newInstance().create("MBox",String.class);
+                        Property urlProperty = PropertyFactory.newInstance().create("BasicProperty","MBox",String.class);
 
                         urlProperty.add(string);
 
@@ -360,7 +364,7 @@ public class LastFMProfile extends Handler {
 
                         int age = Integer.parseInt(new String(ch, start, length));
 
-                        Property urlProperty = PropertyFactory.newInstance().create("PlayCount",Integer.class);
+                        Property urlProperty = PropertyFactory.newInstance().create("BasicProperty","PlayCount",Integer.class);
 
                         urlProperty.add(new Integer(age));
 
@@ -378,7 +382,7 @@ public class LastFMProfile extends Handler {
 
                         String string = new String(ch, start, length);
 
-                        Property urlProperty = PropertyFactory.newInstance().create("name",String.class);
+                        Property urlProperty = PropertyFactory.newInstance().create("BasicProperty","name",String.class);
 
                         urlProperty.add(string);
 
@@ -440,7 +444,7 @@ public class LastFMProfile extends Handler {
 
                         int cluster = Integer.parseInt(attributes.getValue("cluster"));
 
-                        Property urlProperty = PropertyFactory.newInstance().create("Cluster ID",Integer.class);
+                        Property urlProperty = PropertyFactory.newInstance().create("BasicProperty","Cluster ID",Integer.class);
 
                         urlProperty.add(new Integer(cluster));
 
@@ -450,7 +454,7 @@ public class LastFMProfile extends Handler {
 
                         int id = Integer.parseInt(attributes.getValue("id"));
 
-                        urlProperty = PropertyFactory.newInstance().create("User ID",Integer.class);
+                        urlProperty = PropertyFactory.newInstance().create("BasicProperty","User ID",Integer.class);
 
                         urlProperty.add(new Integer(id));
 
@@ -502,7 +506,7 @@ public class LastFMProfile extends Handler {
 
                         int registered = Integer.parseInt(attributes.getValue("unixtime"));
 
-                        Property urlProperty = PropertyFactory.newInstance().create("Date Registered",Integer.class);
+                        Property urlProperty = PropertyFactory.newInstance().create("BasicProperty","Date Registered",Integer.class);
 
                         urlProperty.add(new Integer(registered));
 

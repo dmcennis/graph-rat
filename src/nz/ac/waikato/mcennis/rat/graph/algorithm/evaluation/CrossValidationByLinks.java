@@ -21,6 +21,10 @@ import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQueryFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByRelation;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 /**
  * Creates cross-validation splits across a link mode. 
@@ -90,7 +94,7 @@ public class CrossValidationByLinks extends ModelShell implements Algorithm {
             int split = (Integer)parameter.get("NumberOfFolds").get();
             while(original.hasNext()){
                 int assignment = (int) Math.floor(split*Math.random());
-                Property linkAssignment = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g,(String)parameter.get("DestinationProperty").get()),Integer.class);
+                Property linkAssignment = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g,(String)parameter.get("DestinationProperty").get()),Integer.class);
                 try {
                     linkAssignment.add(assignment);
                 } catch (InvalidObjectTypeException ex) {

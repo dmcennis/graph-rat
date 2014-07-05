@@ -5,7 +5,12 @@
 
 package nz.ac.waikato.mcennis.rat.reusablecores.instancefactory;
 
-import nz.ac.waikato.mcennis.rat.AbstractFactory;
+import org.dynamicfactory.AbstractFactory;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+
 import weka.core.Instance;
 
 /**

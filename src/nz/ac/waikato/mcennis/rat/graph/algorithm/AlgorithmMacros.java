@@ -15,6 +15,7 @@ import nz.ac.waikato.mcennis.rat.graph.query.ActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.actor.AndActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.link.AndLinkQuery;
+import org.dynamicfactory.descriptors.Properties;
 
 /**
  *

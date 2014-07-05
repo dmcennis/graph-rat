@@ -20,6 +20,10 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 
 import java.util.LinkedList;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import java.util.List;
 import java.util.Map;

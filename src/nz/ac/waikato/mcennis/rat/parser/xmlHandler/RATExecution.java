@@ -31,6 +31,10 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmFactory;
 
 import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
 
@@ -196,7 +200,7 @@ public class RATExecution extends Handler{
 
         }else if(localName.contentEquals("Scheduler")||qName.contentEquals("Scheduler")){
 
-             props = SchedulerFactory.newInstance().getParameter().duplicate();
+             props = SchedulerFactory.newInstance().getParameter();
 
            now = State.SCHEDULER;
 
@@ -300,7 +304,7 @@ public class RATExecution extends Handler{
 
                 try{
 
-                entry = PropertyFactory.newInstance().create(propertyName,Class.forName(className));
+                entry = PropertyFactory.newInstance().create("BasicProperty",propertyName,Class.forName(className));
 
                 }catch(ClassNotFoundException ex){
 

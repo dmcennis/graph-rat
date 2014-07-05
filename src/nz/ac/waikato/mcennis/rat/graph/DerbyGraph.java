@@ -33,6 +33,10 @@ import nz.ac.waikato.mcennis.rat.graph.path.Path;
 import nz.ac.waikato.mcennis.rat.graph.path.PathFactory;
 import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
 import nz.ac.waikato.mcennis.rat.graph.path.PathSetFactory;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 import org.dynamicfactory.property.PropertyValueDatabaseFactory;
 import org.dynamicfactory.property.database.PropertyValueDB;
 
@@ -1704,7 +1708,7 @@ public class DerbyGraph extends ModelShell implements Graph, Listener, Comparabl
                 propertyID = rs.getInt("Property.id");
                 type = rs.getString("Property.type");
                 PropertyValueDB factory = PropertyValueDatabaseFactory.newInstance().create(className);
-                Property prop = PropertyFactory.newInstance().create(type, factory.getValueClass());
+                Property prop = PropertyFactory.newInstance().create("BasicPropertry",type, factory.getValueClass());
                 rs.close();
                 getPropertyValuesStatement.clearParameters();
                 getPropertyValuesStatement.setInt(1, propertyID);
@@ -1739,7 +1743,7 @@ public class DerbyGraph extends ModelShell implements Graph, Listener, Comparabl
                 className = rs.getString("Property.class");
                 propertyID = rs.getInt("Property.id");
                 PropertyValueDB factory = PropertyValueDatabaseFactory.newInstance().create(className);
-                ret = PropertyFactory.newInstance().create(type, factory.getValueClass());
+                ret = PropertyFactory.newInstance().create(type, Integer.toString(propertyID), factory.getValueClass());
                 rs.close();
                 getPropertyValuesStatement.clearParameters();
                 getPropertyValuesStatement.setInt(1, propertyID);

@@ -35,6 +35,9 @@ import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
 
 import nz.ac.waikato.mcennis.rat.parser.xmlHandler.Handler;
 
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 import org.xml.sax.Attributes;
 
 import org.xml.sax.SAXException;
@@ -259,7 +262,7 @@ public class ParseClassLabel extends Handler {
 
             if (paper != null) {
 
-                Property property = PropertyFactory.newInstance().create("cluster",String.class);
+                Property property = PropertyFactory.newInstance().create("BasicProperty","cluster",String.class);
 
                 try {
 

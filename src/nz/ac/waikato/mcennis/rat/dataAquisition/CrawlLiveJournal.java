@@ -51,6 +51,8 @@ import org.dynamicfactory.descriptors.IODescriptor;
 
 
 import org.dynamicfactory.descriptors.IODescriptor.Type;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
 
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 

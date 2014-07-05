@@ -7,7 +7,11 @@ package nz.ac.waikato.mcennis.rat.graph.query;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.AbstractFactory;
+import org.dynamicfactory.AbstractFactory;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 import nz.ac.waikato.mcennis.rat.graph.query.graph.GraphByLink;
 import nz.ac.waikato.mcennis.rat.graph.query.graph.GraphByActor;
 import nz.ac.waikato.mcennis.rat.graph.query.graph.GraphByProperty;

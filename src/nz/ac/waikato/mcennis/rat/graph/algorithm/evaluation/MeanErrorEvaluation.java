@@ -14,6 +14,10 @@ import java.util.logging.Logger;
 
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
@@ -364,7 +368,7 @@ public class MeanErrorEvaluation extends ModelShell implements Algorithm {
 
                     }
 
-                    Property precisionProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean Error"),Double.class);
+                    Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean Error"),Double.class);
                     precisionProperty.add(new Double(precision));
                     a.get(0).add(precisionProperty);
                     a.clear();
@@ -389,11 +393,11 @@ public class MeanErrorEvaluation extends ModelShell implements Algorithm {
             double sd = ((n * precisionSquaredSum) - precisionSum * precisionSum) / n;
             double mean = precisionSum / n;
 
-            Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean Error Standard Deviation"),Double.class);
+            Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean Error Standard Deviation"),Double.class);
             property.add(new Double(sd));
             g.add(property);
 
-            property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean Error Mean"),Double.class);
+            property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean Error Mean"),Double.class);
             property.add(new Double(mean));
             g.add(property);
             Logger.getLogger(MeanErrorEvaluation.class.getName()).log(Level.INFO,"Mean Error\t" + mean);
@@ -484,7 +488,7 @@ public class MeanErrorEvaluation extends ModelShell implements Algorithm {
 
                     }
 
-                    Property precisionProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean Squared Error"),Double.class);
+                    Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean Squared Error"),Double.class);
                     precisionProperty.add(new Double(precision));
                     a.get(0).add(precisionProperty);
                     a.clear();
@@ -509,11 +513,11 @@ public class MeanErrorEvaluation extends ModelShell implements Algorithm {
             double sd = ((n * precisionSquaredSum) - precisionSum * precisionSum) / n;
             double mean = precisionSum / n;
 
-            Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean Squared Error Standard Deviation"),Double.class);
+            Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean Squared Error Standard Deviation"),Double.class);
             property.add(new Double(sd));
             g.add(property);
 
-            property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean Error Mean"),Double.class);
+            property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean Error Mean"),Double.class);
             property.add(new Double(mean));
             g.add(property);
             Logger.getLogger(MeanErrorEvaluation.class.getName()).log(Level.INFO,"Mean Squared Error\t" + mean);
@@ -601,7 +605,7 @@ public class MeanErrorEvaluation extends ModelShell implements Algorithm {
 
                     }
 
-                    Property precisionProperty = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Root Mean Squared Error"),Double.class);
+                    Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Root Mean Squared Error"),Double.class);
                     precisionProperty.add(new Double(precision));
                     a.get(0).add(precisionProperty);
                     a.clear();
@@ -626,11 +630,11 @@ public class MeanErrorEvaluation extends ModelShell implements Algorithm {
             double sd = ((n * precisionSquaredSum) - precisionSum * precisionSum) / n;
             double mean = precisionSum / n;
 
-            Property property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Root Mean Squared Error Standard Deviation"),Double.class);
+            Property property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Root Mean Squared Error Standard Deviation"),Double.class);
             property.add(new Double(sd));
             g.add(property);
 
-            property = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Root Mean Error Mean"),Double.class);
+            property = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Root Mean Error Mean"),Double.class);
             property.add(new Double(mean));
             g.add(property);
             Logger.getLogger(MeanErrorEvaluation.class.getName()).log(Level.INFO,"Mean Squared Error\t" + mean);

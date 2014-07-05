@@ -13,6 +13,10 @@ package nz.ac.waikato.mcennis.rat.graph.algorithm.clustering;
 import java.util.HashSet;
 
 import java.util.Iterator;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import java.util.LinkedList;
 import java.util.List;

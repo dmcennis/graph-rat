@@ -9,6 +9,9 @@
 package nz.ac.waikato.mcennis.rat.gui;
 
 
+import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.Parameter;
+
 import java.util.Iterator;
 import java.util.List;
 

@@ -18,6 +18,7 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery.LinkEnd;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQueryFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByRelation;
+import org.dynamicfactory.property.PropertyFactory;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 

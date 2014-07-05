@@ -16,7 +16,7 @@
 
 package org.dynamicfactory.descriptors;
 
-import nz.ac.waikato.mcennis.rat.AbstractFactory;
+import org.dynamicfactory.AbstractFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.Query;
 
 

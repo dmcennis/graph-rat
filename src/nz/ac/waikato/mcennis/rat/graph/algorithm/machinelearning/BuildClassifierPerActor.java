@@ -14,9 +14,8 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;
-import org.dynamicfactory.descriptors.IODescriptor;
+import org.dynamicfactory.descriptors.*;
 import org.dynamicfactory.descriptors.IODescriptor.Type;
-import org.dynamicfactory.descriptors.IODescriptorFactory;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQuery;
@@ -26,6 +25,8 @@ import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery.LinkEnd;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQueryFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.actor.ActorByMode;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByRelation;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 import weka.classifiers.Classifier;
 import weka.core.Attribute;
 import weka.core.FastVector;
@@ -213,12 +214,12 @@ public class BuildClassifierPerActor extends ModelShell implements Algorithm {
             try {
                 classifier.buildClassifier(dataSet);
                 Property classifierProperty = PropertyFactory.newInstance().create(
-                    AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("ClassifierProperty").get()),weka.classifiers.Classifier.class);
+                    AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("ClassifierProperty").get()),(String)parameter.get("ClassifierProperty").getType(),weka.classifiers.Classifier.class);
                 classifierProperty.add(classifier);
                 artists.get(i).add(classifierProperty);
 
                 Property instancesProperty = PropertyFactory.newInstance().create(
-                    AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("InstancesProperty").get()),weka.core.Instances.class);
+                    AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("InstancesProperty").get()),(String)parameter.get("InstancesProperty").getType(),weka.core.Instances.class);
                 instancesProperty.add(classifier);
                 artists.get(i).add(instancesProperty);
             } catch (Exception ex) {

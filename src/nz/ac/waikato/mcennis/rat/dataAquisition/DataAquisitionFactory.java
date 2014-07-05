@@ -28,7 +28,8 @@ import nz.ac.waikato.bibliography.LoadBibliographyAndClass;
 
 import nz.ac.waikato.bibliography.LoadBibliographyXML;
 
-import nz.ac.waikato.mcennis.rat.AbstractFactory;
+import org.dynamicfactory.AbstractFactory;
+import org.dynamicfactory.descriptors.*;
 
 
 /**
@@ -170,6 +171,12 @@ public class DataAquisitionFactory extends AbstractFactory<DataAquisition>{
      * @return DataAquisition object requested
 
      */
+       @Override
+       public DataAquisition create(Properties props) {
+
+           return create(null,props);
+
+       }
 
 
 
@@ -249,13 +256,6 @@ public class DataAquisitionFactory extends AbstractFactory<DataAquisition>{
 
 
 
-    @Override
-
-    public DataAquisition create(Properties props) {
-
-        return create(null,props);
-
-    }
 
 
 

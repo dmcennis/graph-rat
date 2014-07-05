@@ -19,6 +19,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.XMLParserObject;
 import nz.ac.waikato.mcennis.rat.graph.MemGraph;
+import org.dynamicfactory.property.Property;
 import org.dynamicfactory.property.PropertyXMLFactory;
 import org.dynamicfactory.property.xml.PropertyXML;
 import org.xml.sax.Attributes;

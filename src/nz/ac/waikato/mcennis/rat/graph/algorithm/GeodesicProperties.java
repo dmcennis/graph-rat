@@ -16,6 +16,10 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import org.dynamicfactory.descriptors.IODescriptorFactory;
 import org.dynamicfactory.descriptors.IODescriptor;
 
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
 
@@ -149,7 +153,7 @@ public class GeodesicProperties extends ModelShell implements Algorithm {
                     }
                 }
 
-                eccentricity = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" In"),Double.class);
+                eccentricity = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" In"),Double.class);
 
                 eccentricity.add(new Double(cost));
 
@@ -192,7 +196,7 @@ public class GeodesicProperties extends ModelShell implements Algorithm {
                     }
                 }
 
-                Property eccentricity = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Out"),Double.class);
+                Property eccentricity = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Out"),Double.class);
 
                 eccentricity.add(new Double(cost));
 
@@ -226,7 +230,7 @@ public class GeodesicProperties extends ModelShell implements Algorithm {
                 }
             }
 
-            Property diameterProp = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
+            Property diameterProp = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()),Double.class);
 
             diameterProp.add(new Double(diameter));
 

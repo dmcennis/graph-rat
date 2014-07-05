@@ -21,6 +21,10 @@ import org.dynamicfactory.descriptors.IODescriptor.Type;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQueryFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.actor.ActorByMode;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
 
 /**
  *
@@ -90,7 +94,7 @@ public class CrossValidationByActor extends ModelShell implements Algorithm {
             int split = (Integer)parameter.get("NumberOfFolds").get();
             while(original.hasNext()){
                 int assignment = (int) Math.floor(split*Math.random());
-                Property linkAssignment = PropertyFactory.newInstance().create(AlgorithmMacros.getDestID(parameter, g,(String)parameter.get("DestinationProperty").get()),Integer.class);
+                Property linkAssignment = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g,(String)parameter.get("DestinationProperty").get()),Integer.class);
                 try {
                     linkAssignment.add(assignment);
                 } catch (InvalidObjectTypeException ex) {

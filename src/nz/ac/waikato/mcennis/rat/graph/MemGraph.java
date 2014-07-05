@@ -20,6 +20,8 @@ import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
 import nz.ac.waikato.mcennis.rat.graph.path.Path;
+import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.property.Property;
 import org.dynamicfactory.property.PropertyXMLFactory;
 import org.dynamicfactory.property.xml.PropertyXML;
 
