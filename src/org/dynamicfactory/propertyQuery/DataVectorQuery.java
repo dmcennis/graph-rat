@@ -3,7 +3,7 @@
  * Created Jan 5, 2009 - 11:47:45 PM
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.query.property;
+package org.dynamicfactory.propertyQuery;
 
 import java.io.Reader;
 import java.io.Writer;

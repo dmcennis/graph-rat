@@ -3,13 +3,11 @@
  * Created Jan 12, 2009 - 8:52:45 PM
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.query.property.xml;
+package org.dynamicfactory.propertyQuery;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.query.property.NumericQuery;
-import nz.ac.waikato.mcennis.rat.graph.query.property.PropertyQuery;
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 

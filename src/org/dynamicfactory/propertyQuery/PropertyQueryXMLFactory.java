@@ -3,7 +3,7 @@
  * Created Jan 26, 2009 - 11:10:44 PM
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.query.property.xml;
+package org.dynamicfactory.propertyQuery;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

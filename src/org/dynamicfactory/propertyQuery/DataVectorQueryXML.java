@@ -3,12 +3,11 @@
  * Created Jan 12, 2009 - 8:13:15 PM
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.query.property.xml;
+package org.dynamicfactory.propertyQuery;
 
 import nz.ac.waikato.mcennis.rat.reusablecores.datavector.DataVector;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.xml.DistanceXML;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.xml.DistanceXMLFactory;
-import nz.ac.waikato.mcennis.rat.graph.query.property.DataVectorQuery;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
