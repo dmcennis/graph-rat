@@ -20,9 +20,6 @@ import junit.framework.TestCase;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
-import org.dynamicfactory.property.Property;
-
-
 
 /**
 

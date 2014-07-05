@@ -11,7 +11,6 @@ import java.util.Collection;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
-import org.dynamicfactory.property.Property;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
 import nz.ac.waikato.mcennis.rat.parser.ParsedObject;

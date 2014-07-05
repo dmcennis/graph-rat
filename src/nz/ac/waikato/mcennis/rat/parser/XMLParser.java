@@ -25,10 +25,6 @@ import nz.ac.waikato.mcennis.rat.crawler.Crawler;
 
 import nz.ac.waikato.mcennis.rat.parser.xmlHandler.Handler;
 
-import org.dynamicfactory.descriptors.Parameter;
-
-import org.dynamicfactory.descriptors.Properties;
-
 
 /**
 

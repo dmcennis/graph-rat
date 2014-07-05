@@ -23,7 +23,6 @@ import junit.framework.*;
 import java.io.IOException;
 
 
-import org.dynamicfactory.descriptors.PropertiesFactory;
 import nz.ac.waikato.mcennis.rat.parser.Parser;
 
 import nz.ac.waikato.mcennis.rat.parser.NullParser;

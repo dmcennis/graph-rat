@@ -10,8 +10,6 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
-import org.dynamicfactory.property.Property;
-import org.dynamicfactory.property.PropertyFactory;
 
 /**
  *

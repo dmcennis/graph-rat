@@ -8,9 +8,6 @@ package org.dynamicfactory.descriptors;
 import java.util.LinkedList;
 import java.util.List;
 import junit.framework.TestCase;
-import org.dynamicfactory.property.InvalidObjectTypeException;
-import org.dynamicfactory.property.Property;
-import org.dynamicfactory.property.PropertyFactory;
 
 /**
  *

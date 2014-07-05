@@ -20,9 +20,6 @@ package nz.ac.waikato.mcennis.rat.graph.actor;
 
 import java.util.List;
 
-import org.dynamicfactory.property.Property;
-import org.dynamicfactory.descriptors.Properties;
-
 
 /**
 

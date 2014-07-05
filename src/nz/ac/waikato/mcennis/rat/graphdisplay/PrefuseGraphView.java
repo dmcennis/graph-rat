@@ -73,7 +73,6 @@ import nz.ac.waikato.mcennis.rat.graph.MemGraph;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
-import org.dynamicfactory.descriptors.Properties;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
 import prefuse.Display;

@@ -8,13 +8,12 @@ package nz.ac.waikato.mcennis.rat.graph.algorithm.similarity;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import org.dynamicfactory.descriptors.Properties;
+
 import junit.framework.TestCase;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.MemGraph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.actor.BasicUser;
-import org.dynamicfactory.descriptors.PropertiesFactory;
 import nz.ac.waikato.mcennis.rat.reusablecores.datavector.MapDataVector;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.CosineDistance;
 import nz.ac.waikato.mcennis.rat.graph.link.BasicUserLink;

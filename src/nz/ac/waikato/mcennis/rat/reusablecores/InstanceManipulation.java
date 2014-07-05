@@ -10,7 +10,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.TreeMap;
 import nz.ac.waikato.mcennis.rat.reusablecores.instancefactory.InstanceFactory;
-import org.dynamicfactory.property.Property;
 import nz.ac.waikato.mcennis.rat.reusablecores.instancefactory.InstanceFactoryFactory;
 import weka.core.Attribute;
 import weka.core.FastVector;

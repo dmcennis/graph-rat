@@ -10,7 +10,6 @@ import junit.framework.TestCase;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
-import org.dynamicfactory.descriptors.Parameter;
 import org.dynamicfactory.descriptors.SettableParameter;
 import weka.core.Instances;
 

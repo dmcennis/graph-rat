@@ -41,8 +41,6 @@ import javax.swing.JTextField;
 import nz.ac.waikato.mcennis.rat.Component;
 
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
-import org.dynamicfactory.descriptors.Properties;
-
 
 
 /**

@@ -39,15 +39,6 @@ import java.util.List;
 import junit.framework.*;
 
 
-
-
-import org.dynamicfactory.descriptors.Properties;
-
-
-
-
-
-
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
 
@@ -58,16 +49,6 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
 
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
-
-
-import org.dynamicfactory.descriptors.PropertiesFactory;
-import org.dynamicfactory.property.Property;
-
-
-import org.dynamicfactory.property.PropertyFactory;
-
-
-
 
 
 /**

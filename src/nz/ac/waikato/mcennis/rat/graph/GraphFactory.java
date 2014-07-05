@@ -14,12 +14,6 @@ import java.util.LinkedList;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 import nz.ac.waikato.mcennis.rat.AbstractFactory;
-import org.dynamicfactory.descriptors.Parameter;
-import org.dynamicfactory.descriptors.ParameterFactory;
-import org.dynamicfactory.descriptors.ParameterInternal;
-import org.dynamicfactory.descriptors.Properties;
-import org.dynamicfactory.descriptors.SyntaxCheckerFactory;
-import org.dynamicfactory.descriptors.SyntaxObject;
 
 /**
  * Create a Graph object of the given type with the given arguments

@@ -32,20 +32,6 @@ import java.util.logging.Level;
 
 import java.util.logging.Logger;
 
-import org.dynamicfactory.descriptors.Properties;
-
-import org.dynamicfactory.descriptors.PropertiesInternal;
-
-import org.dynamicfactory.descriptors.PropertiesFactory;
-
-import org.dynamicfactory.descriptors.ParameterInternal;
-
-import org.dynamicfactory.descriptors.ParameterFactory;
-
-import org.dynamicfactory.descriptors.SyntaxObject;
-
-import org.dynamicfactory.descriptors.SyntaxCheckerFactory;
-
 import nz.ac.waikato.mcennis.rat.dataAquisition.DataAquisition;
 
 import nz.ac.waikato.mcennis.rat.graph.Graph;

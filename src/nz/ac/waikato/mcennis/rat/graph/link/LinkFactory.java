@@ -21,13 +21,6 @@ package nz.ac.waikato.mcennis.rat.graph.link;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.AbstractFactory;
-import org.dynamicfactory.descriptors.Parameter;
-import org.dynamicfactory.descriptors.ParameterFactory;
-import org.dynamicfactory.descriptors.ParameterInternal;
-import org.dynamicfactory.descriptors.Properties;
-import org.dynamicfactory.descriptors.SyntaxCheckerFactory;
-import org.dynamicfactory.descriptors.SyntaxObject;
-
 
 
 /**

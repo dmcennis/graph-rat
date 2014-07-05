@@ -12,11 +12,6 @@ import java.sql.SQLException;
 
 import java.sql.Statement;
 
-import org.dynamicfactory.descriptors.ParameterFactory;
-import org.dynamicfactory.descriptors.ParameterInternal;
-import org.dynamicfactory.descriptors.SyntaxObject;
-import org.dynamicfactory.descriptors.SyntaxCheckerFactory;
-
 /**
  * Sub-class of the DerbyGraph Object to work with postgresql databases
  *

@@ -11,12 +11,8 @@ import java.util.List;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.model.Model;
-import org.dynamicfactory.property.Property;
 import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
 import java.util.Iterator;
-
-import org.dynamicfactory.descriptors.Parameter;
-import org.dynamicfactory.descriptors.Properties;
 
 /**
  * Interface representing a social network.  Users are the individuals consuming

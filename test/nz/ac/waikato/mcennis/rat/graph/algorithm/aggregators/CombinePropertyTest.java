@@ -6,11 +6,10 @@
 package nz.ac.waikato.mcennis.rat.graph.algorithm.aggregators;
 
 import java.util.List;
-import org.dynamicfactory.descriptors.Properties;
+
 import junit.framework.TestCase;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import org.dynamicfactory.descriptors.IODescriptor;
-import org.dynamicfactory.descriptors.Parameter;
 
 /**
  *

@@ -22,21 +22,11 @@ import java.util.TreeSet;
 import java.util.regex.Pattern;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
-import org.dynamicfactory.descriptors.Parameter;
-import org.dynamicfactory.descriptors.ParameterInternal;
-import org.dynamicfactory.descriptors.ParameterFactory;
-import org.dynamicfactory.descriptors.Properties;
-import org.dynamicfactory.descriptors.PropertiesInternal;
-import org.dynamicfactory.descriptors.PropertiesFactory;
-import org.dynamicfactory.descriptors.SyntaxObject;
-import org.dynamicfactory.descriptors.SyntaxCheckerFactory;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 
 import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
-
-import org.dynamicfactory.property.Property;
 
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.Query;

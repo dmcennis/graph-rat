@@ -34,12 +34,6 @@ package nz.ac.waikato.mcennis.rat.graph.algorithm.descriptors;
 import junit.framework.*;
 
 
-import org.dynamicfactory.descriptors.BasicParameter;
-
-
-
-
-
 /**
 
 

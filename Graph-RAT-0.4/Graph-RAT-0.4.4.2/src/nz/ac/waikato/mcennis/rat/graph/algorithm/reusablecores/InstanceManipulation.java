@@ -11,7 +11,6 @@ import java.util.LinkedList;
 import java.util.TreeMap;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.instanceFactories.InstanceFactory;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.instanceFactories.InstanceFactoryRegistry;
-import org.dynamicfactory.property.Property;
 import weka.core.Attribute;
 import weka.core.FastVector;
 import weka.core.Instance;

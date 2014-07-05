@@ -14,10 +14,7 @@ import java.util.LinkedList;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
-import org.dynamicfactory.descriptors.Properties;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
-
-import org.dynamicfactory.property.Property;
 
 /**
  * Class providing a base implementation of the Link Interface

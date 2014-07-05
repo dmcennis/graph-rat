@@ -8,7 +8,6 @@ package nz.ac.waikato.mcennis.rat.graph.algorithm.prestige;
 import junit.framework.TestCase;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import org.dynamicfactory.descriptors.OutputDescriptor;
-import org.dynamicfactory.descriptors.ParameterInternal;
 import nz.ac.waikato.mcennis.rat.graph.path.PathNode;
 
 /**

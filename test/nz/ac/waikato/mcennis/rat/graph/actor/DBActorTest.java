@@ -33,12 +33,7 @@ import java.util.List;
 import nz.ac.waikato.mcennis.rat.graph.DerbyGraph;
 
 
-import org.dynamicfactory.descriptors.PropertiesFactory;
 import nz.ac.waikato.mcennis.rat.graph.model.Model;
-import org.dynamicfactory.property.Property;
-
-import org.dynamicfactory.property.PropertyFactory;
-
 
 
 /**

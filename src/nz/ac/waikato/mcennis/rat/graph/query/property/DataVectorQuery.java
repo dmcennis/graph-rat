@@ -11,7 +11,6 @@ import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.reusablecores.InstanceManipulation;
-import org.dynamicfactory.property.Property;
 import nz.ac.waikato.mcennis.rat.reusablecores.datavector.DataVector;
 import nz.ac.waikato.mcennis.rat.reusablecores.datavector.DoubleArrayDataVector;
 import nz.ac.waikato.mcennis.rat.reusablecores.datavector.InstanceDataVector;

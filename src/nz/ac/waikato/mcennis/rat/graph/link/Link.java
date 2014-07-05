@@ -10,10 +10,7 @@ package nz.ac.waikato.mcennis.rat.graph.link;
 import java.util.List;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
-import org.dynamicfactory.descriptors.Properties;
 import nz.ac.waikato.mcennis.rat.graph.model.Model;
-
-import org.dynamicfactory.property.Property;
 
 /**
  * Interface for describing a link (arc, edge) in a graph.

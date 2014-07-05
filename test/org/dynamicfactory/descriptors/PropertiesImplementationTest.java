@@ -9,8 +9,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import junit.framework.TestCase;
-import org.dynamicfactory.property.Property;
-import org.dynamicfactory.property.PropertyFactory;
 
 /**
  *

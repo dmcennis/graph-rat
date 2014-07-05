@@ -17,8 +17,6 @@ import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
-import org.dynamicfactory.property.Property;
-import org.dynamicfactory.property.PropertyFactory;
 import weka.core.Attribute;
 import weka.core.FastVector;
 import weka.core.Instance;

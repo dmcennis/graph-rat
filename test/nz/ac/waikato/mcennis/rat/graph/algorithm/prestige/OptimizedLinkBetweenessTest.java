@@ -19,8 +19,6 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 import org.dynamicfactory.descriptors.IODescriptor;
 
-import org.dynamicfactory.descriptors.ParameterInternal;
-
 import nz.ac.waikato.mcennis.rat.graph.path.PathNode;
 
 

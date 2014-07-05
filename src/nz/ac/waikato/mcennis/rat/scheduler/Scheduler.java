@@ -12,7 +12,6 @@ import java.io.InputStream;
 import nz.ac.waikato.mcennis.rat.dataAquisition.DataAquisition;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
-import org.dynamicfactory.descriptors.Properties;
 import nz.ac.waikato.mcennis.rat.graph.model.Listener;
 import nz.ac.waikato.mcennis.rat.graph.model.Model;
 import nz.ac.waikato.mcennis.rat.graph.query.GraphQuery;

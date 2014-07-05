@@ -18,7 +18,6 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.query.property.PropertyQuery;
-import org.dynamicfactory.property.Property;
 import nz.ac.waikato.mcennis.rat.graph.query.property.NullPropertyQuery;
 import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQuery;

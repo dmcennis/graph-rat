@@ -18,7 +18,6 @@ import java.util.regex.Pattern;
 import nz.ac.waikato.mcennis.rat.dataAquisition.DataAquisition;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
-import org.dynamicfactory.descriptors.Parameter;
 import nz.ac.waikato.mcennis.rat.graph.model.Listener;
 import nz.ac.waikato.mcennis.rat.graph.model.Model;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;

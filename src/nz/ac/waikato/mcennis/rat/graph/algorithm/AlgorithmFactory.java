@@ -47,12 +47,6 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.similarity.SimilarityByProperty
 import nz.ac.waikato.mcennis.rat.graph.algorithm.visual.BasicDisplayGraph;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.visual.ColoredByPropertyGraph;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.visual.DisplayAll;
-import org.dynamicfactory.descriptors.ParameterInternal;
-import org.dynamicfactory.descriptors.Parameter;
-import org.dynamicfactory.descriptors.ParameterFactory;
-import org.dynamicfactory.descriptors.Properties;
-import org.dynamicfactory.descriptors.SyntaxCheckerFactory;
-import org.dynamicfactory.descriptors.SyntaxObject;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery;
 

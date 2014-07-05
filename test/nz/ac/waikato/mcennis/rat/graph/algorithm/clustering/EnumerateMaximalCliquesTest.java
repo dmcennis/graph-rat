@@ -25,10 +25,6 @@ import java.util.List;
 import junit.framework.*;
 
 
-
-
-import org.dynamicfactory.descriptors.Properties;
-
 import nz.ac.waikato.mcennis.rat.graph.Clique;
 
 import nz.ac.waikato.mcennis.rat.graph.Graph;
@@ -43,13 +39,7 @@ import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
 
 
-import org.dynamicfactory.property.Property;
-
-import org.dynamicfactory.property.PropertyFactory;
-
 import org.dynamicfactory.descriptors.IODescriptor;
-import org.dynamicfactory.descriptors.PropertiesFactory;
-
 
 
 /**

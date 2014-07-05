@@ -8,7 +8,6 @@ package nz.ac.waikato.mcennis.rat.graph.query.property;
 import java.io.Reader;
 import java.io.Writer;
 
-import org.dynamicfactory.property.Property;
 import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

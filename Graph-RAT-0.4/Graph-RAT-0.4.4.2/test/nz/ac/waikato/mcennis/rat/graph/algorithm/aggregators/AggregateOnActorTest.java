@@ -15,8 +15,6 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator.SumAgg
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
-import org.dynamicfactory.property.Property;
-import org.dynamicfactory.property.PropertyFactory;
 import weka.core.Attribute;
 import weka.core.FastVector;
 import weka.core.Instance;

@@ -30,12 +30,6 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmFactory;
 
-import org.dynamicfactory.descriptors.Properties;
-
-import org.dynamicfactory.property.Property;
-
-import org.dynamicfactory.property.PropertyFactory;
-
 import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
 
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;

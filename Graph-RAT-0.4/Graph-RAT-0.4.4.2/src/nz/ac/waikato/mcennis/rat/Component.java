@@ -11,7 +11,6 @@ package nz.ac.waikato.mcennis.rat;
 import java.util.Properties;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
-import org.dynamicfactory.descriptors.Parameter;
 import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.model.Model;
 

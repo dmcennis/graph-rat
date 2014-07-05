@@ -20,8 +20,6 @@ import java.util.logging.Logger;
 
 import nz.ac.waikato.mcennis.rat.crawler.Crawler;
 
-import org.dynamicfactory.property.InvalidObjectTypeException;
-
 import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
 
 import org.xml.sax.Attributes;
@@ -38,22 +36,9 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 
-import org.dynamicfactory.property.Property;
-
-import org.dynamicfactory.property.PropertyFactory;
-
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
-
-import org.dynamicfactory.descriptors.ParameterInternal;
-
-import org.dynamicfactory.descriptors.ParameterFactory;
-
-import org.dynamicfactory.descriptors.SyntaxObject;
-
-import org.dynamicfactory.descriptors.SyntaxCheckerFactory;
-
 
 
 import nz.ac.waikato.mcennis.rat.crawler.WebCrawler;

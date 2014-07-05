@@ -15,8 +15,6 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
-import org.dynamicfactory.property.Property;
-
 /**
  * JFrame object for displaying the contents of strings from a property
  * @author Daniel McEnnis

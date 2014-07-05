@@ -11,7 +11,6 @@ package nz.ac.waikato.mcennis.rat.graph.algorithm.clustering;
 
 
 import java.util.List;
-import org.dynamicfactory.descriptors.Properties;
 
 import junit.framework.TestCase;
 
@@ -23,7 +22,6 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 
-import org.dynamicfactory.descriptors.PropertiesFactory;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;

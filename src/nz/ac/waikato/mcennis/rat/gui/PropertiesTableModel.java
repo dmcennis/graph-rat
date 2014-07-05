@@ -14,10 +14,6 @@ import java.util.List;
 
 import javax.swing.table.DefaultTableModel;
 
-import org.dynamicfactory.descriptors.Parameter;
-import org.dynamicfactory.descriptors.Properties;
-
-
 
 /**
 

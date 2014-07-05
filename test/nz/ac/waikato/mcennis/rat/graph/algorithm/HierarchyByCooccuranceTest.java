@@ -15,8 +15,6 @@ package nz.ac.waikato.mcennis.rat.graph.algorithm;
 import java.util.List;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.similarity.HierarchyByCooccurance;
 
-import org.dynamicfactory.descriptors.Properties;
-
 import junit.framework.TestCase;
 
 
@@ -29,9 +27,6 @@ import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.collaborativefiltering.AssociativeMining;
 
 
-
-
-import org.dynamicfactory.descriptors.PropertiesFactory;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;

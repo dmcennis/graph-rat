@@ -15,13 +15,10 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.Distance
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
-import org.dynamicfactory.descriptors.Parameter;
-import org.dynamicfactory.descriptors.ParameterInternal;
 import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
-import org.dynamicfactory.property.Property;
 
 /**
  * Calculates similarity between actors via a double[] describing a vector property

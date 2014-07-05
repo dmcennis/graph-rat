@@ -14,8 +14,6 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.CosineDi
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
-import org.dynamicfactory.property.Property;
-import org.dynamicfactory.property.PropertyFactory;
 import nz.ac.waikato.mcennis.rat.util.Duples;
 
 /**

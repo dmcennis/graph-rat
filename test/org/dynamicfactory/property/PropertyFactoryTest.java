@@ -6,9 +6,6 @@
 package org.dynamicfactory.property;
 
 import junit.framework.TestCase;
-import org.dynamicfactory.descriptors.Parameter;
-import org.dynamicfactory.descriptors.Properties;
-import org.dynamicfactory.descriptors.PropertiesFactory;
 
 /**
  *

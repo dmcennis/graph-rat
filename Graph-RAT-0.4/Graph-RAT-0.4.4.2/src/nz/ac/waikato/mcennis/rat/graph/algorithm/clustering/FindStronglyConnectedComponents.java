@@ -10,8 +10,6 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.FindStronglyConne
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
-import org.dynamicfactory.descriptors.Parameter;
-import org.dynamicfactory.descriptors.ParameterInternal;
 import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.model.Listener;
 import nz.ac.waikato.mcennis.rat.graph.model.Model;

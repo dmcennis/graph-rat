@@ -6,15 +6,12 @@
 package nz.ac.waikato.mcennis.rat.graph.algorithm.similarity;
 
 import java.util.List;
-import org.dynamicfactory.descriptors.Properties;
+
 import junit.framework.TestCase;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.MemGraph;
-import org.dynamicfactory.descriptors.PropertiesFactory;
 import nz.ac.waikato.mcennis.rat.reusablecores.datavector.DoubleArrayDataVector;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.CosineDistance;
-import org.dynamicfactory.property.Property;
-import org.dynamicfactory.property.PropertyFactory;
 import nz.ac.waikato.mcennis.rat.util.Duples;
 
 /**

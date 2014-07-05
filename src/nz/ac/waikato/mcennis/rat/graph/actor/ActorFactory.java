@@ -14,12 +14,6 @@
 package nz.ac.waikato.mcennis.rat.graph.actor;
 
 import nz.ac.waikato.mcennis.rat.AbstractFactory;
-import org.dynamicfactory.descriptors.Parameter;
-import org.dynamicfactory.descriptors.ParameterFactory;
-import org.dynamicfactory.descriptors.ParameterInternal;
-import org.dynamicfactory.descriptors.Properties;
-import org.dynamicfactory.descriptors.SyntaxCheckerFactory;
-import org.dynamicfactory.descriptors.SyntaxObject;
 
 /**
 

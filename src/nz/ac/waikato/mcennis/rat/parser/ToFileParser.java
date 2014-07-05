@@ -25,20 +25,6 @@ import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.crawler.Crawler;
 
 
-
-
-
-
-import org.dynamicfactory.descriptors.ParameterInternal;
-
-import org.dynamicfactory.descriptors.ParameterFactory;
-
-import org.dynamicfactory.descriptors.SyntaxObject;
-
-import org.dynamicfactory.descriptors.SyntaxCheckerFactory;
-
-
-
 /**
 
  * Class for writing the contents of a data stream to a file.  Designed to be 

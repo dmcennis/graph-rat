@@ -22,10 +22,6 @@ import java.util.List;
 
 import org.dynamicfactory.descriptors.IODescriptor;
 
-import org.dynamicfactory.descriptors.Parameter;
-
-import org.dynamicfactory.descriptors.Properties;
-
 import nz.ac.waikato.mcennis.rat.graph.model.Model;
 
 

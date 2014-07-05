@@ -31,12 +31,6 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.GraphFactory;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
-import org.dynamicfactory.property.InvalidObjectTypeException;
-
-import org.dynamicfactory.property.Property;
-
-import org.dynamicfactory.property.PropertyFactory;
-
 import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
 
 import nz.ac.waikato.mcennis.rat.parser.xmlHandler.Handler;

@@ -11,7 +11,6 @@ import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.link.BasicUserLink;
-import org.dynamicfactory.property.Property;
 
 /**
  *

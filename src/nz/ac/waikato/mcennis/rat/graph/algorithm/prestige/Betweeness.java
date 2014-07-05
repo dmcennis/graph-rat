@@ -28,20 +28,8 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.OptimizedPathBase;
 import org.dynamicfactory.descriptors.IODescriptor.Type;
 import org.dynamicfactory.descriptors.IODescriptorFactory;
 import org.dynamicfactory.descriptors.IODescriptorInternal;
-import org.dynamicfactory.descriptors.ParameterFactory;
-import org.dynamicfactory.descriptors.ParameterInternal;
 
-import org.dynamicfactory.descriptors.Properties;
-import org.dynamicfactory.descriptors.SyntaxCheckerFactory;
-import org.dynamicfactory.descriptors.SyntaxObject;
 import nz.ac.waikato.mcennis.rat.graph.path.PathNode;
-
-import org.dynamicfactory.property.InvalidObjectTypeException;
-
-import org.dynamicfactory.property.Property;
-
-import org.dynamicfactory.property.PropertyFactory;
-
 
 
 /**

@@ -10,7 +10,6 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
-import org.dynamicfactory.property.Property;
 
 /**
  *

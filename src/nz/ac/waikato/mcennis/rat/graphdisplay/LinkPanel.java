@@ -40,8 +40,6 @@ import javax.swing.JScrollPane;
 
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
-import org.dynamicfactory.property.Property;
-
 import prefuse.util.ColorLib;
 
 import prefuse.visual.VisualItem;

@@ -18,17 +18,12 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.OptimizedLinkBetw
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
-import org.dynamicfactory.descriptors.Parameter;
-import org.dynamicfactory.descriptors.ParameterInternal;
 import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.model.Listener;
 import nz.ac.waikato.mcennis.rat.graph.model.Model;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.graph.path.PathNode;
-import org.dynamicfactory.property.InvalidObjectTypeException;
-import org.dynamicfactory.property.Property;
-import org.dynamicfactory.property.PropertyFactory;
 
 /**
  * Class built upon OptimizedPathBase that calculates Betweeness for links.  OptimizedPathBase

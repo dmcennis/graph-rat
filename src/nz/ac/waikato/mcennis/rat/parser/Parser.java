@@ -5,8 +5,6 @@ package nz.ac.waikato.mcennis.rat.parser;
 
 import java.io.InputStream;
 import nz.ac.waikato.mcennis.rat.crawler.Crawler;
-import org.dynamicfactory.descriptors.Parameter;
-import org.dynamicfactory.descriptors.Properties;
 
 /**
  * This interface decsribes classes that transforms a data stream into objects.

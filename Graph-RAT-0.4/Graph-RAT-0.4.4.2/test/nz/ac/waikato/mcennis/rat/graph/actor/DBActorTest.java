@@ -16,8 +16,6 @@ import java.sql.SQLException;
 import nz.ac.waikato.mcennis.rat.graph.DerbyGraph;
 import nz.ac.waikato.mcennis.rat.graph.model.Model;
 import nz.ac.waikato.mcennis.rat.graph.page.Page;
-import org.dynamicfactory.property.Property;
-import org.dynamicfactory.property.PropertyFactory;
 
 /**
  *

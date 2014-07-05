@@ -7,9 +7,6 @@ package org.dynamicfactory.descriptors;
 
 import java.util.LinkedList;
 import junit.framework.TestCase;
-import org.dynamicfactory.property.InvalidObjectTypeException;
-import org.dynamicfactory.property.Property;
-import org.dynamicfactory.property.PropertyFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.property.NullPropertyQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.property.PropertyQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.property.StringQuery;

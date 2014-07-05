@@ -7,7 +7,6 @@ package nz.ac.waikato.mcennis.rat.gui;
 import java.util.Properties;
 import java.util.Vector;
 import javax.swing.table.DefaultTableModel;
-import org.dynamicfactory.descriptors.Parameter;
 
 /**
  * Model to back the editing of components using the EditComponent frame

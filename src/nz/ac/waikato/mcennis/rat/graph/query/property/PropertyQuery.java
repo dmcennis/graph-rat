@@ -5,7 +5,6 @@
  */
 package nz.ac.waikato.mcennis.rat.graph.query.property;
 
-import org.dynamicfactory.property.Property;
 import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
         
 /**

@@ -30,9 +30,6 @@ import javax.swing.JScrollPane;
 
 import javax.swing.JTextArea;
 
-import org.dynamicfactory.property.Property;
-
-
 
 /**
 

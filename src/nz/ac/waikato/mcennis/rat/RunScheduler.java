@@ -18,8 +18,6 @@ package nz.ac.waikato.mcennis.rat;
 
 import java.io.File;
 
-import org.dynamicfactory.descriptors.Properties;
-import org.dynamicfactory.descriptors.PropertiesFactory;
 import nz.ac.waikato.mcennis.rat.parser.ParserFactory;
 
 import nz.ac.waikato.mcennis.rat.parser.Parser;

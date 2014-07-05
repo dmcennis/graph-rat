@@ -13,8 +13,6 @@ package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores;
 import java.util.List;
 import nz.ac.waikato.mcennis.rat.reusablecores.FindStronglyConnectedComponentsCore;
 
-import org.dynamicfactory.descriptors.Properties;
-
 import junit.framework.TestCase;
 
 import nz.ac.waikato.mcennis.rat.graph.Graph;
@@ -25,7 +23,6 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 
-import org.dynamicfactory.descriptors.PropertiesFactory;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;

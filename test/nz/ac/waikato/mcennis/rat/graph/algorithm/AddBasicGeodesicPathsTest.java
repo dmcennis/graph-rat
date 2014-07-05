@@ -47,7 +47,6 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 
 
-import org.dynamicfactory.descriptors.PropertiesFactory;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
 
@@ -60,17 +59,6 @@ import nz.ac.waikato.mcennis.rat.graph.path.Path;
 
 
 import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
-
-
-
-
-import org.dynamicfactory.property.Property;
-
-
-import org.dynamicfactory.property.PropertyFactory;
-
-
-
 
 
 /**

@@ -16,13 +16,10 @@ import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.InputDescriptorInternal;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptorInternal;
-import org.dynamicfactory.descriptors.Parameter;
-import org.dynamicfactory.descriptors.ParameterInternal;
 import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
-import org.dynamicfactory.property.Property;
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
 
 /**

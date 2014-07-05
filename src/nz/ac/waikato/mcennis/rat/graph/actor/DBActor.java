@@ -26,18 +26,13 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.dynamicfactory.descriptors.Properties;
+
 import nz.ac.waikato.mcennis.rat.graph.model.Listener;
 
 import nz.ac.waikato.mcennis.rat.graph.model.Model;
 
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 
-import org.dynamicfactory.property.InvalidObjectTypeException;
-
-import org.dynamicfactory.property.Property;
-
-import org.dynamicfactory.property.PropertyFactory;
 import org.dynamicfactory.property.PropertyValueDatabaseFactory;
 import org.dynamicfactory.property.database.PropertyValueDB;
 

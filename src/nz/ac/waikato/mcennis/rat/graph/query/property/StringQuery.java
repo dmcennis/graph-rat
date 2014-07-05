@@ -10,7 +10,7 @@ import java.io.Writer;
 import java.util.Collection;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.dynamicfactory.property.Property;
+
 import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

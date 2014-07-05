@@ -15,7 +15,6 @@ package nz.ac.waikato.bibliography.XMLParser;
 import java.io.FileInputStream;
 
 import java.util.List;
-import org.dynamicfactory.descriptors.Properties;
 
 import junit.framework.TestCase;
 
@@ -26,8 +25,6 @@ import nz.ac.waikato.mcennis.rat.graph.MemGraph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
 
-
-import org.dynamicfactory.descriptors.PropertiesFactory;
 import nz.ac.waikato.mcennis.rat.parser.XMLParser;
 
 

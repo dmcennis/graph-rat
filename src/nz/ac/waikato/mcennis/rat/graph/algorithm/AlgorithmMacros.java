@@ -10,7 +10,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import org.dynamicfactory.descriptors.Properties;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery;

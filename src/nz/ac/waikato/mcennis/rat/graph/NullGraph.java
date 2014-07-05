@@ -16,14 +16,9 @@ import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
-import org.dynamicfactory.descriptors.Parameter;
-import org.dynamicfactory.descriptors.Properties;
-import org.dynamicfactory.descriptors.PropertiesFactory;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
 
 import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
-
-import org.dynamicfactory.property.Property;
 
 /**
  * Class that retains no information and implements null operations on every node.

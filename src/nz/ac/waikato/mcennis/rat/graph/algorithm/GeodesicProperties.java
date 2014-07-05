@@ -17,9 +17,6 @@ import org.dynamicfactory.descriptors.IODescriptorFactory;
 import org.dynamicfactory.descriptors.IODescriptor;
 
 
-import org.dynamicfactory.descriptors.Parameter;
-
-import org.dynamicfactory.descriptors.ParameterInternal;
 import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
 
 import nz.ac.waikato.mcennis.rat.graph.path.Path;
@@ -28,17 +25,8 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
 import org.dynamicfactory.descriptors.IODescriptor.Type;
 import org.dynamicfactory.descriptors.IODescriptorInternal;
-import org.dynamicfactory.descriptors.ParameterFactory;
-import org.dynamicfactory.descriptors.Properties;
-import org.dynamicfactory.descriptors.PropertiesFactory;
-import org.dynamicfactory.descriptors.PropertiesInternal;
-import org.dynamicfactory.descriptors.SyntaxCheckerFactory;
-import org.dynamicfactory.descriptors.SyntaxObject;
 import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
-import org.dynamicfactory.property.InvalidObjectTypeException;
-import org.dynamicfactory.property.Property;
 
-import org.dynamicfactory.property.PropertyFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQueryFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.actor.ActorByMode;
