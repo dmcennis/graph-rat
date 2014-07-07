@@ -3,14 +3,14 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator;
+package org.mcennis.graphrat.algorithm.reusablecores.aggregator;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.DataVector;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.InstanceDataVector;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.DistanceFunction;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.DotProductDistance;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.DataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.InstanceDataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.DistanceFunction;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.DotProductDistance;
 import weka.core.Instance;
 
 /**

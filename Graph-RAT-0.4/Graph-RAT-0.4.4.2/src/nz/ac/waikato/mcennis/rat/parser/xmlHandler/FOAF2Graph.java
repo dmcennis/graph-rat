@@ -1,27 +1,27 @@
 /**
  * copyright Daniel McEnnis - published under Aferro GPL (see license.txt)
  */
-package nz.ac.waikato.mcennis.rat.parser.xmlHandler;
+package org.mcennis.graphrat.parser.xmlHandler;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.crawler.Crawler;
-import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
+import org.mcennis.graphrat.crawler.Crawler;
+import org.mcennis.graphrat.parser.ParsedObject;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.GraphFactory;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.graph.GraphFactory;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.actor.ActorFactory;
+import org.mcennis.graphrat.link.Link;
+import org.mcennis.graphrat.link.LinkFactory;
 import nz.ac.waikato.mcennis.rat.graph.page.Page;
 import nz.ac.waikato.mcennis.rat.graph.page.PageFactory;
 
-import nz.ac.waikato.mcennis.rat.crawler.WebCrawler;
+import org.mcennis.graphrat.crawler.WebCrawler;
 
 /**
  * SAX XML parser for reading FOAF files of the LiveJournal dialect.  See 

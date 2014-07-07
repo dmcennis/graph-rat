@@ -9,11 +9,11 @@
 package nz.ac.waikato.mcennis.rat;
 
 import java.util.Properties;
-import nz.ac.waikato.mcennis.rat.dataAquisition.FileReader2Pass;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.GraphFactory;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmFactory;
+import org.mcennis.graphrat.dataAquisition.FileReader2Pass;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.graph.GraphFactory;
+import org.mcennis.graphrat.algorithm.Algorithm;
+import org.mcennis.graphrat.algorithm.AlgorithmFactory;
 
 /**
  *

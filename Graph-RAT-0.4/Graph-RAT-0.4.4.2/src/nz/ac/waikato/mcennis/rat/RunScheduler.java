@@ -9,9 +9,9 @@ package nz.ac.waikato.mcennis.rat;
 
 import java.io.File;
 import java.util.Properties;
-import nz.ac.waikato.mcennis.rat.parser.ParserFactory;
-import nz.ac.waikato.mcennis.rat.parser.Parser;
-import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
+import org.mcennis.graphrat.parser.ParserFactory;
+import org.mcennis.graphrat.parser.Parser;
+import org.mcennis.graphrat.scheduler.Scheduler;
 
 /**
  * Executes RAT by reading in an XML file - scheduler.xml by default.  This

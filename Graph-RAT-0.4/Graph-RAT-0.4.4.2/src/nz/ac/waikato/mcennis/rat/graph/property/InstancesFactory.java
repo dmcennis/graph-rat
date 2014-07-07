@@ -7,7 +7,7 @@ package org.dynamicfactory.property;
 
 import java.util.Enumeration;
 
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.graph.Graph;
 import weka.core.Attribute;
 import weka.core.FastVector;
 import weka.core.Instances;

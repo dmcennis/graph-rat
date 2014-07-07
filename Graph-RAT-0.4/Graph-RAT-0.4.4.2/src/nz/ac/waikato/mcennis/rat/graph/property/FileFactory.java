@@ -6,7 +6,7 @@
 package org.dynamicfactory.property;
 
 import java.io.File;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.graph.Graph;
 
 /**
  * Class for serializing and deserializing java.io.File objects

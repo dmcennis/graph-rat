@@ -2,7 +2,7 @@
  * Initial copyright jheer - BSD license
  * Modifications copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graphdisplay;
+package org.mcennis.graphrat.graphdisplay;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -10,8 +10,6 @@ import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 import java.awt.geom.Rectangle2D;
 
 import java.util.HashMap;
@@ -35,10 +33,10 @@ import javax.swing.event.ChangeListener;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import nz.ac.waikato.bibliography.LoadBibliographyXML;
-import nz.ac.waikato.mcennis.rat.graph.MemGraph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
+import org.mcennis.graphrat.dataAquisition.LoadBibliographyXML;
+import org.mcennis.graphrat.graph.MemGraph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.link.Link;
 import prefuse.Display;
 import prefuse.Visualization;
 import prefuse.action.Action;
@@ -84,7 +82,7 @@ import prefuse.visual.VisualItem;
  */
 public class PrefuseGraphView extends JPanel {
 
-    private static nz.ac.waikato.mcennis.rat.graph.Graph bibGraph;
+    private static org.mcennis.graphrat.graph.Graph bibGraph;
     private static final String graph = "graph";
     private static final String nodes = "graph.nodes";
     private static final String edges = "graph.edges";

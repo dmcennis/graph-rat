@@ -2,20 +2,20 @@
  * Aug 15, 2008-4:39:14 PM
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.machinelearning;
+package org.mcennis.graphrat.algorithm.machinelearning;
 
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.algorithm.Algorithm;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
+import org.mcennis.graphrat.link.Link;
+import org.mcennis.graphrat.link.LinkFactory;
 import org.dynamicfactory.model.ModelShell;
 import weka.classifiers.Classifier;
 import weka.classifiers.trees.J48;

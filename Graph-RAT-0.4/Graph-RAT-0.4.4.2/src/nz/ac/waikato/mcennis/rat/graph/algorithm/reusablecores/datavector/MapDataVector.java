@@ -2,9 +2,9 @@
  * Created 21/05/2008-16:16:29
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector;
+package org.mcennis.graphrat.algorithm.reusablecores.datavector;
 
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.DataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.DataVector;
 import java.util.Iterator;
 import java.util.Map;
 

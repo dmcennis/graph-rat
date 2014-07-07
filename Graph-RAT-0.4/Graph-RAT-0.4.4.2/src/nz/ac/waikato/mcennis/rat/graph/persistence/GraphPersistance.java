@@ -8,7 +8,7 @@
 
 package nz.ac.waikato.mcennis.rat.graph.persistence;
 
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.graph.Graph;
 
 /**
  *

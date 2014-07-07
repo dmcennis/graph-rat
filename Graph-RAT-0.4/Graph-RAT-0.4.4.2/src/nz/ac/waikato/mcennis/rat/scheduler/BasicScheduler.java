@@ -6,7 +6,7 @@
  * Copyright Daniel McEnnis, published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.scheduler;
+package org.mcennis.graphrat.scheduler;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,9 +15,9 @@ import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Pattern;
-import nz.ac.waikato.mcennis.rat.dataAquisition.DataAquisition;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
+import org.mcennis.graphrat.dataAquisition.DataAquisition;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.algorithm.Algorithm;
 import org.dynamicfactory.model.Listener;
 import org.dynamicfactory.model.Model;
 import org.dynamicfactory.model.ModelShell;

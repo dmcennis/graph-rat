@@ -2,25 +2,24 @@
  * Created 13/05/2008-16:53:29
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.parser.xmlHandler;
+package org.mcennis.graphrat.parser.xmlHandler;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URLEncoder;
 import java.util.HashSet;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.crawler.Crawler;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
-import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
-import nz.ac.waikato.mcennis.rat.parser.ToFileParser;
+import org.mcennis.graphrat.crawler.Crawler;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.actor.ActorFactory;
+import org.mcennis.graphrat.link.Link;
+import org.mcennis.graphrat.link.LinkFactory;
+import org.mcennis.graphrat.parser.ParsedObject;
+import org.mcennis.graphrat.parser.ToFileParser;
 import org.xml.sax.Attributes;
 import org.xml.sax.Locator;
 import org.xml.sax.SAXException;

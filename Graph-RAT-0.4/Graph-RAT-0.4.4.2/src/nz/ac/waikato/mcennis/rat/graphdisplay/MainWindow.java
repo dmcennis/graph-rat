@@ -14,7 +14,7 @@
 
 
 
-package nz.ac.waikato.mcennis.rat.graphdisplay;
+package org.mcennis.graphrat.graphdisplay;
 
 
 
@@ -34,15 +34,15 @@ import javax.swing.tree.DefaultTreeModel;
 
 import javax.swing.tree.TreePath;
 
-import nz.ac.waikato.mcennis.rat.graph.MemGraph;
+import org.mcennis.graphrat.graph.MemGraph;
 
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
+import org.mcennis.graphrat.link.Link;
 
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
+import org.mcennis.graphrat.actor.Actor;
 
-import nz.ac.waikato.mcennis.rat.parser.XMLParser;
+import org.mcennis.graphrat.parser.XMLParser;
 
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.GraphReader;
+import org.mcennis.graphrat.parser.xmlHandler.GraphReader;
 
 
 

@@ -6,7 +6,7 @@
  */
 package org.dynamicfactory.property;
 
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.graph.Graph;
 
 /**
  * Factory for serializing and deserializing Integer objects

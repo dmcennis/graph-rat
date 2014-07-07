@@ -1,15 +1,14 @@
 /**
  * copyright Daniel McEnnis - published under Aferro GPL (see license.txt)
  */
-package nz.ac.waikato.mcennis.rat.parser;
+package org.mcennis.graphrat.parser;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.File;
 
-import nz.ac.waikato.mcennis.rat.crawler.Crawler;
-import nz.ac.waikato.mcennis.rat.crawler.WebCrawler;
+import org.mcennis.graphrat.crawler.Crawler;
 
 /**
  * Class for writing the contents of a data stream to a file.  Designed to be 

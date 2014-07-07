@@ -4,7 +4,7 @@
  * Copyright Daniel McEnnis, see license.txt
  *
  */
-package nz.ac.waikato.mcennis.rat.dataAquisition;
+package org.mcennis.graphrat.dataAquisition;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -14,14 +14,14 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.zip.GZIPInputStream;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.graph.Graph;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
 import org.dynamicfactory.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.parser.XMLParser;
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.GraphReader;
+import org.mcennis.graphrat.parser.XMLParser;
+import org.mcennis.graphrat.parser.xmlHandler.GraphReader;
 
 /**
  * Class for reading an arbitrary MemGraph XML file.  Uses the GraphReader XML 

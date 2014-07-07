@@ -4,7 +4,7 @@
 
 package org.dynamicfactory.property;
 
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.graph.Graph;
 
 /**
  * Factory object for serializing and deserializing a Long object

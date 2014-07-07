@@ -8,14 +8,11 @@ package nz.ac.waikato.bibliography.XMLParser;
 import java.io.FileInputStream;
 import java.util.Properties;
 import junit.framework.TestCase;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.MemGraph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
-import nz.ac.waikato.mcennis.rat.parser.Parser;
-import nz.ac.waikato.mcennis.rat.parser.XMLParser;
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.Handler;
-import org.xml.sax.Attributes;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.graph.MemGraph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.parser.XMLParser;
+import org.mcennis.graphrat.parser.xmlHandler.ParseBibliographyXML;
 
 /**
  *

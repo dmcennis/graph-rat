@@ -3,10 +3,10 @@
  * and open the template in the editor.
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.evaluation;
+package org.mcennis.graphrat.algorithm.evaluation;
 
 import junit.framework.TestCase;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
+import org.mcennis.graphrat.actor.Actor;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;

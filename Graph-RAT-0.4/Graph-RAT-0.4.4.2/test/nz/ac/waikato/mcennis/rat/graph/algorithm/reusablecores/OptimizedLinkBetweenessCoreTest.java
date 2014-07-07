@@ -2,19 +2,19 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores;
+package org.mcennis.graphrat.algorithm.reusablecores;
 
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Properties;
-import java.util.Set;
+
 import junit.framework.TestCase;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.GraphFactory;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.graph.GraphFactory;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.actor.ActorFactory;
+import org.mcennis.graphrat.link.Link;
+import org.mcennis.graphrat.link.LinkFactory;
 
 /**
  *

@@ -2,7 +2,7 @@
  * Created 27-3-08
  * Copyright Daniel McEnnis, saee license.txt
  */
-package nz.ac.waikato.mcennis.rat.dataAquisition;
+package org.mcennis.graphrat.dataAquisition;
 
 import jAudioFeatureExtractor.ACE.DataTypes.Batch;
 import jAudioFeatureExtractor.ACE.DataTypes.FeatureDefinition;
@@ -15,9 +15,9 @@ import java.util.LinkedList;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.actor.ActorFactory;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;

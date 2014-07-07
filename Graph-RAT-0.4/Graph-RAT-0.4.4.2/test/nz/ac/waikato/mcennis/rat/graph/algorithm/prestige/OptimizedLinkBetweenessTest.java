@@ -3,12 +3,12 @@
  * and open the template in the editor.
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.prestige;
+package org.mcennis.graphrat.prestige;
 
 import junit.framework.TestCase;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.graph.Graph;
 import org.dynamicfactory.descriptors.OutputDescriptor;
-import nz.ac.waikato.mcennis.rat.graph.path.PathNode;
+import org.mcennis.graphrat.path.PathNode;
 
 /**
  *

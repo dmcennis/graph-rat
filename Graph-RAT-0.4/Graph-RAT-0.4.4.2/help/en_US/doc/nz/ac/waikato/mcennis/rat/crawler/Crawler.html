@@ -55,8 +55,8 @@ function windowTitle()
 
 <TR>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/Authenticator.html" title="class in nz.ac.waikato.mcennis.rat.crawler"><B>PREV CLASS</B></A>&nbsp;
-&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/CrawlerBase.html" title="class in nz.ac.waikato.mcennis.rat.crawler"><B>NEXT CLASS</B></A></FONT></TD>
+&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/Authenticator.html" title="class in org.mcennis.graphrat.crawler"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/CrawlerBase.html" title="class in org.mcennis.graphrat.crawler"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
   <A HREF="../../../../../../index.html?nz/ac/waikato/mcennis/rat/crawler/Crawler.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="Crawler.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
@@ -88,11 +88,11 @@ DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHO
 <!-- ======== START OF CLASS DATA ======== -->
 <H2>
 <FONT SIZE="-1">
-nz.ac.waikato.mcennis.rat.crawler</FONT>
+    org.mcennis.graphrat.crawler</FONT>
 <BR>
 Interface Crawler</H2>
 <DL>
-<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/CrawlerBase.html" title="class in nz.ac.waikato.mcennis.rat.crawler">CrawlerBase</A>, <A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/FileListCrawler.html" title="class in nz.ac.waikato.mcennis.rat.crawler">FileListCrawler</A>, <A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/GZipFileCrawler.html" title="class in nz.ac.waikato.mcennis.rat.crawler">GZipFileCrawler</A>, <A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/WebCrawler.html" title="class in nz.ac.waikato.mcennis.rat.crawler">WebCrawler</A>, <A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/WebCrawler.Spider.html" title="class in nz.ac.waikato.mcennis.rat.crawler">WebCrawler.Spider</A></DD>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/CrawlerBase.html" title="class in org.mcennis.graphrat.crawler">CrawlerBase</A>, <A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/FileListCrawler.html" title="class in org.mcennis.graphrat.crawler">FileListCrawler</A>, <A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/GZipFileCrawler.html" title="class in org.mcennis.graphrat.crawler">GZipFileCrawler</A>, <A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/WebCrawler.html" title="class in org.mcennis.graphrat.crawler">WebCrawler</A>, <A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/WebCrawler.Spider.html" title="class in org.mcennis.graphrat.crawler">WebCrawler.Spider</A></DD>
 </DL>
 <HR>
 <DL>
@@ -147,7 +147,7 @@ Interface for accessing files via io.  Designed to abstract away the
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/parser/Parser.html" title="interface in nz.ac.waikato.mcennis.rat.parser">Parser</A>[]</CODE></FONT></TD>
+<CODE>&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/parser/Parser.html" title="interface in org.mcennis.graphrat.parser">Parser</A>[]</CODE></FONT></TD>
 <TD><CODE><B><A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/Crawler.html#getParser()">getParser</A></B>()</CODE>
 
 <BR>
@@ -172,7 +172,7 @@ Interface for accessing files via io.  Designed to abstract away the
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/Crawler.html#set(nz.ac.waikato.mcennis.rat.parser.Parser[])">set</A></B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/parser/Parser.html" title="interface in nz.ac.waikato.mcennis.rat.parser">Parser</A>[]&nbsp;parser)</CODE>
+<TD><CODE><B><A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/Crawler.html#set(org.mcennis.graphrat.parser.Parser[])">set</A></B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/parser/Parser.html" title="interface in org.mcennis.graphrat.parser">Parser</A>[]&nbsp;parser)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the parsers that are to be utilized by this crawler to interpret the
@@ -264,10 +264,10 @@ void <B>crawl</B>(java.lang.String&nbsp;site,
 </DL>
 <HR>
 
-<A NAME="set(nz.ac.waikato.mcennis.rat.parser.Parser[])"><!-- --></A><H3>
+<A NAME="set(org.mcennis.graphrat.parser.Parser[])"><!-- --></A><H3>
 set</H3>
 <PRE>
-void <B>set</B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/parser/Parser.html" title="interface in nz.ac.waikato.mcennis.rat.parser">Parser</A>[]&nbsp;parser)</PRE>
+void <B>set</B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/parser/Parser.html" title="interface in org.mcennis.graphrat.parser">Parser</A>[]&nbsp;parser)</PRE>
 <DL>
 <DD>Set the parsers that are to be utilized by this crawler to interpret the
 
@@ -282,7 +282,7 @@ void <B>set</B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/parser/Pars
 <A NAME="getParser()"><!-- --></A><H3>
 getParser</H3>
 <PRE>
-<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/parser/Parser.html" title="interface in nz.ac.waikato.mcennis.rat.parser">Parser</A>[] <B>getParser</B>()</PRE>
+<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/parser/Parser.html" title="interface in org.mcennis.graphrat.parser">Parser</A>[] <B>getParser</B>()</PRE>
 <DL>
 <DD>Returns an array of Parser objects used by this crawler to parse pages.
 <P>
@@ -393,8 +393,8 @@ boolean <B>isSpidering</B>()</PRE>
 
 <TR>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/Authenticator.html" title="class in nz.ac.waikato.mcennis.rat.crawler"><B>PREV CLASS</B></A>&nbsp;
-&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/CrawlerBase.html" title="class in nz.ac.waikato.mcennis.rat.crawler"><B>NEXT CLASS</B></A></FONT></TD>
+&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/Authenticator.html" title="class in org.mcennis.graphrat.crawler"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/crawler/CrawlerBase.html" title="class in org.mcennis.graphrat.crawler"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
   <A HREF="../../../../../../index.html?nz/ac/waikato/mcennis/rat/crawler/Crawler.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="Crawler.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;

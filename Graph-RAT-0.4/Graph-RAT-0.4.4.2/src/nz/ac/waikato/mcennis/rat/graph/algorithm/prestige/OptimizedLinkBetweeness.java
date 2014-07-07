@@ -5,25 +5,26 @@
  *
  * Copyright Daniel McEnnis, published under Aferro GPL (see license.txt)
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.prestige;
+package org.mcennis.graphrat.prestige;
 
 import java.util.Iterator;
 import java.util.Map;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.*;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.OptimizedLinkBetweenessCore;
+
+import org.mcennis.graphrat.algorithm.Algorithm;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.algorithm.reusablecores.OptimizedLinkBetweenessCore;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
+import org.mcennis.graphrat.link.Link;
 import org.dynamicfactory.model.Listener;
 import org.dynamicfactory.model.Model;
 import org.dynamicfactory.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.graph.path.PathNode;
+import org.mcennis.graphrat.path.PathNode;
 
 /**
  * Class built upon OptimizedPathBase that calculates Betweeness for links.  OptimizedPathBase

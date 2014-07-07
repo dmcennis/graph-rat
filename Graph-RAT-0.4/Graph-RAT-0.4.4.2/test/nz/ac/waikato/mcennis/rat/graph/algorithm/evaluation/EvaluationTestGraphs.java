@@ -3,14 +3,14 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.evaluation;
+package org.mcennis.graphrat.algorithm.evaluation;
 
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.MemGraph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.actor.BasicUser;
-import nz.ac.waikato.mcennis.rat.graph.link.BasicUserLink;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.graph.MemGraph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.actor.BasicUser;
+import org.mcennis.graphrat.link.BasicUserLink;
+import org.mcennis.graphrat.link.Link;
 
 /**
  *

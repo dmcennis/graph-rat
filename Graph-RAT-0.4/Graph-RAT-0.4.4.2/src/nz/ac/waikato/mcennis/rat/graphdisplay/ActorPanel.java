@@ -2,7 +2,7 @@
  * Created 26-1-08
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graphdisplay;
+package org.mcennis.graphrat.graphdisplay;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -18,8 +18,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import prefuse.data.Node;
+import org.mcennis.graphrat.actor.Actor;
 import prefuse.util.ColorLib;
 import prefuse.visual.VisualItem;
 

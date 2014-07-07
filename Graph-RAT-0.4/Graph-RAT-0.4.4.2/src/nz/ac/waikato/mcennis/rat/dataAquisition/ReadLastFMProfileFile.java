@@ -4,7 +4,7 @@
  * Copyright Daniel McEnnis, see license.txt
  *
  */
-package nz.ac.waikato.mcennis.rat.dataAquisition;
+package org.mcennis.graphrat.dataAquisition;
 
 import com.ice.tar.TarEntry;
 import com.ice.tar.TarInputStream;
@@ -17,14 +17,14 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.zip.GZIPInputStream;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.graph.Graph;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
 import org.dynamicfactory.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.parser.Parser;
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.LastFMUserExpansion;
+import org.mcennis.graphrat.parser.Parser;
+import org.mcennis.graphrat.parser.xmlHandler.LastFMUserExpansion;
 
 /**
  * Class for parsing a (possibly compressed) tar file containing the files created

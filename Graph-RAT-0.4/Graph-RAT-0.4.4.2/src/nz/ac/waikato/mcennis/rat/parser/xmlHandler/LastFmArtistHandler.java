@@ -5,16 +5,16 @@
  *
  * Copyright Daniel McEnnis - published under Aferro GPL (see license.txt)
  */
-package nz.ac.waikato.mcennis.rat.parser.xmlHandler;
+package org.mcennis.graphrat.parser.xmlHandler;
 
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
+import org.mcennis.graphrat.parser.ParsedObject;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.actor.ActorFactory;
 import org.xml.sax.Locator;
 
 /**

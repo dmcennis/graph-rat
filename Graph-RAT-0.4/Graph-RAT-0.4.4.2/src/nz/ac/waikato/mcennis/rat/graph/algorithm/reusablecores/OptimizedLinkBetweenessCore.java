@@ -1,15 +1,15 @@
 /*
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores;
+package org.mcennis.graphrat.algorithm.reusablecores;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.graph.path.PathNode;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.link.Link;
+import org.mcennis.graphrat.path.PathNode;
 
 /**
  * Provides link betweeness calculations for algorithms that use it continuosly

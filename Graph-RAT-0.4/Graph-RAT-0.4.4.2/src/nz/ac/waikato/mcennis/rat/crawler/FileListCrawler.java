@@ -1,7 +1,7 @@
 /**
  * copyright Daniel McEnnis - published under Aferro GPL (see license.txt)
  */
-package nz.ac.waikato.mcennis.rat.crawler;
+package org.mcennis.graphrat.crawler;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.parser.Parser;
+import org.mcennis.graphrat.parser.Parser;
 
 /**
  * Crawler designed to parse files from the local file system.  Utilizes native

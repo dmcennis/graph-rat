@@ -1,12 +1,13 @@
 /*
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.clustering;
+package org.mcennis.graphrat.algorithm.clustering;
 
-import nz.ac.waikato.mcennis.rat.graph.algorithm.*;
 import java.util.Properties;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.FindStronglyConnectedComponentsCore;
+
+import org.mcennis.graphrat.algorithm.Algorithm;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.algorithm.reusablecores.FindStronglyConnectedComponentsCore;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;

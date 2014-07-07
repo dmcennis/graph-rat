@@ -3,18 +3,18 @@
  * and open the template in the editor.
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.collaborativefiltering;
+package org.mcennis.graphrat.algorithm.collaborativefiltering;
 
 import java.util.Properties;
 import junit.framework.TestCase;
-import nz.ac.waikato.mcennis.rat.graph.MemGraph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
+import org.mcennis.graphrat.graph.MemGraph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.actor.ActorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
+import org.mcennis.graphrat.link.Link;
+import org.mcennis.graphrat.link.LinkFactory;
 
 /**
  *

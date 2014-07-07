@@ -1,7 +1,7 @@
 /**
  * copyright Daniel McEnnis - published under Aferro GPL (see license.txt)
  */
-package nz.ac.waikato.mcennis.rat.crawler;
+package org.mcennis.graphrat.crawler;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -9,7 +9,7 @@ import java.net.MalformedURLException;
 import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.parser.Parser;
+import org.mcennis.graphrat.parser.Parser;
 
 /**
  * Multithreaded web crawler designed to pull web pages.  Each thread utilizes

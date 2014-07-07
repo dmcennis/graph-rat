@@ -8,9 +8,9 @@
 
 package nz.ac.waikato.mcennis.rat;
 
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.GraphFactory;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.graph.GraphFactory;
+import org.mcennis.graphrat.actor.Actor;
 
 /**
  *

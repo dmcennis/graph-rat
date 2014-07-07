@@ -5,9 +5,9 @@
  *
  * Copyright Daniel McEnnis, published under Aferro GPL (see license.txt)
  */
-package nz.ac.waikato.mcennis.rat.graph.link;
+package org.mcennis.graphrat.link;
 
-import nz.ac.waikato.mcennis.rat.graph.actor.*;
+import org.mcennis.graphrat.actor.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

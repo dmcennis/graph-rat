@@ -14,9 +14,9 @@ import java.net.MalformedURLException;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.crawler.CrawlerBase;
-import nz.ac.waikato.mcennis.rat.parser.Parser;
-import nz.ac.waikato.mcennis.rat.parser.ParserFactory;
+import org.mcennis.graphrat.crawler.CrawlerBase;
+import org.mcennis.graphrat.parser.Parser;
+import org.mcennis.graphrat.parser.ParserFactory;
 
 /**
  *

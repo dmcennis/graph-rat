@@ -3,24 +3,24 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.similarity;
+package org.mcennis.graphrat.algorithm.similarity;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Properties;
 import junit.framework.TestCase;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.MemGraph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.actor.BasicUser;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.MapDataVector;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.CosineDistance;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.EuclideanDistance;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.graph.MemGraph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.actor.BasicUser;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.MapDataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.CosineDistance;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.EuclideanDistance;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
-import nz.ac.waikato.mcennis.rat.graph.link.BasicUserLink;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
+import org.mcennis.graphrat.link.BasicUserLink;
+import org.mcennis.graphrat.link.Link;
 
 /**
  *

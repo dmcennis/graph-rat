@@ -5,9 +5,9 @@
 
 package nz.ac.waikato.mcennis.rat.graph.algorithm;
 
-import nz.ac.waikato.mcennis.rat.graph.algorithm.similarity.SimilarityByLink;
+import org.mcennis.graphrat.algorithm.similarity.SimilarityByLink;
 import junit.framework.TestCase;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.graph.Graph;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;

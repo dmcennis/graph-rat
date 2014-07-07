@@ -2,17 +2,16 @@
  * 
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.collaborativefiltering;
+package org.mcennis.graphrat.algorithm.collaborativefiltering;
 
 import cern.jet.stat.Probability;
-import java.util.Arrays;
+
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.link.Link;
 
 /**
  * Represents a single association between a set of actors and a destiation actor

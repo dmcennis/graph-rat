@@ -2,16 +2,15 @@
  * Created 14-02-08
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.gui;
+package org.mcennis.graphrat.gui;
 
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.regex.Pattern;
 import javax.swing.table.DefaultTableModel;
-import nz.ac.waikato.mcennis.rat.Component;
-import nz.ac.waikato.mcennis.rat.dataAquisition.DataAquisition;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
+import org.mcennis.graphrat.Component;
+import org.mcennis.graphrat.dataAquisition.DataAquisition;
+import org.mcennis.graphrat.algorithm.Algorithm;
 
 /**
  * JTable model containing the DataAquisition and Algorithm modules that

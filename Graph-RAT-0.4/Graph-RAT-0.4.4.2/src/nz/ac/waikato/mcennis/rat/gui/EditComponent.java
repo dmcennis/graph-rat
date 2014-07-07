@@ -2,7 +2,7 @@
  * Created 19-02-08
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.gui;
+package org.mcennis.graphrat.gui;
 
 import java.awt.Container;
 import java.awt.Dimension;
@@ -12,7 +12,6 @@ import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Properties;
-import java.util.regex.Pattern;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -20,8 +19,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
-import nz.ac.waikato.mcennis.rat.Component;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
+import org.mcennis.graphrat.Component;
+import org.mcennis.graphrat.algorithm.Algorithm;
 
 /**
  * Frame for editing the properties of a component and setting its pattern.

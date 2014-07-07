@@ -3,7 +3,7 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator;
+package org.mcennis.graphrat.algorithm.reusablecores.aggregator;
 
 import java.util.Arrays;
 import java.util.logging.Level;

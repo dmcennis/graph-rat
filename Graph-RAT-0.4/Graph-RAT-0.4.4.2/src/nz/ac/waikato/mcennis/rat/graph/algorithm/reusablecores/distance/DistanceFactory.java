@@ -3,7 +3,7 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance;
+package org.mcennis.graphrat.algorithm.reusablecores.distance;
 
 import java.util.Properties;
 

@@ -6,16 +6,16 @@
  * Copyright Daniel McEnnis, published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.parser.xmlHandler;
+package org.mcennis.graphrat.parser.xmlHandler;
 
 import java.util.regex.Pattern;
-import nz.ac.waikato.mcennis.rat.dataAquisition.DataAquisitionFactory;
-import nz.ac.waikato.mcennis.rat.graph.GraphFactory;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmFactory;
-import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
-import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
-import nz.ac.waikato.mcennis.rat.scheduler.SchedulerFactory;
+import org.mcennis.graphrat.dataAquisition.DataAquisitionFactory;
+import org.mcennis.graphrat.graph.GraphFactory;
+import org.mcennis.graphrat.algorithm.Algorithm;
+import org.mcennis.graphrat.algorithm.AlgorithmFactory;
+import org.mcennis.graphrat.parser.ParsedObject;
+import org.mcennis.graphrat.scheduler.Scheduler;
+import org.mcennis.graphrat.scheduler.SchedulerFactory;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 

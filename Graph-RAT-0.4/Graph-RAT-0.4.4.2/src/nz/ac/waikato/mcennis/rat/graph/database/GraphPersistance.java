@@ -6,7 +6,7 @@
  * Copyright Daniel McEnnis, published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.graph.database;
+package org.mcennis.graphrat.database;
 
 /**
  *

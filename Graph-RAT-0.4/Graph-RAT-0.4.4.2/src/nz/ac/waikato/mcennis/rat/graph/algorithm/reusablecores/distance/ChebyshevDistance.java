@@ -3,10 +3,9 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance;
+package org.mcennis.graphrat.algorithm.reusablecores.distance;
 
-import java.util.HashSet;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.DataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.DataVector;
 
 /**
  * Distance measure as defined in Wikipedia

@@ -10,9 +10,9 @@ package nz.ac.waikato.mcennis.rat.graph.artist.decider;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
-import nz.ac.waikato.mcennis.rat.crawler.CrawlerBase;
-import nz.ac.waikato.mcennis.rat.parser.Parser;
-import nz.ac.waikato.mcennis.rat.parser.ParserFactory;
+import org.mcennis.graphrat.crawler.CrawlerBase;
+import org.mcennis.graphrat.parser.Parser;
+import org.mcennis.graphrat.parser.ParserFactory;
 /**
  * Class for utilizing a Google music finder web query to determine if a string
  * matches an artist name or not.  Note: this algorithm hits Google's servers

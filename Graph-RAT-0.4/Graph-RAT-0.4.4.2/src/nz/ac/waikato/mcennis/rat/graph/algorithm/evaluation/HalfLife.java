@@ -4,7 +4,7 @@
  * Copyright Daniel McEnnis, see license.txt
  * 
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.evaluation;
+package org.mcennis.graphrat.algorithm.evaluation;
 
 import java.util.HashMap;
 
@@ -12,9 +12,9 @@ import java.util.Properties;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.graph.Graph;
 
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
+import org.mcennis.graphrat.actor.Actor;
 
 import org.dynamicfactory.descriptors.DescriptorFactory;
 
@@ -28,13 +28,13 @@ import org.dynamicfactory.descriptors.OutputDescriptorInternal;
 
 import org.dynamicfactory.descriptors.SettableParameter;
 
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
+import org.mcennis.graphrat.link.Link;
 
 import java.util.Iterator;
 
-import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
+import org.mcennis.graphrat.algorithm.Algorithm;
 import org.dynamicfactory.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
+import org.mcennis.graphrat.scheduler.Scheduler;
 
 /**
  * 

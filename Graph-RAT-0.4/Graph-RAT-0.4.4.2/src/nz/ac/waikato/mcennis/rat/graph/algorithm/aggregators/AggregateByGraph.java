@@ -2,21 +2,21 @@
  * Jul 23, 2008-9:31:14 PM
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.aggregators;
+package org.mcennis.graphrat.algorithm.aggregators;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.InstanceManipulation;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator.AggregatorFunction;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator.AggregatorFunctionFactory;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator.FirstItemAggregatorFunction;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator.SumAggregator;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.algorithm.Algorithm;
+import org.mcennis.graphrat.algorithm.reusablecores.InstanceManipulation;
+import org.mcennis.graphrat.algorithm.reusablecores.aggregator.AggregatorFunction;
+import org.mcennis.graphrat.algorithm.reusablecores.aggregator.AggregatorFunctionFactory;
+import org.mcennis.graphrat.algorithm.reusablecores.aggregator.FirstItemAggregatorFunction;
+import org.mcennis.graphrat.algorithm.reusablecores.aggregator.SumAggregator;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.InputDescriptorInternal;

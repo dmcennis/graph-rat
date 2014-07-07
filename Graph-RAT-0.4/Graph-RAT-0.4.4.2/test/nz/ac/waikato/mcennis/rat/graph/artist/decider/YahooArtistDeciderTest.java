@@ -10,7 +10,7 @@
 package nz.ac.waikato.mcennis.rat.graph.artist.decider;
 
 import junit.framework.TestCase;
-import nz.ac.waikato.mcennis.rat.crawler.Authenticator;
+import org.mcennis.graphrat.crawler.Authenticator;
 
 /**
  *

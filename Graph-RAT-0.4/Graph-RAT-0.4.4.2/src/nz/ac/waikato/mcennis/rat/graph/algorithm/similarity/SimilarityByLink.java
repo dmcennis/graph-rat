@@ -3,28 +3,29 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.similarity;
+package org.mcennis.graphrat.algorithm.similarity;
 
-import nz.ac.waikato.mcennis.rat.graph.algorithm.*;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.DataVector;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.MapDataVector;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.DistanceFactory;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.DistanceFunction;
+
+import org.mcennis.graphrat.algorithm.Algorithm;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.DataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.MapDataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.DistanceFactory;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.DistanceFunction;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.InputDescriptorInternal;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptorInternal;
 import org.dynamicfactory.descriptors.SettableParameter;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
+import org.mcennis.graphrat.link.Link;
+import org.mcennis.graphrat.link.LinkFactory;
 import org.dynamicfactory.model.ModelShell;
 
 /**
@@ -34,7 +35,7 @@ import org.dynamicfactory.model.ModelShell;
  * 
  * @author Daniel McEnnis
  */
-public class SimilarityByLink extends ModelShell implements Algorithm{
+public class SimilarityByLink extends ModelShell implements Algorithm {
     private ParameterInternal[] parameter = new ParameterInternal[7];
     private InputDescriptorInternal[] input = new InputDescriptorInternal[2];
     private OutputDescriptorInternal[] output = new OutputDescriptorInternal[1];

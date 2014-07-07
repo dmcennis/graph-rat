@@ -3,18 +3,18 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.parser.xmlHandler;
+package org.mcennis.graphrat.parser.xmlHandler;
 
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URLEncoder;
 import java.util.HashSet;
-import nz.ac.waikato.mcennis.rat.crawler.Crawler;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.parser.Parser;
-import nz.ac.waikato.mcennis.rat.parser.ToFileParser;
-import nz.ac.waikato.mcennis.rat.parser.XMLParser;
+import org.mcennis.graphrat.crawler.Crawler;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.parser.Parser;
+import org.mcennis.graphrat.parser.ToFileParser;
+import org.mcennis.graphrat.parser.XMLParser;
 
 /**
  * Class for setting up a set of parsers for crawling LastFM or reading XML files

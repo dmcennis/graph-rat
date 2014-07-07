@@ -2,7 +2,7 @@
  * copyright Daniel McEnnis published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.crawler;
+package org.mcennis.graphrat.crawler;
 
 import java.net.PasswordAuthentication;
 import java.util.logging.Level;

@@ -6,14 +6,13 @@
  * Copyright Daniel McEnnis - published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.parser;
+package org.mcennis.graphrat.parser;
 
 import java.io.IOException;
 import java.io.InputStream;
-import nz.ac.waikato.mcennis.rat.crawler.Crawler;
-import nz.ac.waikato.mcennis.rat.crawler.WebCrawler;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
+import org.mcennis.graphrat.crawler.Crawler;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.actor.ActorFactory;
 
 
 /**

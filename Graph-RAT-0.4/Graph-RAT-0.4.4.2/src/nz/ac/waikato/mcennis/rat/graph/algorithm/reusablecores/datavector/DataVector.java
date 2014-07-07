@@ -3,7 +3,7 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector;
+package org.mcennis.graphrat.algorithm.reusablecores.datavector;
 
 /**
  * Class describing an abstraction of a vector for data.  This is designed so

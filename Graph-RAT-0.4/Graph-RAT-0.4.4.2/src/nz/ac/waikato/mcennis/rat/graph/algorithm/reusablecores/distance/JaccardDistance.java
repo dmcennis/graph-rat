@@ -1,9 +1,9 @@
 /**
  * Copyright Daniel McEnnis, Anna Huang, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance;
+package org.mcennis.graphrat.algorithm.reusablecores.distance;
 
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.DataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.DataVector;
 
 /**
  * Jaccard Distance function adapted from Anna Huang's Weka Distance function by Daniel McEnnis

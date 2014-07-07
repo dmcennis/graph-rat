@@ -10,16 +10,16 @@ import java.util.Properties;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.algorithm.Algorithm;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
 import org.dynamicfactory.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
-import nz.ac.waikato.mcennis.rat.util.Duples;
+import org.mcennis.graphrat.scheduler.Scheduler;
+import org.mcennis.graphrat.util.Duples;
 
 /**
  *

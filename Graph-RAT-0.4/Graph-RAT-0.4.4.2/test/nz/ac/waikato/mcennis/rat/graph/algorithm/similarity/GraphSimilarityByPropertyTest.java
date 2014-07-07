@@ -3,18 +3,18 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.similarity;
+package org.mcennis.graphrat.algorithm.similarity;
 
 import java.util.Properties;
 import junit.framework.TestCase;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.MemGraph;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.DoubleArrayDataVector;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.CosineDistance;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.graph.MemGraph;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.DoubleArrayDataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.CosineDistance;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
-import nz.ac.waikato.mcennis.rat.util.Duples;
+import org.mcennis.graphrat.util.Duples;
 
 /**
  *

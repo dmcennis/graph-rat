@@ -2,24 +2,24 @@
  * Created 29/05/2008-16:15:19
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.similarity;
+package org.mcennis.graphrat.algorithm.similarity;
 
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Pattern;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.DataVector;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.DoubleArrayDataVector;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.DistanceFactory;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.DistanceFunction;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.algorithm.Algorithm;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.DataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.DoubleArrayDataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.DistanceFactory;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.DistanceFunction;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
 import org.dynamicfactory.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.util.Duples;
+import org.mcennis.graphrat.util.Duples;
 
 /**
  * Calculates the similarity between two graphs by a given property.
@@ -52,7 +52,7 @@ public class GraphSimilarityByProperty extends ModelShell implements Algorithm {
             props.setProperty("DistanceFunction", (String) parameter[3].getValue());
             DistanceFunction distance = DistanceFactory.newInstance().create(props);
             for (int i = 0; i < data.length; ++i) {
-                props.setProperty("PropertyClass", "nz.ac.waikato.mcennis.rat.util.Duples");
+                props.setProperty("PropertyClass", "org.mcennis.graphrat.util.Duples");
                 props.setProperty("PropertyType", "Basic");
                 props.setProperty("PropertyID", (String) parameter[6].getValue());
                 Property similarityProperty = PropertyFactory.newInstance().create(props);

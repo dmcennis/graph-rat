@@ -55,8 +55,8 @@ function windowTitle()
 
 <TR>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/DBLink.html" title="class in nz.ac.waikato.mcennis.rat.graph.link"><B>PREV CLASS</B></A>&nbsp;
-&nbsp;<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/LinkFactory.html" title="class in nz.ac.waikato.mcennis.rat.graph.link"><B>NEXT CLASS</B></A></FONT></TD>
+&nbsp;<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/DBLink.html" title="class in org.mcennis.graphrat.link"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/LinkFactory.html" title="class in org.mcennis.graphrat.link"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
   <A HREF="../../../../../../../index.html?nz/ac/waikato/mcennis/rat/graph/link/Link.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="Link.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
@@ -88,14 +88,14 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A
 <!-- ======== START OF CLASS DATA ======== -->
 <H2>
 <FONT SIZE="-1">
-nz.ac.waikato.mcennis.rat.graph.link</FONT>
+    org.mcennis.graphrat.link</FONT>
 <BR>
 Interface Link</H2>
 <DL>
 <DT><B>All Superinterfaces:</B> <DD>java.lang.Comparable, <A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/model/Model.html" title="interface in org.dynamicfactory.model">Model</A>, java.io.Serializable</DD>
 </DL>
 <DL>
-<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/BasicUserLink.html" title="class in nz.ac.waikato.mcennis.rat.graph.link">BasicUserLink</A>, <A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/DBLink.html" title="class in nz.ac.waikato.mcennis.rat.graph.link">DBLink</A></DD>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/BasicUserLink.html" title="class in org.mcennis.graphrat.link">BasicUserLink</A>, <A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/DBLink.html" title="class in org.mcennis.graphrat.link">DBLink</A></DD>
 </DL>
 <HR>
 <DL>
@@ -182,7 +182,7 @@ Interface for describing a link (arc, edge) in a graph.
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>&nbsp;<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A></CODE></FONT></TD>
+<CODE>&nbsp;<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A></CODE></FONT></TD>
 <TD><CODE><B><A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/Link.html#getDestination()">getDestination</A></B>()</CODE>
 
 <BR>
@@ -206,7 +206,7 @@ Interface for describing a link (arc, edge) in a graph.
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>&nbsp;<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A></CODE></FONT></TD>
+<CODE>&nbsp;<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A></CODE></FONT></TD>
 <TD><CODE><B><A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/Link.html#getSource()">getSource</A></B>()</CODE>
 
 <BR>
@@ -231,9 +231,9 @@ Interface for describing a link (arc, edge) in a graph.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/Link.html#set(nz.ac.waikato.mcennis.rat.graph.actor.Actor, double, nz.ac.waikato.mcennis.rat.graph.actor.Actor)">set</A></B>(<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A>&nbsp;l,
+<TD><CODE><B><A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/Link.html#set(org.mcennis.graphrat.actor.Actor, double, org.mcennis.graphrat.actor.Actor)">set</A></B>(<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A>&nbsp;l,
     double&nbsp;strength,
-    <A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A>&nbsp;r)</CODE>
+    <A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A>&nbsp;r)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sets all aspects of the link at once</TD>
@@ -249,7 +249,7 @@ Interface for describing a link (arc, edge) in a graph.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/Link.html#setDestination(nz.ac.waikato.mcennis.rat.graph.actor.Actor)">setDestination</A></B>(<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A>&nbsp;u)</CODE>
+<TD><CODE><B><A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/Link.html#setDestination(org.mcennis.graphrat.actor.Actor)">setDestination</A></B>(<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A>&nbsp;u)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the destination of this link.</TD>
@@ -257,7 +257,7 @@ Interface for describing a link (arc, edge) in a graph.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/Link.html#setSource(nz.ac.waikato.mcennis.rat.graph.actor.Actor)">setSource</A></B>(<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A>&nbsp;u)</CODE>
+<TD><CODE><B><A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/Link.html#setSource(org.mcennis.graphrat.actor.Actor)">setSource</A></B>(<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A>&nbsp;u)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the source of this link.</TD>
@@ -308,7 +308,7 @@ ALL</H3>
 static final int <B>ALL</B></PRE>
 <DL>
 <DL>
-<DT><B>See Also:</B><DD><A HREF="../../../../../../../constant-values.html#nz.ac.waikato.mcennis.rat.graph.link.Link.ALL">Constant Field Values</A></DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../constant-values.html#org.mcennis.graphrat.link.Link.ALL">Constant Field Values</A></DL>
 </DL>
 <HR>
 
@@ -318,7 +318,7 @@ SOURCE</H3>
 static final int <B>SOURCE</B></PRE>
 <DL>
 <DL>
-<DT><B>See Also:</B><DD><A HREF="../../../../../../../constant-values.html#nz.ac.waikato.mcennis.rat.graph.link.Link.SOURCE">Constant Field Values</A></DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../constant-values.html#org.mcennis.graphrat.link.Link.SOURCE">Constant Field Values</A></DL>
 </DL>
 <HR>
 
@@ -328,7 +328,7 @@ DESTINATION</H3>
 static final int <B>DESTINATION</B></PRE>
 <DL>
 <DL>
-<DT><B>See Also:</B><DD><A HREF="../../../../../../../constant-values.html#nz.ac.waikato.mcennis.rat.graph.link.Link.DESTINATION">Constant Field Values</A></DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../constant-values.html#org.mcennis.graphrat.link.Link.DESTINATION">Constant Field Values</A></DL>
 </DL>
 <HR>
 
@@ -338,7 +338,7 @@ STRENGTH</H3>
 static final int <B>STRENGTH</B></PRE>
 <DL>
 <DL>
-<DT><B>See Also:</B><DD><A HREF="../../../../../../../constant-values.html#nz.ac.waikato.mcennis.rat.graph.link.Link.STRENGTH">Constant Field Values</A></DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../constant-values.html#org.mcennis.graphrat.link.Link.STRENGTH">Constant Field Values</A></DL>
 </DL>
 <HR>
 
@@ -348,7 +348,7 @@ TYPE</H3>
 static final int <B>TYPE</B></PRE>
 <DL>
 <DL>
-<DT><B>See Also:</B><DD><A HREF="../../../../../../../constant-values.html#nz.ac.waikato.mcennis.rat.graph.link.Link.TYPE">Constant Field Values</A></DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../constant-values.html#org.mcennis.graphrat.link.Link.TYPE">Constant Field Values</A></DL>
 </DL>
 
 <!-- ============ METHOD DETAIL ========== -->
@@ -383,7 +383,7 @@ double <B>getStrength</B>()</PRE>
 <A NAME="getSource()"><!-- --></A><H3>
 getSource</H3>
 <PRE>
-<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A> <B>getSource</B>()</PRE>
+<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A> <B>getSource</B>()</PRE>
 <DL>
 <DD>Returns the actor from which the link (edge, arc) begins.
 <P>
@@ -400,7 +400,7 @@ getSource</H3>
 <A NAME="getDestination()"><!-- --></A><H3>
 getDestination</H3>
 <PRE>
-<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A> <B>getDestination</B>()</PRE>
+<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A> <B>getDestination</B>()</PRE>
 <DL>
 <DD>Returns the actor where the link (edge, arc) terminates.
 <P>
@@ -431,12 +431,12 @@ java.lang.String <B>getType</B>()</PRE>
 </DL>
 <HR>
 
-<A NAME="set(nz.ac.waikato.mcennis.rat.graph.actor.Actor, double, nz.ac.waikato.mcennis.rat.graph.actor.Actor)"><!-- --></A><H3>
+<A NAME="set(org.mcennis.graphrat.actor.Actor, double, org.mcennis.graphrat.actor.Actor)"><!-- --></A><H3>
 set</H3>
 <PRE>
-void <B>set</B>(<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A>&nbsp;l,
+void <B>set</B>(<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A>&nbsp;l,
          double&nbsp;strength,
-         <A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A>&nbsp;r)</PRE>
+         <A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A>&nbsp;r)</PRE>
 <DL>
 <DD>sets all aspects of the link at once
 <P>
@@ -449,10 +449,10 @@ void <B>set</B>(<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/ac
 </DL>
 <HR>
 
-<A NAME="setSource(nz.ac.waikato.mcennis.rat.graph.actor.Actor)"><!-- --></A><H3>
+<A NAME="setSource(org.mcennis.graphrat.actor.Actor)"><!-- --></A><H3>
 setSource</H3>
 <PRE>
-void <B>setSource</B>(<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A>&nbsp;u)</PRE>
+void <B>setSource</B>(<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A>&nbsp;u)</PRE>
 <DL>
 <DD>Sets the source of this link.  This may not be null.
 <P>
@@ -465,10 +465,10 @@ void <B>setSource</B>(<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/gr
 </DL>
 <HR>
 
-<A NAME="setDestination(nz.ac.waikato.mcennis.rat.graph.actor.Actor)"><!-- --></A><H3>
+<A NAME="setDestination(org.mcennis.graphrat.actor.Actor)"><!-- --></A><H3>
 setDestination</H3>
 <PRE>
-void <B>setDestination</B>(<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A>&nbsp;u)</PRE>
+void <B>setDestination</B>(<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A>&nbsp;u)</PRE>
 <DL>
 <DD>Sets the destination of this link. This may not be null.
 <P>
@@ -594,8 +594,8 @@ getProperty</H3>
 
 <TR>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/DBLink.html" title="class in nz.ac.waikato.mcennis.rat.graph.link"><B>PREV CLASS</B></A>&nbsp;
-&nbsp;<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/LinkFactory.html" title="class in nz.ac.waikato.mcennis.rat.graph.link"><B>NEXT CLASS</B></A></FONT></TD>
+&nbsp;<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/DBLink.html" title="class in org.mcennis.graphrat.link"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../nz/ac/waikato/mcennis/rat/graph/link/LinkFactory.html" title="class in org.mcennis.graphrat.link"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
   <A HREF="../../../../../../../index.html?nz/ac/waikato/mcennis/rat/graph/link/Link.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="Link.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;

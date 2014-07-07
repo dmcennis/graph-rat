@@ -6,13 +6,12 @@
  * copyright Daniel McEnnis - published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.parser;
+package org.mcennis.graphrat.parser;
 
 import java.io.InputStream;
-import nz.ac.waikato.mcennis.rat.crawler.Crawler;
-import nz.ac.waikato.mcennis.rat.crawler.WebCrawler;
+import org.mcennis.graphrat.crawler.Crawler;
 
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.Handler;
+import org.mcennis.graphrat.parser.xmlHandler.Handler;
 
 
 

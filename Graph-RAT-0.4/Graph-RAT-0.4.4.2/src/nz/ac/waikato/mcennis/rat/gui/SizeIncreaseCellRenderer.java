@@ -2,7 +2,7 @@
  * Created 19-02-08
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.gui;
+package org.mcennis.graphrat.gui;
 
 import java.awt.Component;
 import javax.swing.JLabel;

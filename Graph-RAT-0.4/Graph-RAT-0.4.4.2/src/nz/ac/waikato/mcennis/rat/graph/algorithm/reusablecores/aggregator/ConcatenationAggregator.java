@@ -3,12 +3,11 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator;
+package org.mcennis.graphrat.algorithm.reusablecores.aggregator;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.InstanceManipulation;
-import weka.core.FastVector;
+import org.mcennis.graphrat.algorithm.reusablecores.InstanceManipulation;
 import weka.core.Instance;
 import weka.core.Instances;
 

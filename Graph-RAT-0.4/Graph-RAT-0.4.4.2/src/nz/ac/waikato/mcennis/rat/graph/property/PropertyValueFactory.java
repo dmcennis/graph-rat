@@ -4,7 +4,7 @@
 
 package org.dynamicfactory.property;
 
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.graph.Graph;
 
 /**
  * A factory interface for importing and exporting a given java data type from

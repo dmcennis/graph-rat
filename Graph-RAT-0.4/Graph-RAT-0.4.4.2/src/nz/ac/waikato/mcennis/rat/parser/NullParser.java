@@ -6,12 +6,11 @@
  * copyright Daniel McEnnis - published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.parser;
+package org.mcennis.graphrat.parser;
 
 import java.io.IOException;
 import java.io.InputStream;
-import nz.ac.waikato.mcennis.rat.crawler.Crawler;
-import nz.ac.waikato.mcennis.rat.crawler.WebCrawler;
+import org.mcennis.graphrat.crawler.Crawler;
 
 /**
  * Intentionally a do-nothing parser.  
