@@ -3,7 +3,7 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.gui;
+package org.mcennis.graphrat.gui;
 
 import java.util.logging.Handler;
 import java.util.logging.LogRecord;

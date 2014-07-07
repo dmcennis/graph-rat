@@ -4,7 +4,7 @@
 
  */
 
-package nz.ac.waikato.mcennis.rat.crawler;
+package org.mcennis.graphrat.crawler;
 
 
 
@@ -18,11 +18,9 @@ import java.util.LinkedList;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.crawler.Authenticator;
 
 
-
-import nz.ac.waikato.mcennis.rat.parser.Parser;
+import org.mcennis.graphrat.parser.Parser;
 
 
 

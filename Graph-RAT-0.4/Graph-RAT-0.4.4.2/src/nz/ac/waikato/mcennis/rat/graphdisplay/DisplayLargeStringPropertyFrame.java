@@ -4,7 +4,7 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graphdisplay;
+package org.mcennis.graphrat.graphdisplay;
 
 import java.awt.BorderLayout;
 import java.awt.Container;

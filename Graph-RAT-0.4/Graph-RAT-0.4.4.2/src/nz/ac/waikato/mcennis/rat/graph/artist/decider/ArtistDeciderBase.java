@@ -8,7 +8,7 @@
 
 package nz.ac.waikato.mcennis.rat.graph.artist.decider;
 
-import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
+import org.mcennis.graphrat.parser.ParsedObject;
 
 /**
  * Common base class for deciding whether or not something belongs to a class

@@ -94,14 +94,14 @@ Class LoadBibliographyXML</H2>
 <PRE>
 java.lang.Object
   <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../nz/ac/waikato/mcennis/rat/graph/model/ModelShell.html" title="class in org.dynamicfactory.model">org.dynamicfactory.model.ModelShell</A>
-      <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>nz.ac.waikato.bibliography.LoadBibliographyXML</B>
+      <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>org.mcennis.graphrat.dataAquisition.LoadBibliographyXML</B>
 </PRE>
 <DL>
-<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../nz/ac/waikato/mcennis/rat/Component.html" title="interface in nz.ac.waikato.mcennis.rat">Component</A>, <A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html" title="interface in nz.ac.waikato.mcennis.rat.dataAquisition">DataAquisition</A>, <A HREF="../../../../nz/ac/waikato/mcennis/rat/graph/model/Model.html" title="interface in org.dynamicfactory.model">Model</A></DD>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../nz/ac/waikato/mcennis/rat/Component.html" title="interface in nz.ac.waikato.mcennis.rat">Component</A>, <A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html" title="interface in org.mcennis.graphrat.dataAquisition">DataAquisition</A>, <A HREF="../../../../nz/ac/waikato/mcennis/rat/graph/model/Model.html" title="interface in org.dynamicfactory.model">Model</A></DD>
 </DL>
 <HR>
 <DL>
-<DT><PRE>public class <B>LoadBibliographyXML</B><DT>extends <A HREF="../../../../nz/ac/waikato/mcennis/rat/graph/model/ModelShell.html" title="class in org.dynamicfactory.model">ModelShell</A><DT>implements <A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html" title="interface in nz.ac.waikato.mcennis.rat.dataAquisition">DataAquisition</A></DL>
+<DT><PRE>public class <B>LoadBibliographyXML</B><DT>extends <A HREF="../../../../nz/ac/waikato/mcennis/rat/graph/model/ModelShell.html" title="class in org.dynamicfactory.model">ModelShell</A><DT>implements <A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html" title="interface in org.mcennis.graphrat.dataAquisition">DataAquisition</A></DL>
 </PRE>
 
 <P>
@@ -302,7 +302,7 @@ public void <B>start</B>()</PRE>
 <DD>Begin executing the data aquisition module
 <P>
 <DD><DL>
-<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html#start()">start</A></CODE> in interface <CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html" title="interface in nz.ac.waikato.mcennis.rat.dataAquisition">DataAquisition</A></CODE></DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html#start()">start</A></CODE> in interface <CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html" title="interface in org.mcennis.graphrat.dataAquisition">DataAquisition</A></CODE></DL>
 </DD>
 <DD><DL>
 </DL>
@@ -319,7 +319,7 @@ public void <B>set</B>(<A HREF="../../../../nz/ac/waikato/mcennis/rat/graph/Grap
 <DD>Set the graph to be populated by this object
 <P>
 <DD><DL>
-<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html#set(nz.ac.waikato.mcennis.rat.graph.Graph)">set</A></CODE> in interface <CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html" title="interface in nz.ac.waikato.mcennis.rat.dataAquisition">DataAquisition</A></CODE></DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html#set(nz.ac.waikato.mcennis.rat.graph.Graph)">set</A></CODE> in interface <CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html" title="interface in org.mcennis.graphrat.dataAquisition">DataAquisition</A></CODE></DL>
 </DD>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>g</CODE> - graph to be created for analysis</DL>
@@ -336,7 +336,7 @@ public <A HREF="../../../../nz/ac/waikato/mcennis/rat/graph/Graph.html" title="i
 <DD>Obtain a reference to the graph this object holds
 <P>
 <DD><DL>
-<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html#get()">get</A></CODE> in interface <CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html" title="interface in nz.ac.waikato.mcennis.rat.dataAquisition">DataAquisition</A></CODE></DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html#get()">get</A></CODE> in interface <CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html" title="interface in org.mcennis.graphrat.dataAquisition">DataAquisition</A></CODE></DL>
 </DD>
 <DD><DL>
 
@@ -354,7 +354,7 @@ public void <B>cancel</B>()</PRE>
 <DD>Stop all collection at the end of the next entity (file, web-page, etc.)
 <P>
 <DD><DL>
-<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html#cancel()">cancel</A></CODE> in interface <CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html" title="interface in nz.ac.waikato.mcennis.rat.dataAquisition">DataAquisition</A></CODE></DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html#cancel()">cancel</A></CODE> in interface <CODE><A HREF="../../../../nz/ac/waikato/mcennis/rat/dataAquisition/DataAquisition.html" title="interface in org.mcennis.graphrat.dataAquisition">DataAquisition</A></CODE></DL>
 </DD>
 <DD><DL>
 </DL>

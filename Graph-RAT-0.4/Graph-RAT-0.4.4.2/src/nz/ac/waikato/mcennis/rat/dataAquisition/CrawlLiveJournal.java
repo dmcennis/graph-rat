@@ -6,7 +6,7 @@
  * Copyright Daniel McEnnis, published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.dataAquisition;
+package org.mcennis.graphrat.dataAquisition;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -15,21 +15,21 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import nz.ac.waikato.mcennis.rat.crawler.FileListCrawler;
-import nz.ac.waikato.mcennis.rat.crawler.WebCrawler;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
+import org.mcennis.graphrat.crawler.FileListCrawler;
+import org.mcennis.graphrat.crawler.WebCrawler;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptorInternal;
 import org.dynamicfactory.descriptors.SettableParameter;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.parser.Parser;
-import nz.ac.waikato.mcennis.rat.parser.ParserFactory;
-import nz.ac.waikato.mcennis.rat.parser.ToFileParser;
+import org.mcennis.graphrat.link.Link;
+import org.mcennis.graphrat.parser.Parser;
+import org.mcennis.graphrat.parser.ParserFactory;
+import org.mcennis.graphrat.parser.ToFileParser;
 import org.dynamicfactory.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
+import org.mcennis.graphrat.scheduler.Scheduler;
 
 /**
  * This class enables parsing and spidering of the LiveJournal site.  

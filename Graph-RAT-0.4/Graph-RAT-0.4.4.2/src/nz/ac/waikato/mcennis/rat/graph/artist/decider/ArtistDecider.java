@@ -8,7 +8,7 @@
 
 package nz.ac.waikato.mcennis.rat.graph.artist.decider;
 
-import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
+import org.mcennis.graphrat.parser.ParsedObject;
 
 /**
  * Interface for providing a binary responce to whether a given String belongs

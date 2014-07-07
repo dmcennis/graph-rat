@@ -6,7 +6,7 @@ package org.dynamicfactory.property;
 
 import java.util.HashMap;
 import java.util.Iterator;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.graph.Graph;
 
 /**
  * Factory for serlizing and deserializing HashMap&lt;String,Double&gt; objects

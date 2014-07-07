@@ -1,7 +1,7 @@
 /*
  *  Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.clustering;
+package org.mcennis.graphrat.algorithm.clustering;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -9,20 +9,20 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.prestige.OptimizedLinkBetweeness;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.FindStronglyConnectedComponentsCore;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.OptimizedLinkBetweenessCore;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.algorithm.Algorithm;
+import org.mcennis.graphrat.prestige.OptimizedLinkBetweeness;
+import org.mcennis.graphrat.algorithm.reusablecores.FindStronglyConnectedComponentsCore;
+import org.mcennis.graphrat.algorithm.reusablecores.OptimizedLinkBetweenessCore;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
+import org.mcennis.graphrat.link.Link;
 import org.dynamicfactory.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
-import nz.ac.waikato.mcennis.rat.util.Duples;
+import org.mcennis.graphrat.scheduler.Scheduler;
+import org.mcennis.graphrat.util.Duples;
 
 /**
  * Creates clusters by removing each edge sequentially by order of link betweeness.

@@ -12,10 +12,10 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.Handler;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.parser.ParsedObject;
+import org.mcennis.graphrat.parser.xmlHandler.Handler;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 

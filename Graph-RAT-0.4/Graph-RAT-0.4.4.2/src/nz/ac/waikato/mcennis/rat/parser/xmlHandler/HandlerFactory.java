@@ -6,13 +6,12 @@
  * Copyright Daniel McEnnis, published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.parser.xmlHandler;
+package org.mcennis.graphrat.parser.xmlHandler;
 
 import java.util.Properties;
-import nz.ac.waikato.bibliography.XMLParser.ParseBibliographyXML;
-import nz.ac.waikato.bibliography.XMLParser.ParseClassLabel;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.GraphFactory;
+
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.graph.GraphFactory;
 
 /**
  * Factory class for creating SAX XML parsers for use with the XML Parser class.

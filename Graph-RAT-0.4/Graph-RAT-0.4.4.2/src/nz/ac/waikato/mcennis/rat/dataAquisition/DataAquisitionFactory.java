@@ -6,13 +6,11 @@
  * Copyright Daniel McEnnis, published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.dataAquisition;
+package org.mcennis.graphrat.dataAquisition;
 
 import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.bibliography.LoadBibliographyAndClass;
-import nz.ac.waikato.bibliography.LoadBibliographyXML;
 
 /**
  * Class for creating DataAquisition Objects

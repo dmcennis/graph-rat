@@ -3,13 +3,13 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.collaborativefiltering;
+package org.mcennis.graphrat.algorithm.collaborativefiltering;
 
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
 
 /**
  * Class for bundling Association Objects.  It stores references to the paraent 

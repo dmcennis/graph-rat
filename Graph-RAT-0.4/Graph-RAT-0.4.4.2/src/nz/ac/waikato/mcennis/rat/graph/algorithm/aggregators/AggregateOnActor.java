@@ -3,7 +3,7 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.aggregators;
+package org.mcennis.graphrat.algorithm.aggregators;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -11,14 +11,14 @@ import java.util.LinkedList;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.InstanceManipulation;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator.AggregatorFunction;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator.AggregatorFunctionFactory;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator.ConcatenationAggregator;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator.FirstItemAggregatorFunction;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.algorithm.Algorithm;
+import org.mcennis.graphrat.algorithm.reusablecores.InstanceManipulation;
+import org.mcennis.graphrat.algorithm.reusablecores.aggregator.AggregatorFunction;
+import org.mcennis.graphrat.algorithm.reusablecores.aggregator.AggregatorFunctionFactory;
+import org.mcennis.graphrat.algorithm.reusablecores.aggregator.ConcatenationAggregator;
+import org.mcennis.graphrat.algorithm.reusablecores.aggregator.FirstItemAggregatorFunction;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.InputDescriptorInternal;
@@ -26,7 +26,7 @@ import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptorInternal;
 import org.dynamicfactory.descriptors.SettableParameter;
 import org.dynamicfactory.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.util.Duples;
+import org.mcennis.graphrat.util.Duples;
 import weka.core.Instance;
 import weka.core.Instances;
 

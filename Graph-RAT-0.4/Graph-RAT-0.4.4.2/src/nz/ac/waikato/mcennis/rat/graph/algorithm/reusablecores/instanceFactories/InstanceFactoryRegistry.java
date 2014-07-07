@@ -3,7 +3,7 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.instanceFactories;
+package org.mcennis.graphrat.algorithm.reusablecores.instanceFactories;
 
 import java.util.HashMap;
 import weka.core.Instance;

@@ -6,7 +6,8 @@ package nz.ac.waikato.mcennis.rat.graph;
 
 import java.util.Collection;
 import java.util.LinkedList;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.graph.MemGraph;
 
 /**
  * Class for describing a tree.  Does not enforce acyclic condition.  Subclass
@@ -15,7 +16,7 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
  * FIXME: Serialization not implemented - needs its own parser and output function.
  * @author Daniel McEnnis
  */
-public class Tree extends MemGraph{
+public class Tree extends MemGraph {
     
     LinkedList<Actor> roots = new LinkedList<Actor>();
     

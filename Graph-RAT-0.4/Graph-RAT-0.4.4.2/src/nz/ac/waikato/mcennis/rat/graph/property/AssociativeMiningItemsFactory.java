@@ -7,10 +7,10 @@ package org.dynamicfactory.property;
 
 import java.util.LinkedList;
 import java.util.Properties;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.collaborativefiltering.AssociativeMiningItems;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.actor.ActorFactory;
+import org.mcennis.graphrat.algorithm.collaborativefiltering.AssociativeMiningItems;
 
 /**
  * Factory for serializing and deserializing AssociativeMiningItems.

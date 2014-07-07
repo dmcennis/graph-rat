@@ -5,7 +5,7 @@
 
 package org.dynamicfactory.property;
 
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.graph.Graph;
 import weka.core.Instance;
 
 /**

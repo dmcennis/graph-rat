@@ -10,16 +10,16 @@ package nz.ac.waikato.bibliography;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.crawler.FileListCrawler;
-import nz.ac.waikato.mcennis.rat.dataAquisition.DataAquisition;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.crawler.FileListCrawler;
+import org.mcennis.graphrat.dataAquisition.DataAquisition;
+import org.mcennis.graphrat.graph.Graph;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
 import org.dynamicfactory.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.parser.Parser;
-import nz.ac.waikato.mcennis.rat.parser.ParserFactory;
+import org.mcennis.graphrat.parser.Parser;
+import org.mcennis.graphrat.parser.ParserFactory;
 
 /**
  * Loads an XML file containing bibliographic data.  See ParseBibliographyXML for

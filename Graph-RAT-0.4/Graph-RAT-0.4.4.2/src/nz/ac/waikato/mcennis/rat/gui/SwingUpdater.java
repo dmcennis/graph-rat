@@ -3,12 +3,12 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.gui;
+package org.mcennis.graphrat.gui;
 
 import javax.swing.SwingUtilities;
 import org.dynamicfactory.model.Listener;
 import org.dynamicfactory.model.Model;
-import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
+import org.mcennis.graphrat.scheduler.Scheduler;
 
 /**
  * Controller for recieving updates during execution and

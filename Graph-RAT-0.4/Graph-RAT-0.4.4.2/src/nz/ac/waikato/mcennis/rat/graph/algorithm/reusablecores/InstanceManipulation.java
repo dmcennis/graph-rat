@@ -3,14 +3,14 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores;
+package org.mcennis.graphrat.algorithm.reusablecores;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.TreeMap;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.instanceFactories.InstanceFactory;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.instanceFactories.InstanceFactoryRegistry;
+import org.mcennis.graphrat.algorithm.reusablecores.instanceFactories.InstanceFactory;
+import org.mcennis.graphrat.algorithm.reusablecores.instanceFactories.InstanceFactoryRegistry;
 import weka.core.Attribute;
 import weka.core.FastVector;
 import weka.core.Instance;

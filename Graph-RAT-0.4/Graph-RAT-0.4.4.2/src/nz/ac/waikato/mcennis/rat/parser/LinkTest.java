@@ -6,15 +6,14 @@
  * copyright Daniel McEnnis - published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.parser;
+package org.mcennis.graphrat.parser;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.crawler.Crawler;
-import nz.ac.waikato.mcennis.rat.crawler.WebCrawler;
+import org.mcennis.graphrat.crawler.Crawler;
 
 /**
  * Dummy class designed purely to test spidering capabilities

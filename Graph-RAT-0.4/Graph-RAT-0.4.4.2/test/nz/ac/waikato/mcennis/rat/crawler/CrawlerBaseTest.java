@@ -6,15 +6,14 @@
  * copyright Daniel McEnnis - all rights reserved
  */
 
-package nz.ac.waikato.mcennis.rat.crawler;
+package org.mcennis.graphrat.crawler;
 
 import junit.framework.*;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import nz.ac.waikato.mcennis.rat.parser.Parser;
-import nz.ac.waikato.mcennis.rat.parser.NullParser;
-import nz.ac.waikato.mcennis.rat.parser.LinkTest;
-import nz.ac.waikato.mcennis.rat.parser.ParserFactory;
+
+import org.mcennis.graphrat.parser.Parser;
+import org.mcennis.graphrat.parser.NullParser;
+import org.mcennis.graphrat.parser.ParserFactory;
 
 /**
  *

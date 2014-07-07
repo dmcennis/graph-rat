@@ -2,7 +2,7 @@
  * Created 19/05/2008-10:51:51
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.dataAquisition;
+package org.mcennis.graphrat.dataAquisition;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,27 +11,27 @@ import java.io.LineNumberReader;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.crawler.Authenticator;
-import nz.ac.waikato.mcennis.rat.crawler.FileListCrawler;
-import nz.ac.waikato.mcennis.rat.crawler.WebCrawler;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.crawler.Authenticator;
+import org.mcennis.graphrat.crawler.FileListCrawler;
+import org.mcennis.graphrat.crawler.WebCrawler;
+import org.mcennis.graphrat.graph.Graph;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
 import org.dynamicfactory.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.parser.Parser;
-import nz.ac.waikato.mcennis.rat.parser.ToFileParser;
-import nz.ac.waikato.mcennis.rat.parser.XMLParser;
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.LastFMArtistTag;
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.LastFMFriends;
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.LastFMProfile;
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.LastFMSimilarUsers;
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.LastFMUserArtistTags;
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.LastFMUserExpansion;
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.LastFMUserTags;
-import nz.ac.waikato.mcennis.rat.parser.xmlHandler.LastFMUserTopArtists;
+import org.mcennis.graphrat.parser.Parser;
+import org.mcennis.graphrat.parser.ToFileParser;
+import org.mcennis.graphrat.parser.XMLParser;
+import org.mcennis.graphrat.parser.xmlHandler.LastFMArtistTag;
+import org.mcennis.graphrat.parser.xmlHandler.LastFMFriends;
+import org.mcennis.graphrat.parser.xmlHandler.LastFMProfile;
+import org.mcennis.graphrat.parser.xmlHandler.LastFMSimilarUsers;
+import org.mcennis.graphrat.parser.xmlHandler.LastFMUserArtistTags;
+import org.mcennis.graphrat.parser.xmlHandler.LastFMUserExpansion;
+import org.mcennis.graphrat.parser.xmlHandler.LastFMUserTags;
+import org.mcennis.graphrat.parser.xmlHandler.LastFMUserTopArtists;
 
 /**
  * Class for parsing the LastFM web services with a multi-threaded parser.  Files are stored to the directory 

@@ -2,7 +2,7 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.util;
+package org.mcennis.graphrat.util;
 
 
 /**

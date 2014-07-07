@@ -2,7 +2,7 @@
  * Jul 23, 2008-9:42:03 PM
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.instanceFactories;
+package org.mcennis.graphrat.algorithm.reusablecores.instanceFactories;
 
 import weka.core.Attribute;
 import weka.core.FastVector;

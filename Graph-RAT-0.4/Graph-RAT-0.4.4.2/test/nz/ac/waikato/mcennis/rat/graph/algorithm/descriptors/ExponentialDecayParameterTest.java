@@ -16,7 +16,7 @@
 
 
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.descriptors;
+package org.mcennis.graphrat.algorithm.descriptors;
 
 
 

@@ -7,13 +7,13 @@
  * Copyright Daniel McEnnis, all rights reserved
  */
 
-package nz.ac.waikato.mcennis.rat.graph.actor;
+package org.mcennis.graphrat.actor;
 
 import java.io.File;
 import junit.framework.*;
 
 import java.sql.SQLException;
-import nz.ac.waikato.mcennis.rat.graph.DerbyGraph;
+import org.mcennis.graphrat.graph.DerbyGraph;
 import org.dynamicfactory.model.Model;
 import nz.ac.waikato.mcennis.rat.graph.page.Page;
 
@@ -57,7 +57,7 @@ public class DBActorTest extends TestCase {
 
 
     /**
-     * Test of setID method, of class nz.ac.waikato.mcennis.rat.graph.actor.DBActor.
+     * Test of setID method, of class org.mcennis.graphrat.actor.DBActor.
      */
     public void testSetID() {
         System.out.println("setID");
@@ -70,7 +70,7 @@ public class DBActorTest extends TestCase {
     }
 
     /**
-     * Test of getID method, of class nz.ac.waikato.mcennis.rat.graph.actor.DBActor.
+     * Test of getID method, of class org.mcennis.graphrat.actor.DBActor.
      */
     public void testGetID() {
         System.out.println("getID");
@@ -84,7 +84,7 @@ public class DBActorTest extends TestCase {
     }
 
     /**
-     * Test of setType method, of class nz.ac.waikato.mcennis.rat.graph.actor.DBActor.
+     * Test of setType method, of class org.mcennis.graphrat.actor.DBActor.
      */
     public void testSetType() {
         System.out.println("setType");
@@ -97,7 +97,7 @@ public class DBActorTest extends TestCase {
     }
 
     /**
-     * Test of getType method, of class nz.ac.waikato.mcennis.rat.graph.actor.DBActor.
+     * Test of getType method, of class org.mcennis.graphrat.actor.DBActor.
      */
     public void testGetType() {
         System.out.println("getType");
@@ -130,7 +130,7 @@ public class DBActorTest extends TestCase {
     }
 
     /**
-     * Test of duplicate method, of class nz.ac.waikato.mcennis.rat.graph.actor.DBActor.
+     * Test of duplicate method, of class org.mcennis.graphrat.actor.DBActor.
      */
     public void testDuplicate() {
         System.out.println("duplicate");
@@ -148,7 +148,7 @@ public class DBActorTest extends TestCase {
     }
 
     /**
-     * Test of getProperty method, of class nz.ac.waikato.mcennis.rat.graph.actor.DBActor.
+     * Test of getProperty method, of class org.mcennis.graphrat.actor.DBActor.
      */
     public void testGetPropertyNull() {
         System.out.println("getProperty");
@@ -172,7 +172,7 @@ public class DBActorTest extends TestCase {
     }
 
     /**
-     * Test of removeProperty method, of class nz.ac.waikato.mcennis.rat.graph.actor.DBActor.
+     * Test of removeProperty method, of class org.mcennis.graphrat.actor.DBActor.
      */
     public void testRemoveProperty() {
         System.out.println("removeProperty");
@@ -194,7 +194,7 @@ public class DBActorTest extends TestCase {
     }
 
     /**
-     * Test of getPage method, of class nz.ac.waikato.mcennis.rat.graph.actor.DBActor.
+     * Test of getPage method, of class org.mcennis.graphrat.actor.DBActor.
      */
     public void testGetPage() {
         System.out.println("getPage");
@@ -212,7 +212,7 @@ public class DBActorTest extends TestCase {
 
 
     /**
-     * Test of publishChange method, of class nz.ac.waikato.mcennis.rat.graph.actor.DBActor.
+     * Test of publishChange method, of class org.mcennis.graphrat.actor.DBActor.
      */
     public void testPublishChange() throws Exception{
         System.out.println("publishChange");

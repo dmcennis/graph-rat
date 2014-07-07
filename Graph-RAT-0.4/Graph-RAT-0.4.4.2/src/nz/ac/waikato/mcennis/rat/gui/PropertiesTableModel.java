@@ -2,7 +2,7 @@
  * Created 18-02-08
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.gui;
+package org.mcennis.graphrat.gui;
 
 import java.util.Properties;
 import java.util.Vector;

@@ -2,25 +2,26 @@
  * Created 7-5-08
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.similarity;
+package org.mcennis.graphrat.algorithm.similarity;
 
-import nz.ac.waikato.mcennis.rat.graph.algorithm.*;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.collaborativefiltering.AssociativeMiningItems;
+
+import org.mcennis.graphrat.algorithm.Algorithm;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.algorithm.collaborativefiltering.AssociativeMiningItems;
 import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.InputDescriptorInternal;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptorInternal;
 import org.dynamicfactory.descriptors.SettableParameter;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
+import org.mcennis.graphrat.link.Link;
+import org.mcennis.graphrat.link.LinkFactory;
 import org.dynamicfactory.model.ModelShell;
-import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
+import org.mcennis.graphrat.scheduler.Scheduler;
 
 /**
  * Initial algorithm for creating an ontology from a folksonomy.  Utilizes 
@@ -275,7 +276,7 @@ public class HierarchyByCooccurance extends ModelShell implements Algorithm {
             parameter[0].setValue("Basic Interest Link");
         }
 
-        props.setProperty("Type", "nz.ac.waikato.mcennis.rat.graph.algorithm.collaborativefiltering.AssociativeMiningItems");
+        props.setProperty("Type", "org.mcennis.graphrat.algorithm.collaborativefiltering.AssociativeMiningItems");
         props.setProperty("Name", "association");
         props.setProperty("Class", "Basic");
         props.setProperty("Structural", "true");

@@ -3,12 +3,11 @@
  * and open the template in the editor.
  */
 
-package nz.ac.waikato.mcennis.rat.dataAquisition;
+package org.mcennis.graphrat.dataAquisition;
 
-import jAudioFeatureExtractor.ACE.DataTypes.Batch;
 import java.util.Properties;
 import junit.framework.TestCase;
-import nz.ac.waikato.mcennis.rat.graph.MemGraph;
+import org.mcennis.graphrat.graph.MemGraph;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;

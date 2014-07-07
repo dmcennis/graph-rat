@@ -6,7 +6,7 @@
  * Copyright Daniel McEnnis, published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.scheduler;
+package org.mcennis.graphrat.scheduler;
 
 /**
  * Class for creating a scheduler.

@@ -4,7 +4,7 @@
 
 package nz.ac.waikato.mcennis.rat;
 
-import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
+import org.mcennis.graphrat.scheduler.Scheduler;
 
 /**
  * Thread class for executing RAT schedulers outside of the main thread.

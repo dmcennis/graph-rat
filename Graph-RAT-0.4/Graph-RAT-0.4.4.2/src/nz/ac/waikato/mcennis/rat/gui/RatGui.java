@@ -4,7 +4,7 @@
  * Created on 14 February 2008, 13:44
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.gui;
+package org.mcennis.graphrat.gui;
 
 import java.awt.event.ActionEvent;
 import java.util.Properties;
@@ -23,15 +23,15 @@ import javax.swing.tree.TreePath;
 
 import org.multihelp.HelpWindow;
 
-import nz.ac.waikato.mcennis.rat.RatExecutionThread;
-import nz.ac.waikato.mcennis.rat.dataAquisition.DataAquisition;
-import nz.ac.waikato.mcennis.rat.dataAquisition.DataAquisitionFactory;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.GraphFactory;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmFactory;
-import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
-import nz.ac.waikato.mcennis.rat.scheduler.SchedulerFactory;
+import org.mcennis.graphrat.RatExecutionThread;
+import org.mcennis.graphrat.dataAquisition.DataAquisition;
+import org.mcennis.graphrat.dataAquisition.DataAquisitionFactory;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.graph.GraphFactory;
+import org.mcennis.graphrat.algorithm.Algorithm;
+import org.mcennis.graphrat.algorithm.AlgorithmFactory;
+import org.mcennis.graphrat.scheduler.Scheduler;
+import org.mcennis.graphrat.scheduler.SchedulerFactory;
 
 /**
  * Application Frame for creating and executing graph-RAT applications

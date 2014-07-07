@@ -3,13 +3,13 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.aggregator;
+package org.mcennis.graphrat.algorithm.reusablecores.aggregator;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import junit.framework.TestCase;
 import nz.ac.waikato.mcennis.rat.AssertionHandler;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.DistanceFunction;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.DistanceFunction;
 import weka.core.Attribute;
 import weka.core.FastVector;
 import weka.core.Instance;

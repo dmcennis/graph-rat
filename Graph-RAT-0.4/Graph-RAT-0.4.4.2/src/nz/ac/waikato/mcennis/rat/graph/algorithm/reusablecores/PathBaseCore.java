@@ -1,7 +1,7 @@
 /*
  * Copyright Daniel McEnnis under BSD license
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores;
+package org.mcennis.graphrat.algorithm.reusablecores;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -9,10 +9,10 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
-import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.graph.path.PathNode;
+import org.mcennis.graphrat.graph.Graph;
+import org.mcennis.graphrat.actor.Actor;
+import org.mcennis.graphrat.link.Link;
+import org.mcennis.graphrat.path.PathNode;
 
 /**
  * Core abstract class for algorithm cores that utilize shortest-path info

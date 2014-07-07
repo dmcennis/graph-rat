@@ -6,10 +6,10 @@
  * Copyright Daniel McEnnis, published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.dataAquisition;
+package org.mcennis.graphrat.dataAquisition;
 
-import nz.ac.waikato.mcennis.rat.Component;
-import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.mcennis.graphrat.Component;
+import org.mcennis.graphrat.graph.Graph;
 
 /**
  * Class for acquiring data into RAT.  This module makes extensive use of the 

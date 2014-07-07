@@ -3,10 +3,10 @@
  * Copyright Daniel McEnnis, see license.txt
  */
 
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector;
+package org.mcennis.graphrat.algorithm.reusablecores.datavector;
 
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.DataVector;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.distance.*;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.DataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.*;
 import weka.core.Instance;
 
 /**

@@ -93,7 +93,7 @@ nz.ac.waikato.mcennis.rat.graph</FONT>
 Class GraphIndex</H2>
 <PRE>
 java.lang.Object
-  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>nz.ac.waikato.mcennis.rat.graph.GraphIndex</B>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.mcennis.graphrat.graph.GraphIndex</B>
 </PRE>
 <HR>
 <DL>
@@ -144,7 +144,7 @@ Helper Class that maintains an inverse index - the set of all graphs that an
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/GraphIndex.html#addActor(nz.ac.waikato.mcennis.rat.graph.actor.Actor, nz.ac.waikato.mcennis.rat.graph.Graph)">addActor</A></B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A>&nbsp;a,
+<TD><CODE><B><A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/GraphIndex.html#addActor(org.mcennis.graphrat.actor.Actor, nz.ac.waikato.mcennis.rat.graph.Graph)">addActor</A></B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A>&nbsp;a,
          <A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/Graph.html" title="interface in nz.ac.waikato.mcennis.rat.graph">Graph</A>&nbsp;g)</CODE>
 
 <BR>
@@ -161,7 +161,7 @@ Helper Class that maintains an inverse index - the set of all graphs that an
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/Graph.html" title="interface in nz.ac.waikato.mcennis.rat.graph">Graph</A>[]</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/GraphIndex.html#getGraph(nz.ac.waikato.mcennis.rat.graph.actor.Actor)">getGraph</A></B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A>&nbsp;a)</CODE>
+<TD><CODE><B><A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/GraphIndex.html#getGraph(org.mcennis.graphrat.actor.Actor)">getGraph</A></B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A>&nbsp;a)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return an array of all graphs that contain the actor or null if no indexed
@@ -218,10 +218,10 @@ public <B>GraphIndex</B>()</PRE>
 </TR>
 </TABLE>
 
-<A NAME="addActor(nz.ac.waikato.mcennis.rat.graph.actor.Actor, nz.ac.waikato.mcennis.rat.graph.Graph)"><!-- --></A><H3>
+<A NAME="addActor(org.mcennis.graphrat.actor.Actor, nz.ac.waikato.mcennis.rat.graph.Graph)"><!-- --></A><H3>
 addActor</H3>
 <PRE>
-public void <B>addActor</B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A>&nbsp;a,
+public void <B>addActor</B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A>&nbsp;a,
                      <A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/Graph.html" title="interface in nz.ac.waikato.mcennis.rat.graph">Graph</A>&nbsp;g)</PRE>
 <DL>
 <DD>Add a reference between a graph and an actor.  Implicitly adds the graph
@@ -247,10 +247,10 @@ public void <B>addGraph</B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat
 </DL>
 <HR>
 
-<A NAME="getGraph(nz.ac.waikato.mcennis.rat.graph.actor.Actor)"><!-- --></A><H3>
+<A NAME="getGraph(org.mcennis.graphrat.actor.Actor)"><!-- --></A><H3>
 getGraph</H3>
 <PRE>
-public <A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/Graph.html" title="interface in nz.ac.waikato.mcennis.rat.graph">Graph</A>[] <B>getGraph</B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in nz.ac.waikato.mcennis.rat.graph.actor">Actor</A>&nbsp;a)</PRE>
+public <A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/Graph.html" title="interface in nz.ac.waikato.mcennis.rat.graph">Graph</A>[] <B>getGraph</B>(<A HREF="../../../../../../nz/ac/waikato/mcennis/rat/graph/actor/Actor.html" title="interface in org.mcennis.graphrat.actor">Actor</A>&nbsp;a)</PRE>
 <DL>
 <DD>Return an array of all graphs that contain the actor or null if no indexed
 

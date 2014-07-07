@@ -2,13 +2,13 @@
  * Created 21/05/2008-15:55:16
  * Copyright Daniel McEnnis, see license.txt
  */
-package nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector;
+package org.mcennis.graphrat.algorithm.reusablecores.datavector;
 
-import nz.ac.waikato.mcennis.rat.graph.algorithm.reusablecores.datavector.DataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.DataVector;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import nz.ac.waikato.mcennis.rat.util.Duples;
+import org.mcennis.graphrat.util.Duples;
 
 /**
  * Class that creates a dual data vector class fromm a duples-list and a map.  Note
