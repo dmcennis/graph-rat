@@ -10,6 +10,7 @@ import org.xml.sax.SAXException;
 import java.io.Writer;
 import java.io.IOException;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.WeightedKLDDistance;
+import org.dynamicfactory.propertyQuery.Query.State;
 
 /**
  *

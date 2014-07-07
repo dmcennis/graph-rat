@@ -12,6 +12,9 @@ import org.dynamicfactory.descriptors.BasicParameter;
 import org.dynamicfactory.descriptors.ParameterInternal;
 import org.dynamicfactory.descriptors.PropertyRestriction;
 import org.dynamicfactory.descriptors.SyntaxObject;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 /**
  *
@@ -66,7 +69,7 @@ public class BasicParameterTest extends TestCase {
      */
     public void testSet_Property() {
         System.out.println("set");
-        Property o = PropertyFactory.newInstance().create("Param", String.class);
+        Property o = PropertyFactory.newInstance().create("BasicProperty","Param", String.class);
         BasicParameter instance = new BasicParameter();
         instance.set(o);
     }
@@ -226,7 +229,7 @@ public class BasicParameterTest extends TestCase {
      */
     public void testCheck_Default_Property() {
         System.out.println("checkDefaultDefault");
-        Property property = PropertyFactory.newInstance().create("Type", String.class);
+        Property property = PropertyFactory.newInstance().create("BasicProperty","Type", String.class);
         BasicParameter instance = new BasicParameter();
         instance.setParameterClass(String.class);
         instance.setType("Type");
@@ -240,7 +243,7 @@ public class BasicParameterTest extends TestCase {
      */
     public void testBadTypeCheck_Default_Property() {
         System.out.println("checkDefaultDefault");
-        Property property = PropertyFactory.newInstance().create("Bad ID", String.class);
+        Property property = PropertyFactory.newInstance().create("BasicProperty","Bad ID", String.class);
         BasicParameter instance = new BasicParameter();
         instance.setType("Type");
         instance.setParameterClass(String.class);
@@ -255,7 +258,7 @@ public class BasicParameterTest extends TestCase {
      */
     public void testBadClassCheck_Default_Property() {
         System.out.println("checkDefaultDefault");
-        Property property = PropertyFactory.newInstance().create("Type", Double.class);
+        Property property = PropertyFactory.newInstance().create("BasicProperty","Type", Double.class);
         BasicParameter instance = new BasicParameter();
         instance.setType("Type");
         instance.setParameterClass(String.class);
@@ -269,7 +272,7 @@ public class BasicParameterTest extends TestCase {
      */
     public void testCheck_Property() throws InvalidObjectTypeException {
         System.out.println("check");
-        Property property = PropertyFactory.newInstance().create("Type", String.class);
+        Property property = PropertyFactory.newInstance().create("BasicProperty","Type", String.class);
         property.add("Value 1");
         BasicParameter instance = new BasicParameter();
         instance.setType("Type");

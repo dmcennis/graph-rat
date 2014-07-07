@@ -34,17 +34,16 @@ import nz.ac.waikato.mcennis.rat.crawler.WebCrawler;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 
-import org.dynamicfactory.descriptors.IODescriptorFactory;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptorFactory;
 
 
 
-import org.dynamicfactory.descriptors.IODescriptor;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor;
 
-import org.dynamicfactory.descriptors.IODescriptor.Type;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor.Type;
 import org.dynamicfactory.descriptors.*;
-import org.dynamicfactory.property.Property;
 
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 
 import nz.ac.waikato.mcennis.rat.parser.Parser;
 

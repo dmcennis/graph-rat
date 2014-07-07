@@ -25,7 +25,7 @@ import org.dynamicfactory.descriptors.InputDescriptorInternal;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptorInternal;
 import org.dynamicfactory.descriptors.SettableParameter;
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.util.Duples;
 import weka.core.Instance;
 import weka.core.Instances;

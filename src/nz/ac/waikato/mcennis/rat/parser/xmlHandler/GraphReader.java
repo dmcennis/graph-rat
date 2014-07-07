@@ -17,7 +17,7 @@ import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
 import java.util.Stack;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.XMLParserObject;
+import org.dynamicfactory.propertyQuery.Query;
 import nz.ac.waikato.mcennis.rat.graph.MemGraph;
 import org.dynamicfactory.property.Property;
 import org.dynamicfactory.property.PropertyXMLFactory;
@@ -229,7 +229,8 @@ public class GraphReader extends Handler {
         try {
             if (propertyXML!=null) {
                 propertyXML.endElement(uri, localName, qName);
-                if(propertyXML.buildingStatus()==XMLParserObject.State.READY){
+
+                if(propertyXML.buildingStatus()==Query.State.READY){
                     switch(state){
                         case GRAPH:
                             graph.add(propertyXML.getProperty());

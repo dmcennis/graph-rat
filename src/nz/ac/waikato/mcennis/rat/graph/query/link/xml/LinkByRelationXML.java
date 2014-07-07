@@ -5,7 +5,7 @@
  */
 package nz.ac.waikato.mcennis.rat.graph.query.link.xml;
 
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+import org.dynamicfactory.propertyQuery.Query.State;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQueryXML;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByRelation;

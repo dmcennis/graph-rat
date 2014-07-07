@@ -8,8 +8,12 @@ package nz.ac.waikato.mcennis.rat.graph.query.property.xml;
 import nz.ac.waikato.mcennis.rat.reusablecores.datavector.DataVector;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.xml.DistanceXML;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.xml.DistanceXMLFactory;
-import org.dynamicfactory.propertyQuery.DataVectorQuery;import org.dynamicfactory.propertyQuery.xml.NumericQueryXML;import org.dynamicfactory.propertyQuery.xml.PropertyQueryXML;import org.xml.sax.Attributes;
+import nz.ac.waikato.mcennis.rat.graph.query.property.DataVectorQuery;
+import org.dynamicfactory.propertyQuery.xml.NumericQueryXML;
+import org.dynamicfactory.propertyQuery.xml.PropertyQueryXML;
+import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;import java.lang.String;
+import org.dynamicfactory.propertyQuery.Query.State;
 
 /**
  *

@@ -39,7 +39,11 @@ import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
 
 
-import org.dynamicfactory.descriptors.IODescriptor;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor;
+import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.PropertiesFactory;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 
 /**

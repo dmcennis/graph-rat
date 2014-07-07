@@ -38,11 +38,11 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 
-import nz.ac.waikato.mcennis.rat.graph.model.Listener;
+import org.dynamicfactory.model.Listener;
 
-import nz.ac.waikato.mcennis.rat.graph.model.Model;
+import org.dynamicfactory.model.Model;
 
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 
 import nz.ac.waikato.mcennis.rat.graph.query.GraphQuery;
 import org.dynamicfactory.descriptors.*;

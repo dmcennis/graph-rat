@@ -13,6 +13,10 @@ import nz.ac.waikato.mcennis.rat.graph.MemGraph;
 import nz.ac.waikato.mcennis.rat.reusablecores.datavector.DoubleArrayDataVector;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.CosineDistance;
 import nz.ac.waikato.mcennis.rat.util.Duples;
+import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.PropertiesFactory;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 /**
  *

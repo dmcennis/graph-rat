@@ -27,11 +27,11 @@ import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import nz.ac.waikato.mcennis.rat.graph.model.Listener;
+import org.dynamicfactory.model.Listener;
 
-import nz.ac.waikato.mcennis.rat.graph.model.Model;
+import org.dynamicfactory.model.Model;
 
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 
 import org.dynamicfactory.descriptors.Properties;
 import org.dynamicfactory.property.InvalidObjectTypeException;

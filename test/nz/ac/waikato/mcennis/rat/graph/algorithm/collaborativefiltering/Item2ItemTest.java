@@ -15,6 +15,10 @@ package nz.ac.waikato.mcennis.rat.graph.algorithm.collaborativefiltering;
 import java.util.List;
 
 import junit.framework.TestCase;
+import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.PropertiesFactory;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 
 import nz.ac.waikato.mcennis.rat.graph.MemGraph;

@@ -5,13 +5,14 @@
  */
 package nz.ac.waikato.mcennis.rat.reusablecores.datavector.xml;
 
+import nz.ac.waikato.mcennis.rat.graph.property.xml.InstanceXML;
 import org.dynamicfactory.property.PropertyValueXMLFactory;
 import nz.ac.waikato.mcennis.rat.reusablecores.datavector.DataVector;
 import nz.ac.waikato.mcennis.rat.reusablecores.datavector.InstanceDataVector;
-import org.dynamicfactory.property.xml.InstanceXML;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import weka.core.Instance;
+import org.dynamicfactory.propertyQuery.Query.State;
 
 /**
  *

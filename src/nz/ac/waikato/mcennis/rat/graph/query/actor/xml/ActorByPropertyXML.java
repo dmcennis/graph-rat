@@ -5,10 +5,11 @@
  */
 package nz.ac.waikato.mcennis.rat.graph.query.actor.xml;
 
-import org.dynamicfactory.propertyQuery.PropertyQueryXML;
+import org.dynamicfactory.propertyQuery.xml.PropertyQueryXML;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQueryXML;
-import org.dynamicfactory.propertyQuery.PropertyQueryXMLFactory;
+import org.dynamicfactory.propertyQuery.xml.PropertyQueryXMLFactory;
+import org.dynamicfactory.propertyQuery.Query.State;
 import nz.ac.waikato.mcennis.rat.graph.query.actor.ActorByProperty;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

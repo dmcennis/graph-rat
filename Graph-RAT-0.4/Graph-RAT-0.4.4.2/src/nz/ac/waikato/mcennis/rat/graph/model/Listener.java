@@ -6,7 +6,7 @@
  * Copyright Daniel McEnnis, published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.graph.model;
+package org.dynamicfactory.model;
 
 /**
  * Class for implementing a lister interface for View part of MVC.  To be 

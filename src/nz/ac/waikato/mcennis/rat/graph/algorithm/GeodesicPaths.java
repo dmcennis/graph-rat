@@ -10,10 +10,10 @@ package nz.ac.waikato.mcennis.rat.graph.algorithm;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 
-import org.dynamicfactory.descriptors.IODescriptorFactory;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptorFactory;
 
 
-import org.dynamicfactory.descriptors.IODescriptor;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor;
 
 
 import nz.ac.waikato.mcennis.rat.graph.path.Path;
@@ -25,9 +25,6 @@ import nz.ac.waikato.mcennis.rat.graph.path.PathFactory;
 import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
 
 import org.dynamicfactory.descriptors.*;
-import org.dynamicfactory.property.Property;
-import org.dynamicfactory.property.PropertyFactory;
-import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.path.PathSetFactory;
 
@@ -52,9 +49,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.dynamicfactory.descriptors.IODescriptor.Type;
-import org.dynamicfactory.descriptors.IODescriptorInternal;
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor.Type;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptorInternal;
+import org.dynamicfactory.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQueryFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery;

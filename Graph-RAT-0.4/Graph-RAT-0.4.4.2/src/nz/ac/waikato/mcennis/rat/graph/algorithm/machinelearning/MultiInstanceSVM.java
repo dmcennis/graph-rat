@@ -19,7 +19,7 @@ import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
 import weka.classifiers.trees.J48;
 import weka.core.Attribute;
@@ -27,8 +27,6 @@ import weka.core.FastVector;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.classifiers.Classifier;
-import weka.classifiers.functions.SMOreg;
-import weka.classifiers.functions.SVMreg;
 import weka.classifiers.meta.AdaBoostM1;
 import weka.core.SparseInstance;
 /**

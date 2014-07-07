@@ -6,7 +6,6 @@
 package nz.ac.waikato.mcennis.rat.graph.query;
 
 import java.io.IOException;
-import java.io.Reader;
 import java.io.Writer;
 import java.util.Collection;
 import java.util.HashSet;
@@ -14,7 +13,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+import org.dynamicfactory.propertyQuery.Query.State;
 import nz.ac.waikato.mcennis.rat.graph.query.actor.NullActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.graph.NullGraphQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.link.NullLinkQuery;

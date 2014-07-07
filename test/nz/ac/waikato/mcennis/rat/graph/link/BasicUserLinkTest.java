@@ -9,6 +9,10 @@ import java.util.List;
 import junit.framework.TestCase;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
+import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.PropertiesFactory;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 /**
  *
@@ -137,7 +141,7 @@ public class BasicUserLinkTest extends TestCase {
      */
     public void testAdd() {
         System.out.println("add");
-        Property prop = PropertyFactory.newInstance().create("Type", String.class);
+        Property prop = PropertyFactory.newInstance().create("BasicProperty","Type", String.class);
         BasicUserLink instance = new BasicUserLink();
         instance.add(prop);
     }

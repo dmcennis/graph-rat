@@ -26,9 +26,8 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
 
 import nz.ac.waikato.mcennis.rat.parser.XMLParser;
-
-
-
+import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.PropertiesFactory;
 
 
 /**

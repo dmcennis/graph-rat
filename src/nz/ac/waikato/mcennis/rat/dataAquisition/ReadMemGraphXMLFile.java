@@ -31,9 +31,6 @@ import java.util.logging.Level;
 
 import java.util.logging.Logger;
 import org.dynamicfactory.descriptors.*;
-import org.dynamicfactory.property.Property;
-import org.dynamicfactory.property.PropertyFactory;
-import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import java.util.zip.GZIPInputStream;
 
@@ -41,9 +38,9 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 
 
-import org.dynamicfactory.descriptors.IODescriptor;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor;
 
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 
 
 import nz.ac.waikato.mcennis.rat.parser.XMLParser;

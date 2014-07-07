@@ -20,7 +20,7 @@ package nz.ac.waikato.mcennis.rat.graph.path;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
-import nz.ac.waikato.mcennis.rat.graph.model.Model;
+import org.dynamicfactory.model.Model;
 
 
 

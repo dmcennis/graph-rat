@@ -13,6 +13,8 @@ import weka.core.FastVector;
 import weka.core.Attribute;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
+import org.dynamicfactory.propertyQuery.Query.State;
+
 
 /**
  *

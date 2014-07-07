@@ -20,11 +20,12 @@ import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor;
 import org.dynamicfactory.descriptors.*;
 
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.graph.path.PathNode;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQueryFactory;

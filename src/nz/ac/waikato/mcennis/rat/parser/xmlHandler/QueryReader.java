@@ -6,11 +6,11 @@
 package nz.ac.waikato.mcennis.rat.parser.xmlHandler;
 
 import org.dynamicfactory.AbstractFactory;
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+import org.dynamicfactory.propertyQuery.Query.State;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQueryXML;
 import nz.ac.waikato.mcennis.rat.graph.query.GraphQueryXML;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQueryXML;
-import nz.ac.waikato.mcennis.rat.graph.query.Query;
+import org.dynamicfactory.propertyQuery.Query;
 import nz.ac.waikato.mcennis.rat.graph.query.actor.xml.ActorQueryXMLFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.graph.xml.GraphQueryXMLFactory;
 import nz.ac.waikato.mcennis.rat.graph.query.link.xml.LinkQueryXMLFactory;
@@ -43,7 +43,10 @@ public class QueryReader extends Handler{
     
     @Override
     public ParsedObject get() {
-        return result;
+        ParsedObject ret = new ParsedObject() {
+            public Query q = result;
+        };
+        return ret;
     }
 
     @Override

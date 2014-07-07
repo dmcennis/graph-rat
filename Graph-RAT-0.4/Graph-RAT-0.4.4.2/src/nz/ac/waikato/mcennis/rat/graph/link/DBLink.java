@@ -12,9 +12,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import nz.ac.waikato.mcennis.rat.graph.model.Listener;
-import nz.ac.waikato.mcennis.rat.graph.model.Model;
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.Listener;
+import org.dynamicfactory.model.Model;
+import org.dynamicfactory.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.graph.page.Page;
 
 /**

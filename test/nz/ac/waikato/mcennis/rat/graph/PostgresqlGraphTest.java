@@ -44,6 +44,10 @@ import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
+import org.dynamicfactory.descriptors.PropertiesFactory;
+import org.dynamicfactory.property.InvalidObjectTypeException;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 
 /**
@@ -222,7 +226,7 @@ public class PostgresqlGraphTest extends TestCase {
 
     
 
-    protected void initialise() throws SQLException{
+    protected void initialise() throws SQLException, InvalidObjectTypeException {
 
         try {
 
@@ -802,7 +806,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testRemoveActor() throws SQLException{
+    public void testRemoveActor() throws SQLException, InvalidObjectTypeException{
 
         System.out.println("removeActor");
 
@@ -838,7 +842,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testRemoveLink()  throws SQLException{
+    public void testRemoveLink()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("removeLink");
 
@@ -860,7 +864,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetActorSinglePresent()  throws SQLException{
+    public void testGetActorSinglePresent()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getActorSinglePresent");
 
@@ -890,7 +894,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetActorSingleNotPresent() throws SQLException {
+    public void testGetActorSingleNotPresent() throws SQLException, InvalidObjectTypeException {
 
         System.out.println("getActor");
 
@@ -920,7 +924,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetActorTypePresent()  throws SQLException{
+    public void testGetActorTypePresent()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getActor");
 
@@ -958,7 +962,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetActorTypeNotPresent()  throws SQLException{
+    public void testGetActorTypeNotPresent()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getActor");
 
@@ -986,7 +990,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetActorAllPresent()  throws SQLException{
+    public void testGetActorAllPresent()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getActor");
 
@@ -1060,7 +1064,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetActorAllNotPresent()  throws SQLException{
+    public void testGetActorAllNotPresent()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getActor");
 
@@ -1086,7 +1090,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetActorIterator()  throws SQLException{
+    public void testGetActorIterator()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getActorIterator");
 
@@ -1172,7 +1176,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetActorTypes()  throws SQLException{
+    public void testGetActorTypes()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getActorTypes");
 
@@ -1204,7 +1208,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetLink() throws SQLException{
+    public void testGetLink() throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getLink");
 
@@ -1230,7 +1234,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetLinkNull() throws SQLException{
+    public void testGetLinkNull() throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getLinkNull");
 
@@ -1252,7 +1256,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetLinkBySource()  throws SQLException{
+    public void testGetLinkBySource()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getLinkBySource");
 
@@ -1282,7 +1286,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetLinkBySourceBadType()  throws SQLException{
+    public void testGetLinkBySourceBadType()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getLinkBySourceBadType");
 
@@ -1308,7 +1312,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetLinkBySourceBadUser()  throws SQLException{
+    public void testGetLinkBySourceBadUser()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getLinkBySource");
 
@@ -1342,7 +1346,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetLinkByDestination()  throws SQLException{
+    public void testGetLinkByDestination()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getLinkByDestination");
 
@@ -1368,7 +1372,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetLinkByDestinationBadType()  throws SQLException{
+    public void testGetLinkByDestinationBadType()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getLinkByDestination");
 
@@ -1396,7 +1400,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetLinkByDestinationBadActor()  throws SQLException{
+    public void testGetLinkByDestinationBadActor()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getLinkByDestination");
 
@@ -1430,7 +1434,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetLinkTypes()  throws SQLException{
+    public void testGetLinkTypes()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getLinkTypes");
 
@@ -1503,7 +1507,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetProperty()  throws SQLException{
+    public void testGetProperty()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getProperty");
 
@@ -1559,7 +1563,7 @@ public class PostgresqlGraphTest extends TestCase {
 
      */
 
-    public void testGetPropertySingle()  throws SQLException{
+    public void testGetPropertySingle()  throws SQLException, InvalidObjectTypeException{
 
         System.out.println("getProperty");
 

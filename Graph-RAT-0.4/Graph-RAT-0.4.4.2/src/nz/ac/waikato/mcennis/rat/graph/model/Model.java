@@ -6,7 +6,7 @@
  * Copyright Daniel McEnnis, published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.graph.model;
+package org.dynamicfactory.model;
 
 /**
  * Interface for implementing MVC.  TO be replaced by the standard JavaBeans

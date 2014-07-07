@@ -6,7 +6,7 @@
  * Copyright Daniel McEnnis, published under Aferro GPL (see license.txt)
  */
 
-package nz.ac.waikato.mcennis.rat.graph.model;
+package org.dynamicfactory.model;
 
 /**
  * Shell class providing basic MVC support to models.  Models must define what the 

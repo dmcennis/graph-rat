@@ -23,15 +23,14 @@ import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptorFactory;
 import org.dynamicfactory.descriptors.*;
 import org.dynamicfactory.property.Property;
 import org.dynamicfactory.property.PropertyFactory;
 import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-
-
-import org.dynamicfactory.descriptors.*;
 
 
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
@@ -48,8 +47,8 @@ import java.util.Vector;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
 
 import nz.ac.waikato.mcennis.rat.graph.algorithm.AlgorithmMacros;
-import org.dynamicfactory.descriptors.IODescriptor.Type;
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor.Type;
+import org.dynamicfactory.model.ModelShell;
 
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQueryFactory;
@@ -61,9 +60,6 @@ import nz.ac.waikato.mcennis.rat.graph.query.link.AndLinkQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByActor;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByRelation;
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
-import org.dynamicfactory.property.InvalidObjectTypeException;
-import org.dynamicfactory.property.Property;
-import org.dynamicfactory.property.PropertyFactory;
 
 
 /**

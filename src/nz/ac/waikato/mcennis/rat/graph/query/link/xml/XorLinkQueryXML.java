@@ -9,6 +9,7 @@ import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQueryXML;
 import nz.ac.waikato.mcennis.rat.graph.query.link.XorLinkQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.xml.XorQueryXML;
+import org.dynamicfactory.propertyQuery.Query.State;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 

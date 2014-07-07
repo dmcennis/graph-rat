@@ -9,7 +9,9 @@ import java.util.List;
 
 import junit.framework.TestCase;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
-import org.dynamicfactory.descriptors.IODescriptor;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor;
+import org.dynamicfactory.descriptors.Parameter;
+import org.dynamicfactory.descriptors.Properties;
 import weka.core.Instances;
 
 /**

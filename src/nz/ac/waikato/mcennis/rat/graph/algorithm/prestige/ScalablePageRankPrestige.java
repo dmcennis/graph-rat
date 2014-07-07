@@ -23,19 +23,19 @@ import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import org.dynamicfactory.descriptors.IODescriptor;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor;
 import org.dynamicfactory.descriptors.*;
 import org.dynamicfactory.property.Property;
 import org.dynamicfactory.property.PropertyFactory;
 import org.dynamicfactory.property.InvalidObjectTypeException;
 
-import org.dynamicfactory.descriptors.IODescriptor.Type;
-import org.dynamicfactory.descriptors.IODescriptorFactory;
-import org.dynamicfactory.descriptors.IODescriptorInternal;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor.Type;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptorFactory;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptorInternal;
 
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQueryFactory;

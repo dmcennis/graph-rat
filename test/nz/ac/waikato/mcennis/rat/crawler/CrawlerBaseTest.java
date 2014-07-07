@@ -29,7 +29,7 @@ import nz.ac.waikato.mcennis.rat.parser.NullParser;
 
 
 import nz.ac.waikato.mcennis.rat.parser.ParserFactory;
-
+import org.dynamicfactory.descriptors.PropertiesFactory;
 
 
 /**

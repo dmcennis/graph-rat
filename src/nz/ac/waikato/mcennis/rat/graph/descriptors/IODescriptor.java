@@ -8,7 +8,7 @@
 
 package nz.ac.waikato.mcennis.rat.graph.descriptors;
 
-import nz.ac.waikato.mcennis.rat.graph.query.Query;
+import org.dynamicfactory.propertyQuery.Query;
 
 /**
  * Class describing one input parameter of an object.  This object is guaranteed

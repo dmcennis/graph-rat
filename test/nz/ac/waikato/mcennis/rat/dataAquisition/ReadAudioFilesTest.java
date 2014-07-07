@@ -17,6 +17,8 @@ import junit.framework.TestCase;
 
 
 import nz.ac.waikato.mcennis.rat.graph.MemGraph;
+import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.PropertiesFactory;
 
 
 /**

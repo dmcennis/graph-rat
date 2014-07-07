@@ -20,9 +20,9 @@ package nz.ac.waikato.mcennis.rat;
 
 import java.util.List;
 
-import org.dynamicfactory.descriptors.IODescriptor;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor;
 
-import nz.ac.waikato.mcennis.rat.graph.model.Model;
+import org.dynamicfactory.model.Model;
 import org.dynamicfactory.descriptors.Parameter;
 import org.dynamicfactory.descriptors.Properties;
 
@@ -59,7 +59,7 @@ public interface Component extends Model{
 
      * 
 
-     * @see org.dynamicfactory.descriptors.IODescriptor
+     * @see nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor
 
      *
 
@@ -83,7 +83,7 @@ public interface Component extends Model{
 
      * 
 
-     * @see org.dynamicfactory.descriptors.IODescriptor
+     * @see nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor
 
      * 
 

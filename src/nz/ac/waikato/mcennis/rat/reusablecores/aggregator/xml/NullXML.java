@@ -11,6 +11,7 @@ import nz.ac.waikato.mcennis.rat.reusablecores.aggregator.AggregatorFunction;
 import nz.ac.waikato.mcennis.rat.reusablecores.aggregator.NullAggregator;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
+import org.dynamicfactory.propertyQuery.Query.State;
 
 /**
  *

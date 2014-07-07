@@ -4,7 +4,8 @@
  */
 package nz.ac.waikato.mcennis.rat.graph.property.database;
 
-import java.lang.Class;import java.sql.Connection;
+import java.lang.Class;
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,7 +15,11 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
-import nz.ac.waikato.mcennis.rat.graph.algorithm.collaborativefiltering.AssociativeMiningItems;import org.dynamicfactory.property.database.AbstractPropertyDB;import org.dynamicfactory.property.database.StringDB;import org.dynamicfactory.property.database.URLDB;
+import nz.ac.waikato.mcennis.rat.graph.algorithm.collaborativefiltering.AssociativeMiningItems;
+import org.dynamicfactory.property.database.AbstractPropertyDB;
+import org.dynamicfactory.property.database.StringDB;
+import org.dynamicfactory.property.database.URLDB;
+import org.dynamicfactory.propertyQuery.Query.State;
 
 /**
  *

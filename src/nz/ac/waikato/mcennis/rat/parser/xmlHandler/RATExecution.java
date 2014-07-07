@@ -34,7 +34,6 @@ import nz.ac.waikato.mcennis.rat.parser.ParsedObject;
 import org.dynamicfactory.descriptors.*;
 import org.dynamicfactory.property.Property;
 import org.dynamicfactory.property.PropertyFactory;
-import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
 
@@ -42,7 +41,8 @@ import nz.ac.waikato.mcennis.rat.scheduler.SchedulerFactory;
 
 import nz.ac.waikato.mcennis.rat.graph.query.graph.xml.GraphQueryXMLFactory;
 
-import nz.ac.waikato.mcennis.rat.XMLParserObject;
+import org.dynamicfactory.propertyQuery.Query;
+import org.dynamicfactory.propertyQuery.XMLParserObject;
 
 import org.dynamicfactory.property.PropertyXMLFactory;
 
@@ -348,7 +348,7 @@ public class RATExecution extends Handler{
 
             queryXML.endElement(uri,localName,qName);
 
-            if(queryXML.buildingStatus() == XMLParserObject.State.READY){
+            if(queryXML.buildingStatus() == Query.State.READY){
 
                 query = queryXML.getQuery();
 
@@ -362,7 +362,7 @@ public class RATExecution extends Handler{
 
             valueXML.endElement(uri,localName,qName);
 
-            if(valueXML.buildingStatus() == XMLParserObject.State.READY){
+            if(valueXML.buildingStatus() == Query.State.READY){
 
                 Property property = valueXML.getProperty();
 

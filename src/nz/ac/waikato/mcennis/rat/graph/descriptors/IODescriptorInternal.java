@@ -16,7 +16,7 @@
 
 package nz.ac.waikato.mcennis.rat.graph.descriptors;
 
-import nz.ac.waikato.mcennis.rat.graph.query.Query;
+import org.dynamicfactory.propertyQuery.Query;
 
 
 /**

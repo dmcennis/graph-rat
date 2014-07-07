@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+import org.dynamicfactory.propertyQuery.Query.State;
 import org.dynamicfactory.property.Property;
 import org.dynamicfactory.propertyQuery.NullPropertyQuery;
 import org.dynamicfactory.propertyQuery.PropertyQuery;

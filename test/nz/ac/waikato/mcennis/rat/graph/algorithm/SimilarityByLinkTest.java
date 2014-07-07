@@ -18,6 +18,10 @@ import nz.ac.waikato.mcennis.rat.graph.algorithm.similarity.SimilarityByLink;
 import junit.framework.TestCase;
 
 import nz.ac.waikato.mcennis.rat.graph.Graph;
+import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.PropertiesFactory;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 
 

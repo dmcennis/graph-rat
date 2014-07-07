@@ -22,7 +22,7 @@ import java.util.HashMap;
 
 import java.util.Vector;
 
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 
 
 

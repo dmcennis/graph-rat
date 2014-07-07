@@ -16,7 +16,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
 import nz.ac.waikato.mcennis.rat.graph.path.Path;

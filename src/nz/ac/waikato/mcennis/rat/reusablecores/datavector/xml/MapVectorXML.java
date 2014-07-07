@@ -14,6 +14,7 @@ import org.dynamicfactory.property.xml.PropertyValueXML;
 import org.dynamicfactory.property.PropertyValueXMLFactory;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
+import org.dynamicfactory.propertyQuery.Query.State;
 
 /**
  *

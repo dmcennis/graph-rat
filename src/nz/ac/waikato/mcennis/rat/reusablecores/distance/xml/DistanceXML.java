@@ -6,7 +6,7 @@
 package nz.ac.waikato.mcennis.rat.reusablecores.distance.xml;
 
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.DistanceFunction;
-import nz.ac.waikato.mcennis.rat.XMLParserObject;
+import org.dynamicfactory.propertyQuery.XMLParserObject;
 import java.io.Writer;
 import java.io.IOException;
 

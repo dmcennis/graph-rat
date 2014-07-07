@@ -6,7 +6,7 @@
 package nz.ac.waikato.mcennis.rat.graph.query.graph.xml;
 
 import java.util.regex.Pattern;
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+import org.dynamicfactory.propertyQuery.Query.State;
 import nz.ac.waikato.mcennis.rat.graph.query.GraphQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.GraphQueryXML;
 import nz.ac.waikato.mcennis.rat.graph.query.graph.GraphByID;

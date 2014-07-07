@@ -6,7 +6,7 @@
 package nz.ac.waikato.mcennis.rat.graph.query.xml;
 
 import nz.ac.waikato.mcennis.rat.graph.query.NullQuery;
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+import org.dynamicfactory.propertyQuery.Query.State;
 import nz.ac.waikato.mcennis.rat.graph.query.actor.NullActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.graph.NullGraphQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.link.NullLinkQuery;

@@ -11,6 +11,9 @@ package nz.ac.waikato.mcennis.rat.graph.actor;
 
 import java.util.List;
 import junit.framework.*;
+import org.dynamicfactory.descriptors.PropertiesFactory;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 /**
  *

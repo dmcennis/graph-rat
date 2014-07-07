@@ -10,7 +10,7 @@ package nz.ac.waikato.mcennis.rat.graph;
 import java.util.List;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
-import nz.ac.waikato.mcennis.rat.graph.model.Model;
+import org.dynamicfactory.model.Model;
 import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
 import org.dynamicfactory.descriptors.Parameter;
 import org.dynamicfactory.descriptors.Properties;

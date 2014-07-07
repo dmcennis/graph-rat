@@ -4,8 +4,6 @@
  */
 package nz.ac.waikato.mcennis.rat.graph.algorithm.transformToArray;
 
-import cern.colt.matrix.DoubleFactory1D;
-import cern.colt.matrix.DoubleMatrix2D;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,7 +17,7 @@ import org.dynamicfactory.descriptors.InputDescriptorInternal;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptorInternal;
 import org.dynamicfactory.descriptors.SettableParameter;
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 
 /**
  * Class for creating a matrix representing the distances between graph nodes.

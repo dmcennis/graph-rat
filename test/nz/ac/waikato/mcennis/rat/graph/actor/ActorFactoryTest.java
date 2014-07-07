@@ -6,6 +6,9 @@
 package nz.ac.waikato.mcennis.rat.graph.actor;
 
 import junit.framework.TestCase;
+import org.dynamicfactory.descriptors.Parameter;
+import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.PropertiesFactory;
 
 /**
  *

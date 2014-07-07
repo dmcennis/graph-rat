@@ -7,7 +7,7 @@ package nz.ac.waikato.mcennis.rat.graph.query.xml;
 
 import java.util.LinkedList;
 import nz.ac.waikato.mcennis.rat.graph.query.AndQuery;
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+import org.dynamicfactory.propertyQuery.Query.State;
 import nz.ac.waikato.mcennis.rat.graph.query.ActorQueryXML;
 import nz.ac.waikato.mcennis.rat.graph.query.GraphQueryXML;
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQueryXML;

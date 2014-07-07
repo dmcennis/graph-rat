@@ -8,10 +8,12 @@ package nz.ac.waikato.mcennis.rat.graph.property.xml;
 import java.io.IOException;
 import java.io.Writer;import java.lang.String;
 
-import org.dynamicfactory.property.xml.PropertyValueXML;import weka.core.Attribute;
+import org.dynamicfactory.property.xml.PropertyValueXML;
+import weka.core.Attribute;
 import weka.core.FastVector;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
+import org.dynamicfactory.propertyQuery.Query.State;
 
 /**
  *

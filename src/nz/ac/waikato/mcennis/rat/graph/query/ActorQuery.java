@@ -14,7 +14,8 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import java.util.Collection;
 import java.util.Iterator;
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+import org.dynamicfactory.propertyQuery.Query.State;
+import org.dynamicfactory.propertyQuery.Query;
 
 /**
  * Class for general queries generating subgraphs.  Currently in pre-planning stages

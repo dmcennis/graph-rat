@@ -16,7 +16,7 @@ import nz.ac.waikato.mcennis.rat.reusablecores.datavector.DoubleArrayDataVector;
 import nz.ac.waikato.mcennis.rat.reusablecores.datavector.InstanceDataVector;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.CosineDistance;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.DistanceFunction;
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+import org.dynamicfactory.propertyQuery.Query.State;
 import org.dynamicfactory.property.Property;
 import org.dynamicfactory.propertyQuery.NumericQuery;
 import org.dynamicfactory.propertyQuery.PropertyQuery;

@@ -24,6 +24,10 @@ import java.util.List;
 import junit.framework.*;
 
 
+import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.PropertiesFactory;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
@@ -36,7 +40,7 @@ import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
 
 import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
 
-import nz.ac.waikato.mcennis.rat.graph.query.Query;
+import org.dynamicfactory.propertyQuery.Query;
 
 
 

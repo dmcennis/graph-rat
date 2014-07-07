@@ -7,8 +7,8 @@ package nz.ac.waikato.mcennis.rat.reusablecores.aggregator.xml;
 
 import java.io.IOException;
 import java.io.Writer;
-import nz.ac.waikato.mcennis.rat.XMLParserObject;
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+import org.dynamicfactory.propertyQuery.XMLParserObject;
+import org.dynamicfactory.propertyQuery.Query.State;
 import nz.ac.waikato.mcennis.rat.reusablecores.aggregator.AggregatorFunction;
 import nz.ac.waikato.mcennis.rat.reusablecores.aggregator.FirstItemAggregator;
 import org.xml.sax.Attributes;

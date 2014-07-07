@@ -17,10 +17,10 @@ import junit.framework.TestCase;
 
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 
-import org.dynamicfactory.descriptors.IODescriptor;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor;
 
 import nz.ac.waikato.mcennis.rat.graph.path.PathNode;
-
+import org.dynamicfactory.descriptors.ParameterInternal;
 
 
 /**

@@ -32,7 +32,7 @@ import java.util.Iterator;
 
 import java.util.Vector;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
 
 /**

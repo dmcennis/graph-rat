@@ -21,6 +21,10 @@ package nz.ac.waikato.mcennis.rat.graph.algorithm.prestige;
 
 
 import java.util.List;
+import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.PropertiesFactory;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 import junit.framework.*;
 

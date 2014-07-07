@@ -14,7 +14,7 @@ import org.dynamicfactory.descriptors.DescriptorFactory;
 import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.parser.Parser;
 import nz.ac.waikato.mcennis.rat.parser.ParserFactory;
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;

@@ -43,12 +43,12 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 
-import org.dynamicfactory.descriptors.IODescriptorFactory;
-import org.dynamicfactory.descriptors.IODescriptor;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptorFactory;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor;
 
-import org.dynamicfactory.descriptors.IODescriptor.Type;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor.Type;
 
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 
 import weka.core.Attribute;
 

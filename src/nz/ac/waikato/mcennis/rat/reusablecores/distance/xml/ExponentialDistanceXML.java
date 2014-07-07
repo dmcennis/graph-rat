@@ -7,9 +7,8 @@ package nz.ac.waikato.mcennis.rat.reusablecores.distance.xml;
 
 import java.io.IOException;
 import java.io.Writer;
-import nz.ac.waikato.mcennis.rat.XMLParserObject;
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
-import nz.ac.waikato.mcennis.rat.reusablecores.distance.DistanceFunction;
+import org.dynamicfactory.propertyQuery.XMLParserObject;
+import org.dynamicfactory.propertyQuery.Query.State;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.ExponentialDistance;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

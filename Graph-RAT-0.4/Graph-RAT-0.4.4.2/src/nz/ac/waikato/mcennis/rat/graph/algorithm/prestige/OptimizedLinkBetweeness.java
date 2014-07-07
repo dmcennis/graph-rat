@@ -20,9 +20,9 @@ import org.dynamicfactory.descriptors.InputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.graph.model.Listener;
-import nz.ac.waikato.mcennis.rat.graph.model.Model;
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.Listener;
+import org.dynamicfactory.model.Model;
+import org.dynamicfactory.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.graph.path.PathNode;
 
 /**

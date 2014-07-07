@@ -20,7 +20,7 @@ import org.dynamicfactory.descriptors.OutputDescriptor;
 import org.dynamicfactory.descriptors.OutputDescriptorInternal;
 import org.dynamicfactory.descriptors.SettableParameter;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 import weka.core.Attribute;
 import weka.core.FastVector;
 import weka.core.Instance;

@@ -10,6 +10,8 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 import nz.ac.waikato.mcennis.rat.graph.actor.ActorFactory;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.graph.link.LinkFactory;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 /**
  *
@@ -71,7 +73,7 @@ public class GraphCompareTest extends TestCase {
         oneActorOneMode.add(a);
         oneActorOneMode2.add(c);
         oneActorOneMode3.add(c);
-        Property prop = PropertyFactory.newInstance().create("Type", String.class);
+        Property prop = PropertyFactory.newInstance().create("BasicProperty","Type", String.class);
         oneActorOneMode3.add(prop);
         twoActorOneMode.add(a);
         twoActorOneMode.add(b);

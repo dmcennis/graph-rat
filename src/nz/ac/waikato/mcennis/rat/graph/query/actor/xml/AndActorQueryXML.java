@@ -11,6 +11,7 @@ import nz.ac.waikato.mcennis.rat.graph.query.actor.AndActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.xml.AndQueryXML;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
+import org.dynamicfactory.propertyQuery.Query.State;
 
 /**
  *

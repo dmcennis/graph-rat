@@ -28,7 +28,7 @@ import nz.ac.waikato.mcennis.rat.graph.link.Link;
 import nz.ac.waikato.mcennis.rat.parser.Parser;
 import nz.ac.waikato.mcennis.rat.parser.ParserFactory;
 import nz.ac.waikato.mcennis.rat.parser.ToFileParser;
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
 
 /**

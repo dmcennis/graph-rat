@@ -6,7 +6,7 @@
 package nz.ac.waikato.mcennis.rat.reusablecores.datavector.xml;
 
 import nz.ac.waikato.mcennis.rat.reusablecores.datavector.DataVector;
-import nz.ac.waikato.mcennis.rat.XMLParserObject;
+import org.dynamicfactory.propertyQuery.XMLParserObject;
 
 /**
  *

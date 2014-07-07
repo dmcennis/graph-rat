@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor.Type;
 import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptorFactory;
 import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptorInternal;
-import nz.ac.waikato.mcennis.rat.graph.query.Query;
+import org.dynamicfactory.propertyQuery.Query;
 import nz.ac.waikato.mcennis.rat.graph.query.actor.NullActorQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.link.NullLinkQuery;
 import org.dynamicfactory.descriptors.Parameter;
@@ -311,7 +311,7 @@ public class IODescriptorFactoryTest extends TestCase {
     }
 
     public void testCreateNull_Properties(){
-        IODescriptorFactory.newInstance().create(null);
+        IODescriptorFactory.newInstance().create((Properties)null);
     }
 
     /**

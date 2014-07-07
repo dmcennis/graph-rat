@@ -13,6 +13,8 @@ import java.util.LinkedList;
 import org.dynamicfactory.property.xml.PropertyValueXML;import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import weka.core.Instance;
+import org.dynamicfactory.propertyQuery.Query.State;
+
 
 /**
  *

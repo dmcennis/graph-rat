@@ -9,6 +9,7 @@ import nz.ac.waikato.mcennis.rat.reusablecores.datavector.DataVector;
 import nz.ac.waikato.mcennis.rat.reusablecores.datavector.DoubleArrayDataVector;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
+import org.dynamicfactory.propertyQuery.Query.State;
 
 /**
  *

@@ -24,16 +24,14 @@ import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 import org.dynamicfactory.descriptors.*;
 import org.dynamicfactory.property.Property;
-import org.dynamicfactory.property.PropertyFactory;
-import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import nz.ac.waikato.mcennis.rat.graph.path.PathSet;
 
 import nz.ac.waikato.mcennis.rat.graph.query.LinkQuery;
-import nz.ac.waikato.mcennis.rat.graph.query.Query;
+import org.dynamicfactory.propertyQuery.Query;
 import nz.ac.waikato.mcennis.rat.graph.query.link.LinkByActor;
 import nz.ac.waikato.mcennis.rat.graph.query.actor.ActorByMode;
 import nz.ac.waikato.mcennis.rat.graph.query.link.AndLinkQuery;

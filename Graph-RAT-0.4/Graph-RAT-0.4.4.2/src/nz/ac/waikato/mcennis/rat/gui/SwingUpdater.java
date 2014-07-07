@@ -6,8 +6,8 @@
 package nz.ac.waikato.mcennis.rat.gui;
 
 import javax.swing.SwingUtilities;
-import nz.ac.waikato.mcennis.rat.graph.model.Listener;
-import nz.ac.waikato.mcennis.rat.graph.model.Model;
+import org.dynamicfactory.model.Listener;
+import org.dynamicfactory.model.Model;
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
 
 /**

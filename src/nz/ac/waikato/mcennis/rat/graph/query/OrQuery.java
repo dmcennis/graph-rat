@@ -6,14 +6,13 @@
 package nz.ac.waikato.mcennis.rat.graph.query;
 
 import java.io.IOException;
-import java.io.Reader;
 import java.io.Writer;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.TreeSet;
 import java.util.Vector;
-import nz.ac.waikato.mcennis.rat.XMLParserObject.State;
+import org.dynamicfactory.propertyQuery.Query.State;
 
 /**
  *

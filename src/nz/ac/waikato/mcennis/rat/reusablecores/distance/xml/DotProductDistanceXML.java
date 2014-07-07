@@ -7,6 +7,8 @@ package nz.ac.waikato.mcennis.rat.reusablecores.distance.xml;
 
 import java.io.Writer;
 import java.io.IOException;
+
+import org.dynamicfactory.propertyQuery.Query.State;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.DotProductDistance;

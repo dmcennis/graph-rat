@@ -16,6 +16,10 @@ import nz.ac.waikato.mcennis.rat.reusablecores.OptimizedLinkBetweenessCore;
 import java.util.Iterator;
 
 import java.util.Map;
+import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.PropertiesFactory;
+import org.dynamicfactory.property.Property;
+import org.dynamicfactory.property.PropertyFactory;
 
 
 import junit.framework.TestCase;

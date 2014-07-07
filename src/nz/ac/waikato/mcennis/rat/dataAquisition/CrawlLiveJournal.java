@@ -44,15 +44,14 @@ import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.GraphFactory;
 import nz.ac.waikato.mcennis.rat.graph.actor.Actor;
 
-import org.dynamicfactory.descriptors.IODescriptorFactory;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptorFactory;
 
 
-import org.dynamicfactory.descriptors.IODescriptor;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor;
 
 
-import org.dynamicfactory.descriptors.IODescriptor.Type;
+import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor.Type;
 import org.dynamicfactory.descriptors.*;
-import org.dynamicfactory.property.Property;
 
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
 
@@ -62,7 +61,7 @@ import nz.ac.waikato.mcennis.rat.parser.ParserFactory;
 
 import nz.ac.waikato.mcennis.rat.parser.ToFileParser;
 
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.ModelShell;
 
 import nz.ac.waikato.mcennis.rat.scheduler.Scheduler;
 

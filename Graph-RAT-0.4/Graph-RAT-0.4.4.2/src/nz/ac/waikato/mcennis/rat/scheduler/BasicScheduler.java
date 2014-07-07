@@ -18,9 +18,9 @@ import java.util.regex.Pattern;
 import nz.ac.waikato.mcennis.rat.dataAquisition.DataAquisition;
 import nz.ac.waikato.mcennis.rat.graph.Graph;
 import nz.ac.waikato.mcennis.rat.graph.algorithm.Algorithm;
-import nz.ac.waikato.mcennis.rat.graph.model.Listener;
-import nz.ac.waikato.mcennis.rat.graph.model.Model;
-import nz.ac.waikato.mcennis.rat.graph.model.ModelShell;
+import org.dynamicfactory.model.Listener;
+import org.dynamicfactory.model.Model;
+import org.dynamicfactory.model.ModelShell;
 
 /**
  * Stripped down scheduler that directly executes each component without performing 

@@ -18,6 +18,8 @@ import nz.ac.waikato.mcennis.rat.reusablecores.datavector.MapDataVector;
 import nz.ac.waikato.mcennis.rat.reusablecores.distance.CosineDistance;
 import nz.ac.waikato.mcennis.rat.graph.link.BasicUserLink;
 import nz.ac.waikato.mcennis.rat.graph.link.Link;
+import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.PropertiesFactory;
 
 /**
  *

@@ -8,7 +8,7 @@ package nz.ac.waikato.mcennis.rat.graph.descriptors;
 import junit.framework.TestCase;
 import nz.ac.waikato.mcennis.rat.graph.descriptors.BasicIODescriptor;
 import nz.ac.waikato.mcennis.rat.graph.descriptors.IODescriptor.Type;
-import nz.ac.waikato.mcennis.rat.graph.query.Query;
+import org.dynamicfactory.propertyQuery.Query;
 import nz.ac.waikato.mcennis.rat.graph.query.graph.NullGraphQuery;
 import nz.ac.waikato.mcennis.rat.graph.query.link.NullLinkQuery;
 
