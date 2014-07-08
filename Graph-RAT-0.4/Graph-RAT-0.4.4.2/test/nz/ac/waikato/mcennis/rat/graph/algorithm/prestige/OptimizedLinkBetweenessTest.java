@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package org.mcennis.graphrat.prestige;
+package org.mcennis.graphrat.algorithm.prestige;
 
 import junit.framework.TestCase;
 import org.mcennis.graphrat.graph.Graph;

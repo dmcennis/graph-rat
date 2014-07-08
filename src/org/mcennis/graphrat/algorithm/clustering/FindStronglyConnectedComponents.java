@@ -42,7 +42,7 @@ import org.dynamicfactory.model.Model;
 import org.dynamicfactory.model.ModelShell;
 import org.mcennis.graphrat.query.ActorQuery;
 import org.mcennis.graphrat.query.LinkQuery;
-import org.mcennis.graphrat.reusablecores.FindStronglyConnectedComponentsCore;
+import org.mcennis.graphrat.algorithm.reusablecores.FindStronglyConnectedComponentsCore;
 
 
 

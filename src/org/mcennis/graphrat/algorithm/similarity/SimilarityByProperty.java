@@ -57,11 +57,11 @@ import org.mcennis.graphrat.query.ActorQuery;
 import org.mcennis.graphrat.query.ActorQueryFactory;
 import org.mcennis.graphrat.query.LinkQuery;
 import org.mcennis.graphrat.query.actor.ActorByMode;
-import org.mcennis.graphrat.reusablecores.InstanceManipulation;
-import org.mcennis.graphrat.reusablecores.datavector.DataVector;
-import org.mcennis.graphrat.reusablecores.datavector.DoubleArrayDataVector;
-import org.mcennis.graphrat.reusablecores.datavector.InstanceDataVector;
-import org.mcennis.graphrat.reusablecores.distance.DistanceFunction;
+import org.mcennis.graphrat.algorithm.reusablecores.InstanceManipulation;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.DataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.DoubleArrayDataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.InstanceDataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.DistanceFunction;
 import weka.core.Instance;
 
 

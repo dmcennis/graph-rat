@@ -43,8 +43,8 @@ import org.mcennis.graphrat.query.ActorQuery;
 import org.mcennis.graphrat.query.ActorQueryFactory;
 import org.mcennis.graphrat.query.LinkQuery;
 import org.mcennis.graphrat.query.actor.ActorByMode;
-import org.mcennis.graphrat.reusablecores.InstanceManipulation;
-import org.mcennis.graphrat.reusablecores.aggregator.AggregatorFunction;
+import org.mcennis.graphrat.algorithm.reusablecores.InstanceManipulation;
+import org.mcennis.graphrat.algorithm.reusablecores.aggregator.AggregatorFunction;
 import weka.core.Instance;
 
 /**

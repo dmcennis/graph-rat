@@ -5,7 +5,7 @@
  *
  * Copyright Daniel McEnnis, published under Aferro GPL (see license.txt)
  */
-package org.mcennis.graphrat.prestige;
+package org.mcennis.graphrat.algorithm.prestige;
 
 import java.util.Iterator;
 import java.util.Map;

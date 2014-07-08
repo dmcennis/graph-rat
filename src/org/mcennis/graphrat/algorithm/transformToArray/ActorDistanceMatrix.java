@@ -47,7 +47,7 @@ import org.dynamicfactory.property.PropertyFactory;
 import org.dynamicfactory.property.InvalidObjectTypeException;
 
 import org.mcennis.graphrat.algorithm.AlgorithmMacros;
-import org.mcennis.graphrat.reusablecores.ActorDistanceMatrixCore;
+import org.mcennis.graphrat.algorithm.reusablecores.ActorDistanceMatrixCore;
 
 import org.mcennis.graphrat.descriptors.IODescriptorFactory;
 

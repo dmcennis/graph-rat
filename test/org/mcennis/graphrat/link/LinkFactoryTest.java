@@ -115,7 +115,7 @@ public class LinkFactoryTest extends TestCase {
         LinkFactory instance = new LinkFactory();
         Parameter result = instance.getClassParameter();
         assertNotNull(result);
-        assertEquals("LinkClass",result);
+        assertEquals("LinkClass",result.getType());
     }
 
 }

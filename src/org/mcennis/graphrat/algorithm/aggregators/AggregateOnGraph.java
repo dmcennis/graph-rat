@@ -40,8 +40,8 @@ import org.mcennis.graphrat.descriptors.IODescriptorInternal;
 import org.dynamicfactory.model.ModelShell;
 import org.mcennis.graphrat.query.ActorQuery;
 import org.mcennis.graphrat.query.LinkQuery;
-import org.mcennis.graphrat.reusablecores.InstanceManipulation;
-import org.mcennis.graphrat.reusablecores.aggregator.AggregatorFunction;
+import org.mcennis.graphrat.algorithm.reusablecores.InstanceManipulation;
+import org.mcennis.graphrat.algorithm.reusablecores.aggregator.AggregatorFunction;
 import weka.core.Instance;
 import weka.core.Instances;
 

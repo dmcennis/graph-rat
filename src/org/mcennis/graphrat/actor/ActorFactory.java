@@ -61,7 +61,7 @@ public class ActorFactory extends AbstractFactory<Actor> {
         ParameterInternal parameter = ParameterFactory.newInstance().create("ActorClass", String.class);
         SyntaxObject restrictionPart = SyntaxCheckerFactory.newInstance().create(1,1,null,String.class);
         parameter.setRestrictions(restrictionPart);
-        parameter.add("BasicUser");
+        parameter.add("BasicActor");
         properties.add(parameter);
 
         parameter = ParameterFactory.newInstance().create("ActorMode", String.class);
@@ -97,6 +97,9 @@ public class ActorFactory extends AbstractFactory<Actor> {
     }
 
     public Actor create(String mode, String id, Properties parameters) {
+        if(parameters == null){
+            parameters = properties;
+        }
         if (mode == null) {
             if ((parameters.get("ActorMode") != null) && (parameters.get("ActorMode").getParameterClass().getName().contentEquals(String.class.getName()))) {
                 mode = (String) parameters.get("ActorMode").getValue().iterator().next();

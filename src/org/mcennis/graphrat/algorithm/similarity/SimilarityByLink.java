@@ -48,12 +48,12 @@ import org.mcennis.graphrat.graph.Graph;
 
 import org.mcennis.graphrat.actor.Actor;
 
-import org.mcennis.graphrat.reusablecores.datavector.DataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.DataVector;
 
-import org.mcennis.graphrat.reusablecores.datavector.MapDataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.MapDataVector;
 
 
-import org.mcennis.graphrat.reusablecores.distance.DistanceFunction;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.DistanceFunction;
 import org.mcennis.graphrat.descriptors.IODescriptor;
 
 

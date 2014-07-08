@@ -21,9 +21,9 @@
  */
 package org.mcennis.graphrat.query.property.xml;
 
-import org.mcennis.graphrat.reusablecores.datavector.DataVector;
-import org.mcennis.graphrat.reusablecores.distance.xml.DistanceXML;
-import org.mcennis.graphrat.reusablecores.distance.xml.DistanceXMLFactory;
+import org.mcennis.graphrat.algorithm.reusablecores.datavector.DataVector;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.xml.DistanceXML;
+import org.mcennis.graphrat.algorithm.reusablecores.distance.xml.DistanceXMLFactory;
 import org.mcennis.graphrat.query.property.DataVectorQuery;
 import org.dynamicfactory.propertyQuery.xml.NumericQueryXML;
 import org.dynamicfactory.propertyQuery.xml.PropertyQueryXML;

@@ -142,10 +142,13 @@ public class LinkFactory extends AbstractFactory<Link>{
     
     public Link create(String relation, Properties parameters){
         String linkClass = "";
-        if ((parameters.get("ActorClass") != null) && (parameters.get("ActorClass").getParameterClass().getName().contentEquals(String.class.getName()))) {
-            linkClass = (String) parameters.get("ActorClass").getValue().iterator().next();
+        if(parameters == null){
+            parameters = properties;
+        }
+        if ((parameters.get("LinkClass") != null) && (parameters.get("LinkClass").getParameterClass().getName().contentEquals(String.class.getName()))) {
+            linkClass = (String) parameters.get("LinkClass").getValue().iterator().next();
         } else {
-            linkClass = (String) properties.get("ActorClass").getValue().iterator().next();
+            linkClass = (String) properties.get("LinkClass").getValue().iterator().next();
         }
         
         Link ret = null;

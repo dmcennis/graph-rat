@@ -11,7 +11,7 @@ package org.mcennis.graphrat.algorithm.reusablecores;
 
 
 import java.util.List;
-import org.mcennis.graphrat.reusablecores.FindStronglyConnectedComponentsCore;
+
 import org.dynamicfactory.descriptors.Properties;
 import org.dynamicfactory.descriptors.PropertiesFactory;
 

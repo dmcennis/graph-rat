@@ -62,8 +62,8 @@ import org.mcennis.graphrat.query.LinkQuery;
 import org.mcennis.graphrat.query.LinkQueryFactory;
 import org.mcennis.graphrat.query.actor.ActorByMode;
 import org.mcennis.graphrat.query.link.LinkByRelation;
-import org.mcennis.graphrat.reusablecores.FindStronglyConnectedComponentsCore;
-import org.mcennis.graphrat.reusablecores.OptimizedLinkBetweenessCore;
+import org.mcennis.graphrat.algorithm.reusablecores.FindStronglyConnectedComponentsCore;
+import org.mcennis.graphrat.algorithm.reusablecores.OptimizedLinkBetweenessCore;
 import org.mcennis.graphrat.scheduler.Scheduler;
 
 import org.mcennis.graphrat.util.Duples;

@@ -5,7 +5,6 @@
 
 package org.mcennis.graphrat.algorithm.reusablecores.aggregator;
 
-import org.mcennis.graphrat.reusablecores.aggregator.ConcatenationAggregator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import junit.framework.TestCase;

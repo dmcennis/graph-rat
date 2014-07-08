@@ -11,8 +11,6 @@ package org.mcennis.graphrat.algorithm.reusablecores;
 
 
 
-import org.mcennis.graphrat.reusablecores.OptimizedLinkBetweenessCore;
-
 import java.util.Iterator;
 
 import java.util.Map;

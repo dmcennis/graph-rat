@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 import org.mcennis.graphrat.graph.Graph;
 import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.algorithm.Algorithm;
-import org.mcennis.graphrat.prestige.OptimizedLinkBetweeness;
+import org.mcennis.graphrat.algorithm.prestige.OptimizedLinkBetweeness;
 import org.mcennis.graphrat.algorithm.reusablecores.FindStronglyConnectedComponentsCore;
 import org.mcennis.graphrat.algorithm.reusablecores.OptimizedLinkBetweenessCore;
 import org.dynamicfactory.descriptors.DescriptorFactory;

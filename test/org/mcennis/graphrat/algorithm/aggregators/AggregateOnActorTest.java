@@ -12,7 +12,7 @@ import org.mcennis.graphrat.graph.Graph;
 import org.mcennis.graphrat.graph.MemGraph;
 import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.actor.ActorFactory;
-import org.mcennis.graphrat.reusablecores.aggregator.SumAggregator;
+import org.mcennis.graphrat.algorithm.reusablecores.aggregator.SumAggregator;
 import org.dynamicfactory.descriptors.Properties;
 import org.dynamicfactory.descriptors.PropertiesFactory;
 import org.dynamicfactory.property.Property;
