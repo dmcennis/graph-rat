@@ -259,7 +259,7 @@ public class BasicUserLinkTest extends TestCase {
         instance.set(s,1.0,d);
         int expResult = 1;
         int result = instance.compareTo(o);
-        assertTrue(result>0);
+        assertTrue(result<0);
     }
 
     /**

@@ -160,32 +160,60 @@ public class BasicUserLink extends ModelShell implements Link {
 
         Link link = (Link) o;
 
+        if( o == null){
+            return 1;
+        }
+
         if (this.type.compareTo(link.getRelation()) == 0) {
-
             if (this.strength == link.getStrength()) {
+                if((this.source != null)||(link.getSource() != null)){
+                    if(this.source == null){
+                        return -1;
+                    }
+                    if(link.getSource() == null){
+                        return 1;
+                    }
 
-                if (this.source.getID().compareTo(link.getSource().getID()) == 0) {
-
-                    return this.destination.getID().compareTo(link.getDestination().getID());
-
-                } else {
-
-                    return this.source.getID().compareTo(link.getSource().getID());
-
+                    int ret = this.source.getID().compareTo(link.getSource().getID());
+                    if(ret != 0){
+                        return ret;
+                    }
                 }
+                if((this.destination != null)||(link.getDestination() != null)){
+                    if(this.destination == null){
+                        return -1;
+                    }
+                    if(link.getDestination() != null){
+                        return 1;
+                    }
 
+                    int ret = this.destination.getID().compareTo(link.getDestination().getID());
+                    if(ret !=0){
+                        return ret;
+                    }
+                }
             } else {
 
                 return Double.compare(strength, link.getStrength());
 
             }
-
+            if (this.properties.size()!= ((Link) o).getProperty().size()){
+                return this.properties.size() - ((Link) o).getProperty().size();
+            }
+            Iterator<Property> l = properties.iterator();
+            Iterator<Property> r = ((Link) o).getProperty().iterator();
+            while(l.hasNext()){
+                int ret = l.next().compareTo(r.next());
+                if(ret !=0){
+                    return ret;
+                }
+            }
+            return 0;
         } else {
 
             return this.type.compareTo(link.getRelation());
 
         }
-
     }
 
     @Override
