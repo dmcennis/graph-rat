@@ -60,6 +60,7 @@ public class GraphCompareTest extends TestCase {
         oneLinkOneRelation = new MemGraph();
         oneLinkOneRelation2 = new MemGraph();
         oneLinkTwoRelation = new MemGraph();
+        oneLinkTwoRelation2 = new MemGraph();
         a = ActorFactory.newInstance().create("A", "A");
         b = ActorFactory.newInstance().create("A", "B");
         c = ActorFactory.newInstance().create("B", "A");
@@ -114,7 +115,7 @@ public class GraphCompareTest extends TestCase {
      */
     public void testClassDifferenceCompareTo() {
         System.out.println("compareTo");
-        int expResult = 1;
+        int expResult = -1;
         int result = GraphCompare.compareTo(empty, nullGraph);
         assertEquals(expResult, result);
     }
@@ -124,7 +125,7 @@ public class GraphCompareTest extends TestCase {
      */
     public void testDifferingModeListCompareTo() {
         System.out.println("compareTo");
-        int expResult = -1;
+        int expResult = 1;
         int result = GraphCompare.compareTo(oneActorOneMode2, oneActorOneMode);
         assertEquals(expResult, result);
     }
@@ -144,7 +145,7 @@ public class GraphCompareTest extends TestCase {
      */
     public void testLinkListModeListCompareTo() {
         System.out.println("compareTo");
-        int expResult = -1;
+        int expResult = 1;
         int result = GraphCompare.compareTo(oneLinkOneRelation2, oneLinkOneRelation);
         assertEquals(expResult, result);
     }
@@ -154,7 +155,7 @@ public class GraphCompareTest extends TestCase {
      */
     public void testActorCompareTo() {
         System.out.println("compareTo");
-        int expResult = 1;
+        int expResult = -1;
         int result = GraphCompare.compareTo(oneActorOneMode, twoActorOneMode);
         assertEquals(expResult, result);
     }
@@ -176,7 +177,7 @@ public class GraphCompareTest extends TestCase {
      */
     public void testUnequalRelationListCompareTo() {
         System.out.println("compareTo");
-        int expResult = 1;
+        int expResult = -1;
         int result = GraphCompare.compareTo(oneLinkOneRelation, oneLinkTwoRelation);
         assertEquals(expResult, result);
     }
@@ -196,7 +197,7 @@ public class GraphCompareTest extends TestCase {
      */
     public void testLeftNullCompareTo() {
         System.out.println("compareTo");
-        int expResult = 1;
+        int expResult = -1;
         int result = GraphCompare.compareTo(null, oneActorOneMode);
         assertEquals(expResult, result);
     }
@@ -206,7 +207,7 @@ public class GraphCompareTest extends TestCase {
      */
     public void testRightNullCompareTo() {
         System.out.println("compareTo");
-        int expResult = -1;
+        int expResult = 1;
         int result = GraphCompare.compareTo(oneActorOneMode, null);
         assertEquals(expResult, result);
     }
@@ -226,7 +227,7 @@ public class GraphCompareTest extends TestCase {
      */
     public void testPropertyPresence() {
         System.out.println("compareTo");
-        int expResult = 1;
+        int expResult = -1;
         int result = GraphCompare.compareTo(oneActorOneMode2, oneActorOneMode3);
         assertEquals(expResult, result);
     }

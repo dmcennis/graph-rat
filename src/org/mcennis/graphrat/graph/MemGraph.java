@@ -171,6 +171,9 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
     public List<Actor> getActor(String type) {
         TreeMap<String, Actor> actorClass = actor.get(type);
         LinkedList<Actor> ret = new LinkedList<Actor>();
+        if(actor.get(type) == null){
+            return new LinkedList<Actor>();
+        }
         ret.addAll(actor.get(type).values());
         return ret;
     }
@@ -416,7 +419,7 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
             if (links.get(sourceLinkKey).containsKey(u.getMode()) && (links.get(sourceLinkKey).get(u.getMode()).containsKey(u.getID()))) {
                 TreeMap<String, TreeMap<Actor,Link>> forward = links.get(sourceLinkKey).get(u.getMode());
                 TreeMap<Actor,Link> vectForward = forward.get(u.getID());
-                for (int i = 0; i < vectForward.size(); ++i) {
+                for (Actor i : vectForward.keySet()) {
                     //                    System.out.println("Forward: " + key + " - "+ vectForward.get(i).getDestination().getID());
                     linkDestType.add(sourceLinkKey);
                     destTypes.add(vectForward.get(i).getDestination().getMode());
@@ -436,7 +439,7 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
             if ((invertedLinks.get(key).containsKey(u.getMode())) && (invertedLinks.get(key).get(u.getMode()).containsKey(u.getID()))) {
                 TreeMap<String, TreeMap<Actor,Link>> backward = invertedLinks.get(key).get(u.getMode());
                 TreeMap<Actor,Link> vectBackward = backward.get(u.getID());
-                for (int i = 0; i < vectBackward.size(); ++i) {
+                for (Actor i : vectBackward.keySet()) {
                     //                    System.out.println("Backward: "+key + " - "+ vectBackward.get(i).getSource().getID());
                     linkSourceType.add(key);
                     sourceTypes.add(vectBackward.get(i).getSource().getMode());
@@ -701,7 +704,7 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
 
     @Override
     public void init(Properties map) {
-        if (parameters.check(map)) {
+        if (parameters.check(map) && (map!= null)) {
             Iterator<Parameter> it = map.get().iterator();
             while (it.hasNext()) {
                 Parameter param = it.next();

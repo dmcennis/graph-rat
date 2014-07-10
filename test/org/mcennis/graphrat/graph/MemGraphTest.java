@@ -702,7 +702,7 @@ public class MemGraphTest extends TestCase {
         assertEquals(2, test.links.get("Knows").get("User").get("D").size());
 
 
-        assertEquals(a, test.links.get("Knows").get("User").get("D").get(1).getDestination());
+        assertEquals(c, test.links.get("Knows").get("User").get("D").get(c).getDestination());
 
 
         assertEquals(3, test.invertedLinks.get("Knows").get("User").get("A").size());
@@ -951,13 +951,13 @@ public class MemGraphTest extends TestCase {
         assertEquals(expResult.size(), result.size());
 
 
-        assertEquals(expResult.get(0), result.get(0));
+        assertEquals(expResult.get(0).getDestination().getID(), result.get(0).getDestination().getID());
 
 
-        assertEquals(expResult.get(1), result.get(1));
+        assertEquals(expResult.get(1).getDestination().getID(), result.get(1).getDestination().getID());
 
 
-        assertEquals(expResult.get(2), result.get(2));
+        assertEquals(expResult.get(2).getDestination().getID(), result.get(2).getDestination().getID());
 
 
 
@@ -1140,7 +1140,7 @@ public class MemGraphTest extends TestCase {
         assertEquals(expResult.size(), result.size());
 
 
-        assertEquals(expResult.get(0), result.get(0));
+        assertEquals(expResult.get(0).getDestination().getID(), result.get(0).getDestination().getID());
 
 
 
@@ -1182,10 +1182,10 @@ public class MemGraphTest extends TestCase {
         assertNull(test.getActor("User", "E"));
 
 
-        assertNull(test.getLinkBySource("Knows", e));
+        assertEquals(0,test.getLinkBySource("Knows", e).size());
 
 
-        assertNull(test.getLinkByDestination("Knows", e));
+        assertEquals(0,test.getLinkByDestination("Knows", e).size());
 
 
     }
@@ -1209,16 +1209,16 @@ public class MemGraphTest extends TestCase {
 
 
 
-        assertNull(test.getActor("D"));
+        assertEquals(0,test.getActor("D").size());
 
 
-        assertNull(test.getLinkBySource("Knows", d));
+        assertEquals(0,test.getLinkBySource("Knows", d).size());
 
 
         assertEquals(2, test.getLinkBySource("Knows", b).size());
 
 
-        assertNull(test.getLinkByDestination("Knows", d));
+        assertEquals(0,test.getLinkByDestination("Knows", d).size());
 
 
         assertEquals(2, test.getLinkByDestination("Knows", c).size());

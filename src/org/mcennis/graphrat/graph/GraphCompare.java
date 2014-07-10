@@ -21,9 +21,13 @@
  */
 package org.mcennis.graphrat.graph;
 
+import org.dynamicfactory.property.Property;
+import org.mcennis.graphrat.actor.Actor;
+
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  *
@@ -31,6 +35,15 @@ import java.util.LinkedList;
  */
 public class GraphCompare {
     static public int compareTo(Graph left, Object rightO){
+        if((left == null)&&(rightO==null)){
+            return 0;
+        }
+        if(left == null){
+            return -1;
+        }
+        if(rightO == null){
+            return 1;
+        }
         if (left.getClass().getName().compareTo(rightO.getClass().getName())==0) {
             Graph right = (Graph)rightO;
             LinkedList<String>  leftTypes = new LinkedList<String>();
@@ -89,7 +102,7 @@ public class GraphCompare {
                 leftObjects.clear();
                 rightObjects.clear();
             }            
-            return 0;
+            return compareProperties(left,right);
         } else {
             return left.getClass().getName().compareTo(rightO.getClass().getName());
         }
@@ -128,6 +141,48 @@ public class GraphCompare {
             return 0;
         }
    }
-    
+
+    protected static int compareProperties(Graph left, Graph right){
+
+        List<Property> leftProp = left.getProperty();
+
+        List<Property> rightProp = right.getProperty();
+
+        if(leftProp.size() != rightProp.size()){
+            return leftProp.size() - rightProp.size();
+        }
+
+        LinkedList<Property> l = new LinkedList<Property>();
+        l.addAll(leftProp);
+
+        LinkedList<Property> r = new LinkedList<Property>();
+        r.addAll(rightProp);
+
+        java.util.Collections.sort(l);
+
+        java.util.Collections.sort(r);
+
+        Iterator<Property> lIt = l.iterator();
+        Iterator<Property> rIt = r.iterator();
+
+        int ret = 0;
+
+        while((lIt.hasNext())&&(rIt.hasNext())){
+
+            ret = lIt.next().compareTo(rIt.next());
+
+            if(ret != 0){
+
+                return ret;
+
+            }
+
+        }
+
+
+        return 0;
+
+
+    }
 
 }

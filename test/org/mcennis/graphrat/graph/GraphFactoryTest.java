@@ -36,11 +36,9 @@ public class GraphFactoryTest extends TestCase {
      */
     public void testNewInstance() {
         System.out.println("newInstance");
-        GraphFactory expResult = null;
         GraphFactory result = GraphFactory.newInstance();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotNull(result);
+        assertEquals(result,GraphFactory.newInstance());
     }
 
     /**
