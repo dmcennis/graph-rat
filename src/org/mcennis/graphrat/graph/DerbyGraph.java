@@ -29,12 +29,11 @@ import java.sql.Statement;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.util.List;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Vector;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import org.dynamicfactory.descriptors.Properties;
 import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.actor.ActorFactory;
 import org.mcennis.graphrat.actor.DBActor;
@@ -1433,8 +1432,8 @@ public class DerbyGraph extends ModelShell implements Graph, Listener, Comparabl
     }
 
     @Override
-    public List<Actor> getActor() {
-        Vector<Actor> ret = new Vector<Actor>();
+    public SortedSet<Actor> getActor() {
+        TreeSet<Actor> ret = new TreeSet<Actor>();
         try {
             ResultSet rs = getActorStatement.executeQuery();
             while (rs.next()) {
@@ -1453,8 +1452,8 @@ public class DerbyGraph extends ModelShell implements Graph, Listener, Comparabl
     }
 
     @Override
-    public List<Actor> getActor(String type) {
-        Vector<Actor> ret = new Vector<Actor>();
+    public SortedSet<Actor> getActor(String type) {
+        TreeSet<Actor> ret = new TreeSet<Actor>();
         try {
             getActorByTypeStatement.clearParameters();
             getActorByTypeStatement.setString(1, type);
@@ -1478,13 +1477,14 @@ public class DerbyGraph extends ModelShell implements Graph, Listener, Comparabl
     public Iterator<Actor> getActorIterator(String type) {
         try {
             ResultSet rs = getActorStatement.executeQuery();
-            Vector<Integer> intVect = new Vector<Integer>();
+            TreeSet<Integer> intVect = new TreeSet<Integer>();
             while (rs.next()) {
                 intVect.add(rs.getInt("id"));
             }
             int[] list = new int[intVect.size()];
-            for (int i = 0; i < list.length; ++i) {
-                list[i] = intVect.get(i).intValue();
+            int count=0;
+            for (int i : intVect) {
+                list[count++] = i;
             }
             ActorIterator it = new ActorIterator();
             it.setList(list);
@@ -1496,8 +1496,8 @@ public class DerbyGraph extends ModelShell implements Graph, Listener, Comparabl
     }
 
     @Override
-    public List<String> getActorTypes() {
-        LinkedList<String> ret = new LinkedList<String>();
+    public SortedSet<String> getActorTypes() {
+        TreeSet<String> ret = new TreeSet<String>();
         try {
             getActorTypesStatement.clearParameters();
             ResultSet rs = getActorTypesStatement.executeQuery();
@@ -1512,8 +1512,8 @@ public class DerbyGraph extends ModelShell implements Graph, Listener, Comparabl
     }
 
     @Override
-    public List<Link> getLink() {
-        Vector<Link> ret = new Vector<Link>();
+    public SortedSet<Link> getLink() {
+        TreeSet<Link> ret = new TreeSet<Link>();
         try {
             ResultSet rs = getLinkStatement.executeQuery();
             while (rs.next()) {
@@ -1562,8 +1562,8 @@ public class DerbyGraph extends ModelShell implements Graph, Listener, Comparabl
     }
 
     @Override
-    public List<Link> getLink(String type) {
-        Vector<Link> ret = new Vector<Link>();
+    public SortedSet<Link> getLink(String type) {
+        TreeSet<Link> ret = new TreeSet<Link>();
         try {
             getLinkByTypeStatement.clearParameters();
             getLinkByTypeStatement.setString(1, type);
@@ -1587,8 +1587,8 @@ public class DerbyGraph extends ModelShell implements Graph, Listener, Comparabl
     }
 
     @Override
-    public List<Link> getLinkBySource(String type, Actor sourceActor) {
-        Vector<Link> ret = new Vector<Link>();
+    public SortedSet<Link> getLinkBySource(String type, Actor sourceActor) {
+        TreeSet<Link> ret = new TreeSet<Link>();
         try {
             actorGetIDStatement.clearParameters();
             actorGetIDStatement.setString(1, sourceActor.getMode());
@@ -1620,8 +1620,8 @@ public class DerbyGraph extends ModelShell implements Graph, Listener, Comparabl
     }
 
     @Override
-    public List<Link> getLinkByDestination(String type, Actor destActor) {
-        Vector<Link> ret = new Vector<Link>();
+    public SortedSet<Link> getLinkByDestination(String type, Actor destActor) {
+        TreeSet<Link> ret = new TreeSet<Link>();
         try {
             actorGetIDStatement.clearParameters();
             actorGetIDStatement.setString(1, destActor.getMode());
@@ -1653,8 +1653,8 @@ public class DerbyGraph extends ModelShell implements Graph, Listener, Comparabl
     }
 
     @Override
-    public List<Link> getLink(String type, Actor sourceActor, Actor destActor) {
-        Vector<Link> ret = new Vector<Link>();
+    public SortedSet<Link> getLink(String type, Actor sourceActor, Actor destActor) {
+        TreeSet<Link> ret = new TreeSet<Link>();
         try {
             actorGetIDStatement.clearParameters();
             actorGetIDStatement.setString(1, sourceActor.getMode());
@@ -1696,8 +1696,8 @@ public class DerbyGraph extends ModelShell implements Graph, Listener, Comparabl
     }
 
     @Override
-    public List<String> getLinkTypes() {
-        Vector<String> ret = new Vector<String>();
+    public SortedSet<String> getLinkTypes() {
+        TreeSet<String> ret = new TreeSet<String>();
         try {
             ResultSet rs = getLinkTypesStatement.executeQuery();
             while (rs.next()) {
@@ -2107,8 +2107,8 @@ public class DerbyGraph extends ModelShell implements Graph, Listener, Comparabl
     /**
      * FIXME: Does not properly access database
      */
-    public List<Graph> getChildren() {
-        Vector<Graph> children = new Vector<Graph>();
+    public SortedSet<Graph> getChildren() {
+        TreeSet<Graph> children = new TreeSet<Graph>();
         try {
             getGraphChildrenStatement.clearParameters();
             getGraphChildrenStatement.setInt(1, graphID);

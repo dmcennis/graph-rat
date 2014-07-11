@@ -12,7 +12,7 @@ package org.mcennis.graphrat.algorithm.collaborativefiltering;
 
 
 
-import java.util.List;
+import java.util.SortedSet;
 
 import junit.framework.TestCase;
 import org.dynamicfactory.descriptors.Properties;
@@ -384,7 +384,7 @@ public class Item2ItemTest extends TestCase {
 
         
 
-        List<Link> correlation = base.getLinkBySource("Correlated Artist", artist1);
+        SortedSet<Link> correlation = base.getLinkBySource("Correlated Artist", artist1);
 
         assertNull(correlation);
 
@@ -408,7 +408,7 @@ public class Item2ItemTest extends TestCase {
 
         
 
-        List<Link> correlation = base.getLinkBySource("Correlated Artist", artist2);
+        SortedSet<Link> correlation = base.getLinkBySource("Correlated Artist", artist2);
 
         assertNull(correlation);
 
@@ -432,15 +432,15 @@ public class Item2ItemTest extends TestCase {
 
         
 
-        List<Link> correlation = base.getLinkBySource("Correlated Artist", artist3);
+        SortedSet<Link> correlation = base.getLinkBySource("Correlated Artist", artist3);
 
         assertNotNull(correlation);
 
         assertEquals(1,correlation.size());
 
-        assertEquals(artist4,correlation.get(0).getDestination());
+        assertEquals(artist4,correlation.first().getDestination());
 
-        assertEquals(0.6364,correlation.get(0).getStrength(),0.0001);
+        assertEquals(0.6364,correlation.first().getStrength(),0.0001);
 
     }
 
@@ -462,15 +462,15 @@ public class Item2ItemTest extends TestCase {
 
         
 
-        List<Link> correlation = base.getLinkBySource("Correlated Artist", artist4);
+        SortedSet<Link> correlation = base.getLinkBySource("Correlated Artist", artist4);
 
         assertNotNull(correlation);
 
         assertEquals(1,correlation.size());
 
-        assertEquals(artist3,correlation.get(0).getDestination());
+        assertEquals(artist3,correlation.first().getDestination());
 
-        assertEquals(0.6364,correlation.get(0).getStrength(),0.0001);
+        assertEquals(0.6364,correlation.first().getStrength(),0.0001);
 
     }
 
@@ -492,7 +492,7 @@ public class Item2ItemTest extends TestCase {
 
         
 
-        List<Link> correlation = base.getLinkBySource("Correlated Artist", artist5);
+        SortedSet<Link> correlation = base.getLinkBySource("Correlated Artist", artist5);
 
         assertNull(correlation);
 
@@ -516,7 +516,7 @@ public class Item2ItemTest extends TestCase {
 
         
 
-        List<Link> correlation = base.getLinkBySource("Correlated Artist", artist6);
+        SortedSet<Link> correlation = base.getLinkBySource("Correlated Artist", artist6);
 
         assertNull(correlation);
 
@@ -540,13 +540,13 @@ public class Item2ItemTest extends TestCase {
 
         
 
-        List<Link> correlation = base.getLinkBySource("Derived", b);
+        SortedSet<Link> correlation = base.getLinkBySource("Derived", b);
 
         assertNotNull(correlation);
 
-        assertEquals(0.3182,correlation.get(0).getStrength(),0.0001);
+        assertEquals(0.3182,correlation.first().getStrength(),0.0001);
 
-        assertEquals(artist4,correlation.get(0).getDestination());
+        assertEquals(artist4,correlation.first().getDestination());
 
     }
 
@@ -568,13 +568,13 @@ public class Item2ItemTest extends TestCase {
 
         
 
-        List<Link> correlation = base.getLinkBySource("Derived", c);
+        SortedSet<Link> correlation = base.getLinkBySource("Derived", c);
 
         assertNotNull(correlation);
 
-        assertEquals(0.3182,correlation.get(0).getStrength(),0.0001);
+        assertEquals(0.3182,correlation.first().getStrength(),0.0001);
 
-        assertEquals(artist3,correlation.get(0).getDestination());
+        assertEquals(artist3,correlation.first().getDestination());
 
     }
 
@@ -596,7 +596,7 @@ public class Item2ItemTest extends TestCase {
 
         
 
-        List<Link> correlation = base.getLinkBySource("Derived", a);
+        SortedSet<Link> correlation = base.getLinkBySource("Derived", a);
 
         assertNull(correlation);
 
@@ -622,7 +622,7 @@ public class Item2ItemTest extends TestCase {
 
         
 
-        List<Link> correlation = base.getLinkBySource("Derived", d);
+        SortedSet<Link> correlation = base.getLinkBySource("Derived", d);
 
         assertNotNull(correlation);
 

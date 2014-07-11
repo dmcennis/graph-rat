@@ -8,6 +8,7 @@ package org.mcennis.graphrat.graph;
 import junit.framework.TestCase;
 import org.dynamicfactory.descriptors.Parameter;
 import org.dynamicfactory.descriptors.Properties;
+import org.dynamicfactory.descriptors.PropertiesFactory;
 import org.mcennis.graphrat.graph.Graph;
 import org.mcennis.graphrat.graph.GraphFactory;
 
@@ -46,13 +47,12 @@ public class GraphFactoryTest extends TestCase {
      */
     public void testCreate_String() {
         System.out.println("create");
-        String id = "";
+        String id = "NullGraph";
         GraphFactory instance = new GraphFactory();
-        Graph expResult = null;
         Graph result = instance.create(id);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotNull(result);
+        assertEquals(MemGraph.class,result.getClass());
+        assertEquals("NullGraph",result.getID());
     }
 
     /**
@@ -60,14 +60,14 @@ public class GraphFactoryTest extends TestCase {
      */
     public void testCreate_String_Properties() {
         System.out.println("create");
-        String id = "";
-        Properties parameters = null;
+        String id = "Null";
+        Properties parameters = PropertiesFactory.newInstance().create();
         GraphFactory instance = new GraphFactory();
-        Graph expResult = null;
+        parameters.add(instance.getClassParameter().getType(),"UserList");
         Graph result = instance.create(id, parameters);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotNull( result);
+        assertEquals("Null",result.getID());
+        assertEquals(UserList.class,result.getClass());
     }
 
     /**
@@ -75,13 +75,13 @@ public class GraphFactoryTest extends TestCase {
      */
     public void testCreate_Properties() {
         System.out.println("create");
-        Properties props = null;
+        Properties props = PropertiesFactory.newInstance().create();
+        props.add("GraphID","Name");
         GraphFactory instance = new GraphFactory();
-        Graph expResult = null;
+        props.add(instance.getClassParameter().getType(),"UserList");
         Graph result = instance.create(props);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals("Name", result.getID());
+        assertEquals(UserList.class,result.getClass());
     }
 
     /**
@@ -90,11 +90,8 @@ public class GraphFactoryTest extends TestCase {
     public void testGetKnownGraphs() {
         System.out.println("getKnownGraphs");
         GraphFactory instance = new GraphFactory();
-        String[] expResult = null;
         String[] result = instance.getKnownGraphs();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotNull(result);
     }
 
     /**
@@ -103,11 +100,8 @@ public class GraphFactoryTest extends TestCase {
     public void testGetClassParameter() {
         System.out.println("getClassParameter");
         GraphFactory instance = new GraphFactory();
-        Parameter expResult = null;
         Parameter result = instance.getClassParameter();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals("GraphClass", result.getType());
     }
 
 }

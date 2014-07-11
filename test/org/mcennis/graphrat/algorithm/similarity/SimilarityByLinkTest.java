@@ -8,6 +8,7 @@ package org.mcennis.graphrat.algorithm.similarity;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.SortedSet;
 
 import junit.framework.TestCase;
 import org.mcennis.graphrat.graph.Graph;
@@ -167,14 +168,14 @@ public class SimilarityByLinkTest extends TestCase {
         instance.init(props);
         instance.execute(graph);
         
-        List<Link> link = graph.getLinkBySource("Tag Similarity",a);
+        SortedSet<Link> link = graph.getLinkBySource("Tag Similarity",a);
         assertNotNull(link);
         assertEquals(1,link.size());
-        assertEquals(b,link.get(0).getDestination());
+        assertEquals(b,link.first().getDestination());
         HashMap<Actor,Double> left = instance.getMap(a, new HashSet<Actor>(), graph);
         HashMap<Actor,Double> right = instance.getMap(b, new HashSet<Actor>(), graph);
         double value = distance.distance(new MapDataVector(left,graph.getActorCount("User")), new MapDataVector(right,graph.getActorCount("User")));
-        assertEquals(value,link.get(0).getStrength(),0.001);
+        assertEquals(value,link.first().getStrength(),0.001);
     }
 
     /**
@@ -189,14 +190,14 @@ public class SimilarityByLinkTest extends TestCase {
         instance.init(props);
         instance.execute(graph);
         
-        List<Link> link = graph.getLinkBySource("Tag Similarity", b);
+        SortedSet<Link> link = graph.getLinkBySource("Tag Similarity", b);
         assertNotNull(link);
         assertEquals(1,link.size());
-        assertEquals(a,link.get(0).getDestination());
+        assertEquals(a,link.first().getDestination());
         HashMap<Actor,Double> left = instance.getMap(b, new HashSet<Actor>(), graph);
         HashMap<Actor,Double> right = instance.getMap(a, new HashSet<Actor>(), graph);
         double value = distance.distance(new MapDataVector(left,graph.getActorCount("User")), new MapDataVector(right,graph.getActorCount("User")));
-        assertEquals(value,link.get(0).getStrength(),0.001);
+        assertEquals(value,link.first().getStrength(),0.001);
     }
 
     /**
@@ -211,14 +212,14 @@ public class SimilarityByLinkTest extends TestCase {
         instance.init(props);
         instance.execute(graph);
         
-        List<Link> link = graph.getLinkBySource("Tag Similarity", c);
+        SortedSet<Link> link = graph.getLinkBySource("Tag Similarity", c);
         assertNotNull(link);
         assertEquals(1,link.size());
-        assertEquals(d,link.get(0).getDestination());
+        assertEquals(d,link.first().getDestination());
         HashMap<Actor,Double> left = instance.getMap(c, new HashSet<Actor>(), graph);
         HashMap<Actor,Double> right = instance.getMap(d, new HashSet<Actor>(), graph);
         double value = distance.distance(new MapDataVector(left,graph.getActorCount("User")), new MapDataVector(right,graph.getActorCount("User")));
-        assertEquals(value,link.get(0).getStrength(),0.001);
+        assertEquals(value,link.first().getStrength(),0.001);
     }
 
     /**
@@ -233,14 +234,14 @@ public class SimilarityByLinkTest extends TestCase {
         instance.init(props);
         instance.execute(graph);
         
-        List<Link> link = graph.getLinkBySource("Tag Similarity", d);
+        SortedSet<Link> link = graph.getLinkBySource("Tag Similarity", d);
         assertNotNull(link);
         assertEquals(1,link.size());
-        assertEquals(c,link.get(0).getDestination());
+        assertEquals(c,link.first().getDestination());
         HashMap<Actor,Double> left = instance.getMap(d, new HashSet<Actor>(), graph);
         HashMap<Actor,Double> right = instance.getMap(c, new HashSet<Actor>(), graph);
         double value = distance.distance(new MapDataVector(left,graph.getActorCount("User")), new MapDataVector(right,graph.getActorCount("User")));
-        assertEquals(value,link.get(0).getStrength(),0.001);
+        assertEquals(value,link.first().getStrength(),0.001);
     }
 
     /**

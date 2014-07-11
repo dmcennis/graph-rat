@@ -25,12 +25,9 @@ package org.mcennis.graphrat.graph;
 
 import java.io.IOException;
 import java.io.Writer;
-import java.util.List;
-import java.util.TreeMap;
-import java.util.Vector;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 
+import org.dynamicfactory.descriptors.Properties;
 import org.mcennis.graphrat.link.Link;
 import org.dynamicfactory.model.ModelShell;
 import org.mcennis.graphrat.actor.Actor;
@@ -44,7 +41,7 @@ import org.dynamicfactory.property.xml.PropertyXML;
 /**
  * A graph object that is held entirely in memory
  *
- * @see nz.ac.waikato.mcennis.arm.graph.Graph
+ * @see org.mcennis.graphrat.graph.Graph
  *
  * @author Daniel McEnnis
  *
@@ -72,7 +69,7 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
     TreeMap<String, Property> properties = new TreeMap<String, Property>();
     TreeMap<String, PathSet> pathSets;
     Graph parent = null;
-    LinkedList<Graph> children = new LinkedList<Graph>();
+    TreeSet<Graph> children = new TreeSet<Graph>();
     String name;
     UserIDList mapped = null;
     Writer outs = null;
@@ -168,11 +165,11 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
     }
 
     @Override
-    public List<Actor> getActor(String type) {
+    public SortedSet<Actor> getActor(String type) {
         TreeMap<String, Actor> actorClass = actor.get(type);
-        LinkedList<Actor> ret = new LinkedList<Actor>();
+        TreeSet<Actor> ret = new TreeSet<Actor>();
         if(actor.get(type) == null){
-            return new LinkedList<Actor>();
+            return new TreeSet<Actor>();
         }
         ret.addAll(actor.get(type).values());
         return ret;
@@ -308,8 +305,8 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
     }
 
     @Override
-    public List<Actor> getActor() {
-        Vector<Actor> ret = new Vector<Actor>();
+    public SortedSet<Actor> getActor() {
+        TreeSet<Actor> ret = new TreeSet<Actor>();
         Iterator<TreeMap<String, Actor>> it = actor.values().iterator();
         while (it.hasNext()) {
             ret.addAll(it.next().values());
@@ -331,42 +328,42 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
     //    
 
     @Override
-    public List<Link> getLinkBySource(String type, Actor source) {
+    public SortedSet<Link> getLinkBySource(String type, Actor source) {
         if (links.containsKey(type) && links.get(type).containsKey(source.getMode()) && (links.get(type).get(source.getMode()).containsKey(source.getID()))) {
-            LinkedList<Link> ret = new LinkedList<Link>();
+            TreeSet<Link> ret = new TreeSet<Link>();
             ret.addAll(links.get(type).get(source.getMode()).get(source.getID()).values());
             return ret;
         } else {
-            return new LinkedList<Link>();
+            return new TreeSet<Link>();
         }
     }
 
     @Override
-    public List<Link> getLinkByDestination(String type, Actor dest) {
+    public SortedSet<Link> getLinkByDestination(String type, Actor dest) {
         if (invertedLinks.containsKey(type) && invertedLinks.get(type).containsKey(dest.getMode()) && (invertedLinks.get(type).get(dest.getMode()).containsKey(dest.getID()))) {
-            LinkedList<Link> ret = new LinkedList<Link>();
+            TreeSet<Link> ret = new TreeSet<Link>();
             ret.addAll(invertedLinks.get(type).get(dest.getMode()).get(dest.getID()).values());
             return ret;
         } else {
-            return new LinkedList<Link>();
+            return new TreeSet<Link>();
         }
     }
 
     @Override
-    public List<Link> getLink(String type, Actor source, Actor dest) {
+    public SortedSet<Link> getLink(String type, Actor source, Actor dest) {
         if (links.containsKey(type) && links.get(type).containsKey(source.getMode()) && links.get(type).get(source.getMode()).containsKey(source.getID())) {
             TreeMap<Actor,Link> base = links.get(type).get(source.getMode()).get(source.getID());
-            Vector<Link> ret = new Vector<Link>(base.size());
+            TreeSet<Link> ret = new TreeSet<Link>();
             ret.add(base.get(dest));
             return ret;
         } else {
-            return new LinkedList<Link>();
+            return new TreeSet<Link>();
         }
     }
 
     @Override
-    public List<Link> getLink() {
-        Vector<Link> ret = new Vector<Link>();
+    public SortedSet<Link> getLink() {
+        TreeSet<Link> ret = new TreeSet<Link>();
         Iterator<TreeMap<String, TreeMap<String, TreeMap<Actor,Link>>>> it = links.values().iterator();
         while (it.hasNext()) {
             Iterator<TreeMap<String, TreeMap<Actor,Link>>> type = it.next().values().iterator();
@@ -381,10 +378,10 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
     }
 
     @Override
-    public List<Link> getLink(String type) {
+    public SortedSet<Link> getLink(String type) {
         if (links.containsKey(type)) {
             Iterator<TreeMap<String, TreeMap<Actor,Link>>> typeLevel = links.get(type).values().iterator();
-            Vector<Link> ret = new Vector<Link>();
+            TreeSet<Link> ret = new TreeSet<Link>();
             while (typeLevel.hasNext()) {
                 Iterator<TreeMap<Actor,Link>> idLevel = typeLevel.next().values().iterator();
                 while (idLevel.hasNext()) {
@@ -393,7 +390,7 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
             }
             return ret;
         } else {
-            return new LinkedList<Link>();
+            return new TreeSet<Link>();
         }
     }
 
@@ -511,15 +508,15 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
     }
 
     @Override
-    public List<String> getLinkTypes() {
-        LinkedList<String> ret = new LinkedList<String>();
+    public SortedSet<String> getLinkTypes() {
+        TreeSet<String> ret = new TreeSet<String>();
         ret.addAll(links.keySet());
         return ret;
     }
 
     @Override
-    public List<String> getActorTypes() {
-        LinkedList<String> ret = new LinkedList<String>();
+    public SortedSet<String> getActorTypes() {
+        TreeSet<String> ret = new TreeSet<String>();
         ret.addAll(actor.keySet());
         return ret;
     }
@@ -538,7 +535,7 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
     public Iterator<Actor> getActorIterator(String type) {
         TreeMap<String, Actor> map = actor.get(type);
         if (map != null) {
-            LinkedList<Actor> ret = new LinkedList<Actor>();
+            TreeSet<Actor> ret = new TreeSet<Actor>();
             ret.addAll(map.values());
             return ret.iterator();
         } else {
@@ -597,14 +594,14 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
 
     @Override
     public void anonymize() {
-        List<Actor> a = new LinkedList<Actor>();
+        SortedSet<Actor> a = new TreeSet<Actor>();
         a.addAll(this.getActor());
         Iterator<Actor> aIt = a.iterator();
         int count = 0;
         while (aIt.hasNext()) {
             aIt.next().setID(Integer.toString(count++));
         }
-        List<Link> l = new LinkedList<Link>();
+        SortedSet<Link> l = new TreeSet<Link>();
         l.addAll(this.getLink());
         this.actor.clear();
         this.links.clear();
@@ -625,7 +622,7 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
     }
 
     @Override
-    public List<Graph> getChildren() {
+    public SortedSet<Graph> getChildren() {
         return children;
     }
 
@@ -646,8 +643,8 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
         children.add(g);
     }
 
-    protected LinkedList<Link> getLinkBySource(Actor a) {
-        LinkedList<Link> ret = new LinkedList<Link>();
+    protected SortedSet<Link> getLinkBySource(Actor a) {
+        TreeSet<Link> ret = new TreeSet<Link>();
         if (a != null) {
             Iterator<String> linkTypes = links.keySet().iterator();
             while (linkTypes.hasNext()) {
@@ -665,8 +662,8 @@ public class MemGraph extends ModelShell implements Graph, java.io.Serializable 
         return ret;
     }
 
-    protected LinkedList<Link> getLinkByDestination(Actor a) {
-        LinkedList<Link> ret = new LinkedList<Link>();
+    protected SortedSet<Link> getLinkByDestination(Actor a) {
+        TreeSet<Link> ret = new TreeSet<Link>();
         if (a != null) {
             Iterator<String> linkTypes = invertedLinks.keySet().iterator();
             while (linkTypes.hasNext()) {

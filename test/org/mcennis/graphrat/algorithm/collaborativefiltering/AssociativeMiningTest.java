@@ -13,6 +13,7 @@ import org.dynamicfactory.descriptors.PropertiesFactory;
 import org.dynamicfactory.property.Property;
 
 import java.util.List;
+import java.util.SortedSet;
 
 import junit.framework.TestCase;
 
@@ -583,7 +584,7 @@ public class AssociativeMiningTest extends TestCase {
 
         instance.execute(base);
 
-        List<Link> links = base.getLinkBySource("Derived", a);
+        SortedSet<Link> links = base.getLinkBySource("Derived", a);
 
 
 

@@ -6,6 +6,7 @@
 package org.mcennis.graphrat.algorithm.similarity;
 
 import java.util.List;
+import java.util.SortedSet;
 
 import junit.framework.TestCase;
 import org.mcennis.graphrat.graph.Graph;
@@ -103,14 +104,14 @@ public class SimilarityByPropertyTest extends TestCase {
         instance.init(props);
         instance.execute(graph);
         
-        List<Link> link = graph.getLinkBySource("Similarity",a);
+        SortedSet<Link> link = graph.getLinkBySource("Similarity",a);
         assertNotNull(link);
         assertEquals(1,link.size());
-        assertEquals(b,link.get(0).getDestination());
+        assertEquals(b,link.first().getDestination());
         double[] left = (double[])a.getProperty("Array").getValue().get(0);
         double[] right = (double[])b.getProperty("Array").getValue().get(0);
         double value = distance.distance(new DoubleArrayDataVector(left), new DoubleArrayDataVector(right));
-        assertEquals(value,link.get(0).getStrength(),0.001);
+        assertEquals(value,link.first().getStrength(),0.001);
     }
 
     public void testExecuteB() {
@@ -122,14 +123,14 @@ public class SimilarityByPropertyTest extends TestCase {
         instance.init(props);
         instance.execute(graph);
         
-        List<Link> link = graph.getLinkBySource("Similarity",b);
+        SortedSet<Link> link = graph.getLinkBySource("Similarity",b);
         assertNotNull(link);
         assertEquals(1,link.size());
-        assertEquals(a,link.get(0).getDestination());
+        assertEquals(a,link.first().getDestination());
         double[] left = (double[])b.getProperty("Array").getValue().get(0);
         double[] right = (double[])a.getProperty("Array").getValue().get(0);
         double value = distance.distance(new DoubleArrayDataVector(left), new DoubleArrayDataVector(right));
-        assertEquals(value,link.get(0).getStrength(),0.001);
+        assertEquals(value,link.first().getStrength(),0.001);
     }
 
     public void testExecuteC() {
@@ -141,14 +142,14 @@ public class SimilarityByPropertyTest extends TestCase {
         instance.init(props);
         instance.execute(graph);
         
-        List<Link> link = graph.getLinkBySource("Similarity",c);
+        SortedSet<Link> link = graph.getLinkBySource("Similarity",c);
         assertNotNull(link);
         assertEquals(1,link.size());
-        assertEquals(d,link.get(0).getDestination());
+        assertEquals(d,link.first().getDestination());
         double[] left = (double[])c.getProperty("Array").getValue().get(0);
         double[] right = (double[])d.getProperty("Array").getValue().get(0);
         double value = distance.distance(new DoubleArrayDataVector(left), new DoubleArrayDataVector(right));
-        assertEquals(value,link.get(0).getStrength(),0.001);
+        assertEquals(value,link.first().getStrength(),0.001);
     }
 
     public void testExecuteD() {
@@ -160,14 +161,14 @@ public class SimilarityByPropertyTest extends TestCase {
         instance.init(props);
         instance.execute(graph);
         
-        List<Link> link = graph.getLinkBySource("Similarity",d);
+        SortedSet<Link> link = graph.getLinkBySource("Similarity",d);
         assertNotNull(link);
         assertEquals(1,link.size());
-        assertEquals(c,link.get(0).getDestination());
+        assertEquals(c,link.first().getDestination());
         double[] left = (double[])d.getProperty("Array").getValue().get(0);
         double[] right = (double[])c.getProperty("Array").getValue().get(0);
         double value = distance.distance(new DoubleArrayDataVector(left), new DoubleArrayDataVector(right));
-        assertEquals(value,link.get(0).getStrength(),0.001);
+        assertEquals(value,link.first().getStrength(),0.001);
     }
 
 

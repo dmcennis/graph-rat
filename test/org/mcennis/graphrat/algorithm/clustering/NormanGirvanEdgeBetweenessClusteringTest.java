@@ -13,6 +13,7 @@ package org.mcennis.graphrat.algorithm.clustering;
 
 
 import java.util.List;
+import java.util.SortedSet;
 
 import junit.framework.TestCase;
 
@@ -347,7 +348,7 @@ public class NormanGirvanEdgeBetweenessClusteringTest extends TestCase {
 
         instance.execute(base2);
 
-        List<Graph> children = base2.getChildren();
+        SortedSet<Graph> children = base2.getChildren();
 
         assertNull(children);
 
@@ -377,7 +378,7 @@ public class NormanGirvanEdgeBetweenessClusteringTest extends TestCase {
 
         instance.execute(base2);
 
-        List<Graph> children = base2.getChildren();
+        SortedSet<Graph> children = base2.getChildren();
 
         assertNotNull(children);
 
@@ -409,33 +410,33 @@ public class NormanGirvanEdgeBetweenessClusteringTest extends TestCase {
 
         instance.execute(base);
 
-        List<Graph> children = base.getChildren();
+        SortedSet<Graph> children = base.getChildren();
 
         assertNotNull(children);
 
         assertEquals(4,children.size());
 
-        for(int i=0;i<4;++i){
+        for(Graph i : children){
 
-            if(children.get(i).getActor("Member", "G2A") != null){
+            if(i.getActor("Member", "G2A") != null){
 
-                assertNotNull(children.get(i).getChildren());
+                assertNotNull(i.getChildren());
 
-                assertEquals(3,children.get(i).getChildren().size());
+                assertEquals(3,i.getChildren().size());
 
-            }else if(children.get(i).getActor("Member","Isolated") != null){
+            }else if(i.getActor("Member","Isolated") != null){
 
-                assertNull(children.get(i).getChildren());
+                assertNull(i.getChildren());
 
-            }else if(children.get(i).getActor("Member","Bridge") != null){
+            }else if(i.getActor("Member","Bridge") != null){
 
-                assertNull(children.get(i).getChildren());
+                assertNull(i.getChildren());
 
-            }else if(children.get(i).getActor("Member","G2A") != null){
+            }else if(i.getActor("Member","G2A") != null){
 
-                assertNotNull(children.get(i).getChildren());
+                assertNotNull(i.getChildren());
 
-                assertEquals(2,children.get(i).getChildren().size());
+                assertEquals(2,i.getChildren().size());
 
             }
 

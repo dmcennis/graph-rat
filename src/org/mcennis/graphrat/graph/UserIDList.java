@@ -23,11 +23,9 @@
  */
 package org.mcennis.graphrat.graph;
 
-import java.util.List;
-import java.util.TreeSet;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 
+import org.dynamicfactory.descriptors.Properties;
 import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.actor.ActorFactory;
 import org.mcennis.graphrat.link.Link;
@@ -106,16 +104,16 @@ public class UserIDList extends ModelShell implements Graph {
     }
 
     @Override
-    public List<Actor> getActor() {
+    public SortedSet<Actor> getActor() {
 
-        return new LinkedList<Actor>();
+        return new TreeSet<Actor>();
 
     }
 
     @Override
-    public List<Actor> getActor(String type) {
+    public SortedSet<Actor> getActor(String type) {
 
-        return new LinkedList<Actor>();
+        return new TreeSet<Actor>();
 
     }
 
@@ -127,51 +125,51 @@ public class UserIDList extends ModelShell implements Graph {
     }
 
     @Override
-    public List<String> getActorTypes() {
+    public SortedSet<String> getActorTypes() {
 
-        return new LinkedList<String>();
-
-    }
-
-    @Override
-    public List<Link> getLink() {
-
-        return new LinkedList<Link>();
+        return new TreeSet<String>();
 
     }
 
     @Override
-    public List<Link> getLink(String type) {
+    public SortedSet<Link> getLink() {
 
-        return new LinkedList<Link>();
-
-    }
-
-    @Override
-    public List<Link> getLinkBySource(String type, Actor sourceActor) {
-
-        return new LinkedList<Link>();
+        return new TreeSet<Link>();
 
     }
 
     @Override
-    public List<Link> getLinkByDestination(String type, Actor destActor) {
+    public SortedSet<Link> getLink(String type) {
 
-        return new LinkedList<Link>();
-
-    }
-
-    @Override
-    public List<Link> getLink(String type, Actor sourceActor, Actor destActor) {
-
-        return new LinkedList<Link>();
+        return new TreeSet<Link>();
 
     }
 
     @Override
-    public List<String> getLinkTypes() {
+    public SortedSet<Link> getLinkBySource(String type, Actor sourceActor) {
 
-        return new LinkedList<String>();
+        return new TreeSet<Link>();
+
+    }
+
+    @Override
+    public SortedSet<Link> getLinkByDestination(String type, Actor destActor) {
+
+        return new TreeSet<Link>();
+
+    }
+
+    @Override
+    public SortedSet<Link> getLink(String type, Actor sourceActor, Actor destActor) {
+
+        return new TreeSet<Link>();
+
+    }
+
+    @Override
+    public SortedSet<String> getLinkTypes() {
+
+        return new TreeSet<String>();
 
     }
 
@@ -254,9 +252,9 @@ public class UserIDList extends ModelShell implements Graph {
     }
 
     @Override
-    public List<Graph> getChildren() {
+    public SortedSet<Graph> getChildren() {
 
-        return new LinkedList<Graph>();
+        return new TreeSet<Graph>();
 
     }
 
@@ -302,27 +300,27 @@ public class UserIDList extends ModelShell implements Graph {
     }
 
     public Iterator<Actor> getActorIterator() {
-        return new LinkedList<Actor>().iterator();
+        return new TreeSet<Actor>().iterator();
     }
 
     public Iterator<Link> getLinkIterator() {
-        return new LinkedList<Link>().iterator();
+        return new TreeSet<Link>().iterator();
     }
 
     public Iterator<Link> getLinkIterator(String type) {
-        return new LinkedList<Link>().iterator();
+        return new TreeSet<Link>().iterator();
     }
 
     public Iterator<Link> getLinkBySourceIterator(String type, Actor sourceActor) {
-        return new LinkedList<Link>().iterator();
+        return new TreeSet<Link>().iterator();
     }
 
     public Iterator<Link> getLinkByDesinationIterator(String type, Actor destActor) {
-        return new LinkedList<Link>().iterator();
+        return new TreeSet<Link>().iterator();
     }
 
     public Iterator<Link> getLinkIterator(String type, Actor sourceActor, Actor destActor) {
-        return new LinkedList<Link>().iterator();
+        return new TreeSet<Link>().iterator();
     }
 
     public Iterator<Property> getPropertyIterator() {
@@ -334,7 +332,7 @@ public class UserIDList extends ModelShell implements Graph {
     }
 
     public Iterator<Graph> getChildrenIterator() {
-        return new LinkedList<Graph>().iterator();
+        return new TreeSet<Graph>().iterator();
     }
 
     public Parameter getParameter(String name) {

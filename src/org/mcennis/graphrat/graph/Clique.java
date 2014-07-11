@@ -23,19 +23,11 @@
  */
 package org.mcennis.graphrat.graph;
 
-import java.util.List;
-
-import java.util.HashSet;
-
-import java.util.Iterator;
-
-import java.util.LinkedList;
-
-import java.util.Set;
-import java.util.TreeMap;
-import java.util.TreeSet;
+import java.util.*;
 
 import java.util.regex.Pattern;
+
+import org.dynamicfactory.descriptors.Properties;
 import org.mcennis.graphrat.actor.Actor;
 
 import org.mcennis.graphrat.link.Link;
@@ -149,23 +141,23 @@ public class Clique extends ModelShell implements Graph, Comparable {
     }
 
     @Override
-    public List<Actor> getActor() {
-        LinkedList<Actor> ret = new LinkedList<Actor>();
+    public SortedSet<Actor> getActor() {
+        TreeSet<Actor> ret = new TreeSet<Actor>();
         ret.addAll(map.values());
         return ret;
     }
 
     @Override
-    public List<Actor> getActor(String type) {
-        LinkedList<Actor> ret = new LinkedList<Actor>();
+    public SortedSet<Actor> getActor(String type) {
+        TreeSet<Actor> ret = new TreeSet<Actor>();
         ret.addAll(map.values());
         return ret;
 
     }
 
     @Override
-    public List<String> getActorTypes() {
-        LinkedList<String> ret = new LinkedList<String>();
+    public SortedSet<String> getActorTypes() {
+        TreeSet<String> ret = new TreeSet<String>();
         ret.add(actorType);
         return ret;
     }
@@ -173,53 +165,53 @@ public class Clique extends ModelShell implements Graph, Comparable {
     /**
      * Null operation - links are implicit, not explicitly defined.
      */
-    public List<Link> getLink() {
+    public SortedSet<Link> getLink() {
 
-        return new LinkedList<Link>();
-
-    }
-
-    /**
-     * Null operation - links are implicit, not explicitly defined.
-     */
-    public List<Link> getLink(String type) {
-
-        return new LinkedList<Link>();
+        return new TreeSet<Link>();
 
     }
 
     /**
      * Null operation - links are implicit, not explicitly defined.
      */
-    public List<Link> getLinkBySource(String type, Actor sourceActor) {
+    public SortedSet<Link> getLink(String type) {
 
-        return new LinkedList<Link>();
-
-    }
-
-    /**
-     * Null operation - links are implicit, not explicitly defined.
-     */
-    public List<Link> getLinkByDestination(String type, Actor destActor) {
-
-        return new LinkedList<Link>();
+        return new TreeSet<Link>();
 
     }
 
     /**
      * Null operation - links are implicit, not explicitly defined.
      */
-    public List<Link> getLink(String type, Actor sourceActor, Actor destActor) {
+    public SortedSet<Link> getLinkBySource(String type, Actor sourceActor) {
 
-        return new LinkedList<Link>();
+        return new TreeSet<Link>();
 
     }
 
     /**
      * Null operation - links are implicit, not explicitly defined.
      */
-    public List<String> getLinkTypes() {
-        LinkedList<String> ret = new LinkedList<String>();
+    public SortedSet<Link> getLinkByDestination(String type, Actor destActor) {
+
+        return new TreeSet<Link>();
+
+    }
+
+    /**
+     * Null operation - links are implicit, not explicitly defined.
+     */
+    public SortedSet<Link> getLink(String type, Actor sourceActor, Actor destActor) {
+
+        return new TreeSet<Link>();
+
+    }
+
+    /**
+     * Null operation - links are implicit, not explicitly defined.
+     */
+    public SortedSet<String> getLinkTypes() {
+        TreeSet<String> ret = new TreeSet<String>();
         ret.add(relation);
         return ret;
 
@@ -468,7 +460,7 @@ public class Clique extends ModelShell implements Graph, Comparable {
 
             Actor next = it.next();
 
-            List<Link> l = g.getLinkBySource(relation, next);
+            SortedSet<Link> l = g.getLinkBySource(relation, next);
             Iterator<Link> lIt = l.iterator();
             String[] dest = new String[l.size()];
             int count = 0;
@@ -604,9 +596,9 @@ public class Clique extends ModelShell implements Graph, Comparable {
     /**
      * Leaf graph only, so intentionally null
      */
-    public List<Graph> getChildren() {
+    public SortedSet<Graph> getChildren() {
 
-        return new LinkedList<Graph>();
+        return new TreeSet<Graph>();
 
     }
 
@@ -673,8 +665,8 @@ public class Clique extends ModelShell implements Graph, Comparable {
      * 
      * @return array of actors
      */
-    public List<Actor> getIntersection() {
-        LinkedList<Actor> ret = new LinkedList<Actor>();
+    public SortedSet<Actor> getIntersection() {
+        TreeSet<Actor> ret = new TreeSet<Actor>();
         ret.addAll(intersection);
         return ret;
     }
@@ -768,23 +760,23 @@ public class Clique extends ModelShell implements Graph, Comparable {
     }
 
     public Iterator<Link> getLinkIterator() {
-        return new LinkedList<Link>().iterator();
+        return new TreeSet<Link>().iterator();
     }
 
     public Iterator<Link> getLinkIterator(String type) {
-        return new LinkedList<Link>().iterator();
+        return new TreeSet<Link>().iterator();
     }
 
     public Iterator<Link> getLinkBySourceIterator(String type, Actor sourceActor) {
-        return new LinkedList<Link>().iterator();
+        return new TreeSet<Link>().iterator();
     }
 
     public Iterator<Link> getLinkByDesinationIterator(String type, Actor destActor) {
-        return new LinkedList<Link>().iterator();
+        return new TreeSet<Link>().iterator();
     }
 
     public Iterator<Link> getLinkIterator(String type, Actor sourceActor, Actor destActor) {
-        return new LinkedList<Link>().iterator();
+        return new TreeSet<Link>().iterator();
     }
 
     public Iterator<Property> getPropertyIterator() {

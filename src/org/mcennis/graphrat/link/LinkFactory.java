@@ -162,10 +162,10 @@ public class LinkFactory extends AbstractFactory<Link>{
         ret.init(parameters);
         
         if (relation == null) {
-            if ((parameters.get("Relation") != null) && (parameters.get("Relation").getParameterClass().getName().contentEquals(String.class.getName()))) {
-                relation = (String) parameters.get("Relation").getValue().iterator().next();
+            if ((parameters.get("LinkRelation") != null) && (parameters.get("LinkRelation").getParameterClass().getName().contentEquals(String.class.getName()))) {
+                relation = (String) parameters.get("LinkRelation").getValue().iterator().next();
             } else {
-                relation = (String) properties.get("Relation").getValue().iterator().next();
+                relation = (String) properties.get("LinkRelation").getValue().iterator().next();
             }
         }
         ret.setRelation(relation);

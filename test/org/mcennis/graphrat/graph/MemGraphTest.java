@@ -34,8 +34,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.OutputStreamWriter;
 
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
+
 import junit.framework.*;
 
 
@@ -939,30 +939,21 @@ public class MemGraphTest extends TestCase {
 
 
 
-        LinkedList<Link> expResult = new LinkedList<Link>();
+        SortedSet<Link> expResult = new TreeSet<Link>();
         expResult.add(ab);
         expResult.add(ac);
         expResult.add(ae);
 
 
-        List<Link> result = test.getLinkBySource(type, a);
+        SortedSet<Link> result = test.getLinkBySource(type, a);
 
 
         assertEquals(expResult.size(), result.size());
 
-
-        assertEquals(expResult.get(0).getDestination().getID(), result.get(0).getDestination().getID());
-
-
-        assertEquals(expResult.get(1).getDestination().getID(), result.get(1).getDestination().getID());
-
-
-        assertEquals(expResult.get(2).getDestination().getID(), result.get(2).getDestination().getID());
-
-
-
-
-
+        Iterator<Link> resultIT = result.iterator();
+        for(Link i : expResult) {
+            assertEquals(i.getDestination().getID(), resultIT.next().getDestination().getID());
+        }
     }
 
 
@@ -972,7 +963,7 @@ public class MemGraphTest extends TestCase {
     public void testGetUserLinks() {
 
 
-        List<Link> result = test.getLink("Knows");
+        SortedSet<Link> result = test.getLink("Knows");
 
 
         assertEquals(9, result.size());
@@ -987,37 +978,37 @@ public class MemGraphTest extends TestCase {
     public void testGetUserLinksByDestination() {
 
 
-        List<Link> result = test.getLinkByDestination("Knows", c);
+        SortedSet<Link> result = test.getLinkByDestination("Knows", c);
 
 
         assertEquals(3, result.size());
 
 
-        for (int i = 0; i < 3; ++i) {
+        for (Link i : result) {
 
 
-            if (result.get(i).getSource().equals(a)) {
+            if (i.getSource().equals(a)) {
 
 
-                assertEquals(c, result.get(i).getDestination());
+                assertEquals(c, i.getDestination());
 
 
-            } else if (result.get(i).getSource().equals(b)) {
+            } else if (i.getSource().equals(b)) {
 
 
-                assertEquals(c, result.get(i).getDestination());
+                assertEquals(c, i.getDestination());
 
 
-            } else if (result.get(i).getSource().equals(d)) {
+            } else if (i.getSource().equals(d)) {
 
 
-                assertEquals(c, result.get(i).getDestination());
+                assertEquals(c, i.getDestination());
 
 
             } else {
 
 
-                fail("Source " + result.get(i).getSource().getID() + " should not be present");
+                fail("Source " + i.getSource().getID() + " should not be present");
 
 
             }
@@ -1035,16 +1026,16 @@ public class MemGraphTest extends TestCase {
     public void testGetUserLinksBySourceAndDestination() {
 
 
-        List<Link> result = test.getLink("Knows", a, e);
+        SortedSet<Link> result = test.getLink("Knows", a, e);
 
 
         assertEquals(1, result.size());
 
 
-        assertEquals(a, result.get(0).getSource());
+        assertEquals(a, result.first().getSource());
 
 
-        assertEquals(e, result.get(0).getDestination());
+        assertEquals(e, result.first().getDestination());
 
 
     }
@@ -1130,17 +1121,17 @@ public class MemGraphTest extends TestCase {
 
 
 
-        LinkedList<Link> expResult = new LinkedList<Link>();
+        SortedSet<Link> expResult = new TreeSet<Link>();
         expResult.add(a1);
 
 
-        List<Link> result = test.getLinkBySource(type, a);
+        SortedSet<Link> result = test.getLinkBySource(type, a);
 
 
         assertEquals(expResult.size(), result.size());
 
 
-        assertEquals(expResult.get(0).getDestination().getID(), result.get(0).getDestination().getID());
+        assertEquals(expResult.first().getDestination().getID(), result.first().getDestination().getID());
 
 
 
@@ -1182,10 +1173,10 @@ public class MemGraphTest extends TestCase {
         assertNull(test.getActor("User", "E"));
 
 
-        assertEquals(0,test.getLinkBySource("Knows", e).size());
+        assertEquals(0, test.getLinkBySource("Knows", e).size());
 
 
-        assertEquals(0,test.getLinkByDestination("Knows", e).size());
+        assertEquals(0, test.getLinkByDestination("Knows", e).size());
 
 
     }
@@ -1212,13 +1203,13 @@ public class MemGraphTest extends TestCase {
         assertEquals(0,test.getActor("D").size());
 
 
-        assertEquals(0,test.getLinkBySource("Knows", d).size());
+        assertEquals(0, test.getLinkBySource("Knows", d).size());
 
 
         assertEquals(2, test.getLinkBySource("Knows", b).size());
 
 
-        assertEquals(0,test.getLinkByDestination("Knows", d).size());
+        assertEquals(0, test.getLinkByDestination("Knows", d).size());
 
 
         assertEquals(2, test.getLinkByDestination("Knows", c).size());

@@ -33,6 +33,7 @@ import org.dynamicfactory.descriptors.Properties;
 import org.dynamicfactory.property.Property;
 
 import java.util.Iterator;
+import java.util.SortedSet;
 
 /**
  * Interface representing a social network.  Users are the individuals consuming
@@ -88,11 +89,11 @@ public interface Graph extends java.io.Serializable, org.mcennis.graphrat.parser
     public Actor getActor(String type, String ID);
 
     /**
-     * Retrieve an array of all actors of all types.  Returns null if no actors are in the graph.
+     * Retrieve an array of all actors of all types.  Returns empty list if no actors are in the graph.
      *
      * @return array of all users in the graph
      */
-    public List<Actor> getActor();
+    public SortedSet<Actor> getActor();
 
     
     public Iterator<Actor> getActorIterator();
@@ -103,7 +104,7 @@ public interface Graph extends java.io.Serializable, org.mcennis.graphrat.parser
      *
      * @return array of actors of the given type
      */
-    public List<Actor> getActor(String type);
+    public SortedSet<Actor> getActor(String type);
 
     /**
      * Create a read only iterator over all actors.
@@ -114,11 +115,11 @@ public interface Graph extends java.io.Serializable, org.mcennis.graphrat.parser
     public Iterator<Actor> getActorIterator(String type);
 
     /**
-     * List all types - returns null if no actors exist.
+     * SortedSet all types - returns null if no actors exist.
      * 
      * @return array of all type names in this graph
      */
-    public List<String> getActorTypes();
+    public SortedSet<String> getActorTypes();
 
     /**
      * Return all user to user links in this graph in an array. Returns null if no
@@ -126,7 +127,7 @@ public interface Graph extends java.io.Serializable, org.mcennis.graphrat.parser
      *
      * @return array of all userlinks or null
      */
-    public List<Link> getLink();
+    public SortedSet<Link> getLink();
     
     public Iterator<Link> getLinkIterator();
 
@@ -137,7 +138,7 @@ public interface Graph extends java.io.Serializable, org.mcennis.graphrat.parser
      * @param type 
      * @return array of all user links of a given type or null 
      */
-    public List<Link> getLink(String type);
+    public SortedSet<Link> getLink(String type);
     
     public Iterator<Link> getLinkIterator(String type);
 
@@ -149,7 +150,7 @@ public interface Graph extends java.io.Serializable, org.mcennis.graphrat.parser
      * @param sourceActor starting point of the link
      * @return Array of links or null
      */
-    public List<Link> getLinkBySource(String type, Actor sourceActor);
+    public SortedSet<Link> getLinkBySource(String type, Actor sourceActor);
 
     public Iterator<Link> getLinkBySourceIterator(String type,Actor sourceActor);
     
@@ -161,7 +162,7 @@ public interface Graph extends java.io.Serializable, org.mcennis.graphrat.parser
      * @param destActor actor pointed to by links
      * @return Array of links or null
      */
-    public List<Link> getLinkByDestination(String type, Actor destActor);
+    public SortedSet<Link> getLinkByDestination(String type, Actor destActor);
 
     public Iterator<Link> getLinkByDesinationIterator(String type,Actor destActor);
 
@@ -174,7 +175,7 @@ public interface Graph extends java.io.Serializable, org.mcennis.graphrat.parser
      * @param destActor actor pointed to by links
      * @return Array of links or null
      */
-    public List<Link> getLink(String type, Actor sourceActor, Actor destActor);
+    public SortedSet<Link> getLink(String type, Actor sourceActor, Actor destActor);
 
     public Iterator<Link> getLinkIterator(String type, Actor sourceActor, Actor destActor);
 
@@ -182,7 +183,7 @@ public interface Graph extends java.io.Serializable, org.mcennis.graphrat.parser
      * Returns all link types currently in this graph or null if no links are present.
      * @return array of link types
      */
-    public List<String> getLinkTypes();
+    public SortedSet<String> getLinkTypes();
 
     /**
      * Returns an array of all properties associated with this object or null if
@@ -287,7 +288,7 @@ public interface Graph extends java.io.Serializable, org.mcennis.graphrat.parser
      * 
      * @return Array of graphs that are children of this graph
      */
-    public List<Graph> getChildren();
+    public SortedSet<Graph> getChildren();
     
     public Iterator<Graph> getChildrenIterator();
 

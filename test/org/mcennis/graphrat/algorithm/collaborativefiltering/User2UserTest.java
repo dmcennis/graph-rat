@@ -13,6 +13,7 @@ package org.mcennis.graphrat.algorithm.collaborativefiltering;
 
 
 import java.util.List;
+import java.util.SortedSet;
 
 import junit.framework.TestCase;
 
@@ -386,17 +387,17 @@ public class User2UserTest extends TestCase {
 
         
 
-        List<Link> user2user = base.getLinkBySource("Nearest Neighbor", a);
+        SortedSet<Link> user2user = base.getLinkBySource("Nearest Neighbor", a);
 
         assertNotNull(user2user);
 
         assertEquals(1,user2user.size());
 
-        assertEquals(1.0,user2user.get(0).getStrength(),0.0001);
+        assertEquals(1.0,user2user.first().getStrength(),0.0001);
 
-        assertEquals(f,user2user.get(0).getDestination());
+        assertEquals(f,user2user.first().getDestination());
 
-        List<Link> user2artist = base.getLinkBySource("Derived", a);
+        SortedSet<Link> user2artist = base.getLinkBySource("Derived", a);
 
         assertNull(user2artist);
 
@@ -426,41 +427,41 @@ public class User2UserTest extends TestCase {
 
         
 
-        List<Link> user2user = base.getLinkBySource("Nearest Neighbor", b);
+        SortedSet<Link> user2user = base.getLinkBySource("Nearest Neighbor", b);
 
         assertNotNull(user2user);
 
         assertEquals(3,user2user.size());
 
-        for(int i=0;i<user2user.size();++i){
+        for(Link i : user2user){
 
-            if(user2user.get(i).getDestination().equals(d)){
+            if(i.getDestination().equals(d)){
 
-                assertEquals(0.7071,user2user.get(i).getStrength(),0.0001);
+                assertEquals(0.7071,i.getStrength(),0.0001);
 
-            }else if(user2user.get(i).getDestination().equals(e)){
+            }else if(i.getDestination().equals(e)){
 
-                assertEquals(0.7071,user2user.get(i).getStrength(),0.0001);
+                assertEquals(0.7071,i.getStrength(),0.0001);
 
-            }else if(user2user.get(i).getDestination().equals(g)){
+            }else if(i.getDestination().equals(g)){
 
-                assertEquals(0.7071,user2user.get(i).getStrength(),0.0001);
+                assertEquals(0.7071,i.getStrength(),0.0001);
 
             }else{
 
-                fail("Unexpected link '"+user2user.get(i).getDestination().getID()+"' found");
+                fail("Unexpected link '"+i.getDestination().getID()+"' found");
 
             }
 
         }
 
-        List<Link> user2artist = base.getLinkBySource("Derived", b);
+        SortedSet<Link> user2artist = base.getLinkBySource("Derived", b);
 
         assertEquals(1,user2artist.size());
 
-        assertEquals(artist4,user2artist.get(0).getDestination());
+        assertEquals(artist4,user2artist.first().getDestination());
 
-        assertEquals(1.4142,user2artist.get(0).getStrength(),0.0001);
+        assertEquals(1.4142,user2artist.first().getStrength(),0.0001);
 
     }
 
@@ -492,39 +493,39 @@ public class User2UserTest extends TestCase {
 
         
 
-        List<Link> user2user = base.getLinkBySource("Nearest Neighbor", c);
+        SortedSet<Link> user2user = base.getLinkBySource("Nearest Neighbor", c);
 
         assertNotNull(user2user);
 
-        for(int i=0;i<user2user.size();++i){
+        for(Link i : user2user){
 
-            if(user2user.get(i).getDestination().equals(d)){
+            if(i.getDestination().equals(d)){
 
-                assertEquals(0.7071,user2user.get(i).getStrength(),0.0001);
+                assertEquals(0.7071,i.getStrength(),0.0001);
 
-            }else if(user2user.get(i).getDestination().equals(e)){
+            }else if(i.getDestination().equals(e)){
 
-                assertEquals(0.7071,user2user.get(i).getStrength(),0.0001);
+                assertEquals(0.7071,i.getStrength(),0.0001);
 
-            }else if(user2user.get(i).getDestination().equals(g)){
+            }else if(i.getDestination().equals(g)){
 
-                assertEquals(0.7071,user2user.get(i).getStrength(),0.0001);
+                assertEquals(0.7071,i.getStrength(),0.0001);
 
             }else{
 
-                fail("Unexpected link '"+user2user.get(i).getDestination().getID()+"' found");
+                fail("Unexpected link '"+i.getDestination().getID()+"' found");
 
             }
 
         }
 
-        List<Link> user2artist = base.getLinkBySource("Derived", c);
+        SortedSet<Link> user2artist = base.getLinkBySource("Derived", c);
 
         assertEquals(1,user2artist.size());
 
-        assertEquals(artist3,user2artist.get(0).getDestination());
+        assertEquals(artist3,user2artist.first().getDestination());
 
-        assertEquals(1.4142,user2artist.get(0).getStrength(),0.0001);
+        assertEquals(1.4142,user2artist.first().getStrength(),0.0001);
 
     }
 
@@ -552,35 +553,35 @@ public class User2UserTest extends TestCase {
 
         
 
-        List<Link> user2user = base.getLinkBySource("Nearest Neighbor", d);
+        SortedSet<Link> user2user = base.getLinkBySource("Nearest Neighbor", d);
 
         assertNotNull(user2user);
 
         assertEquals(3,user2user.size());
 
-        for(int i=0;i<user2user.size();++i){
+        for(Link i : user2user){
 
-            if(user2user.get(i).getDestination().equals(b)){
+            if(i.getDestination().equals(b)){
 
-                assertEquals(0.7071,user2user.get(i).getStrength(),0.0001);
+                assertEquals(0.7071,i.getStrength(),0.0001);
 
-            }else if(user2user.get(i).getDestination().equals(c)){
+            }else if(i.getDestination().equals(c)){
 
-                assertEquals(0.7071,user2user.get(i).getStrength(),0.0001);
+                assertEquals(0.7071,i.getStrength(),0.0001);
 
-            }else if(user2user.get(i).getDestination().equals(e)){
+            }else if(i.getDestination().equals(e)){
 
-                assertEquals(1.0,user2user.get(i).getStrength(),0.0001);
+                assertEquals(1.0,i.getStrength(),0.0001);
 
             }else{
 
-                fail("Unexpected link '"+user2user.get(i).getDestination().getID()+"' found");
+                fail("Unexpected link '"+i.getDestination().getID()+"' found");
 
             }
 
         }
 
-        List<Link> user2artist = base.getLinkBySource("Derived", d);
+        SortedSet<Link> user2artist = base.getLinkBySource("Derived", d);
 
         assertNull(user2artist);
 
@@ -610,35 +611,35 @@ public class User2UserTest extends TestCase {
 
         
 
-        List<Link> user2user = base.getLinkBySource("Nearest Neighbor", e);
+        SortedSet<Link> user2user = base.getLinkBySource("Nearest Neighbor", e);
 
         assertNotNull(user2user);
 
         assertEquals(3,user2user.size());
 
-        for(int i=0;i<user2user.size();++i){
+        for(Link i : user2user){
 
-            if(user2user.get(i).getDestination().equals(b)){
+            if(i.getDestination().equals(b)){
 
-                assertEquals(0.7071,user2user.get(i).getStrength(),0.0001);
+                assertEquals(0.7071,i.getStrength(),0.0001);
 
-            }else if(user2user.get(i).getDestination().equals(c)){
+            }else if(i.getDestination().equals(c)){
 
-                assertEquals(0.7071,user2user.get(i).getStrength(),0.0001);
+                assertEquals(0.7071,i.getStrength(),0.0001);
 
-            }else if(user2user.get(i).getDestination().equals(d)){
+            }else if(i.getDestination().equals(d)){
 
-                assertEquals(1.0,user2user.get(i).getStrength(),0.0001);
+                assertEquals(1.0,i.getStrength(),0.0001);
 
             }else{
 
-                fail("Unexpected link '"+user2user.get(i).getDestination().getID()+"' found");
+                fail("Unexpected link '"+i.getDestination().getID()+"' found");
 
             }
 
         }
 
-        List<Link> user2artist = base.getLinkBySource("Derived", e);
+        SortedSet<Link> user2artist = base.getLinkBySource("Derived", e);
 
         assertNull(user2artist);
 
@@ -668,17 +669,17 @@ public class User2UserTest extends TestCase {
 
         
 
-        List<Link> user2user = base.getLinkBySource("Nearest Neighbor", f);
+        SortedSet<Link> user2user = base.getLinkBySource("Nearest Neighbor", f);
 
         assertNotNull(user2user);
 
         assertEquals(1,user2user.size());
 
-        assertEquals(1.0,user2user.get(0).getStrength(),0.0001);
+        assertEquals(1.0,user2user.first().getStrength(),0.0001);
 
-        assertEquals(a,user2user.get(0).getDestination());
+        assertEquals(a,user2user.first().getDestination());
 
-        List<Link> user2artist = base.getLinkBySource("Derived", f);
+        SortedSet<Link> user2artist = base.getLinkBySource("Derived", f);
 
         assertNull(user2artist);
 
@@ -708,47 +709,47 @@ public class User2UserTest extends TestCase {
 
         
 
-        List<Link> user2user = base.getLinkBySource("Nearest Neighbor", g);
+        SortedSet<Link> user2user = base.getLinkBySource("Nearest Neighbor", g);
 
         assertNotNull(user2user);
 
         assertEquals(2,user2user.size());
 
-        for(int i=0;i<user2user.size();++i){
+        for(Link i : user2user){
 
-            if(user2user.get(i).getDestination().equals(b)){
+            if(i.getDestination().equals(b)){
 
-                assertEquals(0.7071,user2user.get(i).getStrength(),0.0001);
+                assertEquals(0.7071,i.getStrength(),0.0001);
 
-            }else if(user2user.get(i).getDestination().equals(c)){
+            }else if(i.getDestination().equals(c)){
 
-                assertEquals(0.7071,user2user.get(i).getStrength(),0.0001);
+                assertEquals(0.7071,i.getStrength(),0.0001);
 
             }else{
 
-                fail("Unexpected link '"+user2user.get(i).getDestination().getID()+"' found");
+                fail("Unexpected link '"+i.getDestination().getID()+"' found");
 
             }
 
         }
 
-        List<Link> user2artist = base.getLinkBySource("Derived", g);
+        SortedSet<Link> user2artist = base.getLinkBySource("Derived", g);
 
         assertNotNull(user2artist);
 
-        for(int i=0;i<user2artist.size();++i){
+        for(Link i : user2artist){
 
-            if(user2artist.get(i).getDestination().equals(artist3)){
+            if(i.getDestination().equals(artist3)){
 
-                assertEquals(0.7071,user2user.get(i).getStrength(),0.0001);
+                assertEquals(0.7071,i.getStrength(),0.0001);
 
-            }else if(user2artist.get(i).getDestination().equals(artist4)){
+            }else if(i.getDestination().equals(artist4)){
 
-                assertEquals(0.7071,user2user.get(i).getStrength(),0.0001);
+                assertEquals(0.7071,i.getStrength(),0.0001);
 
             }else{
 
-                fail("Unexpected link '"+user2artist.get(i).getDestination().getID()+"' found");
+                fail("Unexpected link '"+i.getDestination().getID()+"' found");
 
             }
 
@@ -780,11 +781,11 @@ public class User2UserTest extends TestCase {
 
         
 
-        List<Link> user2user = base.getLinkBySource("Nearest Neighbor", h);
+        SortedSet<Link> user2user = base.getLinkBySource("Nearest Neighbor", h);
 
         assertNull(user2user);
 
-        List<Link> user2artist = base.getLinkBySource("Derived", h);
+        SortedSet<Link> user2artist = base.getLinkBySource("Derived", h);
 
         assertNull(user2artist);
 
@@ -808,7 +809,7 @@ public class User2UserTest extends TestCase {
 
         
 
-        List<Link> user2artist = base.getLinkBySource("Derived", d);
+        SortedSet<Link> user2artist = base.getLinkBySource("Derived", d);
 
         assertNotNull(user2artist);
 

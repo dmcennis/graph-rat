@@ -15,6 +15,7 @@ package org.mcennis.graphrat.parser.xmlHandler;
 import java.io.FileInputStream;
 
 import java.util.List;
+import java.util.SortedSet;
 
 import junit.framework.TestCase;
 
@@ -95,13 +96,13 @@ public class ParseBibliographyXMLTest extends TestCase {
 
     public void testActorLength() throws Exception {
 
-        List<Actor> author = graph.getActor("Author");
+        SortedSet<Actor> author = graph.getActor("Author");
 
         assertNotNull(author);
 
         assertEquals(758,author.size());
 
-        List<Actor> paper = graph.getActor("Paper");
+        SortedSet<Actor> paper = graph.getActor("Paper");
 
         assertNotNull(paper);
 
@@ -113,49 +114,49 @@ public class ParseBibliographyXMLTest extends TestCase {
 
     public void testSubGraphs() throws Exception {
 
-        List<Graph> children = graph.getChildren();
+        SortedSet<Graph> children = graph.getChildren();
 
         assertFalse(children.isEmpty());
 
         assertEquals(5,children.size());
 
-        for(int i=0;i<children.size();++i){
+        for(Graph i : children){
 
-            if(children.get(i).getID().contentEquals("0")){
+            if(i.getID().contentEquals("0")){
 
-                List<Actor> a = children.get(i).getActor();
+                SortedSet<Actor> a = i.getActor();
 
                 assertNotNull(a);
 
                 assertEquals(302,a.size());
 
-            }else if(children.get(i).getID().contentEquals("1")){
+            }else if(i.getID().contentEquals("1")){
 
-                List<Actor> a = children.get(i).getActor();
+                SortedSet<Actor> a = i.getActor();
 
                 assertNotNull(a);
 
                 assertEquals(191,a.size());
 
-            }else if(children.get(i).getID().contentEquals("2")){
+            }else if(i.getID().contentEquals("2")){
 
-                List<Actor> a = children.get(i).getActor();
+                SortedSet<Actor> a = i.getActor();
 
                 assertNotNull(a);
 
                 assertEquals(107,a.size());
 
-            }else if(children.get(i).getID().contentEquals("3")){
+            }else if(i.getID().contentEquals("3")){
 
-                List<Actor> a = children.get(i).getActor();
+                SortedSet<Actor> a = i.getActor();
 
                 assertNotNull(a);
 
                 assertEquals(1,a.size());
 
-            }else if(children.get(i).getID().contentEquals("4")){
+            }else if(i.getID().contentEquals("4")){
 
-                List<Actor> a = children.get(i).getActor();
+                SortedSet<Actor> a = i.getActor();
 
                 assertNotNull(a);
 
@@ -163,7 +164,7 @@ public class ParseBibliographyXMLTest extends TestCase {
 
             }else{
 
-                fail("Unknown GraphID '"+children.get(i).getID()+"' detected");
+                fail("Unknown GraphID '"+i.getID()+"' detected");
 
             }
 

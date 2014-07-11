@@ -15,6 +15,7 @@ import org.dynamicfactory.descriptors.Properties;
 import org.dynamicfactory.descriptors.PropertiesFactory;
 
 import java.util.List;
+import java.util.SortedSet;
 
 import junit.framework.TestCase;
 
@@ -387,43 +388,43 @@ public class BicomponentClustererTest extends TestCase {
 
         instance.execute(base);
 
-        List<Graph> children = base.getChildren();
+        SortedSet<Graph> children = base.getChildren();
 
         assertNotNull(children);
 
         assertEquals(5,children.size());
 
-        for(int i=0;i<5;++i){
+        for(Graph i : children){
 
-            if((children.get(i).getActor("Member","C1A")!=null)&&(children.get(i).getActor("Member","C1B")!=null)){
+            if((i.getActor("Member","C1A")!=null)&&(i.getActor("Member","C1B")!=null)){
 
-                assertNotNull(children.get(i).getActor());
+                assertNotNull(i.getActor());
 
-                assertEquals(3,children.get(i).getActor().size());
+                assertEquals(3,i.getActor().size());
 
-            }else if(children.get(i).getActor("Member","Isolated")!=null){
+            }else if(i.getActor("Member","Isolated")!=null){
 
-                assertNotNull(children.get(i).getActor());
+                assertNotNull(i.getActor());
 
-                assertEquals(2,children.get(i).getActor().size());
+                assertEquals(2,i.getActor().size());
 
-            }else if((children.get(i).getActor("Member","Bridge")!=null)&&(children.get(i).getActor("Member","C1B")!=null)){
+            }else if((i.getActor("Member","Bridge")!=null)&&(i.getActor("Member","C1B")!=null)){
 
-                assertNotNull(children.get(i).getActor());
+                assertNotNull(i.getActor());
 
-                assertEquals(2,children.get(i).getActor().size());
+                assertEquals(2,i.getActor().size());
 
-            }else if((children.get(i).getActor("Member","Bridge")!=null)&&(children.get(i).getActor("Member","G2A")!=null)){
+            }else if((i.getActor("Member","Bridge")!=null)&&(i.getActor("Member","G2A")!=null)){
 
-                assertNotNull(children.get(i).getActor());
+                assertNotNull(i.getActor());
 
-                assertEquals(2,children.get(i).getActor().size());
+                assertEquals(2,i.getActor().size());
 
-            }else if((children.get(i).getActor("Member","G2A")!=null)&&(children.get(i).getActor("Member","Bridge")==null)){
+            }else if((i.getActor("Member","G2A")!=null)&&(i.getActor("Member","Bridge")==null)){
 
-                assertNotNull(children.get(i).getActor());
+                assertNotNull(i.getActor());
 
-                assertEquals(3,children.get(i).getActor().size());
+                assertEquals(3,i.getActor().size());
 
             }else{
 

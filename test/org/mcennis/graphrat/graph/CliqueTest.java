@@ -21,6 +21,8 @@ package org.mcennis.graphrat.graph;
 
 
 import java.util.List;
+import java.util.SortedSet;
+
 import junit.framework.*;
 
 
@@ -352,7 +354,7 @@ public class CliqueTest extends TestCase {
 
         assertEquals(1,test.children.size());
 
-        assertEquals(clique,test.children.getFirst());
+        assertEquals(clique,test.children.first());
 
         assertEquals(test,clique.parent);
 
@@ -392,7 +394,7 @@ public class CliqueTest extends TestCase {
 
         assertEquals(1,test.getChildren().size());
 
-        assertEquals(clique,test.getChildren().get(0));
+        assertEquals(clique,test.getChildren().first());
 
     }
 
@@ -576,11 +578,11 @@ public class CliqueTest extends TestCase {
 
         clique.add(a);
 
-        List<Actor> result = clique.getActor(type);
+        SortedSet<Actor> result = clique.getActor(type);
 
         assertEquals(1,result.size());
 
-        assertEquals(expResult, result.get(0));
+        assertEquals(expResult, result.first());
 
         
 
@@ -608,7 +610,7 @@ public class CliqueTest extends TestCase {
 
         test.addChild(clique);
 
-        List<Actor> result = clique.getActor(type);
+        SortedSet<Actor> result = clique.getActor(type);
 
         assertNull(result);
 
@@ -632,11 +634,11 @@ public class CliqueTest extends TestCase {
 
         String expResult = "User";
 
-        List<String> result = clique.getActorTypes();
+        SortedSet<String> result = clique.getActorTypes();
 
         assertEquals(1, result.size());
 
-        assertEquals(expResult,result.get(0));
+        assertEquals(expResult,result.first());
 
         
 
@@ -658,7 +660,7 @@ public class CliqueTest extends TestCase {
 
         
 
-        List<Link> result = clique.getLink();
+        SortedSet<Link> result = clique.getLink();
 
         assertNull(result);
 
@@ -686,7 +688,7 @@ public class CliqueTest extends TestCase {
 
         
 
-        List<Link> result = clique.getLinkBySource(type, sourceActor);
+        SortedSet<Link> result = clique.getLinkBySource(type, sourceActor);
 
         assertNull(result);
 
@@ -714,7 +716,7 @@ public class CliqueTest extends TestCase {
 
         
 
-        List<Link> result = clique.getLinkByDestination(type, destActor);
+        SortedSet<Link> result = clique.getLinkByDestination(type, destActor);
 
         assertNull(result);
 
@@ -740,7 +742,7 @@ public class CliqueTest extends TestCase {
 
         
 
-        List<String> result = clique.getLinkTypes();
+        SortedSet<String> result = clique.getLinkTypes();
 
         assertFalse(result.isEmpty());
 

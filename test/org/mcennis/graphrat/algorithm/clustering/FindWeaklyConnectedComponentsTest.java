@@ -11,6 +11,8 @@ package org.mcennis.graphrat.algorithm.clustering;
 
 
 import java.util.List;
+import java.util.SortedSet;
+
 import org.dynamicfactory.descriptors.Properties;
 import org.dynamicfactory.descriptors.PropertiesFactory;
 
@@ -369,21 +371,21 @@ public class FindWeaklyConnectedComponentsTest extends TestCase {
 
         instance.execute(base);
 
-        List<Graph> graphs = base.getChildren();
+        SortedSet<Graph> graphs = base.getChildren();
 
         assertNotNull(graphs);
 
         assertEquals(2,graphs.size());
 
-        for(int i=0;i<graphs.size();++i){
+        for(Graph i : graphs){
 
-            if(graphs.get(i).getActor("Member", "C1A")!= null){
+            if(i.getActor("Member", "C1A")!= null){
 
-                assertEquals(4,graphs.get(i).getActor().size());
+                assertEquals(4,i.getActor().size());
 
-            }else if(graphs.get(i).getActor("Member","G2A")!= null){
+            }else if(i.getActor("Member","G2A")!= null){
 
-                assertEquals(4,graphs.get(i).getActor().size());
+                assertEquals(4,i.getActor().size());
 
             }else{
 

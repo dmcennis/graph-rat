@@ -170,7 +170,7 @@ public class OutputBibliographyXML extends ModelShell implements Algorithm {
 
         try {
 
-            output = new FileWriter((File) parameter.get("OutputFile"));
+            output = new FileWriter((File) (parameter.get("OutputFile").get()));
 
             output.append("<?xml version=\"1.0\"?>\n");
 

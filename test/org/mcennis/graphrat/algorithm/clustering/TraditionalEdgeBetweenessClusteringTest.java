@@ -11,6 +11,7 @@ package org.mcennis.graphrat.algorithm.clustering;
 
 
 import java.util.List;
+import java.util.SortedSet;
 
 import junit.framework.TestCase;
 import org.dynamicfactory.descriptors.Properties;
@@ -336,25 +337,25 @@ public class TraditionalEdgeBetweenessClusteringTest extends TestCase {
 
        
 
-        List<Graph> firstLevel = base2.getChildren();
+        SortedSet<Graph> firstLevel = base2.getChildren();
 
         assertNotNull("First level of graph children is null.",firstLevel);
 
         assertEquals(3,firstLevel.size());
 
-        for(int i=0;i<3;++i){
+        for(Graph i : firstLevel){
 
-            if(firstLevel.get(i).getActor("Member","G2A")!=null){
+            if(i.getActor("Member","G2A")!=null){
 
-                assertEquals(1,firstLevel.get(i).getActor().size());
+                assertEquals(1,firstLevel.first().getActor().size());
 
-            }else if(firstLevel.get(i).getActor("Member","G2B")!=null){
+            }else if(firstLevel.first().getActor("Member","G2B")!=null){
 
-                assertEquals(1,firstLevel.get(i).getActor().size());
+                assertEquals(1,firstLevel.first().getActor().size());
 
-            }else if(firstLevel.get(i).getActor("Member","G2C")!=null){
+            }else if(firstLevel.first().getActor("Member","G2C")!=null){
 
-                assertEquals(1,firstLevel.get(i).getActor().size());
+                assertEquals(1,firstLevel.first().getActor().size());
 
             }else{
 
@@ -392,41 +393,41 @@ public class TraditionalEdgeBetweenessClusteringTest extends TestCase {
 
        
 
-        List<Graph> firstLevel = base.getChildren();
+        SortedSet<Graph> firstLevel = base.getChildren();
 
         assertNotNull("First level of graph children is null.",firstLevel);
 
         assertEquals(4,firstLevel.size());
 
-        for(int i=0;i<4;++i){
+        for(Graph i : firstLevel){
 
-            if(firstLevel.get(i).getActor("Member","Isolated")!=null){
+            if(i.getActor("Member","Isolated")!=null){
 
-                assertEquals(1,firstLevel.get(i).getActor().size());
+                assertEquals(1,i.getActor().size());
 
-            }else if(firstLevel.get(i).getActor("Member","Bridge")!=null){
+            }else if(i.getActor("Member","Bridge")!=null){
 
-                assertEquals(1,firstLevel.get(i).getActor().size());
+                assertEquals(1,i.getActor().size());
 
-            }else if(firstLevel.get(i).getActor("Member","C1A")!=null){
+            }else if(i.getActor("Member","C1A")!=null){
 
-                assertEquals(3,firstLevel.get(i).getActor().size());
+                assertEquals(3,i.getActor().size());
 
-                List<Graph> secondLevel = firstLevel.get(i).getChildren();
+                SortedSet<Graph> secondLevel = i.getChildren();
 
                 assertNotNull("Second Level of clique is null",secondLevel);
 
                 assertEquals("Expected second level of clique to be length 2, was length "+secondLevel.size(),2,secondLevel.size());
 
-                for(int j=0;j<secondLevel.size();++j){
+                for(Graph j : secondLevel){
 
-                    if(secondLevel.get(j).getActor("Member", "C1A")!=null){
+                    if(j.getActor("Member", "C1A")!=null){
 
-                        assertEquals(2,secondLevel.get(j).getActor().size());
+                        assertEquals(2,j.getActor().size());
 
-                    }else if(secondLevel.get(j).getActor("Member", "C1B")!=null){
+                    }else if(j.getActor("Member", "C1B")!=null){
 
-                        assertEquals(1,secondLevel.get(j).getActor().size());
+                        assertEquals(1,j.getActor().size());
 
                     }else{
 
@@ -436,11 +437,11 @@ public class TraditionalEdgeBetweenessClusteringTest extends TestCase {
 
                 }
 
-            }else if(firstLevel.get(i).getActor("Member","G2A")!=null){
+            }else if(i.getActor("Member","G2A")!=null){
 
-                assertEquals(3,firstLevel.get(i).getActor().size());
+                assertEquals(3,i.getActor().size());
 
-                List<Graph> secondLevel = firstLevel.get(i).getChildren();
+                SortedSet<Graph> secondLevel = i.getChildren();
 
                 assertNotNull("Second Level of cycle is null",secondLevel);
 

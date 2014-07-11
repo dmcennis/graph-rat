@@ -21,6 +21,7 @@ package org.mcennis.graphrat.graph;
 
 
 
+import java.util.SortedSet;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
@@ -934,17 +935,17 @@ public class PostgresqlGraphTest extends TestCase {
 
         
 
-        List<Actor> result = test.getActor(type);
+        SortedSet<Actor> result = test.getActor(type);
 
         assertNotNull(result);
 
         assertEquals(4, result.size());
 
-        for(int i=0;i<result.size();++i){
+        for(Actor i : result){
 
-            if((!result.get(i).equals(art1))&&(!result.get(i).equals(art3))&&(!result.get(i).equals(art5))&&(!result.get(i).equals(art7))){
+            if((!i.equals(art1))&&(!i.equals(art3))&&(!i.equals(art5))&&(!i.equals(art7))){
 
-                fail("Unexpected Artist "+result.get(i).getID()+" of type "+result.get(i).getMode());
+                fail("Unexpected Artist "+i.getID()+" of type "+i.getMode());
 
             }
 
@@ -970,11 +971,11 @@ public class PostgresqlGraphTest extends TestCase {
 
         String type = "NotPresent";
 
-        
 
-        List<Actor> expResult = null;
 
-        List<Actor> result = test.getActor(type);
+        SortedSet<Actor> expResult = null;
+
+        SortedSet<Actor> result = test.getActor(type);
 
         assertEquals(expResult, result);
 
@@ -1002,53 +1003,53 @@ public class PostgresqlGraphTest extends TestCase {
 
         
 
-        List<Actor> result = test.getActor();
+        SortedSet<Actor> result = test.getActor();
 
         assertNotNull(result);
 
         assertEquals(9, result.size());
 
-        for(int i=0;i<result.size();++i){
+        for(Actor i : result){
 
-            if(result.get(i).equals(a)){
-
-                
-
-            }else if(result.get(i).equals(b)){
+            if(i.equals(a)){
 
                 
 
-            }else if(result.get(i).equals(c)){
+            }else if(i.equals(b)){
 
                 
 
-            }else if(result.get(i).equals(d)){
+            }else if(i.equals(c)){
 
                 
 
-            }else if(result.get(i).equals(e)){
+            }else if(i.equals(d)){
 
                 
 
-            }else if(result.get(i).equals(art1)){
+            }else if(i.equals(e)){
 
                 
 
-            }else if(result.get(i).equals(art3)){
+            }else if(i.equals(art1)){
 
                 
 
-            }else if(result.get(i).equals(art5)){
+            }else if(i.equals(art3)){
 
                 
 
-            }else if(result.get(i).equals(art7)){
+            }else if(i.equals(art5)){
+
+                
+
+            }else if(i.equals(art7)){
 
                 
 
             }else{
 
-                fail("Unexpected Actor "+result.get(i).getID()+" of type "+result.get(i).getMode());
+                fail("Unexpected Actor "+i.getID()+" of type "+i.getMode());
 
             }
 
@@ -1074,9 +1075,9 @@ public class PostgresqlGraphTest extends TestCase {
 
         String ID = "";
 
-        List<Actor> expResult = null;
+        SortedSet<Actor> expResult = null;
 
-        List<Actor> result = test.getActor();
+        SortedSet<Actor> result = test.getActor();
 
         assertEquals(expResult, result);
 
@@ -1182,17 +1183,17 @@ public class PostgresqlGraphTest extends TestCase {
 
         initialise();
 
-        List<String> result = test.getActorTypes();
+        SortedSet<String> result = test.getActorTypes();
 
         assertNotNull(result);
 
         assertEquals(2,result.size());
 
-        for(int i=0;i<result.size();++i){
+        for(String i : result){
 
-            if((!result.get(i).equals("User")&&(!result.get(i).equals("Artist")))){
+            if((!i.equals("User")&&(!i.equals("Artist")))){
 
-                fail("Unexpected Type "+result.get(i));
+                fail("Unexpected Type "+i);
 
             }
 
@@ -1218,7 +1219,7 @@ public class PostgresqlGraphTest extends TestCase {
 
         
 
-        List<Link> result = test.getLink();
+        SortedSet<Link> result = test.getLink();
 
         assertNotNull(result);
 
@@ -1240,9 +1241,9 @@ public class PostgresqlGraphTest extends TestCase {
 
         
 
-        List<Link> expResult = null;
+        SortedSet<Link> expResult = null;
 
-        List<Link> result = test.getLink();
+        SortedSet<Link> result = test.getLink();
 
         assertEquals(expResult, result);
 
@@ -1268,13 +1269,13 @@ public class PostgresqlGraphTest extends TestCase {
 
         
 
-        List<Link> result = test.getLinkBySource(type, a);
+        SortedSet<Link> result = test.getLinkBySource(type, a);
 
         assertNotNull(result);
 
         assertEquals(1,result.size());
 
-        assertEquals(a1,result.get(0));
+        assertEquals(a1,result.first());
 
     }
 
@@ -1298,7 +1299,7 @@ public class PostgresqlGraphTest extends TestCase {
 
         
 
-        List<Link> result = test.getLinkBySource(type, a);
+        SortedSet<Link> result = test.getLinkBySource(type, a);
 
         assertNull(result);
 
@@ -1330,7 +1331,7 @@ public class PostgresqlGraphTest extends TestCase {
 
         
 
-        List<Link> result = test.getLinkBySource(type, sourceActor);
+        SortedSet<Link> result = test.getLinkBySource(type, sourceActor);
 
         assertNull(result);
 
@@ -1356,11 +1357,11 @@ public class PostgresqlGraphTest extends TestCase {
 
         
 
-        List<Link> result = test.getLinkByDestination(type, art7);
+        SortedSet<Link> result = test.getLinkByDestination(type, art7);
 
         assertNotNull(result);
 
-        assertEquals(d7,result.get(0));
+        assertEquals(d7,result.first());
 
     }
 
@@ -1384,9 +1385,9 @@ public class PostgresqlGraphTest extends TestCase {
 
         
 
-        List<Link> expResult = null;
+        SortedSet<Link> expResult = null;
 
-        List<Link> result = test.getLinkByDestination(type, destActor);
+        SortedSet<Link> result = test.getLinkByDestination(type, destActor);
 
         assertEquals(expResult, result);
 
@@ -1420,7 +1421,7 @@ public class PostgresqlGraphTest extends TestCase {
 
         
 
-        List<Link> result = test.getLinkByDestination(type, destActor);
+        SortedSet<Link> result = test.getLinkByDestination(type, destActor);
 
         assertNull(result);
 
@@ -1442,33 +1443,33 @@ public class PostgresqlGraphTest extends TestCase {
 
         
 
-        List<String> result = test.getLinkTypes();
+        SortedSet<String> result = test.getLinkTypes();
 
         assertNotNull(result);
 
         assertEquals(4,result.size());
 
-        for(int i=0;i<result.size();++i){
+        for(String i : result){
 
-            if(result.get(i).equals("Given")){
-
-                
-
-            }else if(result.get(i).equals("Music")){
+            if(i.equals("Given")){
 
                 
 
-            }else if(result.get(i).equals("Interest")){
+            }else if(i.equals("Music")){
 
                 
 
-            }else if(result.get(i).equals("Knows")){
+            }else if(i.equals("Interest")){
+
+                
+
+            }else if(i.equals("Knows")){
 
                 
 
             }else{
 
-                fail("Unexpected link type "+result.get(i)+" encountered" );
+                fail("Unexpected link type "+i+" encountered" );
 
             }
 
@@ -1490,9 +1491,9 @@ public class PostgresqlGraphTest extends TestCase {
 
         
 
-        List<String> expResult = null;
+        SortedSet<String> expResult = null;
 
-        List<String> result = test.getLinkTypes();
+        SortedSet<String> result = test.getLinkTypes();
 
         assertEquals(expResult, result);
 
@@ -1521,11 +1522,11 @@ public class PostgresqlGraphTest extends TestCase {
 
         assertEquals(2,result.size());
 
-        for(int i=0;i<result.size();++i){
+        for(Property i : result){
 
-            if((!result.get(i).equals(graphProp))&&(!result.get(i).equals(graphProp2))){
+            if((!i.equals(graphProp))&&(!i.equals(graphProp2))){
 
-                fail("Unexpected property of type "+result.get(i).getType()+" encountered");
+                fail("Unexpected property of type "+i.getType()+" encountered");
 
             }
 

@@ -191,9 +191,10 @@ public class GraphFactory extends AbstractFactory<Graph>{
                 id = (String) properties.get("GraphID").getValue().iterator().next();
             }
         }
-        
+
         ret.init(parameters);
-        
+        ret.setID(id);
+
         return ret;
     }
     

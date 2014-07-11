@@ -21,6 +21,7 @@ package org.mcennis.graphrat.algorithm.clustering;
 
 
 import java.util.List;
+import java.util.SortedSet;
 
 import junit.framework.*;
 
@@ -358,7 +359,7 @@ public class EnumerateMaximalCliquesTest extends TestCase {
 
         
 
-        List<Graph> children = test.getChildren();
+        SortedSet<Graph> children = test.getChildren();
 
         assertNotNull(children);
 
@@ -368,11 +369,11 @@ public class EnumerateMaximalCliquesTest extends TestCase {
 
         boolean isSecond = false;
 
-        for(int i=0;i<children.size();++i){
+        for(Graph i : children){
 
-            assertTrue(children.get(i) instanceof Clique);
+            assertTrue(i instanceof Clique);
 
-            Clique q = (Clique)children.get(i);
+            Clique q = (Clique)i;
 
             if(isFirstTrue(q)){
 
@@ -404,7 +405,7 @@ public class EnumerateMaximalCliquesTest extends TestCase {
 
     protected boolean isFirstTrue(Clique q){
 
-        List<Actor> actors = q.getActor();
+        SortedSet<Actor> actors = q.getActor();
 
         boolean ret = true;
 
@@ -414,17 +415,17 @@ public class EnumerateMaximalCliquesTest extends TestCase {
 
         }
 
-        for(int i=0;i<actors.size();++i){
+        for(Actor i : actors){
 
-            if(actors.get(i).getID().contentEquals("A")){
-
-                
-
-            }else if(actors.get(i).getID().contentEquals("B")){
+            if(i.getID().contentEquals("A")){
 
                 
 
-            }else if(actors.get(i).getID().contentEquals("C")){
+            }else if(i.getID().contentEquals("B")){
+
+                
+
+            }else if(i.getID().contentEquals("C")){
 
                 
 
@@ -444,7 +445,7 @@ public class EnumerateMaximalCliquesTest extends TestCase {
 
     protected boolean isSecondTrue(Clique q){
 
-        List<Actor> actors = q.getActor();
+        SortedSet<Actor> actors = q.getActor();
 
         boolean ret = true;
 
@@ -454,13 +455,13 @@ public class EnumerateMaximalCliquesTest extends TestCase {
 
         }
 
-        for(int i=0;i<actors.size();++i){
+        for(Actor i : actors){
 
-            if(actors.get(i).getID().contentEquals("B")){
+            if(i.getID().contentEquals("B")){
 
                 
 
-            }else if(actors.get(i).getID().contentEquals("D")){
+            }else if(i.getID().contentEquals("D")){
 
                 
 

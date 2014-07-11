@@ -45,6 +45,8 @@ import java.io.OutputStreamWriter;
 
 
 import java.util.List;
+import java.util.SortedSet;
+
 import junit.framework.*;
 
 
@@ -760,7 +762,7 @@ public class GraphReaderTest extends TestCase {
         assertEquals("test",graph.getID());
 
 
-        List<Actor> actors = graph.getActor();
+        SortedSet<Actor> actors = graph.getActor();
 
 
         assertNotNull(actors);
@@ -769,61 +771,61 @@ public class GraphReaderTest extends TestCase {
         assertEquals(9,actors.size());
 
 
-        for(int i=0;i<actors.size();++i){
+        for(Actor i : actors){
 
 
-            if(actors.get(i).getID().equals("A")){
+            if(i.getID().equals("A")){
 
 
-                evaluateA(actors.get(i));
+                evaluateA(i);
 
 
-            }else if(actors.get(i).getID().equals("B")){
+            }else if(i.getID().equals("B")){
 
 
-                evaluateB(actors.get(i));
+                evaluateB(i);
 
 
-            }else if(actors.get(i).getID().equals("C")){
+            }else if(i.getID().equals("C")){
 
 
-                evaluateC(actors.get(i));
+                evaluateC(i);
 
 
-            }else if(actors.get(i).getID().equals("D")){
+            }else if(i.getID().equals("D")){
 
 
-                evaluateD(actors.get(i));
+                evaluateD(i);
 
 
-            }else if(actors.get(i).getID().equals("E")){
+            }else if(i.getID().equals("E")){
 
 
-                evaluateE(actors.get(i));
+                evaluateE(i);
 
 
-            }else if(actors.get(i).getID().equals("1")){
+            }else if(i.getID().equals("1")){
 
 
-                evaluate1(actors.get(i));
+                evaluate1(i);
 
 
-            }else if(actors.get(i).getID().equals("3")){
+            }else if(i.getID().equals("3")){
 
 
-                evaluate3(actors.get(i));
+                evaluate3(i);
 
 
-            }else if(actors.get(i).getID().equals("5")){
+            }else if(i.getID().equals("5")){
 
 
-                evaluate5(actors.get(i));
+                evaluate5(i);
 
 
-            }else if(actors.get(i).getID().equals("7")){
+            }else if(i.getID().equals("7")){
 
 
-                evaluate7(actors.get(i));
+                evaluate7(i);
 
 
             }
@@ -835,7 +837,7 @@ public class GraphReaderTest extends TestCase {
         System.out.println("Evaluating Links of Graph test");
 
 
-        List<Link> links = graph.getLink();
+        SortedSet<Link> links = graph.getLink();
 
 
         assertNotNull(links);
@@ -844,103 +846,103 @@ public class GraphReaderTest extends TestCase {
         assertEquals(15,links.size());
 
 
-        for(int i=0;i<links.size();++i){
+        for(Link i : links){
 
 
-            if(links.get(i).getSource().equals(a)&&links.get(i).getDestination().equals(b)){
+            if(i.getSource().equals(a)&&i.getDestination().equals(b)){
 
 
-                evaluateAB(links.get(i));
+                evaluateAB(i);
 
 
-            } else if(links.get(i).getSource().equals(a)&&links.get(i).getDestination().equals(c)){
+            } else if(i.getSource().equals(a)&&i.getDestination().equals(c)){
 
 
-                evaluateAC(links.get(i));
+                evaluateAC(i);
 
 
-            } else if(links.get(i).getSource().equals(b)&&links.get(i).getDestination().equals(a)){
+            } else if(i.getSource().equals(b)&&i.getDestination().equals(a)){
 
 
-                evaluateBA(links.get(i));
+                evaluateBA(i);
 
 
-            } else if(links.get(i).getSource().equals(b)&&links.get(i).getDestination().equals(c)){
+            } else if(i.getSource().equals(b)&&i.getDestination().equals(c)){
 
 
-                evaluateBC(links.get(i));
+                evaluateBC(i);
 
 
-            } else if(links.get(i).getSource().equals(a)&&links.get(i).getDestination().equals(e)){
+            } else if(i.getSource().equals(a)&&i.getDestination().equals(e)){
 
 
-                evaluateAE(links.get(i));
+                evaluateAE(i);
 
 
-            } else if(links.get(i).getSource().equals(b)&&links.get(i).getDestination().equals(d)){
+            } else if(i.getSource().equals(b)&&i.getDestination().equals(d)){
 
 
-                evaluateBD(links.get(i));
+                evaluateBD(i);
 
 
-            } else if(links.get(i).getSource().equals(c)&&links.get(i).getDestination().equals(a)){
+            } else if(i.getSource().equals(c)&&i.getDestination().equals(a)){
 
 
-                evaluateCA(links.get(i));
+                evaluateCA(i);
 
 
-            } else if(links.get(i).getSource().equals(c)&&links.get(i).getDestination().equals(b)){
+            } else if(i.getSource().equals(c)&&i.getDestination().equals(b)){
 
 
-                evaluateCB(links.get(i));
+                evaluateCB(i);
 
 
-            } else if(links.get(i).getSource().equals(d)&&links.get(i).getDestination().equals(c)){
+            } else if(i.getSource().equals(d)&&i.getDestination().equals(c)){
 
 
-                evaluateDC(links.get(i));
+                evaluateDC(i);
 
 
-            } else if(links.get(i).getSource().equals(a)&&links.get(i).getDestination().equals(art1)){
+            } else if(i.getSource().equals(a)&&i.getDestination().equals(art1)){
 
 
-                evaluateA1(links.get(i));
+                evaluateA1(i);
 
 
-            } else if(links.get(i).getSource().equals(b)&&links.get(i).getDestination().equals(art1)){
+            } else if(i.getSource().equals(b)&&i.getDestination().equals(art1)){
 
 
-                evaluateB1(links.get(i));
+                evaluateB1(i);
 
 
-            } else if(links.get(i).getSource().equals(b)&&links.get(i).getDestination().equals(art3)){
+            } else if(i.getSource().equals(b)&&i.getDestination().equals(art3)){
 
 
-                evaluateB3(links.get(i));
+                evaluateB3(i);
 
 
-            } else if(links.get(i).getSource().equals(c)&&links.get(i).getDestination().equals(art3)){
+            } else if(i.getSource().equals(c)&&i.getDestination().equals(art3)){
 
 
-                evaluateC3(links.get(i));
+                evaluateC3(i);
 
 
-            } else if(links.get(i).getSource().equals(c)&&links.get(i).getDestination().equals(art5)){
+            } else if(i.getSource().equals(c)&&i.getDestination().equals(art5)){
 
 
-                evaluateC5(links.get(i));
+                evaluateC5(i);
 
 
-            } else if(links.get(i).getSource().equals(d)&&links.get(i).getDestination().equals(art7)){
+            } else if(i.getSource().equals(d)&&i.getDestination().equals(art7)){
 
 
-                evaluateD7(links.get(i));
+                evaluateD7(i);
 
 
             }else{
 
 
-                fail("Unexpected Link with source "+links.get(i).getSource().getID()+" and destination of "+links.get(i).getDestination().getID());
+                fail("Unexpected Link with source "+i.getSource().getID()+" and destination of "+i.getDestination().getID());
 
 
             }
@@ -955,7 +957,7 @@ public class GraphReaderTest extends TestCase {
         System.out.println("Evaluating Children");
 
 
-        List<Graph> child = graph.getChildren();
+        SortedSet<Graph> child = graph.getChildren();
 
 
         assertNotNull(child);
@@ -1015,7 +1017,7 @@ public class GraphReaderTest extends TestCase {
         
 
 
-        List<Actor> actors = testChild1.getActor();
+        SortedSet<Actor> actors = testChild1.getActor();
 
 
         assertNotNull(actors);
@@ -1024,37 +1026,37 @@ public class GraphReaderTest extends TestCase {
         assertEquals(4,actors.size());
 
 
-        for(int i=0;i<actors.size();++i){
+        for(Actor i : actors){
 
 
-            if(actors.get(i).getID().equals("A")){
+            if(i.getID().equals("A")){
 
 
-               evaluateA(actors.get(i)); 
+               evaluateA(i);
 
 
-            } else if(actors.get(i).getID().equals("B")){
+            } else if(i.getID().equals("B")){
 
 
-               evaluateB(actors.get(i)); 
+               evaluateB(i);
 
 
-            } else if(actors.get(i).getID().equals("1")){
+            } else if(i.getID().equals("1")){
 
 
-               evaluate1(actors.get(i)); 
+               evaluate1(i);
 
 
-            } else if(actors.get(i).getID().equals("3")){
+            } else if(i.getID().equals("3")){
 
 
-               evaluate3(actors.get(i)); 
+               evaluate3(i);
 
 
             } else{
 
 
-                fail("Unexpected actor "+actors.get(i).getID()+" found");
+                fail("Unexpected actor "+i.getID()+" found");
 
 
             }
@@ -1066,7 +1068,7 @@ public class GraphReaderTest extends TestCase {
         
 
 
-        List<Link> links = testChild1.getLink();
+        SortedSet<Link> links = testChild1.getLink();
 
 
         assertNotNull(links);
@@ -1075,37 +1077,37 @@ public class GraphReaderTest extends TestCase {
         assertEquals(4,links.size());
 
 
-        for(int i=0;i<links.size();++i){
+        for(Link i : links){
 
 
-            if(links.get(i).getSource().equals(a)&&links.get(i).getDestination().equals(b)){
+            if(i.getSource().equals(a)&&i.getDestination().equals(b)){
 
 
-                evaluateAB(links.get(i));
+                evaluateAB(i);
 
 
-            }else if(links.get(i).getSource().equals(a)&&links.get(i).getDestination().equals(art1)){
+            }else if(i.getSource().equals(a)&&i.getDestination().equals(art1)){
 
 
-                evaluateA1(links.get(i));
+                evaluateA1(i);
 
 
-            }else if(links.get(i).getSource().equals(b)&&links.get(i).getDestination().equals(art1)){
+            }else if(i.getSource().equals(b)&&i.getDestination().equals(art1)){
 
 
-                evaluateB1(links.get(i));
+                evaluateB1(i);
 
 
-            }else if(links.get(i).getSource().equals(b)&&links.get(i).getDestination().equals(art3)){
+            }else if(i.getSource().equals(b)&&i.getDestination().equals(art3)){
 
 
-                evaluateB3(links.get(i));
+                evaluateB3(i);
 
 
             }else{
 
 
-                fail("Unexpected link detected source "+links.get(i).getSource().getID()+" and dest "+links.get(i).getDestination().getID());
+                fail("Unexpected link detected source "+i.getSource().getID()+" and dest "+i.getDestination().getID());
 
 
             }
@@ -1168,7 +1170,7 @@ public class GraphReaderTest extends TestCase {
         
 
 
-        List<Actor> actors = testChild11.getActor();
+        SortedSet<Actor> actors = testChild11.getActor();
 
 
         assertNotNull(actors);
@@ -1177,25 +1179,25 @@ public class GraphReaderTest extends TestCase {
         assertEquals(2,actors.size());
 
 
-        for(int i=0;i<actors.size();++i){
+        for(Actor i : actors){
 
 
-            if(actors.get(i).equals(a)){
+            if(i.equals(a)){
 
 
-                evaluateA(actors.get(i));
+                evaluateA(i);
 
 
-            }else if(actors.get(i).equals(b)){
+            }else if(i.equals(b)){
 
 
-                evaluateB(actors.get(i));
+                evaluateB(i);
 
 
             }else{
 
 
-                fail("Unexpected actor "+actors.get(i).getID());
+                fail("Unexpected actor "+i.getID());
 
 
             }
@@ -1207,7 +1209,7 @@ public class GraphReaderTest extends TestCase {
         
 
 
-        List<Link> links = testChild11.getLink();
+        SortedSet<Link> links = testChild11.getLink();
 
 
         assertNotNull(links);
@@ -1216,13 +1218,13 @@ public class GraphReaderTest extends TestCase {
         assertEquals(1,links.size());
 
 
-        assertTrue(links.get(0).getSource().equals(a));
+        assertTrue(links.first().getSource().equals(a));
 
 
-        assertTrue(links.get(0).getDestination().equals(b));
+        assertTrue(links.first().getDestination().equals(b));
 
 
-        evaluateAB(links.get(0));
+        evaluateAB(links.first());
 
 
     }
@@ -1273,7 +1275,7 @@ public class GraphReaderTest extends TestCase {
         
 
 
-        List<Actor> actors = testChild2.getActor();
+        SortedSet<Actor> actors = testChild2.getActor();
 
 
         assertNotNull(actors);
@@ -1282,25 +1284,25 @@ public class GraphReaderTest extends TestCase {
         assertEquals(2,actors.size());
 
 
-        for(int i=0;i<actors.size();++i){
+        for(Actor i : actors){
 
 
-            if(actors.get(i).equals(d)){
+            if(i.equals(d)){
 
 
-                evaluateD(actors.get(i));
+                evaluateD(i);
 
 
-            }else if(actors.get(i).equals(art7)){
+            }else if(i.equals(art7)){
 
 
-                evaluate7(actors.get(i));
+                evaluate7(i);
 
 
             }else{
 
 
-                fail("Unexpected actor "+actors.get(i).getID());
+                fail("Unexpected actor "+i.getID());
 
 
             }
@@ -1312,7 +1314,7 @@ public class GraphReaderTest extends TestCase {
         
 
 
-        List<Link> links = testChild2.getLink();
+        SortedSet<Link> links = testChild2.getLink();
 
 
         assertNotNull(links);
@@ -1321,13 +1323,13 @@ public class GraphReaderTest extends TestCase {
         assertEquals(1,links.size());
 
 
-        assertTrue(links.get(0).getSource().equals(d));
+        assertTrue(links.first().getSource().equals(d));
 
 
-        assertTrue(links.get(0).getDestination().equals(art7));
+        assertTrue(links.first().getDestination().equals(art7));
 
 
-        evaluateD7(links.get(0));
+        evaluateD7(links.first());
 
 
     }

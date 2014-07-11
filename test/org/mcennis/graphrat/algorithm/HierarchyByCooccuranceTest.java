@@ -13,6 +13,8 @@ package org.mcennis.graphrat.algorithm;
 
 
 import java.util.List;
+import java.util.SortedSet;
+
 import org.mcennis.graphrat.algorithm.similarity.HierarchyByCooccurance;
 
 import junit.framework.TestCase;
@@ -921,49 +923,49 @@ public class HierarchyByCooccuranceTest extends TestCase {
 
         
 
-        List<Link> general = base.getLinkBySource("Generalization", rock);
+        SortedSet<Link> general = base.getLinkBySource("Generalization", rock);
 
         assertNull(general);
 
         
 
-        List<Link> specialization = base.getLinkBySource("Specialization", rock);
+        SortedSet<Link> specialization = base.getLinkBySource("Specialization", rock);
 
         assertNotNull(specialization);
 
         assertEquals(1,specialization.size());
 
-        assertEquals(alternative,specialization.get(0).getDestination());
+        assertEquals(alternative,specialization.first().getDestination());
 
         
 
-        List<Link> disjoint = base.getLinkBySource("Disjoint", rock);
+        SortedSet<Link> disjoint = base.getLinkBySource("Disjoint", rock);
 
         assertNotNull(disjoint);
 
         assertEquals(4,disjoint.size());
 
-        for(int i=0;i<disjoint.size();++i){
+        for(Link i : disjoint){
 
-            if(disjoint.get(i).getDestination().getID().contentEquals("Blues")){
-
-                
-
-            }else if(disjoint.get(i).getDestination().getID().contentEquals("OldBlues")){
+            if(i.getDestination().getID().contentEquals("Blues")){
 
                 
 
-            }else if(disjoint.get(i).getDestination().getID().contentEquals("Bebop")){
+            }else if(i.getDestination().getID().contentEquals("OldBlues")){
 
                 
 
-            }else if(disjoint.get(i).getDestination().getID().contentEquals("Jazz")){
+            }else if(i.getDestination().getID().contentEquals("Bebop")){
+
+                
+
+            }else if(i.getDestination().getID().contentEquals("Jazz")){
 
                 
 
             }else{
 
-                fail("Unexpected tag '"+disjoint.get(i).getDestination().getID()+"' detected in set of disjoint links");
+                fail("Unexpected tag '"+i.getDestination().getID()+"' detected in set of disjoint links");
 
             }
 
@@ -989,49 +991,49 @@ public class HierarchyByCooccuranceTest extends TestCase {
 
         
 
-        List<Link> general = base.getLinkBySource("Generalization", alternative);
+        SortedSet<Link> general = base.getLinkBySource("Generalization", alternative);
 
         assertNotNull(general);
 
         assertEquals(1,general.size());
 
-        assertEquals(rock,general.get(0).getDestination());
+        assertEquals(rock,general.first().getDestination());
 
         
 
-        List<Link> specialization = base.getLinkBySource("Specialization", alternative);
+        SortedSet<Link> specialization = base.getLinkBySource("Specialization", alternative);
 
         assertNull(specialization);
 
         
 
-        List<Link> disjoint = base.getLinkBySource("Disjoint", alternative);
+        SortedSet<Link> disjoint = base.getLinkBySource("Disjoint", alternative);
 
         assertNotNull(disjoint);
 
         assertEquals(4,disjoint.size());
 
-        for(int i=0;i<disjoint.size();++i){
+        for(Link i : disjoint){
 
-            if(disjoint.get(i).getDestination().getID().contentEquals("Blues")){
-
-                
-
-            }else if(disjoint.get(i).getDestination().getID().contentEquals("Jazz")){
+            if(i.getDestination().getID().contentEquals("Blues")){
 
                 
 
-            }else if(disjoint.get(i).getDestination().getID().contentEquals("OldBlues")){
+            }else if(i.getDestination().getID().contentEquals("Jazz")){
 
                 
 
-            }else if(disjoint.get(i).getDestination().getID().contentEquals("Bebop")){
+            }else if(i.getDestination().getID().contentEquals("OldBlues")){
+
+                
+
+            }else if(i.getDestination().getID().contentEquals("Bebop")){
 
                 
 
             }else{
 
-                fail("Unexpected tag '"+disjoint.get(i).getDestination().getID()+"' detected in set of disjoint links");
+                fail("Unexpected tag '"+i.getDestination().getID()+"' detected in set of disjoint links");
 
             }
 
@@ -1059,35 +1061,35 @@ public class HierarchyByCooccuranceTest extends TestCase {
 
         
 
-        List<Link> general = base.getLinkBySource("Generalization", jazz);
+        SortedSet<Link> general = base.getLinkBySource("Generalization", jazz);
 
         assertNull(general);
 
         
 
-        List<Link> specialization = base.getLinkBySource("Specialization", jazz);
+        SortedSet<Link> specialization = base.getLinkBySource("Specialization", jazz);
 
         assertNotNull(specialization);
 
         assertEquals(3,specialization.size());
 
-         for(int i=0;i<specialization.size();++i){
+         for(Link i : specialization){
 
-            if(specialization.get(i).getDestination().getID().contentEquals("Blues")){
-
-                
-
-            }else if(specialization.get(i).getDestination().getID().contentEquals("OldBlues")){
+            if(i.getDestination().getID().contentEquals("Blues")){
 
                 
 
-            }else if(specialization.get(i).getDestination().getID().contentEquals("Bebop")){
+            }else if(i.getDestination().getID().contentEquals("OldBlues")){
+
+                
+
+            }else if(i.getDestination().getID().contentEquals("Bebop")){
 
                 
 
             }else{
 
-                fail("Unexpected tag '"+specialization.get(i).getDestination().getID()+"' detected in set of specialization links");
+                fail("Unexpected tag '"+i.getDestination().getID()+"' detected in set of specialization links");
 
             }
 
@@ -1095,25 +1097,25 @@ public class HierarchyByCooccuranceTest extends TestCase {
 
         
 
-        List<Link> disjoint = base.getLinkBySource("Disjoint", jazz);
+        SortedSet<Link> disjoint = base.getLinkBySource("Disjoint", jazz);
 
         assertNotNull(disjoint);
 
         assertEquals(2,disjoint.size());
 
-        for(int i=0;i<disjoint.size();++i){
+        for(Link i : disjoint){
 
-            if(disjoint.get(i).getDestination().getID().contentEquals("Rock")){
+            if(i.getDestination().getID().contentEquals("Rock")){
 
                 
 
-            }else if(disjoint.get(i).getDestination().getID().contentEquals("Alternative")){
+            }else if(i.getDestination().getID().contentEquals("Alternative")){
 
                 
 
             }else{
 
-                fail("Unexpected tag '"+disjoint.get(i).getDestination().getID()+"' detected in set of disjoint links");
+                fail("Unexpected tag '"+i.getDestination().getID()+"' detected in set of disjoint links");
 
             }
 
@@ -1139,49 +1141,49 @@ public class HierarchyByCooccuranceTest extends TestCase {
 
         
 
-        List<Link> general = base.getLinkBySource("Generalization", blues);
+        SortedSet<Link> general = base.getLinkBySource("Generalization", blues);
 
         assertNotNull(general);
 
         assertEquals(1,general.size());
 
-        assertEquals(jazz,general.get(0).getDestination());
+        assertEquals(jazz,general.first().getDestination());
 
         
 
-        List<Link> specialization = base.getLinkBySource("Specialization", blues);
+        SortedSet<Link> specialization = base.getLinkBySource("Specialization", blues);
 
         assertNotNull(specialization);
 
         assertEquals(1,specialization.size());
 
-        assertEquals(oldBlues,specialization.get(0).getDestination());
+        assertEquals(oldBlues,specialization.first().getDestination());
 
         
 
-        List<Link> disjoint = base.getLinkBySource("Disjoint", blues);
+        SortedSet<Link> disjoint = base.getLinkBySource("Disjoint", blues);
 
         assertNotNull(disjoint);
 
         assertEquals(3,disjoint.size());
 
-        for(int i=0;i<disjoint.size();++i){
+        for(Link i : disjoint){
 
-            if(disjoint.get(i).getDestination().getID().contentEquals("Rock")){
-
-                
-
-            }else if(disjoint.get(i).getDestination().getID().contentEquals("Alternative")){
+            if(i.getDestination().getID().contentEquals("Rock")){
 
                 
 
-            }else if(disjoint.get(i).getDestination().getID().contentEquals("Bebop")){
+            }else if(i.getDestination().getID().contentEquals("Alternative")){
+
+                
+
+            }else if(i.getDestination().getID().contentEquals("Bebop")){
 
                 
 
             }else{
 
-                fail("Unexpected tag '"+disjoint.get(i).getDestination().getID()+"' detected in set of disjoint links");
+                fail("Unexpected tag '"+i.getDestination().getID()+"' detected in set of disjoint links");
 
             }
 
@@ -1209,25 +1211,25 @@ public class HierarchyByCooccuranceTest extends TestCase {
 
         
 
-        List<Link> general = base.getLinkBySource("Generalization", oldBlues);
+        SortedSet<Link> general = base.getLinkBySource("Generalization", oldBlues);
 
         assertNotNull(general);
 
         assertEquals(2,general.size());
 
-        for(int i=0;i<general.size();++i){
+        for(Link i : general){
 
-            if(general.get(i).getDestination().getID().contentEquals("Blues")){
+            if(i.getDestination().getID().contentEquals("Blues")){
 
                 
 
-            }else if(general.get(i).getDestination().getID().contentEquals("Jazz")){
+            }else if(i.getDestination().getID().contentEquals("Jazz")){
 
                 
 
             }else{
 
-                fail("Unexpected tag '"+general.get(i).getDestination().getID()+"' detected in set of general links");
+                fail("Unexpected tag '"+i.getDestination().getID()+"' detected in set of general links");
 
             }
 
@@ -1235,35 +1237,35 @@ public class HierarchyByCooccuranceTest extends TestCase {
 
         
 
-        List<Link> specialization = base.getLinkBySource("Specialization", oldBlues);
+        SortedSet<Link> specialization = base.getLinkBySource("Specialization", oldBlues);
 
         assertNull(specialization);
 
         
 
-        List<Link> disjoint = base.getLinkBySource("Disjoint", oldBlues);
+        SortedSet<Link> disjoint = base.getLinkBySource("Disjoint", oldBlues);
 
         assertNotNull(disjoint);
 
         assertEquals(3,disjoint.size());
 
-        for(int i=0;i<disjoint.size();++i){
+        for(Link i : disjoint){
 
-            if(disjoint.get(i).getDestination().getID().contentEquals("Rock")){
-
-                
-
-            }else if(disjoint.get(i).getDestination().getID().contentEquals("Bebop")){
+            if(i.getDestination().getID().contentEquals("Rock")){
 
                 
 
-            }else if(disjoint.get(i).getDestination().getID().contentEquals("Alternative")){
+            }else if(i.getDestination().getID().contentEquals("Bebop")){
+
+                
+
+            }else if(i.getDestination().getID().contentEquals("Alternative")){
 
                 
 
             }else {
 
-                fail("Unexpected tag '"+disjoint.get(i).getDestination().getID()+"' detected in set of disjoint links");
+                fail("Unexpected tag '"+i.getDestination().getID()+"' detected in set of disjoint links");
 
             }
 
@@ -1291,49 +1293,49 @@ public class HierarchyByCooccuranceTest extends TestCase {
 
         
 
-        List<Link> general = base.getLinkBySource("Generalization", bebop);
+        SortedSet<Link> general = base.getLinkBySource("Generalization", bebop);
 
         assertNotNull(general);
 
         assertEquals(1,general.size());
 
-        assertEquals(jazz,general.get(0).getDestination());
+        assertEquals(jazz,general.first().getDestination());
 
         
 
-        List<Link> specialization = base.getLinkBySource("Specialization", bebop);
+        SortedSet<Link> specialization = base.getLinkBySource("Specialization", bebop);
 
         assertNull(specialization);
 
         
 
-        List<Link> disjoint = base.getLinkBySource("Disjoint", bebop);
+        SortedSet<Link> disjoint = base.getLinkBySource("Disjoint", bebop);
 
         assertNotNull(disjoint);
 
         assertEquals(4,disjoint.size());
 
-        for(int i=0;i<disjoint.size();++i){
+        for(Link i : disjoint){
 
-            if(disjoint.get(i).getDestination().getID().contentEquals("Rock")){
-
-                
-
-            }else if(disjoint.get(i).getDestination().getID().contentEquals("Blues")){
+            if(i.getDestination().getID().contentEquals("Rock")){
 
                 
 
-            }else if(disjoint.get(i).getDestination().getID().contentEquals("Alternative")){
+            }else if(i.getDestination().getID().contentEquals("Blues")){
 
                 
 
-            }else if(disjoint.get(i).getDestination().getID().contentEquals("OldBlues")){
+            }else if(i.getDestination().getID().contentEquals("Alternative")){
+
+                
+
+            }else if(i.getDestination().getID().contentEquals("OldBlues")){
 
                 
 
             }else{
 
-                fail("Unexpected tag '"+disjoint.get(i).getDestination().getID()+"' detected in set of disjoint links");
+                fail("Unexpected tag '"+i.getDestination().getID()+"' detected in set of disjoint links");
 
             }
 

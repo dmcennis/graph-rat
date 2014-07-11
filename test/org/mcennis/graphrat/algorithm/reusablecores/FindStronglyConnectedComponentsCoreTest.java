@@ -11,6 +11,7 @@ package org.mcennis.graphrat.algorithm.reusablecores;
 
 
 import java.util.List;
+import java.util.SortedSet;
 
 import org.dynamicfactory.descriptors.Properties;
 import org.dynamicfactory.descriptors.PropertiesFactory;
@@ -463,13 +464,13 @@ public class FindStronglyConnectedComponentsCoreTest extends TestCase {
 
             if(graph[i].getActor("Member", "C1A") != null){
 
-                List<Actor> actors = graph[i].getActor("Member");
+                SortedSet<Actor> actors = graph[i].getActor("Member");
 
                 assertNotNull(actors);
 
                 assertEquals(3,actors.size());
 
-                List<Link> links = graph[i].getLink("IsFriend");
+                SortedSet<Link> links = graph[i].getLink("IsFriend");
 
                 assertNotNull(links);
 
@@ -477,13 +478,13 @@ public class FindStronglyConnectedComponentsCoreTest extends TestCase {
 
             }else if(graph[i].getActor("Member","G2A") != null){
 
-                List<Actor> actors = graph[i].getActor("Member");
+                SortedSet<Actor> actors = graph[i].getActor("Member");
 
                 assertNotNull(actors);
 
                 assertEquals(3,actors.size());
 
-                List<Link> links = graph[i].getLink("IsFriend");
+                SortedSet<Link> links = graph[i].getLink("IsFriend");
 
                 assertNotNull(links);
 
@@ -491,25 +492,25 @@ public class FindStronglyConnectedComponentsCoreTest extends TestCase {
 
             }else if(graph[i].getActor("Member","Bridge") != null){
 
-                List<Actor> actors = graph[i].getActor("Member");
+                SortedSet<Actor> actors = graph[i].getActor("Member");
 
                 assertNotNull(actors);
 
                 assertEquals(1,actors.size());
 
-                List<Link> links = graph[i].getLink("IsFriend");
+                SortedSet<Link> links = graph[i].getLink("IsFriend");
 
                 assertNull(links);
 
             }else if(graph[i].getActor("Member","Isolated") != null){
 
-                List<Actor> actors = graph[i].getActor("Member");
+                SortedSet<Actor> actors = graph[i].getActor("Member");
 
                 assertNotNull(actors);
 
                 assertEquals(1,actors.size());
 
-                List<Link> links = graph[i].getLink("IsFriend");
+                SortedSet<Link> links = graph[i].getLink("IsFriend");
 
                 assertNull(links);
 
