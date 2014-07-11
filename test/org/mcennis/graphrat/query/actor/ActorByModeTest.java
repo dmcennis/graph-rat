@@ -299,7 +299,7 @@ public class ActorByModeTest extends TestCase {
     public void testExecuteASNLA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery(".*","a.*",true);
-        Vector<Actor> actors = new Vector<Actor>();
+        TreeSet<Actor> actors = new TreeSet<Actor>();
         Collection<Actor> actor = mode.execute(graph,actors,null);
     }
 
