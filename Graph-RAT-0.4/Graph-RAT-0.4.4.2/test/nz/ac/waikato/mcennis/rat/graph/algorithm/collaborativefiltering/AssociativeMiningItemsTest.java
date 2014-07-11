@@ -5,7 +5,7 @@
 
 package org.mcennis.graphrat.algorithm.collaborativefiltering;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Properties;
 import junit.framework.TestCase;
 import org.mcennis.graphrat.graph.Graph;
@@ -312,7 +312,7 @@ public class AssociativeMiningItemsTest extends TestCase {
      */
     public void testAppliesTrue() {
         System.out.println("applies");
-        HashSet<Actor> data = new HashSet<Actor>();
+        TreeSet<Actor> data = new TreeSet<Actor>();
         data.add(artist1);
         data.add(artist2);
         data.add(artist3);
@@ -325,7 +325,7 @@ public class AssociativeMiningItemsTest extends TestCase {
      */
     public void testAppliesFalse() {
         System.out.println("applies");
-        HashSet<Actor> data = new HashSet<Actor>();
+        TreeSet<Actor> data = new TreeSet<Actor>();
         data.add(artist1);
         data.add(artist3);
         AssociativeMiningItems instance = new AssociativeMiningItems(base,"Given",artist2);

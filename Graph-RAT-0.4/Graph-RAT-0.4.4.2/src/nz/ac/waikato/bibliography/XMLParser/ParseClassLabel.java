@@ -7,7 +7,7 @@
 package nz.ac.waikato.bibliography.XMLParser;
 
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Iterator;
 import java.util.Properties;
 import java.util.logging.Level;
@@ -50,7 +50,7 @@ public class ParseClassLabel extends Handler {
      
     
     Actor paper = null;
-    HashMap<String, HashSet<Actor>> subgraph = new HashMap<String, HashSet<Actor>>();
+    HashMap<String, TreeSet<Actor>> subgraph = new HashMap<String, TreeSet<Actor>>();
 
     public ParseClassLabel() {
     }
@@ -141,7 +141,7 @@ public class ParseClassLabel extends Handler {
                 paper.add(property);
 
                 if (!subgraph.containsKey(str)) {
-                    subgraph.put(str, new HashSet<Actor>());
+                    subgraph.put(str, new TreeSet<Actor>());
                 }
                 subgraph.get(str).add(paper);
             } else {

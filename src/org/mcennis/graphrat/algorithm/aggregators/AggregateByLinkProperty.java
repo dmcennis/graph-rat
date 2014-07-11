@@ -22,7 +22,7 @@ package org.mcennis.graphrat.algorithm.aggregators;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -176,7 +176,7 @@ public class AggregateByLinkProperty extends ModelShell implements Algorithm {
                 int count=0;
                 while (actorIt.hasNext()) {
                     Actor actor = actorIt.next();
-                    HashSet<Actor> total = new HashSet<Actor>();
+                    TreeSet<Actor> total = new TreeSet<Actor>();
                     HashMap<Actor, Double> links = getMap(actor, total, g);
 
                     LinkedList<Instance> instanceFromLink = new LinkedList<Instance>();
@@ -249,9 +249,9 @@ public class AggregateByLinkProperty extends ModelShell implements Algorithm {
         }
     }
 
-    protected HashMap<Actor, Double> getMap(Actor tag, HashSet<Actor> total, Graph g) {
+    protected HashMap<Actor, Double> getMap(Actor tag, TreeSet<Actor> total, Graph g) {
         HashMap<Actor, Double> ret = new HashMap<Actor, Double>();
-            LinkedList<Actor> actor = new LinkedList<Actor>();
+            TreeSet<Actor> actor = new TreeSet<Actor>();
             actor.add(tag);
             LinkByRelation query = (LinkByRelation)LinkQueryFactory.newInstance().create("LinkByRelation");
             query.buildQuery((String)parameter.get("Relation").get(),false);

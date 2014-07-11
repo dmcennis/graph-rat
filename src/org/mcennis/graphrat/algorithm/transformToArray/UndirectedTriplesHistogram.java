@@ -210,9 +210,9 @@ public class UndirectedTriplesHistogram extends ModelShell implements Algorithm 
             while (iterator.hasNext()) {
                 Actor first = iterator.next();
            TreeSet<Actor> firstNeighbors = new TreeSet<Actor>();
-                LinkedList<Actor> a = new LinkedList<Actor>();
+                TreeSet<Actor> a = new TreeSet<Actor>();
                 a.add(first);
-                LinkedList<Actor> b = new LinkedList<Actor>();
+                TreeSet<Actor> b = new TreeSet<Actor>();
 
                 TreeSet<Actor> secondNeighbors = new TreeSet<Actor>();
 
@@ -304,7 +304,7 @@ public class UndirectedTriplesHistogram extends ModelShell implements Algorithm 
 
     
 
-        protected TreeSet<Actor> getLinks(Graph g, LinkedList<Actor> v, LinkedList<Actor> comparator, TreeSet<Actor> allNeighbors) {
+        protected TreeSet<Actor> getLinks(Graph g, TreeSet<Actor> v, TreeSet<Actor> comparator, TreeSet<Actor> allNeighbors) {
 
     TreeSet<Actor> actors = new TreeSet<Actor>();
 

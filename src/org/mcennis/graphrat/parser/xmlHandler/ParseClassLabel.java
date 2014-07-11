@@ -32,7 +32,7 @@ package org.mcennis.graphrat.parser.xmlHandler;
 
 import java.util.HashMap;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 
 import java.util.Iterator;
 
@@ -120,7 +120,7 @@ public class ParseClassLabel extends Handler {
 
     Actor paper = null;
 
-    HashMap<String, HashSet<Actor>> subgraph = new HashMap<String, HashSet<Actor>>();
+    HashMap<String, TreeSet<Actor>> subgraph = new HashMap<String, TreeSet<Actor>>();
 
 
 
@@ -294,7 +294,7 @@ public class ParseClassLabel extends Handler {
 
                 if (!subgraph.containsKey(str)) {
 
-                    subgraph.put(str, new HashSet<Actor>());
+                    subgraph.put(str, new TreeSet<Actor>());
 
                 }
 

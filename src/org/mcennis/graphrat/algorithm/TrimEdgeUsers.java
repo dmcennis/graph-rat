@@ -25,6 +25,8 @@ package org.mcennis.graphrat.algorithm;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.TreeSet;
+
 import org.mcennis.graphrat.graph.Graph;
 
 
@@ -132,7 +134,7 @@ public class TrimEdgeUsers extends ModelShell implements Algorithm {
         int actorCount=0;
         while (masterList.hasNext()) {
 
-            LinkedList<Actor> source = new LinkedList<Actor>();
+            TreeSet<Actor> source = new TreeSet<Actor>();
 
             Actor actor = masterList.next();
             source.add(actor);

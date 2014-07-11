@@ -24,10 +24,7 @@ package org.mcennis.graphrat.query.graph;
 import java.io.Reader;
 import java.io.Writer;
 import java.io.IOException;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Pattern;
@@ -46,8 +43,8 @@ public class GraphByID implements GraphQuery {
     
     transient State state = State.UNINITIALIZED;
 
-    public Collection<Graph> execute(Graph g, Collection<Actor> actorList, Collection<Link> linkList) {
-        HashSet<Graph> result = new HashSet<Graph>();
+    public SortedSet<Graph> execute(Graph g, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
+        TreeSet<Graph> result = new TreeSet<Graph>();
         if (g == null) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, "Null graph collection - empty set returned by default");
             return result;
@@ -64,8 +61,8 @@ public class GraphByID implements GraphQuery {
         }
     }
 
-    protected Collection<Graph> getGraphSet(Graph g) {
-        LinkedList<Graph> result = new LinkedList<Graph>();
+    protected SortedSet<Graph> getGraphSet(Graph g) {
+        TreeSet<Graph> result = new TreeSet<Graph>();
         if (pattern.matcher(g.getID()).matches()) {
             result.add(g);
         } else {
@@ -106,7 +103,7 @@ public class GraphByID implements GraphQuery {
         return new GraphByID();
     }
 
-    public Iterator<Graph> executeIterator(Graph g, Collection<Actor> actorList, Collection<Link> linkList) {
+    public Iterator<Graph> executeIterator(Graph g, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
         return execute(g,actorList,linkList).iterator();
     }
 }

@@ -14,7 +14,7 @@ package org.mcennis.graphrat.algorithm.collaborativefiltering;
 import org.dynamicfactory.descriptors.Properties;
 import org.dynamicfactory.descriptors.PropertiesFactory;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 
 import junit.framework.TestCase;
 
@@ -642,7 +642,7 @@ public class AssociativeMiningItemsTest extends TestCase {
 
         System.out.println("applies");
 
-        HashSet<Actor> data = new HashSet<Actor>();
+        TreeSet<Actor> data = new TreeSet<Actor>();
 
         data.add(artist1);
 
@@ -670,7 +670,7 @@ public class AssociativeMiningItemsTest extends TestCase {
         System.out.println("applies");
         relation.buildQuery("Given", false);
 
-        HashSet<Actor> data = new HashSet<Actor>();
+        TreeSet<Actor> data = new TreeSet<Actor>();
 
         data.add(artist1);
 

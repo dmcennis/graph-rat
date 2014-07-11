@@ -23,10 +23,8 @@ package org.mcennis.graphrat.query;
 
 import java.io.IOException;
 import java.io.Writer;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Vector;
+import java.util.*;
+
 import org.dynamicfactory.propertyQuery.Query.State;
 
 /**
@@ -39,8 +37,8 @@ public abstract class AndQuery<Type extends Comparable> implements Comparable {
     transient State state = State.UNINITIALIZED;
     String type = "Graph";
 
-    protected Collection<Type> execute(Collection<Type> restriction) {
-        Collection<Type> base = new LinkedList<Type>();
+    protected SortedSet<Type> execute(SortedSet<Type> restriction) {
+        SortedSet<Type> base = new TreeSet<Type>();
         if (entries.size() == 0) {
             return base;
         }
@@ -53,11 +51,11 @@ public abstract class AndQuery<Type extends Comparable> implements Comparable {
         return base;
     }
 
-    protected Iterator<Type> executeIterator(Collection<Type> restriction) {
+    protected Iterator<Type> executeIterator(SortedSet<Type> restriction) {
         return new AndIterator<Type>(restriction);
     }
 
-    protected abstract Collection<Type> executeComponent(Object query);
+    protected abstract SortedSet<Type> executeComponent(Object query);
 
     protected abstract Iterator<Type> executeIterator(Object query);
 
@@ -113,9 +111,9 @@ public abstract class AndQuery<Type extends Comparable> implements Comparable {
         Vector<Type> nextEntries = new Vector<Type>();
         Type next = null;
         boolean remaining = true;
-        Collection<Type> restriction;
+        SortedSet<Type> restriction;
 
-        public AndIterator(Collection<Type> r) {
+        public AndIterator(SortedSet<Type> r) {
             Iterator it = entries.iterator();
             restriction = r;
             while (it.hasNext()) {

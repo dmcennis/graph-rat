@@ -23,10 +23,7 @@ package org.mcennis.graphrat.query;
 
 import java.io.IOException;
 import java.io.Writer;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.dynamicfactory.propertyQuery.Query.State;
@@ -47,12 +44,12 @@ public abstract class XorQuery<Type extends Comparable> implements Comparable {
     
     String type = "Graph";
     
-    protected Collection<Type> execute(Collection<Type> r) {
-        Collection<Type> leftSet = new HashSet<Type>();
-        Collection<Type> rightSet = new LinkedList<Type>();
+    protected SortedSet<Type> execute(SortedSet<Type> r) {
+        SortedSet<Type> leftSet = new TreeSet<Type>();
+        SortedSet<Type> rightSet = new TreeSet<Type>();
         leftSet.addAll(executeComponent(left));
         
-        Collection<Type> common = new LinkedList<Type>();
+        SortedSet<Type> common = new TreeSet<Type>();
         common.addAll(leftSet);
         
         rightSet.addAll(executeComponent(right));
@@ -65,12 +62,12 @@ public abstract class XorQuery<Type extends Comparable> implements Comparable {
         return leftSet;
     }
 
-    protected  Iterator<Type> executeIterator(Collection<Type> r){
+    protected  Iterator<Type> executeIterator(SortedSet<Type> r){
 	return new XorIterator(r);
     }
 
 
-    protected abstract Collection<Type> executeComponent(Object query);
+    protected abstract SortedSet<Type> executeComponent(Object query);
 
     protected abstract Iterator<Type> executeIterator(Object query);
 
@@ -144,9 +141,9 @@ public abstract class XorQuery<Type extends Comparable> implements Comparable {
         Type rightItem = null;
         Type next = null;
         boolean remaining = true;
-        Collection<Type> restriction;
+        SortedSet<Type> restriction;
 
-        public XorIterator(Collection<Type> r) {
+        public XorIterator(SortedSet<Type> r) {
             if(leftIterator.hasNext()){
                 leftItem = leftIterator.next();
             }

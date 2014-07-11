@@ -36,7 +36,7 @@ package org.mcennis.graphrat.graph;
 
 import java.util.HashMap;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 
 import org.mcennis.graphrat.actor.Actor;
 
@@ -64,7 +64,7 @@ public class GraphIndex {
 
     
 
-    HashMap<Actor,HashSet<Graph>> actorMap = new HashMap<Actor,HashSet<Graph>>();
+    HashMap<Actor,TreeSet<Graph>> actorMap = new HashMap<Actor,TreeSet<Graph>>();
 
     HashMap<String,Graph> graphMap = new HashMap<String,Graph>();
 
@@ -94,7 +94,7 @@ public class GraphIndex {
 
             if(!actorMap.containsKey(a)){
 
-                actorMap.put(a,new HashSet<Graph>());
+                actorMap.put(a,new TreeSet<Graph>());
 
             }
 

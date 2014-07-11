@@ -28,7 +28,7 @@ package org.mcennis.graphrat.algorithm;
 
 import java.util.HashMap;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Iterator;
 
 import java.util.LinkedList;
@@ -185,7 +185,7 @@ public class IdentifyBridges extends ModelShell implements Algorithm {
             }
 
             for (int i = 0; i < actor.length; ++i) {
-                LinkedList<Actor> source = new LinkedList<Actor>();
+                TreeSet<Actor> source = new TreeSet<Actor>();
                 source.add(actor[i]);
 
                 HashMap<String, Double> actorBridgeValue = new HashMap<String, Double>();
@@ -202,7 +202,7 @@ public class IdentifyBridges extends ModelShell implements Algorithm {
                     links = AlgorithmMacros.filterLink(parameter, g, relation.execute(g, null, source, null)).toArray(new Link[]{});
 
                 } else{
-                    HashSet<Link> ret = new HashSet<Link>();
+                    TreeSet<Link> ret = new TreeSet<Link>();
                     ret.addAll(AlgorithmMacros.filterLink(parameter, g, relation.execute(g, source, null, null)));
                     ret.addAll(AlgorithmMacros.filterLink(parameter, g, relation.execute(g, null, source, null)));
                     links = ret.toArray(new Link[]{});

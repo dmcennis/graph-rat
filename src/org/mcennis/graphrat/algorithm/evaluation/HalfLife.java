@@ -30,12 +30,12 @@ package org.mcennis.graphrat.algorithm.evaluation;
 
 
 
-import java.util.Collections;
-import java.util.HashMap;
+import java.util.*;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
 
+import org.dynamicfactory.descriptors.Properties;
 import org.mcennis.graphrat.graph.Graph;
 import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.descriptors.IODescriptor;
@@ -47,10 +47,6 @@ import org.dynamicfactory.property.Property;
 import org.dynamicfactory.property.PropertyFactory;
 import org.dynamicfactory.property.InvalidObjectTypeException;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Vector;
 import org.mcennis.graphrat.algorithm.Algorithm;
 
 import org.mcennis.graphrat.algorithm.AlgorithmMacros;
@@ -274,7 +270,7 @@ public class HalfLife extends ModelShell implements Algorithm {
                 n++;
                 try {
 
-                    LinkedList<Actor> actor = new LinkedList<Actor>();
+                    TreeSet<Actor> actor = new TreeSet<Actor>();
                     actor.add(it.next());
                     // determine given (ground truth) links
 
@@ -383,7 +379,7 @@ public class HalfLife extends ModelShell implements Algorithm {
 
                         precisionProperty.add(new Double(rA));
 
-                        actor.get(0).add(precisionProperty);
+                        actor.first().add(precisionProperty);
 
                     }
 

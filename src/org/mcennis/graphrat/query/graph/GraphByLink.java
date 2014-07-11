@@ -23,9 +23,7 @@ package org.mcennis.graphrat.query.graph;
 
 import java.io.IOException;
 import java.io.Writer;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.mcennis.graphrat.graph.Graph;
@@ -75,8 +73,8 @@ public class GraphByLink implements GraphQuery{
         }
     }
     
-    public Collection<Graph> execute(Graph g, Collection<Actor> actorList, Collection<Link> linkList) {
-        LinkedList<Graph> result = new LinkedList<Graph>();
+    public SortedSet<Graph> execute(Graph g, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
+        TreeSet<Graph> result = new TreeSet<Graph>();
         if(g == null){
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, "Null graph collection - empty set returned by default");
             return result;
@@ -84,7 +82,7 @@ public class GraphByLink implements GraphQuery{
         Iterator<Graph> it = (graphQuery.executeIterator(g,actorList,linkList));
         while(it.hasNext()){
             Graph graph = it.next();
-            Collection<Link> links = null;
+            SortedSet<Link> links = null;
             if(end==LinkEnd.SOURCE){
                 links = query.execute(graph, actorList,null,linkList);
             }else if(end==LinkEnd.DESTINATION){
@@ -142,7 +140,7 @@ public class GraphByLink implements GraphQuery{
         return new GraphByLink();
     }
 
-    public Iterator<Graph> executeIterator(Graph g, Collection<Actor> actorList, Collection<Link> linkList) {
+    public Iterator<Graph> executeIterator(Graph g, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
         if(!not){
             return new GraphIterator(g,actorList,linkList);
         }else{
@@ -163,11 +161,11 @@ public class GraphByLink implements GraphQuery{
 
         Graph next = null;
         Iterator<Graph> it;
-        Collection<Actor> a;
-        Collection<Link> l;
+        SortedSet<Actor> a;
+        SortedSet<Link> l;
         boolean remaining = true;
 
-        public GraphIterator(Graph g, Collection<Actor> actorList,Collection<Link>linkList) {
+        public GraphIterator(Graph g, SortedSet<Actor> actorList,SortedSet<Link>linkList) {
             a = actorList;
             l = linkList;
             it = graphQuery.executeIterator(g, actorList, linkList);
@@ -202,7 +200,7 @@ public class GraphByLink implements GraphQuery{
             ;
         }
 
-        protected Iterator<Link> checkLinks(Graph g, Collection<Actor> actorList,Collection<Link>linkList){
+        protected Iterator<Link> checkLinks(Graph g, SortedSet<Actor> actorList,SortedSet<Link>linkList){
             if(end==LinkEnd.SOURCE){
                 return query.executeIterator(g, actorList, null, linkList);
             }else if(end == LinkEnd.DESTINATION){

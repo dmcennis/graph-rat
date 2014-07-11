@@ -21,7 +21,7 @@
 
 package org.mcennis.graphrat.algorithm;
 
-import java.util.Collection;
+import java.util.SortedSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import org.mcennis.graphrat.graph.Graph;
@@ -39,15 +39,15 @@ import org.dynamicfactory.descriptors.Properties;
  */
 public class AlgorithmMacros {
 
-    public static Collection<Link> filterLink(Properties param, Graph g, Collection<Link> collection){
+    public static SortedSet<Link> filterLink(Properties param, Graph g, SortedSet<Link> SortedSet){
 	if(param.get("LinkFilter").get()==null){
-	    return collection;
+	    return SortedSet;
 	}else{
-	    return ((LinkQuery)param.get("LinkFilter").get()).execute(g,null,null,collection);
+	    return ((LinkQuery)param.get("LinkFilter").get()).execute(g,null,null,SortedSet);
 	}
     }
 
-    public static Iterator<Link> filterLink(Properties param, Graph g, LinkQuery query, Collection<Actor> source, Collection<Actor> dest, Collection<Link> link){
+    public static Iterator<Link> filterLink(Properties param, Graph g, LinkQuery query, SortedSet<Actor> source, SortedSet<Actor> dest, SortedSet<Link> link){
         if(param.get("LinkFilter").get() == null){
             return query.executeIterator(g, source, dest, link);
         }else{
@@ -60,7 +60,7 @@ public class AlgorithmMacros {
         }
     }
 
-    public static Iterator<Actor> filterActor(Properties param, Graph g, ActorQuery query, Collection<Actor> actor, Collection<Link> link){
+    public static Iterator<Actor> filterActor(Properties param, Graph g, ActorQuery query, SortedSet<Actor> actor, SortedSet<Link> link){
         if(param.get("LinkFilter").get() == null){
             return query.executeIterator(g, actor, link);
         }else{
@@ -73,12 +73,12 @@ public class AlgorithmMacros {
         }
     }
 
-    public static Collection<Actor> filterActor(Properties param, Graph g, Collection<Actor> collection){
+    public static SortedSet<Actor> filterActor(Properties param, Graph g, SortedSet<Actor> SortedSet){
 	if(param.get("ActorFilter").get()==null){
-	    return collection;
+	    return SortedSet;
 	}else{
         ActorQuery query = (ActorQuery)param.get("ActorFilter").get();
-	    return query.execute(g, collection, null);
+	    return query.execute(g, SortedSet, null);
 	}
     }
 

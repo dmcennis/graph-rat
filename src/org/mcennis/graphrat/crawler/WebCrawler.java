@@ -104,7 +104,7 @@ public class WebCrawler implements Crawler {
 
      */
 
-    java.util.HashSet<SiteReference> webSites = new java.util.HashSet<SiteReference>();
+    java.util.TreeSet<SiteReference> webSites = new java.util.TreeSet<SiteReference>();
 
     
 
@@ -312,7 +312,7 @@ public class WebCrawler implements Crawler {
 
          */
 
-        java.util.HashSet<SiteReference> sites = new java.util.HashSet<SiteReference>();
+        java.util.TreeSet<SiteReference> sites = new java.util.TreeSet<SiteReference>();
 
         
 

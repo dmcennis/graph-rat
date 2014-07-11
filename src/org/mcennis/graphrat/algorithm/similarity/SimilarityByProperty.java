@@ -27,7 +27,7 @@ package org.mcennis.graphrat.algorithm.similarity;
 
 
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Vector;
@@ -167,7 +167,7 @@ public class SimilarityByProperty extends ModelShell implements Algorithm {
 
             HashMap<Actor,Double>[] actorMap = new HashMap[tags.size()];
 
-            HashSet<Actor> actorCount = new HashSet<Actor>();
+            TreeSet<Actor> actorCount = new TreeSet<Actor>();
 
             DataVector[] dataVectorArray = new DataVector[actorMap.length];
             for(int i=0;i<tags.size();++i){

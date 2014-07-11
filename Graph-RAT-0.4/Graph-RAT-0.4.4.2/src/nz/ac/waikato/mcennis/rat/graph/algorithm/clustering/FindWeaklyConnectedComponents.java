@@ -4,7 +4,7 @@
 
 package org.mcennis.graphrat.algorithm.clustering;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Properties;
@@ -35,8 +35,8 @@ public class FindWeaklyConnectedComponents extends ModelShell implements Algorit
     private OutputDescriptor[] output = new OutputDescriptor[1];
     int graphCount=0;
 
-    HashSet<Actor> component = new HashSet<Actor>();
-    HashSet<Actor> seen = new HashSet<Actor>();
+    TreeSet<Actor> component = new TreeSet<Actor>();
+    TreeSet<Actor> seen = new TreeSet<Actor>();
     LinkedList<Graph> children = new LinkedList<Graph>();
     
     public FindWeaklyConnectedComponents(){

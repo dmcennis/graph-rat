@@ -23,9 +23,8 @@ package org.mcennis.graphrat.query;
 
 import java.io.IOException;
 import java.io.Writer;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
+
 import org.dynamicfactory.propertyQuery.Query.State;
 
 /**
@@ -40,8 +39,8 @@ public class NullQuery<Type extends Comparable> {
 
     boolean passAll = false;
 
-    protected Collection<Type> execute() {
-        return new LinkedList<Type>();
+    protected SortedSet<Type> execute() {
+        return new TreeSet<Type>();
     }
 
     protected Iterator<Type> executeIterator(){

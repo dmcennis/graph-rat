@@ -23,11 +23,8 @@ package org.mcennis.graphrat.query;
 
 import java.io.IOException;
 import java.io.Writer;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.TreeSet;
-import java.util.Vector;
+import java.util.*;
+
 import org.dynamicfactory.propertyQuery.Query.State;
 
 /**
@@ -40,7 +37,7 @@ public abstract class OrQuery<Type extends Comparable> implements Comparable {
     LinkedList entries = new LinkedList();
     String type = "Graph";
 
-    protected Collection<Type> execute(Collection<Type> restriction) {
+    protected SortedSet<Type> execute(SortedSet<Type> restriction) {
         TreeSet<Type> base = new TreeSet<Type>();
         if (entries.size() == 0) {
             return base;
@@ -54,11 +51,11 @@ public abstract class OrQuery<Type extends Comparable> implements Comparable {
         return base;
     }
 
-    protected Iterator<Type> executeIterator(Collection<Type> r) {
+    protected Iterator<Type> executeIterator(SortedSet<Type> r) {
         return new OrIterator<Type>(r);
     }
 
-    protected abstract Collection<Type> executeComponent(Object query);
+    protected abstract SortedSet<Type> executeComponent(Object query);
 
     protected abstract Iterator<Type> executeIterator(Object query);
 
@@ -113,9 +110,9 @@ public abstract class OrQuery<Type extends Comparable> implements Comparable {
         Vector<Type> nextEntries = new Vector<Type>();
         Type next = null;
         boolean remaining = true;
-        Collection<Type> restriction;
+        SortedSet<Type> restriction;
 
-        public OrIterator(Collection<Type> r) {
+        public OrIterator(SortedSet<Type> r) {
             Iterator it = entries.iterator();
             while (it.hasNext()) {
                 iterators.add((Iterator<Type>) executeIterator(it.next()));

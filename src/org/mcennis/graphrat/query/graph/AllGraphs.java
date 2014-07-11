@@ -25,10 +25,8 @@ import java.io.IOException;
 import org.mcennis.graphrat.query.*;
 import java.io.Reader;
 import java.io.Writer;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
+
 import org.mcennis.graphrat.graph.Graph;
 import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.link.Link;
@@ -45,10 +43,9 @@ public class AllGraphs implements GraphQuery{
 	state = State.READY;
     }
     
-    public Collection<Graph> execute(Graph restriction, Collection<Actor> actorList, Collection<Link> linkList) {
-        LinkedList<Graph> result = new LinkedList<Graph>();
-	addChildren(result,restriction);
-    Collections.sort(result);
+    public SortedSet<Graph> execute(Graph restriction, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
+        TreeSet<Graph> result = new TreeSet<Graph>();
+	    addChildren(result,restriction);
          return result;
     }
 
@@ -68,8 +65,8 @@ public class AllGraphs implements GraphQuery{
         }
     }
 
-    public void addChildren(LinkedList<Graph> result,Graph parent){
-	Collection<Graph> children = parent.getChildren();
+    public void addChildren(SortedSet<Graph> result,Graph parent){
+	SortedSet<Graph> children = parent.getChildren();
 	Iterator<Graph> it = children.iterator();
 	addChildren(result,it.next());
 	result.add(parent);
@@ -83,7 +80,7 @@ public class AllGraphs implements GraphQuery{
         return new AllGraphs();
     }
 
-    public Iterator<Graph> executeIterator(Graph g, Collection<Actor> actorList, Collection<Link> linkList) {
+    public Iterator<Graph> executeIterator(Graph g, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 

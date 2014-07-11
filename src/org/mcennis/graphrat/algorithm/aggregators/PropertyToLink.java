@@ -20,12 +20,11 @@
  */
 package org.mcennis.graphrat.algorithm.aggregators;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import org.dynamicfactory.descriptors.Properties;
 import org.mcennis.graphrat.graph.Graph;
 import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.algorithm.Algorithm;
@@ -140,7 +139,7 @@ public class PropertyToLink extends ModelShell implements Algorithm {
                     if (values.size() > 0) {
                         Instance data = (Instance) values.get(0);
                         Instances meta = data.dataset();
-                        LinkedList<Actor> base = new LinkedList<Actor>();
+                        TreeSet<Actor> base = new TreeSet<Actor>();
                         for (int j = 0; j < meta.numAttributes(); ++j) {
                             if (!Double.isNaN(data.value(j))) {
                                 Actor destination = g.getActor((String) parameter.get("DestinationMode").get(), meta.attribute(j).name());

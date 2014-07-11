@@ -20,8 +20,8 @@ import org.mcennis.graphrat.parser.ParsedObject;
  */
 public abstract class ArtistDeciderBase implements ArtistDecider, ParsedObject{
     
-    java.util.HashSet<String> checked = new java.util.HashSet<String>();
-    java.util.HashSet<String> artist = new java.util.HashSet<String>();
+    java.util.TreeSet<String> checked = new java.util.TreeSet<String>();
+    java.util.TreeSet<String> artist = new java.util.TreeSet<String>();
  
     /**
      * Only mechanism for getting access to this singleton object.
@@ -33,8 +33,8 @@ public abstract class ArtistDeciderBase implements ArtistDecider, ParsedObject{
     
     /** Creates a new instance of GoogleArtistDecider */
     protected ArtistDeciderBase() {
-        checked = new java.util.HashSet<String>();
-        artist = new java.util.HashSet<String>();
+        checked = new java.util.TreeSet<String>();
+        artist = new java.util.TreeSet<String>();
     }
     
     /**

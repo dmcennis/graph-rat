@@ -27,16 +27,13 @@ import cern.colt.matrix.DoubleMatrix1D;
 
 import cern.colt.matrix.impl.SparseDoubleMatrix1D;
 
-import java.util.HashMap;
+import java.util.*;
 
-import java.util.Iterator;
-
-import java.util.LinkedList;
-import java.util.List;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
 
+import org.dynamicfactory.descriptors.Properties;
 import org.mcennis.graphrat.graph.Graph;
 import org.dynamicfactory.descriptors.*;
 
@@ -210,11 +207,11 @@ public class User2User extends ModelShell implements Algorithm {
 
         // list of all users that have listened to artists
 
-        LinkedList<Actor> userBase = new LinkedList<Actor>();
+        TreeSet<Actor> userBase = new TreeSet<Actor>();
 
         // list of all artists that someone in the user list has listened to
 
-        LinkedList<Actor> artistBase = new LinkedList<Actor>();
+        TreeSet<Actor> artistBase = new TreeSet<Actor>();
 
 
 
@@ -230,7 +227,7 @@ public class User2User extends ModelShell implements Algorithm {
 
             // occur if this is a sub-graph of the root graph.
 
-            LinkedList<Actor> singleActorList = new LinkedList<Actor>();
+            TreeSet<Actor> singleActorList = new TreeSet<Actor>();
             while (user.hasNext()) {
                 singleActorList.add(user.next());
                 Iterator<Link> given = null;
@@ -374,7 +371,7 @@ public class User2User extends ModelShell implements Algorithm {
 
     }
 
-    protected DoubleMatrix1D getUserVector(Graph g, LinkQuery relation, LinkedList<Actor> u, int numArtists) {
+    protected DoubleMatrix1D getUserVector(Graph g, LinkQuery relation, TreeSet<Actor> u, int numArtists) {
 
         Iterator<Link> links = null;
         if (((LinkEnd) parameter.get("LinkEnd").get()) == LinkEnd.DESTINATION) {

@@ -203,11 +203,11 @@ public class DirectedTriplesHistogram extends ModelShell implements Algorithm {
 
                 TreeSet<Actor> firstActorList = getLinks(g, first, first, firstNeighbors);
 
-                LinkedList<Actor> a = new LinkedList<Actor>();
+                TreeSet<Actor> a = new TreeSet<Actor>();
                 a.add(first);
-                LinkedList<Actor> b = new LinkedList<Actor>();
+                TreeSet<Actor> b = new TreeSet<Actor>();
 
-                LinkedList<Actor> c = new LinkedList<Actor>();
+                TreeSet<Actor> c = new TreeSet<Actor>();
 
                 for (Actor second : firstActorList) {
 
@@ -864,7 +864,7 @@ public class DirectedTriplesHistogram extends ModelShell implements Algorithm {
 
     }
 
-    protected int getLinkType(Graph g, LinkedList<Actor> left, LinkedList<Actor> right) {
+    protected int getLinkType(Graph g, TreeSet<Actor> left, TreeSet<Actor> right) {
 
 
         Iterator<Link> leftToRight = AlgorithmMacros.filterLink(parameter, g, relation, left, right, null);
@@ -896,9 +896,9 @@ public class DirectedTriplesHistogram extends ModelShell implements Algorithm {
     protected TreeSet<Actor> getLinks(Graph g, Actor v, Actor comparator, TreeSet<Actor> allNeighbors) {
 
         TreeSet<Actor> actors = new TreeSet<Actor>();
-        LinkedList<Actor> source = new LinkedList<Actor>();
+        TreeSet<Actor> source = new TreeSet<Actor>();
         source.add(v);
-        LinkedList<Actor> compare = new LinkedList<Actor>();
+        TreeSet<Actor> compare = new TreeSet<Actor>();
         compare.add(comparator);
         if (allNeighbors != null) {
 

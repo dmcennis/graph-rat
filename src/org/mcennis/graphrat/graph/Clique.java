@@ -305,7 +305,7 @@ public class Clique extends ModelShell implements Graph, Comparable {
 
     /**
      * Initializes a clique - add an actor and initialize the intersection
-     * HashSet to all destinations this object links to (by keeping a set of all
+     * TreeSet to all destinations this object links to (by keeping a set of all
      * actors that are linked to by all actors in a clique, determining whether
      * a new actor belongs is O(n) with the size of the clique for actors in the
      * set and constant for those not.)
@@ -444,11 +444,11 @@ public class Clique extends ModelShell implements Graph, Comparable {
      * 
      * 
      * @param g parent graph
-     * @return HashSet containing cliques or null
+     * @return TreeSet containing cliques or null
      */
-    public HashSet<Clique> expand(Graph g) {
+    public TreeSet<Clique> expand(Graph g) {
 
-        HashSet<Clique> ret = new HashSet<Clique>();
+        TreeSet<Clique> ret = new TreeSet<Clique>();
 
         Iterator<Actor> it = intersection.iterator();
 

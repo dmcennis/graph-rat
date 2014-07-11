@@ -27,28 +27,17 @@
  */
 package org.mcennis.graphrat.algorithm.clustering;
 
-import java.util.Collection;
-import java.util.HashMap;
+import java.util.*;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 
-import java.util.Iterator;
-import java.util.LinkedHashSet;
-
-import java.util.LinkedList;
 import org.dynamicfactory.descriptors.*;
-
-import java.util.List;
-import java.util.Map;
-
-import java.util.Set;
-
-import java.util.Stack;
 
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
 
+import org.dynamicfactory.descriptors.Properties;
 import org.mcennis.graphrat.graph.Graph;
 
 import org.mcennis.graphrat.graph.GraphFactory;
@@ -179,7 +168,7 @@ public class BicomponentClusterer extends ModelShell implements Algorithm {
     @Override
     public void execute(Graph g) {
 
-        Set<Set<Actor>> bicomponents = new LinkedHashSet<Set<Actor>>();
+        SortedSet<SortedSet<Actor>> bicomponents = new TreeSet<SortedSet<Actor>>();
 
         ActorByMode mode = (ActorByMode) ActorQueryFactory.newInstance().create("ActorByMode");
         mode.buildQuery((String) parameter.get("Mode").get(),".*",false);
@@ -228,7 +217,7 @@ public class BicomponentClusterer extends ModelShell implements Algorithm {
 
                     if (actorListSize - converse_depth == 1) {
 
-                        Set<Actor> s = new HashSet<Actor>();
+                        SortedSet<Actor> s = new TreeSet<Actor>();
 
                         s.add(actor);
 
@@ -242,7 +231,7 @@ public class BicomponentClusterer extends ModelShell implements Algorithm {
 
         }
 
-        for (Set<Actor> set : bicomponents) {
+        for (SortedSet<Actor> set : bicomponents) {
 
             try {
                 Graph graph = GraphFactory.newInstance().create((String) parameter.get("GraphIDPrefix").get() + graphCount, parameter);
@@ -256,7 +245,7 @@ public class BicomponentClusterer extends ModelShell implements Algorithm {
                     graph.add(link.next());
                 }
                 if ((Boolean) parameter.get("AddContext").get()) {
-                    HashSet<Actor> actorSet = new HashSet<Actor>();
+                    TreeSet<Actor> actorSet = new TreeSet<Actor>();
                     actorSet.addAll(graph.getActor());
                     link = query.executeIterator(g, actorSet, null, null);
                     while (link.hasNext()) {
@@ -404,7 +393,7 @@ public class BicomponentClusterer extends ModelShell implements Algorithm {
      * have saved myself a few days.  JRTOM)</p>
      *
      */
-    protected void findBiconnectedComponents(Graph g, Actor v, Set<Set<Actor>> bicomponents) {
+    protected void findBiconnectedComponents(Graph g, Actor v, SortedSet<SortedSet<Actor>> bicomponents) {
 
         int v_dfs_num = converse_depth;
 
@@ -446,7 +435,7 @@ public class BicomponentClusterer extends ModelShell implements Algorithm {
 
                         // v is part of a single biconnected component
 
-                        Set<Actor> bicomponent = new HashSet<Actor>();
+                        TreeSet<Actor> bicomponent = new TreeSet<Actor>();
 
                         Link e;
 
@@ -482,10 +471,10 @@ public class BicomponentClusterer extends ModelShell implements Algorithm {
     protected Link[] getLinks(Graph g, Actor v) {
         LinkByRelation query = (LinkByRelation)LinkQueryFactory.newInstance().create("LinkByRelation");
         query.buildQuery((String)parameter.get("Relation").get(),false);
-        HashSet<Actor> actors = new HashSet<Actor>();
+        TreeSet<Actor> actors = new TreeSet<Actor>();
 
         LinkedList<Link> list = new LinkedList<Link>();
-        LinkedList<Actor> actor = new LinkedList<Actor>();
+        TreeSet<Actor> actor = new TreeSet<Actor>();
         actor.add(v);
 
         Collection<Link> out = query.execute(g, actors, null, null);

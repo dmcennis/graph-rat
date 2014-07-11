@@ -60,7 +60,7 @@ public class BasicPath extends ModelShell implements Path{
 
     
 
-    java.util.HashSet<String> members = null;
+    java.util.TreeSet<String> members = null;
 
     
 
@@ -88,7 +88,7 @@ public class BasicPath extends ModelShell implements Path{
 
     public void setPath(Actor[] participants, double cost,String type) {
 
-        members = new java.util.HashSet<String>();
+        members = new java.util.TreeSet<String>();
 
         path = new java.util.Vector<Actor>();
 

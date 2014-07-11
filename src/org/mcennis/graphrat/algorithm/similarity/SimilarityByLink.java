@@ -30,7 +30,7 @@ package org.mcennis.graphrat.algorithm.similarity;
 
 import java.util.HashMap;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -191,7 +191,7 @@ public class SimilarityByLink extends ModelShell implements Algorithm {
 
             HashMap<Actor,Double>[] actorMap = new HashMap[tags.size()];
 
-            HashSet<Actor> actorCount = new HashSet<Actor>();
+            TreeSet<Actor> actorCount = new TreeSet<Actor>();
 
             DataVector[] dataVectorArray = new DataVector[actorMap.length];
             for(int i=0;i<tags.size();++i){
@@ -236,9 +236,9 @@ public class SimilarityByLink extends ModelShell implements Algorithm {
 
     
 
-    protected HashMap<Actor,Double> getMap(Actor tag, HashSet<Actor> total, Graph g){
+    protected HashMap<Actor,Double> getMap(Actor tag, TreeSet<Actor> total, Graph g){
         HashMap<Actor, Double> ret = new HashMap<Actor, Double>();
-            LinkedList<Actor> actor = new LinkedList<Actor>();
+            TreeSet<Actor> actor = new TreeSet<Actor>();
             actor.add(tag);
             LinkByRelation query = (LinkByRelation)LinkQueryFactory.newInstance().create("LinkByRelation");
             query.buildQuery(AlgorithmMacros.getSourceID(parameter,g, (String)parameter.get("SourceRelation").get()),false);

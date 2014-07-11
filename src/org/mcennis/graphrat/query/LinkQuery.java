@@ -30,6 +30,7 @@ import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.link.Link;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.SortedSet;
 
 import org.dynamicfactory.propertyQuery.Query;
 
@@ -43,9 +44,9 @@ import org.dynamicfactory.propertyQuery.Query;
  */
 public interface LinkQuery extends Query{
     
-    public Collection<Link> execute(Graph g, Collection<Actor> sourceActorList, Collection<Actor> destinationActorList, Collection<Link> linkList);
+    public SortedSet<Link> execute(Graph g, SortedSet<Actor> sourceActorList, SortedSet<Actor> destinationActorList, SortedSet<Link> linkList);
     
-    public Iterator<Link> executeIterator(Graph g, Collection<Actor> sourceActorList, Collection<Actor> destinationActorList, Collection<Link> linkList);
+    public Iterator<Link> executeIterator(Graph g, SortedSet<Actor> sourceActorList, SortedSet<Actor> destinationActorList, SortedSet<Link> linkList);
 
     public void exportQuery(java.io.Writer writer) throws IOException;
     

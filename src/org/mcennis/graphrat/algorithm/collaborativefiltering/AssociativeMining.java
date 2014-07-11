@@ -23,7 +23,7 @@
  */
 package org.mcennis.graphrat.algorithm.collaborativefiltering;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -325,13 +325,13 @@ public class AssociativeMining extends ModelShell implements Algorithm {
                 Iterator<Actor> usersIt = AlgorithmMacros.filterActor(parameter, g, userQuery, null, null);
                 while (usersIt.hasNext()) {
                     Actor user = usersIt.next();
-                    LinkedList<Actor> sourceRestriction = new LinkedList<Actor>();
+                    TreeSet<Actor> sourceRestriction = new TreeSet<Actor>();
                     sourceRestriction.add(outer);
-                    LinkedList<Actor> destinationRestriction = new LinkedList<Actor>();
+                    TreeSet<Actor> destinationRestriction = new TreeSet<Actor>();
                     destinationRestriction.add(user);
                     double strength = 0.0;
 
-                    HashSet<Actor> given = getGiven(g, destinationRestriction,linkQuery);
+                    TreeSet<Actor> given = getGiven(g, destinationRestriction,linkQuery);
 
                     Iterator<Link> l = null;
                     if (((LinkEnd) parameter.get("SourceLinkEnd").get()).equals(LinkEnd.SOURCE)) {
@@ -389,9 +389,9 @@ public class AssociativeMining extends ModelShell implements Algorithm {
 
     }
 
-    protected HashSet<Actor> getGiven(Graph g, LinkedList<Actor> u, LinkQuery linkQuery) {
+    protected TreeSet<Actor> getGiven(Graph g, TreeSet<Actor> u, LinkQuery linkQuery) {
 
-        HashSet<Actor> ret = new HashSet<Actor>();
+        TreeSet<Actor> ret = new TreeSet<Actor>();
         Iterator<Link> l = null;
         if (((LinkEnd) parameter.get("SourceLinkEnd").get()).equals(LinkEnd.SOURCE)) {
             l = AlgorithmMacros.filterLink(parameter, g, linkQuery, null, u, null);

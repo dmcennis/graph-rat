@@ -5,7 +5,7 @@ package org.mcennis.graphrat.algorithm.reusablecores;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -38,9 +38,9 @@ public abstract class PathBaseCore {
      *
      */
     public void execute(Graph g) {
-        HashSet<PathNode> lastSet = new HashSet<PathNode>();
-        HashSet<PathNode> nextSet = new HashSet<PathNode>();
-        HashSet<PathNode> seen = new HashSet<PathNode>();
+        TreeSet<PathNode> lastSet = new TreeSet<PathNode>();
+        TreeSet<PathNode> nextSet = new TreeSet<PathNode>();
+        TreeSet<PathNode> seen = new TreeSet<PathNode>();
         Actor[] a = g.getActor(mode);
         if (a != null) {
             Arrays.sort(a);
@@ -86,7 +86,7 @@ public abstract class PathBaseCore {
                         }
                     }
                     lastSet = nextSet;
-                    nextSet = new HashSet<PathNode>();
+                    nextSet = new TreeSet<PathNode>();
                 }
                 doAnalysis(path, path[i]);
             }

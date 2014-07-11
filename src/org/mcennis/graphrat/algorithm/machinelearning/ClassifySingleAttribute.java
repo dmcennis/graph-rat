@@ -20,12 +20,11 @@
  */
 package org.mcennis.graphrat.algorithm.machinelearning;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Vector;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import org.dynamicfactory.descriptors.Properties;
 import org.mcennis.graphrat.graph.Graph;
 import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.algorithm.Algorithm;
@@ -152,7 +151,7 @@ public class ClassifySingleAttribute extends ModelShell implements Algorithm {
         groundTruth.buildQuery((String) parameter.get("Relation").get(), false);
 
         // build a list of new artists
-        Vector<Actor> artists = new Vector<Actor>();
+        TreeSet<Actor> artists = new TreeSet<Actor>();
         artists.addAll(AlgorithmMacros.filterActor(parameter, g, targetMode.execute(g, artists, null)));
 
         // collect the instance variables from the properties to be the 
@@ -164,9 +163,9 @@ public class ClassifySingleAttribute extends ModelShell implements Algorithm {
             Instances dataSet = null;
             boolean firstEntry = true;
             while (users.hasNext()) {
-                LinkedList<Actor> user = new LinkedList<Actor>();
+                TreeSet<Actor> user = new TreeSet<Actor>();
                 user.add(users.next());
-                Property property = user.get(0).getProperty(AlgorithmMacros.getSourceID(parameter, g, (String) parameter.get("SourceProperty").get()));
+                Property property = user.first().getProperty(AlgorithmMacros.getSourceID(parameter, g, (String) parameter.get("SourceProperty").get()));
                 if (property.getPropertyClass().getName().contentEquals(Instance.class.getName())) {
                     List values = property.getValue();
                     if (!values.isEmpty()) {
@@ -204,9 +203,9 @@ public class ClassifySingleAttribute extends ModelShell implements Algorithm {
                                 Actor target = g.getActor((String) parameter.get("TargetMode").get(), id);
                                 Link link = LinkFactory.newInstance().create((String) parameter.get("Relation").get());
                                 if ((LinkEnd) parameter.get("LinkEnd").get() == LinkEnd.SOURCE) {
-                                    link.set(user.get(0), strength, target);
+                                    link.set(user.first(), strength, target);
                                 } else {
-                                    link.set(target, strength, user.get(0));
+                                    link.set(target, strength, user.first());
                                 }
                                 g.add(link);
                             }

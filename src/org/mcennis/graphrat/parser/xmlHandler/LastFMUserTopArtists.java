@@ -34,7 +34,7 @@ import java.net.MalformedURLException;
 
 import java.net.URLEncoder;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 
 import java.util.Collection;
 
@@ -98,7 +98,7 @@ public class LastFMUserTopArtists extends Handler {
 
     String name = "";
 
-    static HashSet<String> seenArtists = new HashSet<String>();
+    static TreeSet<String> seenArtists = new TreeSet<String>();
 
     private Locator locator;
 

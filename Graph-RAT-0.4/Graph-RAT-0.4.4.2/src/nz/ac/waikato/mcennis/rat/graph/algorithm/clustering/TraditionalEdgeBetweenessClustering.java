@@ -3,7 +3,7 @@
  */
 package org.mcennis.graphrat.algorithm.clustering;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Properties;
@@ -79,7 +79,7 @@ public class TraditionalEdgeBetweenessClustering extends ModelShell implements A
     protected void splitGraph(Graph base, int top,String prefix) {
 
         try {
-            HashSet<Actor> actorSet = new HashSet<Actor>();
+            TreeSet<Actor> actorSet = new TreeSet<Actor>();
             Actor[] actors = base.getActor(core.getMode());
             if ((actors != null) && (actors.length > 1)) {
                 Logger.getLogger(TraditionalEdgeBetweenessClustering.class.getName()).log(Level.FINE, " Splitting "+actors.length+" actors - ");

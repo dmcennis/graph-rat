@@ -24,8 +24,8 @@ package org.mcennis.graphrat.query.link;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
-import java.util.Collection;
-import java.util.Iterator;
+import java.util.*;
+
 import org.mcennis.graphrat.graph.Graph;
 import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.link.Link;
@@ -40,18 +40,18 @@ public class XorLinkQuery extends XorQuery implements LinkQuery{
     
     transient Graph g = null;
 
-    transient Collection<Actor> sourceActorList = null;
+    transient SortedSet<Actor> sourceActorList = null;
 
-    transient Collection<Actor> destActorList = null;
+    transient SortedSet<Actor> destActorList = null;
 
-    transient Collection<Link> linkList = null;
+    transient SortedSet<Link> linkList = null;
     
-    public Collection<Link> execute(Graph g,Collection<Actor> sourceActorList,Collection<Actor> destActorList, Collection<Link> linkList){
+    public SortedSet<Link> execute(Graph g,SortedSet<Actor> sourceActorList,SortedSet<Actor> destActorList, SortedSet<Link> linkList){
 	this.g = g;
 	this.sourceActorList = sourceActorList;
 	this.destActorList = destActorList;
 	this.linkList = linkList;
-	Collection<Link> ret = execute(linkList);
+	SortedSet<Link> ret = execute(linkList);
 	this.g = null;
 	this.destActorList = null;
 	this.sourceActorList = null;
@@ -59,7 +59,7 @@ public class XorLinkQuery extends XorQuery implements LinkQuery{
 	return ret;
     }
 
-    public Iterator<Link> executeIterator(Graph g,Collection<Actor> sourceActorList, Collection<Actor> destActorList,Collection<Link> linkList){
+    public Iterator<Link> executeIterator(Graph g,SortedSet<Actor> sourceActorList, SortedSet<Actor> destActorList,SortedSet<Link> linkList){
 	this.g = g;
 	this.sourceActorList = sourceActorList;
 	this.destActorList = destActorList;
@@ -72,7 +72,7 @@ public class XorLinkQuery extends XorQuery implements LinkQuery{
 	return ret;
     }
 
-    protected Collection<Link> executeComponent(Object query){
+    protected SortedSet<Link> executeComponent(Object query){
 	return ((LinkQuery)query).execute(g,sourceActorList,destActorList,linkList);
     }
 
@@ -88,7 +88,7 @@ public class XorLinkQuery extends XorQuery implements LinkQuery{
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    public void buildQuery(Collection<LinkQuery> source){
+    public void buildQuery(List<LinkQuery> source){
 	super.buildQuery(source,"Link");
     }
 

@@ -23,11 +23,12 @@
  */
 package org.mcennis.graphrat.algorithm.evaluation;
 
-import java.util.Collections;
+import java.util.*;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
 
+import org.dynamicfactory.descriptors.Properties;
 import org.mcennis.graphrat.graph.Graph;
 
 import org.dynamicfactory.descriptors.*;
@@ -43,14 +44,6 @@ import org.mcennis.graphrat.descriptors.IODescriptor;
 import org.mcennis.graphrat.link.Link;
 
 
-import java.util.Iterator;
-
-
-
-
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Vector;
 import org.mcennis.graphrat.algorithm.Algorithm;
 
 import org.mcennis.graphrat.algorithm.AlgorithmMacros;
@@ -243,8 +236,8 @@ public class ROCAreaEvaluation extends ModelShell implements Algorithm {
             int n = 0;
             while (it.hasNext()) {
                 ++n;
-                LinkedList<Actor> s = new LinkedList<Actor>();
-                LinkedList<Actor> r = new LinkedList<Actor>();
+                TreeSet<Actor> s = new TreeSet<Actor>();
+                TreeSet<Actor> r = new TreeSet<Actor>();
                 s.add(it.next());
 
                 // determine given (ground truth) links
@@ -316,7 +309,7 @@ public class ROCAreaEvaluation extends ModelShell implements Algorithm {
 
                 precisionProperty.add(new Double(roc));
 
-                s.get(0).add(precisionProperty);
+                s.first().add(precisionProperty);
 
                 rocSum += roc;
 

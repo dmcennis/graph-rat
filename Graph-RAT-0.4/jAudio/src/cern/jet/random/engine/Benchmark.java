@@ -225,7 +225,7 @@ public static void test(int size, RandomEngine randomEngine) {
 private static void xtestRandomFromTo(long from, long to, int times) {
 	System.out.println("from="+from+", to="+to);
 	
-	//cern.colt.set.OpenMultiFloatHashSet multiset = new cern.colt.set.OpenMultiFloatHashSet();
+	//cern.colt.set.OpenMultiFloatTreeSet multiset = new cern.colt.set.OpenMultiFloatTreeSet();
 
 	java.util.Random randomJava = new java.util.Random();
 	//edu.cornell.lassp.houle.RngPack.RandomElement random = new edu.cornell.lassp.houle.RngPack.Ranecu();

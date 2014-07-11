@@ -5,7 +5,7 @@
 package org.mcennis.graphrat.algorithm.visual;
 
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -51,7 +51,7 @@ public class ColoredByPropertyGraph extends ModelShell implements Algorithm {
         if (a != null) {
             prefuse.data.Node[] n = new prefuse.data.Node[a.length];
             HashMap<Actor, prefuse.data.Node> map = new HashMap<Actor, prefuse.data.Node>();
-            HashSet<String> propertyValues = new HashSet<String>();
+            TreeSet<String> propertyValues = new TreeSet<String>();
             for (int i = 0; i < a.length; ++i) {
                 n[i] = graph.addNode();
                 n[i].setString("label", a[i].getID());

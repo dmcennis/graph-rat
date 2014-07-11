@@ -6,7 +6,7 @@ package org.mcennis.graphrat.algorithm.evaluation;
 
 import java.util.HashMap;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Properties;
 
 import java.util.logging.Level;
@@ -100,7 +100,7 @@ public class KendallTau extends ModelShell implements Algorithm {
                     double derivedSD = 0.0;
 
                     HashMap<Actor, HashMap<Actor, Integer>> given = new HashMap<Actor, HashMap<Actor, Integer>>();
-                    HashSet<Actor> allArtists = new HashSet<Actor>();
+                    TreeSet<Actor> allArtists = new TreeSet<Actor>();
                     
                     
                     if ((gLink != null) && (dLink != null)) {

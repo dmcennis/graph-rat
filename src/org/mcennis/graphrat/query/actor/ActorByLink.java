@@ -25,11 +25,7 @@ import java.io.IOException;
 
 import org.mcennis.graphrat.query.*;
 import java.io.Writer;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.mcennis.graphrat.graph.Graph;
@@ -49,9 +45,9 @@ public class ActorByLink implements ActorQuery {
     boolean not = false;
     transient State state = State.UNINITIALIZED;
 
-    public Collection<Actor> execute(Graph g, Collection<Actor> actorList, Collection<Link> linkList) {
-        HashSet<Actor> result = new HashSet<Actor>();
-        LinkedList<Actor> core = new LinkedList<Actor>();
+    public SortedSet<Actor> execute(Graph g, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
+        TreeSet<Actor> result = new TreeSet<Actor>();
+        TreeSet<Actor> core = new TreeSet<Actor>();
         if (g == null) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, "Null graph collection - empty set returned by default");
             return result;
@@ -60,14 +56,14 @@ public class ActorByLink implements ActorQuery {
             if (actorList == null) {
                 it_actor = g.getActorIterator();
             } else {
-                Collection<Actor> array = g.getActor();
+                SortedSet<Actor> array = g.getActor();
                 array.retainAll(actorList);
                 it_actor = array.iterator();
             }
             while (it_actor.hasNext()) {
                 Actor actor = it_actor.next();
                 core.add(actor);
-                Collection<Link> links = null;
+                SortedSet<Link> links = null;
                 if(restriction == LinkEnd.SOURCE){
                     links = query.execute(g, core, null, linkList);
                 }else if(restriction == LinkEnd.DESTINATION){
@@ -152,7 +148,7 @@ public class ActorByLink implements ActorQuery {
         return new ActorByLink();
     }
 
-    public Iterator<Actor> executeIterator(Graph g, Collection<Actor> actorList, Collection<Link> linkList) {
+    public Iterator<Actor> executeIterator(Graph g, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
         if(!not){
             return new ActorIterator(g,actorList,linkList);
         }else{
@@ -173,21 +169,20 @@ public class ActorByLink implements ActorQuery {
 
     public class ActorIterator implements Iterator<Actor> {
 
-        LinkedList<Actor> next = new LinkedList<Actor>();
+        TreeSet<Actor> next = new TreeSet<Actor>();
         boolean remaining = true;
-        Collection<Link> linkList;
-        Collection<Actor> actorList;
+        SortedSet<Link> linkList;
+        SortedSet<Actor> actorList;
         Iterator<Actor> actorIterator;
         Iterator<Link> linkIterator;
         Graph g;
 
-        public ActorIterator(Graph g, Collection<Actor> a, Collection<Link> l) {
+        public ActorIterator(Graph g, SortedSet<Actor> a, SortedSet<Link> l) {
             linkList = l;
             actorList = a;
             if(a != null){
-                LinkedList<Actor> sortedActor = new LinkedList<Actor>();
+                TreeSet<Actor> sortedActor = new TreeSet<Actor>();
                 sortedActor.addAll(a);
-                Collections.sort( sortedActor);
                 actorIterator = sortedActor.iterator();
             }else{
                 actorIterator = (Iterator<Actor>) g.getActorIterator();
@@ -234,7 +229,7 @@ public class ActorByLink implements ActorQuery {
 
         public Actor next() {
             if(next.size()>0){
-                Actor ret = next.get(0);
+                Actor ret = next.first();
                 next.clear();
                 return ret;
             }else{

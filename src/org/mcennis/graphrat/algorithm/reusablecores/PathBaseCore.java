@@ -22,15 +22,7 @@ package org.mcennis.graphrat.algorithm.reusablecores;
 
 
 
-import java.util.Collections;
-
-import java.util.HashMap;
-
-import java.util.HashSet;
-
-import java.util.Iterator;
-
-import java.util.LinkedList;
+import java.util.*;
 
 import java.util.logging.Level;
 
@@ -100,20 +92,18 @@ public abstract class PathBaseCore {
 
     public void execute(Graph g) {
 
-        HashSet<PathNode> lastSet = new HashSet<PathNode>();
+        TreeSet<PathNode> lastSet = new TreeSet<PathNode>();
 
-        HashSet<PathNode> nextSet = new HashSet<PathNode>();
+        TreeSet<PathNode> nextSet = new TreeSet<PathNode>();
 
-        HashSet<PathNode> seen = new HashSet<PathNode>();
+        TreeSet<PathNode> seen = new TreeSet<PathNode>();
 
-        LinkedList<Actor> sortActor = new LinkedList<Actor>();
+        TreeSet<Actor> sortActor = new TreeSet<Actor>();
 
         ActorByMode mode = (ActorByMode)ActorQueryFactory.newInstance().create("ActorByMode");
         mode.buildQuery((String)parameter.get("Mode").get(),".*",false);
 
         sortActor.addAll(AlgorithmMacros.filterActor(parameter, g, mode.execute(g, null, null)));
-
-        Collections.sort(sortActor);
 
         int count = 0;
 
@@ -187,7 +177,7 @@ public abstract class PathBaseCore {
                 while (last_it.hasNext()) {
 
                     PathNode currentSource = last_it.next();
-                    LinkedList<Actor> actor = new LinkedList<Actor>();
+                    TreeSet<Actor> actor = new TreeSet<Actor>();
                     actor.add(currentSource.getActor());
                     Iterator<Link> linkSet = AlgorithmMacros.filterLink(parameter, g, relation, actor, null, null);
 
@@ -213,7 +203,7 @@ public abstract class PathBaseCore {
 
                 lastSet = nextSet;
 
-                nextSet = new HashSet<PathNode>();
+                nextSet = new TreeSet<PathNode>();
 
             }
 

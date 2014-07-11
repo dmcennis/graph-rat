@@ -23,18 +23,14 @@
  */
 package org.mcennis.graphrat.algorithm.clustering;
 
-import java.util.HashMap;
+import java.util.*;
 
-import java.util.HashSet;
-
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
 
 import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.descriptors.Properties;
 import org.dynamicfactory.property.Property;
 import org.dynamicfactory.property.PropertyFactory;
 
@@ -251,7 +247,7 @@ public class WekaClassifierClusterer extends ModelShell implements Algorithm {
                     graph.add(link.next());
                 }
                 if ((Boolean) parameter.get("AddContext").get()) {
-                    HashSet<Actor> actorSet = new HashSet<Actor>();
+                    TreeSet<Actor> actorSet = new TreeSet<Actor>();
                     actorSet.addAll(graph.getActor());
                     link = query.executeIterator(g, actorSet, null, null);
                     while (link.hasNext()) {

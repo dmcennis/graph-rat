@@ -31,7 +31,7 @@ import java.util.HashMap;
 
 
 
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
@@ -295,7 +295,7 @@ public class KendallTau extends ModelShell implements Algorithm {
 
                     HashMap<Actor, HashMap<Actor, Integer>> given = new HashMap<Actor, HashMap<Actor, Integer>>();
 
-                    HashSet<Actor> allArtists = new HashSet<Actor>();
+                    TreeSet<Actor> allArtists = new TreeSet<Actor>();
 
                     
 

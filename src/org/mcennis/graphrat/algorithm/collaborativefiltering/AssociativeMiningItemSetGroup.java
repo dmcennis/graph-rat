@@ -28,7 +28,7 @@ package org.mcennis.graphrat.algorithm.collaborativefiltering;
 
 
 
-import java.util.HashSet;
+import java.util.TreeSet;
 
 import java.util.Iterator;
 
@@ -62,13 +62,13 @@ import org.mcennis.graphrat.query.LinkQuery.LinkEnd;
 
 public class AssociativeMiningItemSetGroup {
 
-    LinkedList<Actor> baseSetPositive = new LinkedList<Actor>();
+    TreeSet<Actor> baseSetPositive = new TreeSet<Actor>();
 
-    LinkedList<Actor> baseSetNegative = new LinkedList<Actor>();
+    TreeSet<Actor> baseSetNegative = new TreeSet<Actor>();
 
-    HashSet<AssociativeMiningItems> currentSetPositive = new HashSet<AssociativeMiningItems>();
+    TreeSet<AssociativeMiningItems> currentSetPositive = new TreeSet<AssociativeMiningItems>();
 
-    HashSet<AssociativeMiningItems> currentSetNegative = new HashSet<AssociativeMiningItems>();
+    TreeSet<AssociativeMiningItems> currentSetNegative = new TreeSet<AssociativeMiningItems>();
 
     LinkedList<AssociativeMiningItems> storedSet = new LinkedList<AssociativeMiningItems>();
 
@@ -193,9 +193,9 @@ public class AssociativeMiningItemSetGroup {
 
         // Create the next set of candidates
 
-        HashSet<AssociativeMiningItems> nextPositive = new HashSet<AssociativeMiningItems>();
+        TreeSet<AssociativeMiningItems> nextPositive = new TreeSet<AssociativeMiningItems>();
 
-        HashSet<AssociativeMiningItems> nextNegative = new HashSet<AssociativeMiningItems>();
+        TreeSet<AssociativeMiningItems> nextNegative = new TreeSet<AssociativeMiningItems>();
 
         
 

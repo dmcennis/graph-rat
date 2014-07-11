@@ -43,7 +43,7 @@ public class WebCrawler implements Crawler {
      * A hashtable that holds all web sites that have already been scheduled to 
      * be parsed in order to prevent duplicate accesses of the same web page.
      */
-    java.util.HashSet<SiteReference> webSites = new java.util.HashSet<SiteReference>();
+    java.util.TreeSet<SiteReference> webSites = new java.util.TreeSet<SiteReference>();
     
     int count = 0;
     
@@ -147,7 +147,7 @@ public class WebCrawler implements Crawler {
          * redundant set of hash sites to verify no redundant accesses to a web
          * site are made.
          */
-        java.util.HashSet<SiteReference> sites = new java.util.HashSet<SiteReference>();
+        java.util.TreeSet<SiteReference> sites = new java.util.TreeSet<SiteReference>();
         
         boolean siteCheck = true;
         

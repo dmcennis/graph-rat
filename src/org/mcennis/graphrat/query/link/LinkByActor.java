@@ -23,11 +23,7 @@ package org.mcennis.graphrat.query.link;
 
 import java.io.IOException;
 import java.io.Writer;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.mcennis.graphrat.graph.Graph;
@@ -68,10 +64,10 @@ public class LinkByActor implements LinkQuery {
         this.not = not;
     }
 
-    public Collection<Link> execute(Graph g, Collection<Actor> sourceActorList, Collection<Actor> destActorList, Collection<Link> linkList) {
-        HashSet<Link> result = new HashSet<Link>();
-        LinkedList<Link> linkLimit = new LinkedList<Link>();
-        LinkedList<Actor> actorLimit = new LinkedList<Actor>();
+    public SortedSet<Link> execute(Graph g, SortedSet<Actor> sourceActorList, SortedSet<Actor> destActorList, SortedSet<Link> linkList) {
+        TreeSet<Link> result = new TreeSet<Link>();
+        TreeSet<Link> linkLimit = new TreeSet<Link>();
+        TreeSet<Actor> actorLimit = new TreeSet<Actor>();
         if (g == null) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, "Null graph collection - empty set returned by default");
             return result;
@@ -260,7 +256,7 @@ public class LinkByActor implements LinkQuery {
         return new LinkByActor();
     }
 
-    public Iterator<Link> executeIterator(Graph g, Collection<Actor> sourceActorList, Collection<Actor> destinationActorList, Collection<Link> linkList) {
+    public Iterator<Link> executeIterator(Graph g, SortedSet<Actor> sourceActorList, SortedSet<Actor> destinationActorList, SortedSet<Link> linkList) {
         if(!not){
             return new LinkIterator(g,sourceActorList,destinationActorList,linkList);
         }else{
@@ -282,25 +278,24 @@ public class LinkByActor implements LinkQuery {
     public class LinkIterator implements Iterator<Link> {
 
         Iterator<Link> link;
-        LinkedList<Link> next = new LinkedList<Link>();
-        LinkedList<Link> l;
-        Collection<Actor> source;
-        Collection<Actor> dest;
-        LinkedList<Actor> s = new LinkedList<Actor>();
-        LinkedList<Actor> d = new LinkedList<Actor>();
+        TreeSet<Link> next = new TreeSet<Link>();
+        TreeSet<Link> l;
+        SortedSet<Actor> source;
+        SortedSet<Actor> dest;
+        TreeSet<Actor> s = new TreeSet<Actor>();
+        TreeSet<Actor> d = new TreeSet<Actor>();
         Graph g;
         boolean remaining = true;
 
-        public LinkIterator(Graph g,Collection<Actor> sourceActorList,Collection<Actor> destinationActorList,Collection<Link>linkList) {
+        public LinkIterator(Graph g,SortedSet<Actor> sourceActorList,SortedSet<Actor> destinationActorList,SortedSet<Link>linkList) {
             this.g = g;
             source = sourceActorList;
             dest= destinationActorList;
             if(linkList == null){
                 link = g.getLinkIterator();
             }else{
-                l = new LinkedList<Link>();
+                l = new TreeSet<Link>();
                 l.addAll(linkList);
-                Collections.sort(l);
                 link = l.iterator();
             }
         }
@@ -312,10 +307,10 @@ public class LinkByActor implements LinkQuery {
                         next.add(link.next());
                         boolean sourceB = true;
                         s.clear();
-                        s.add(next.get(0).getSource());
+                        s.add(next.first().getSource());
                         s.retainAll(source);
                         d.clear();
-                        d.add(next.get(0).getDestination());
+                        d.add(next.first().getDestination());
                         d.retainAll(dest);
                         if((sourceActorQuery!=null)&&(!sourceActorQuery.executeIterator(g, s, next).hasNext())){
                             sourceB = false;
@@ -344,7 +339,7 @@ public class LinkByActor implements LinkQuery {
 
         public Link next() {
             hasNext();
-            Link ret = next.get(0);
+            Link ret = next.first();
             next.clear();
             return ret;
         }

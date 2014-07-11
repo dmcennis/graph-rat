@@ -16,7 +16,7 @@ public class ChebyshevDistance implements DistanceFunction{
     @Override
     public double distance(DataVector inst1, DataVector inst2) {
         double ret = 0.0;
-//        HashSet<Object> seen = new HashSet<Object>();
+//        TreeSet<Object> seen = new TreeSet<Object>();
         inst1.reset();
         while(inst1.hasNext()){
             inst1.next();

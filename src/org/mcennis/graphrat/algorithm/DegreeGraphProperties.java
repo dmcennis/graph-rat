@@ -26,6 +26,7 @@ package org.mcennis.graphrat.algorithm;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.TreeSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.mcennis.graphrat.graph.Graph;
@@ -200,7 +201,7 @@ public class DegreeGraphProperties extends ModelShell implements Algorithm {
         int i = 0;
         while (actorIt.hasNext()) {
             Actor actor = actorIt.next();
-            LinkedList<Actor> source = new LinkedList<Actor>();
+            TreeSet<Actor> source = new TreeSet<Actor>();
             source.add(actor);
             Property inDegree = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter,g,(String) parameter.get("PropertyPrefix").get() + (String) parameter.get("InDegreeSuffix").get()), Double.class);
             Iterator<Link> links = AlgorithmMacros.filterLink(parameter, g, relation, source, null, null);
@@ -229,7 +230,7 @@ public class DegreeGraphProperties extends ModelShell implements Algorithm {
 
         while (actorIt.hasNext()) {
             Actor actor = actorIt.next();
-            LinkedList<Actor> source = new LinkedList<Actor>();
+            TreeSet<Actor> source = new TreeSet<Actor>();
             source.add(actor);
             Property inDegree = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter,g,(String) parameter.get("PropertyPrefix").get() + (String) parameter.get("OutDegreeSuffix").get()), Double.class);
             Iterator<Link> links = AlgorithmMacros.filterLink(parameter, g, relation, source, null, null);
@@ -261,7 +262,7 @@ public class DegreeGraphProperties extends ModelShell implements Algorithm {
         }
         actorIt = AlgorithmMacros.filterActor(parameter, g, mode, null, null);
         while (actorIt.hasNext()) {
-            LinkedList<Actor> source = new LinkedList<Actor>();
+            TreeSet<Actor> source = new TreeSet<Actor>();
             source.add(actorIt.next());
 
             Iterator<Link> links = AlgorithmMacros.filterLink(parameter, g, relation, source, null, null);
@@ -311,7 +312,7 @@ public class DegreeGraphProperties extends ModelShell implements Algorithm {
         }
         actorIt = AlgorithmMacros.filterActor(parameter, g, mode, null, null);
         while (actorIt.hasNext()) {
-            LinkedList<Actor> source = new LinkedList<Actor>();
+            TreeSet<Actor> source = new TreeSet<Actor>();
             source.add(actorIt.next());
 
 

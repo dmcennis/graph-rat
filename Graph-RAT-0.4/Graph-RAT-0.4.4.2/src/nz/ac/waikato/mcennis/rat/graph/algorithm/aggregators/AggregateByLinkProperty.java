@@ -6,7 +6,7 @@ package org.mcennis.graphrat.algorithm.aggregators;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Properties;
@@ -71,7 +71,7 @@ public class AggregateByLinkProperty extends ModelShell implements Algorithm {
                 HashMap<Integer,Duples<Integer,Integer>> actorMap = new HashMap<Integer,Duples<Integer,Integer>>();
                 int count=0;
                 for (int i = 0; i < actor.length; ++i) {
-                    HashSet<Actor> total = new HashSet<Actor>();
+                    TreeSet<Actor> total = new TreeSet<Actor>();
                     HashMap<Actor, Double> links = getMap(actor[i], total, g);
 
                     LinkedList<Instance> instanceFromLink = new LinkedList<Instance>();
@@ -146,7 +146,7 @@ public class AggregateByLinkProperty extends ModelShell implements Algorithm {
         }
     }
 
-    protected HashMap<Actor, Double> getMap(Actor tag, HashSet<Actor> total, Graph g) {
+    protected HashMap<Actor, Double> getMap(Actor tag, TreeSet<Actor> total, Graph g) {
         HashMap<Actor, Double> ret = new HashMap<Actor, Double>();
 
         if ("Outgoing".contentEquals((String) parameter[7].getValue()) || "All".contentEquals((String) parameter[7].getValue())) {

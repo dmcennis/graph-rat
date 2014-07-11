@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URLEncoder;
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -40,7 +40,7 @@ public class LastFMUserTopArtists extends Handler {
     ToFileParser parser = null;
     Crawler crawler = null;
     String name = "";
-    static HashSet<String> seenArtists = new HashSet<String>();
+    static TreeSet<String> seenArtists = new TreeSet<String>();
     private Locator locator;
 
     enum State {

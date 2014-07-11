@@ -5,7 +5,7 @@
 package org.mcennis.graphrat.algorithm.aggregators;
 
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Iterator;
 import java.util.Properties;
 import java.util.Set;
@@ -72,7 +72,7 @@ public class AggregateLinks extends ModelShell implements Algorithm {
             Link[] link = g.getLink((String) parameter[2].getValue());
             Set<Actor> list = null;
             if ((Boolean) parameter[5].getValue()) {
-                list = new HashSet<Actor>();
+                list = new TreeSet<Actor>();
                 if (link != null) {
                     for (int i = 0; i < link.length; ++i) {
                         list.add(link[i].getDestination());
@@ -102,7 +102,7 @@ public class AggregateLinks extends ModelShell implements Algorithm {
             }
             for (int i = 0; i < actor.length; ++i) {
                 double[] values = new double[meta.numAttributes()];
-                HashSet<Actor> total = new HashSet<Actor>();
+                TreeSet<Actor> total = new TreeSet<Actor>();
                 HashMap<Actor, Double> links = getMap(actor[i], total, g);
                 Instance instance = null;
                 if ((Boolean) parameter[5].getValue()) {
@@ -146,7 +146,7 @@ public class AggregateLinks extends ModelShell implements Algorithm {
         }
     }
 
-    protected HashMap<Actor, Double> getMap(Actor tag, HashSet<Actor> total, Graph g) {
+    protected HashMap<Actor, Double> getMap(Actor tag, TreeSet<Actor> total, Graph g) {
         HashMap<Actor, Double> ret = new HashMap<Actor, Double>();
 
         if ("Outgoing".contentEquals((String) parameter[7].getValue()) || "All".contentEquals((String) parameter[7].getValue())) {
@@ -184,7 +184,7 @@ public class AggregateLinks extends ModelShell implements Algorithm {
         FastVector attributeItems = new FastVector();
         Link[] link = g.getLink((String) parameter[2].getValue());
         if ((Boolean) parameter[5].getValue()) {
-            HashSet<String> list = new HashSet<String>();
+            TreeSet<String> list = new TreeSet<String>();
             if (link != null) {
                 for (int i = 0; i < link.length; ++i) {
                     list.add(link[i].getDestination().getID());

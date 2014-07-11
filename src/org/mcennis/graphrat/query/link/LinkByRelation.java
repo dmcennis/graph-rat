@@ -23,11 +23,7 @@ package org.mcennis.graphrat.query.link;
 
 import java.io.IOException;
 import java.io.Writer;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.mcennis.graphrat.graph.Graph;
@@ -56,8 +52,8 @@ public class LinkByRelation implements LinkQuery {
         state = state.READY;
     }
 
-    public Collection<Link> execute(Graph g, Collection<Actor> sourceActorList, Collection<Actor> destinationActorList, Collection<Link> linkList) {
-        HashSet<Link> result = new HashSet<Link>();
+    public SortedSet<Link> execute(Graph g, SortedSet<Actor> sourceActorList, SortedSet<Actor> destinationActorList, SortedSet<Link> linkList) {
+        TreeSet<Link> result = new TreeSet<Link>();
         if (g == null) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, "Null graph collection - empty set returned by default");
             return result;
@@ -70,7 +66,7 @@ public class LinkByRelation implements LinkQuery {
             relations.add(type);
         }
         Iterator<String> relationsIt = relations.iterator();
-        LinkedList<Link> list = new LinkedList<Link>();
+        TreeSet<Link> list = new TreeSet<Link>();
         while (relationsIt.hasNext()) {
             Iterator<Link> array = g.getLinkIterator(relationsIt.next());
             while (array.hasNext()) {
@@ -132,7 +128,7 @@ public class LinkByRelation implements LinkQuery {
         return new LinkByRelation();
     }
 
-    public Iterator<Link> executeIterator(Graph g, Collection<Actor> sourceActorList, Collection<Actor> destinationActorList, Collection<Link> linkList) {
+    public Iterator<Link> executeIterator(Graph g, SortedSet<Actor> sourceActorList, SortedSet<Actor> destinationActorList, SortedSet<Link> linkList) {
         if(!not){
             return new LinkIterator(g,sourceActorList,destinationActorList,linkList);
         }else{
@@ -154,12 +150,12 @@ public class LinkByRelation implements LinkQuery {
         Link next = null;
         boolean remaining = true;
         Graph g;
-        Collection<Actor> s;
-        Collection<Actor> d;
+        SortedSet<Actor> s;
+        SortedSet<Actor> d;
         Iterator<String> modeMatches;
         Iterator<Link> rIt;
 
-        public LinkIterator(Graph g, Collection<Actor> sourceActorList, Collection<Actor> destActorList,Collection<Link> linkList) {
+        public LinkIterator(Graph g, SortedSet<Actor> sourceActorList, SortedSet<Actor> destActorList,SortedSet<Link> linkList) {
             LinkedList<String> modeList = new LinkedList<String>();
             Iterator<String> source = g.getLinkTypes().iterator();
             while (source.hasNext()) {

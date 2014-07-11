@@ -5,7 +5,7 @@
 package org.mcennis.graphrat.algorithm.clustering;
 
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Iterator;
 import java.util.Properties;
 import java.util.logging.Level;
@@ -57,7 +57,7 @@ public class WekaClassifierClusterer extends ModelShell implements Algorithm {
                 clusterer.buildClusterer(data);
                 Actor[] actors = g.getActor((String) parameter[4].getValue());
                 if (actors != null) {
-                    HashMap<Integer,HashSet<Actor>> clusterAssignment = new HashMap<Integer,HashSet<Actor>>();
+                    HashMap<Integer,TreeSet<Actor>> clusterAssignment = new HashMap<Integer,TreeSet<Actor>>();
                     for (int i = 0; i < actors.length; ++i) {
                         Property instanceProperty = actors[i].getProperty((String) parameter[5].getValue());
                         if (instanceProperty != null) {
@@ -71,7 +71,7 @@ public class WekaClassifierClusterer extends ModelShell implements Algorithm {
                                     Logger.getLogger(WekaClassifierClusterer.class.getName()).log(Level.SEVERE, "ClusterInstance on clusterer failed", ex);
                                 }
                                 if(!clusterAssignment.containsKey(cluster)){
-                                    clusterAssignment.put(cluster, new HashSet<Actor>());
+                                    clusterAssignment.put(cluster, new TreeSet<Actor>());
                                 }
                                 clusterAssignment.get(cluster).add(actors[i]);
                                 Properties props = new Properties();

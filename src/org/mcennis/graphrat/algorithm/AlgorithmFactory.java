@@ -25,7 +25,9 @@ package org.mcennis.graphrat.algorithm;
 
 import org.mcennis.graphrat.algorithm.similarity.SimilarityByLink;
 import org.mcennis.graphrat.algorithm.similarity.HierarchyByCooccurance;
+
 import java.util.LinkedList;
+import java.util.TreeSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.mcennis.graphrat.algorithm.prestige.ScalablePageRankPrestige;
@@ -206,6 +208,10 @@ public class AlgorithmFactory extends AbstractFactory<Algorithm>{
      * @param props mapof parameters for initialiing the algorithm
      * @return newly constructed algorithm
      */
+    @Override
+    public Algorithm create(Properties props){
+        return create(null,props);
+    }
 
     public String[] getKnownOtherModules() {
         LinkedList<String> knownModulesList = new LinkedList<String>();
@@ -318,11 +324,7 @@ public class AlgorithmFactory extends AbstractFactory<Algorithm>{
         return knownModulesList.toArray(new String[]{});
     }
 
-    @Override 
-    public Algorithm create(Properties props){
-        return create(null,props);
-    }
-    
+
     public Algorithm create(String name){
         return create(name,properties);
     }

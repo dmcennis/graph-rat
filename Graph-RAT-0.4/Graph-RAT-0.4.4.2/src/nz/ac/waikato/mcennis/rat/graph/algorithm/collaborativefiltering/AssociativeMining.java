@@ -4,7 +4,7 @@
  */
 package org.mcennis.graphrat.algorithm.collaborativefiltering;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -94,7 +94,7 @@ public class AssociativeMining extends ModelShell implements Algorithm {
                 AssociativeMiningItems[] set = group.exportAssociations();
                 for(int u=0;u<users.length;++u){
                     double strength=0.0;
-                    HashSet<Actor> given = getGiven(g,users[u]);
+                    TreeSet<Actor> given = getGiven(g,users[u]);
                     Link[] l = g.getLink((String)parameter[1].getValue(),users[u] , artists[i]);
                     if((l==null)||(((Boolean)parameter[6].getValue()).booleanValue()==true)){
                         for(int s=0;s<set.length;++s){
@@ -123,8 +123,8 @@ public class AssociativeMining extends ModelShell implements Algorithm {
         }
     }
     
-    protected HashSet<Actor> getGiven(Graph g, Actor u){
-        HashSet<Actor> ret = new HashSet<Actor>();
+    protected TreeSet<Actor> getGiven(Graph g, Actor u){
+        TreeSet<Actor> ret = new TreeSet<Actor>();
         Link[] links = g.getLinkBySource((String)parameter[1].getValue(), u);
         if(links != null){
             for(int i=0;i<links.length;++i){

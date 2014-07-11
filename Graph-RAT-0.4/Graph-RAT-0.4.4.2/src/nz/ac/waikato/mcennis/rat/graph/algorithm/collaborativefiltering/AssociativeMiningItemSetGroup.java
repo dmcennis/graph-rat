@@ -5,7 +5,7 @@
 
 package org.mcennis.graphrat.algorithm.collaborativefiltering;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import org.mcennis.graphrat.graph.Graph;
@@ -23,8 +23,8 @@ import org.mcennis.graphrat.actor.Actor;
 public class AssociativeMiningItemSetGroup {
     LinkedList<Actor> baseSetPositive = new LinkedList<Actor>();
     LinkedList<Actor> baseSetNegative = new LinkedList<Actor>();
-    HashSet<AssociativeMiningItems> currentSetPositive = new HashSet<AssociativeMiningItems>();
-    HashSet<AssociativeMiningItems> currentSetNegative = new HashSet<AssociativeMiningItems>();
+    TreeSet<AssociativeMiningItems> currentSetPositive = new TreeSet<AssociativeMiningItems>();
+    TreeSet<AssociativeMiningItems> currentSetNegative = new TreeSet<AssociativeMiningItems>();
     LinkedList<AssociativeMiningItems> storedSet = new LinkedList<AssociativeMiningItems>();
     Graph graph;
     String relation;
@@ -86,8 +86,8 @@ public class AssociativeMiningItemSetGroup {
      */
     public int expandSet(Actor targetActor){
         // Create the next set of candidates
-        HashSet<AssociativeMiningItems> nextPositive = new HashSet<AssociativeMiningItems>();
-        HashSet<AssociativeMiningItems> nextNegative = new HashSet<AssociativeMiningItems>();
+        TreeSet<AssociativeMiningItems> nextPositive = new TreeSet<AssociativeMiningItems>();
+        TreeSet<AssociativeMiningItems> nextNegative = new TreeSet<AssociativeMiningItems>();
         
         // expand the positive set
         Iterator<AssociativeMiningItems> positiveIT = currentSetPositive.iterator();

@@ -31,15 +31,12 @@ import cern.colt.matrix.DoubleMatrix2D;
 
 import cern.colt.matrix.linalg.EigenvalueDecomposition;
 import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.descriptors.Properties;
 import org.dynamicfactory.property.Property;
 import org.dynamicfactory.property.PropertyFactory;
 import org.dynamicfactory.property.InvalidObjectTypeException;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
@@ -189,7 +186,7 @@ public class HITSPrestige extends ModelShell implements Algorithm {
 //        }
 
             for (int i = 0; i < a.length; ++i) {
-                LinkedList<Actor> source = new LinkedList<Actor>();
+                TreeSet<Actor> source = new TreeSet<Actor>();
                 source.add(a[i]);
                 Collection<Link> linkColl = relation.execute(g, source, null, null);
                 Iterator<Link> l = linkColl.iterator();

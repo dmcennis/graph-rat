@@ -24,7 +24,7 @@
 package org.mcennis.graphrat.algorithm;
 
 import java.util.Arrays;
-import java.util.HashSet;
+import java.util.TreeSet;
 
 import java.util.Hashtable;
 
@@ -102,11 +102,11 @@ public abstract class OptimizedPathBase extends ModelShell implements Algorithm 
      */
     public void execute(Graph g) {
 
-        HashSet<PathNode> lastSet = new HashSet<PathNode>();
+        TreeSet<PathNode> lastSet = new TreeSet<PathNode>();
 
-        HashSet<PathNode> nextSet = new HashSet<PathNode>();
+        TreeSet<PathNode> nextSet = new TreeSet<PathNode>();
 
-        HashSet<PathNode> seen = new HashSet<PathNode>();
+        TreeSet<PathNode> seen = new TreeSet<PathNode>();
 
         ActorByMode mode = (ActorByMode)ActorQueryFactory.newInstance().create("ActorByMode");
         mode.buildQuery((String)parameter.get("Mode").get(),".*",false);
@@ -172,7 +172,7 @@ public abstract class OptimizedPathBase extends ModelShell implements Algorithm 
 
                     while (last_it.hasNext()) {
                         PathNode currentSource = last_it.next();
-                        LinkedList<Actor> source = new LinkedList<Actor>();
+                        TreeSet<Actor> source = new TreeSet<Actor>();
                         source.add(currentSource.getActor());
 
                         Link[] linkSet = (AlgorithmMacros.filterLink(parameter, g, relation.execute(g, source, null, null))).toArray(new Link[]{});
@@ -201,7 +201,7 @@ public abstract class OptimizedPathBase extends ModelShell implements Algorithm 
 
                     lastSet = nextSet;
 
-                    nextSet = new HashSet<PathNode>();
+                    nextSet = new TreeSet<PathNode>();
 
                 }
 

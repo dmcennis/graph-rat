@@ -26,14 +26,9 @@ package org.mcennis.graphrat.algorithm.collaborativefiltering;
 import cern.jet.stat.Probability;
 
 
-import java.util.Collection;
+import java.util.*;
 
 
-import java.util.HashSet;
-
-import java.util.Iterator;
-
-import java.util.LinkedList;
 import org.mcennis.graphrat.graph.Graph;
 
 import org.mcennis.graphrat.actor.Actor;
@@ -55,9 +50,9 @@ import org.mcennis.graphrat.query.LinkQuery.LinkEnd;
  */
 public class AssociativeMiningItems implements Comparable {
 
-    HashSet<Actor> actors;
+    TreeSet<Actor> actors;
     transient Actor maxMember;
-    transient HashSet<Actor> activeUsers = new HashSet();
+    transient TreeSet<Actor> activeUsers = new TreeSet();
     transient double total;
     boolean positive;
     transient Graph graph;
@@ -140,7 +135,7 @@ public class AssociativeMiningItems implements Comparable {
 
         this.direction = direction;
 
-        actors = new HashSet<Actor>();
+        actors = new TreeSet<Actor>();
 
         maxMember = value;
 
@@ -155,7 +150,7 @@ public class AssociativeMiningItems implements Comparable {
 //        Link[] links = g.getLinkByDestination(relation, value);
 
 
-        activeUsers = new HashSet<Actor>();
+        activeUsers = new TreeSet<Actor>();
 
         while (links.hasNext()) {
             if (direction == LinkEnd.SOURCE) {
@@ -212,7 +207,7 @@ public class AssociativeMiningItems implements Comparable {
 
         this.significance = significance;
 
-        actors = new HashSet<Actor>();
+        actors = new TreeSet<Actor>();
 
         actors.addAll(col);
 
@@ -240,7 +235,7 @@ public class AssociativeMiningItems implements Comparable {
 
         AssociativeMiningItems ret = new AssociativeMiningItems();
 
-        ret.actors = new HashSet<Actor>();
+        ret.actors = new TreeSet<Actor>();
 
         ret.actors.addAll(actors);
 
@@ -258,7 +253,7 @@ public class AssociativeMiningItems implements Comparable {
 
         ret.direction = direction;
 
-        ret.activeUsers = new HashSet<Actor>();
+        ret.activeUsers = new TreeSet<Actor>();
 
         ret.activeUsers.addAll(activeUsers);
 
@@ -266,7 +261,7 @@ public class AssociativeMiningItems implements Comparable {
 
         ret.negativeSignificance = negativeSignificance;
 
-        LinkedList<Actor> newActorList = new LinkedList<Actor>();
+        TreeSet<Actor> newActorList = new TreeSet<Actor>();
         newActorList.add(newActor);
         Iterator<Link> links = null;
         if (direction.equals(LinkEnd.SOURCE)) {
@@ -275,7 +270,7 @@ public class AssociativeMiningItems implements Comparable {
             links = relation.executeIterator(graph, null, newActorList, null);
         }
 
-        HashSet<Actor> tmp = new HashSet<Actor>();
+        TreeSet<Actor> tmp = new TreeSet<Actor>();
 
         while (links.hasNext()) {
             Actor actor = null;
@@ -356,7 +351,7 @@ public class AssociativeMiningItems implements Comparable {
 
      */
     public int significanceTest(Actor target) {
-        LinkedList<Actor> newActorList = new LinkedList<Actor>();
+        TreeSet<Actor> newActorList = new TreeSet<Actor>();
         newActorList.add(target);
         Iterator<Link> targetEntries = null;
         if (direction.equals(LinkEnd.SOURCE)) {
@@ -368,7 +363,7 @@ public class AssociativeMiningItems implements Comparable {
         if (targetEntries.hasNext()) {
 
 
-//            HashSet<Actor> intersection = new HashSet<Actor>();
+//            TreeSet<Actor> intersection = new TreeSet<Actor>();
 
             double intersection = 0.0;
             double localTotal = 0.0;
@@ -550,7 +545,7 @@ public class AssociativeMiningItems implements Comparable {
      * @return are all actors present or not
 
      */
-    public boolean applies(HashSet<Actor> data) {
+    public boolean applies(TreeSet<Actor> data) {
 
         Iterator<Actor> it = actors.iterator();
 

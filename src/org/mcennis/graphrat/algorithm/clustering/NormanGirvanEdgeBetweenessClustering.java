@@ -22,7 +22,7 @@
 package org.mcennis.graphrat.algorithm.clustering;
 
 import java.util.Collection;
-import java.util.HashSet;
+import java.util.TreeSet;
 
 import java.util.Iterator;
 
@@ -188,7 +188,7 @@ public class NormanGirvanEdgeBetweenessClustering extends ModelShell implements 
 
             Duples<Double, Link>[] orderedBetweeness;
 
-            HashSet<Actor> actorSet = new HashSet<Actor>();
+            TreeSet<Actor> actorSet = new TreeSet<Actor>();
 
             Iterator<Actor> actors = AlgorithmMacros.filterActor(parameter, base, mode, null,null);
 
@@ -341,7 +341,7 @@ public class NormanGirvanEdgeBetweenessClustering extends ModelShell implements 
 
     }
 
-        protected Graph getGraph(Graph g, HashSet<Actor> component, String prefix){
+        protected Graph getGraph(Graph g, TreeSet<Actor> component, String prefix){
 
         try {
                 Graph graph = GraphFactory.newInstance().create(prefix,parameter);
@@ -355,7 +355,7 @@ public class NormanGirvanEdgeBetweenessClustering extends ModelShell implements 
                     graph.add(link.next());
                 }
                 if ((Boolean) parameter.get("AddContext").get()) {
-                    HashSet<Actor> actorSet = new HashSet<Actor>();
+                    TreeSet<Actor> actorSet = new TreeSet<Actor>();
                     actorSet.addAll(graph.getActor());
                     link = query.executeIterator(g, actorSet, null, null);
                     while (link.hasNext()) {

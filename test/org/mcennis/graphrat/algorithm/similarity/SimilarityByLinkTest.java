@@ -6,7 +6,7 @@
 package org.mcennis.graphrat.algorithm.similarity;
 
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.List;
 import java.util.SortedSet;
 
@@ -172,8 +172,8 @@ public class SimilarityByLinkTest extends TestCase {
         assertNotNull(link);
         assertEquals(1,link.size());
         assertEquals(b,link.first().getDestination());
-        HashMap<Actor,Double> left = instance.getMap(a, new HashSet<Actor>(), graph);
-        HashMap<Actor,Double> right = instance.getMap(b, new HashSet<Actor>(), graph);
+        HashMap<Actor,Double> left = instance.getMap(a, new TreeSet<Actor>(), graph);
+        HashMap<Actor,Double> right = instance.getMap(b, new TreeSet<Actor>(), graph);
         double value = distance.distance(new MapDataVector(left,graph.getActorCount("User")), new MapDataVector(right,graph.getActorCount("User")));
         assertEquals(value,link.first().getStrength(),0.001);
     }
@@ -194,8 +194,8 @@ public class SimilarityByLinkTest extends TestCase {
         assertNotNull(link);
         assertEquals(1,link.size());
         assertEquals(a,link.first().getDestination());
-        HashMap<Actor,Double> left = instance.getMap(b, new HashSet<Actor>(), graph);
-        HashMap<Actor,Double> right = instance.getMap(a, new HashSet<Actor>(), graph);
+        HashMap<Actor,Double> left = instance.getMap(b, new TreeSet<Actor>(), graph);
+        HashMap<Actor,Double> right = instance.getMap(a, new TreeSet<Actor>(), graph);
         double value = distance.distance(new MapDataVector(left,graph.getActorCount("User")), new MapDataVector(right,graph.getActorCount("User")));
         assertEquals(value,link.first().getStrength(),0.001);
     }
@@ -216,8 +216,8 @@ public class SimilarityByLinkTest extends TestCase {
         assertNotNull(link);
         assertEquals(1,link.size());
         assertEquals(d,link.first().getDestination());
-        HashMap<Actor,Double> left = instance.getMap(c, new HashSet<Actor>(), graph);
-        HashMap<Actor,Double> right = instance.getMap(d, new HashSet<Actor>(), graph);
+        HashMap<Actor,Double> left = instance.getMap(c, new TreeSet<Actor>(), graph);
+        HashMap<Actor,Double> right = instance.getMap(d, new TreeSet<Actor>(), graph);
         double value = distance.distance(new MapDataVector(left,graph.getActorCount("User")), new MapDataVector(right,graph.getActorCount("User")));
         assertEquals(value,link.first().getStrength(),0.001);
     }
@@ -238,8 +238,8 @@ public class SimilarityByLinkTest extends TestCase {
         assertNotNull(link);
         assertEquals(1,link.size());
         assertEquals(c,link.first().getDestination());
-        HashMap<Actor,Double> left = instance.getMap(d, new HashSet<Actor>(), graph);
-        HashMap<Actor,Double> right = instance.getMap(c, new HashSet<Actor>(), graph);
+        HashMap<Actor,Double> left = instance.getMap(d, new TreeSet<Actor>(), graph);
+        HashMap<Actor,Double> right = instance.getMap(c, new TreeSet<Actor>(), graph);
         double value = distance.distance(new MapDataVector(left,graph.getActorCount("User")), new MapDataVector(right,graph.getActorCount("User")));
         assertEquals(value,link.first().getStrength(),0.001);
     }
@@ -249,7 +249,7 @@ public class SimilarityByLinkTest extends TestCase {
      */
     public void testGetMapIncoming() {
         System.out.println("getMapIncoming");
-        HashSet<Actor> total = new HashSet<Actor>();
+        TreeSet<Actor> total = new TreeSet<Actor>();
         SimilarityByLink instance = new SimilarityByLink();
         Properties props = PropertiesFactory.newInstance().create();
         props.set("linkDirection", "Incoming");
@@ -267,7 +267,7 @@ public class SimilarityByLinkTest extends TestCase {
      */
     public void testGetMapAll() {
         System.out.println("getMapAll");
-        HashSet<Actor> total = new HashSet<Actor>();
+        TreeSet<Actor> total = new TreeSet<Actor>();
         SimilarityByLink instance = new SimilarityByLink();
         Properties props = PropertiesFactory.newInstance().create();
         props.set("linkDirection", "All");
@@ -291,7 +291,7 @@ public class SimilarityByLinkTest extends TestCase {
      */
     public void testGetMapOutgoing() {
         System.out.println("getMapOutgoing");
-        HashSet<Actor> total = new HashSet<Actor>();
+        TreeSet<Actor> total = new TreeSet<Actor>();
         SimilarityByLink instance = new SimilarityByLink();
         Properties props = PropertiesFactory.newInstance().create();
         props.set("actorType", "User");

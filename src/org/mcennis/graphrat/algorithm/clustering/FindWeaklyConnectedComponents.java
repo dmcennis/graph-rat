@@ -26,7 +26,7 @@ package org.mcennis.graphrat.algorithm.clustering;
 
 
 
-import java.util.HashSet;
+import java.util.TreeSet;
 
 import java.util.Iterator;
 import org.dynamicfactory.descriptors.*;
@@ -91,11 +91,11 @@ public class FindWeaklyConnectedComponents extends ModelShell implements Algorit
 
 
 
-    HashSet<Actor> component = new HashSet<Actor>();
+    TreeSet<Actor> component = new TreeSet<Actor>();
 
-    HashSet<Actor> seen = new HashSet<Actor>();
+    TreeSet<Actor> seen = new TreeSet<Actor>();
 
-    LinkedList<Graph> children = new LinkedList<Graph>();
+    TreeSet<Graph> children = new TreeSet<Graph>();
 
     
 
@@ -231,7 +231,7 @@ public class FindWeaklyConnectedComponents extends ModelShell implements Algorit
 
         seen.add(seed);
 
-        LinkedList<Actor> actor = new LinkedList<Actor>();
+        TreeSet<Actor> actor = new TreeSet<Actor>();
         actor.add(seed);
 
         Iterator<Link> links = AlgorithmMacros.filterLink(parameter, g, relation, actor, null, null);
@@ -280,7 +280,7 @@ public class FindWeaklyConnectedComponents extends ModelShell implements Algorit
                     graph.add(link.next());
                 }
                 if ((Boolean) parameter.get("AddContext").get()) {
-                    HashSet<Actor> actorSet = new HashSet<Actor>();
+                    TreeSet<Actor> actorSet = new TreeSet<Actor>();
                     actorSet.addAll(graph.getActor());
                     link = query.executeIterator(g, actorSet, null, null);
                     while (link.hasNext()) {

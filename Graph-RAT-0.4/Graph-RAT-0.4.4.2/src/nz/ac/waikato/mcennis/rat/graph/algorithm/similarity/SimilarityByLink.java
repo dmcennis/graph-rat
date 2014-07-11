@@ -6,7 +6,7 @@
 package org.mcennis.graphrat.algorithm.similarity;
 
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -55,7 +55,7 @@ public class SimilarityByLink extends ModelShell implements Algorithm {
         DistanceFunction similarity = DistanceFactory.newInstance().create(props);
         if(tags != null){
             HashMap<Actor,Double>[] actorMap = new HashMap[tags.length];
-            HashSet<Actor> actorCount = new HashSet<Actor>();
+            TreeSet<Actor> actorCount = new TreeSet<Actor>();
             DataVector[] dataVectorArray = new DataVector[actorMap.length];
             for(int i=0;i<tags.length;++i){
                 actorMap[i] = getMap(tags[i],actorCount,g);
@@ -82,7 +82,7 @@ public class SimilarityByLink extends ModelShell implements Algorithm {
         }
     }
     
-    protected HashMap<Actor,Double> getMap(Actor tag, HashSet<Actor> total, Graph g){
+    protected HashMap<Actor,Double> getMap(Actor tag, TreeSet<Actor> total, Graph g){
         HashMap<Actor,Double> ret = new HashMap<Actor,Double>();
         
         if("Outgoing".contentEquals((String)parameter[3].getValue())||"All".contentEquals((String)parameter[3].getValue())){

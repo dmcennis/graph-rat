@@ -26,18 +26,15 @@ package org.mcennis.graphrat.algorithm.visual;
 
 
 
-import java.util.Collection;
-import java.util.HashMap;
+import java.util.*;
 
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
 
 import javax.swing.JFrame;
 import org.dynamicfactory.descriptors.*;
+import org.dynamicfactory.descriptors.Properties;
 import org.dynamicfactory.property.Property;
 
 import org.mcennis.graphrat.graph.Graph;
@@ -158,16 +155,16 @@ public class ColoredByPropertyGraph extends ModelShell implements Algorithm {
 
         graph.getEdgeTable().addColumn("Link",Link.class,null);
 
-        Collection<Actor> actor = (AlgorithmMacros.filterActor(parameter, g, ((ActorQuery)parameter.get("Mode").get()).execute(g, null, null)));
+        SortedSet<Actor> actor = (AlgorithmMacros.filterActor(parameter, g, ((ActorQuery)parameter.get("Mode").get()).execute(g, null, null)));
         Actor[] a = actor.toArray(new Actor[]{});
 
         if (a != null) {
 
             prefuse.data.Node[] n = new prefuse.data.Node[a.length];
 
-            HashMap<Actor, prefuse.data.Node> map = new HashMap<Actor, prefuse.data.Node>();
+            TreeMap<Actor, prefuse.data.Node> map = new TreeMap<Actor, prefuse.data.Node>();
 
-            HashSet<String> propertyValues = new HashSet<String>();
+            TreeSet<String> propertyValues = new TreeSet<String>();
 
             for (int i = 0; i < a.length; ++i) {
 

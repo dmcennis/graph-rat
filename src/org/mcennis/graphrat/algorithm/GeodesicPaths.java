@@ -50,7 +50,7 @@ import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.link.Link;
 
 
-import java.util.HashSet;
+import java.util.TreeSet;
 
 
 import java.util.HashMap;
@@ -83,14 +83,14 @@ import org.mcennis.graphrat.scheduler.Scheduler;
 public class GeodesicPaths extends ModelShell implements Algorithm {
 
     public static final long serialVersionUID = 2;
-    HashSet<String> usedCount;
+    TreeSet<String> usedCount;
     HashMap<String, Integer> map;
     HashMap<String, Vector<String>> nodeExpansion;
     Actor[] userList;
     PathSet pathSet;
     PathSet lastPath;
     PathSet nextPath;
-    HashSet<String> seedNodes;
+    TreeSet<String> seedNodes;
     PropertiesInternal parameter = PropertiesFactory.newInstance().create();
     LinkedList<IODescriptor> input = new LinkedList<IODescriptor>();
     LinkedList<IODescriptor> output = new LinkedList<IODescriptor>();
@@ -162,8 +162,8 @@ public class GeodesicPaths extends ModelShell implements Algorithm {
         props.setProperty("PathSetType", "Basic");
         pathSet = PathSetFactory.newInstance().create(props);
         pathSet.setType(AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("PathSetName").get()));
-        seedNodes = new HashSet<String>();
-        usedCount = new HashSet<String>();
+        seedNodes = new TreeSet<String>();
+        usedCount = new TreeSet<String>();
         nodeExpansion = new HashMap<String, Vector<String>>();
         userList = (AlgorithmMacros.filterActor(parameter, g, mode.execute(g, null, null))).toArray(new Actor[]{});
         int count = 0;
@@ -226,7 +226,7 @@ public class GeodesicPaths extends ModelShell implements Algorithm {
     protected void nextStepNodes(Graph g) {
         nodeExpansion.clear();
         Iterator<String> seed = seedNodes.iterator();
-        HashSet<String> nextSeed = new HashSet<String>();
+        TreeSet<String> nextSeed = new TreeSet<String>();
         while (seed.hasNext()) {
             String key = seed.next();
             Actor source = g.getActor((String)parameter.get("Mode").get(), key);

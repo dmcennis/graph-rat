@@ -24,8 +24,8 @@ package org.mcennis.graphrat.query.graph;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
-import java.util.Collection;
-import java.util.Iterator;
+import java.util.*;
+
 import org.mcennis.graphrat.graph.Graph;
 import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.link.Link;
@@ -40,22 +40,22 @@ public class XorGraphQuery extends XorQuery implements GraphQuery{
     
     transient Graph g = null;
 
-    transient Collection<Actor> actorList = null;
+    transient SortedSet<Actor> actorList = null;
 
-    transient Collection<Link> linkList = null;
+    transient SortedSet<Link> linkList = null;
     
-    public Collection<Graph> execute(Graph g,Collection<Actor> actorList, Collection<Link> linkList){
+    public SortedSet<Graph> execute(Graph g,SortedSet<Actor> actorList, SortedSet<Link> linkList){
 	this.g = g;
 	this.actorList = actorList;
 	this.linkList = linkList;
-	Collection<Graph> ret = execute(null);
+	SortedSet<Graph> ret = execute(null);
 	this.g = null;
 	this.actorList = null;
 	this.linkList = null;
 	return ret;
     }
 
-    public Iterator<Graph> executeIterator(Graph g,Collection<Actor> actorList, Collection<Link> linkList){
+    public Iterator<Graph> executeIterator(Graph g,SortedSet<Actor> actorList, SortedSet<Link> linkList){
 	this.g = g;
 	this.actorList = actorList;
 	this.linkList = linkList;
@@ -66,7 +66,7 @@ public class XorGraphQuery extends XorQuery implements GraphQuery{
 	return ret;
     }
 
-    protected Collection<Graph> executeComponent(Object query){
+    protected SortedSet<Graph> executeComponent(Object query){
 	return ((GraphQuery)query).execute(g,actorList,linkList);
     }
 
@@ -82,7 +82,7 @@ public class XorGraphQuery extends XorQuery implements GraphQuery{
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    public void buildQuery(Collection<GraphQuery> source){
+    public void buildQuery(List<GraphQuery> source){
 	super.buildQuery(source,"Graph");
     }
 

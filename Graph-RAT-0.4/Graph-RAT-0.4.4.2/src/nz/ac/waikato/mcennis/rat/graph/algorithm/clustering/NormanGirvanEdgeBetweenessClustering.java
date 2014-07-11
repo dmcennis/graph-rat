@@ -3,7 +3,7 @@
  */
 package org.mcennis.graphrat.algorithm.clustering;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Properties;
@@ -56,7 +56,7 @@ public class NormanGirvanEdgeBetweenessClustering extends ModelShell implements 
     protected void splitGraph(Graph base, String prefix) {
         try {
             Duples<Double, Link>[] orderedBetweeness;
-            HashSet<Actor> actorSet = new HashSet<Actor>();
+            TreeSet<Actor> actorSet = new TreeSet<Actor>();
             Actor[] actors = base.getActor(core.getMode());
 
 

@@ -50,7 +50,7 @@ public class ChebyshevDistance implements DistanceFunction{
 
         double ret = 0.0;
 
-//        HashSet<Object> seen = new HashSet<Object>();
+//        TreeSet<Object> seen = new TreeSet<Object>();
 
         inst1.reset();
 

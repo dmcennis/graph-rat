@@ -25,9 +25,7 @@ import java.io.IOException;
 import org.mcennis.graphrat.query.*;
 
 import java.io.Writer;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.mcennis.graphrat.graph.Graph;
@@ -69,13 +67,13 @@ public class GraphByProperty implements GraphQuery {
         }
     }
 
-    public Collection<Graph> execute(Graph restriction, Collection<Actor> actorList, Collection<Link> linkList) {
-        LinkedList<Graph> result = new LinkedList<Graph>();
+    public SortedSet<Graph> execute(Graph restriction, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
+        TreeSet<Graph> result = new TreeSet<Graph>();
         if (restriction == null) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, "Null graph collection - empty set returned by default");
             return result;
         }
-        Collection<Graph> testSource = graphQuery.execute(restriction, actorList, linkList);
+        SortedSet<Graph> testSource = graphQuery.execute(restriction, actorList, linkList);
         Iterator<Graph> testSourceIt = testSource.iterator();
         while (testSourceIt.hasNext()) {
             Property test = testSourceIt.next().getProperty(propertyID);
@@ -137,7 +135,7 @@ public class GraphByProperty implements GraphQuery {
         return new GraphByProperty();
     }
 
-    public Iterator<Graph> executeIterator(Graph g, Collection<Actor> actorList, Collection<Link> linkList) {
+    public Iterator<Graph> executeIterator(Graph g, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
         if(!not){
             return new GraphIterator(g,actorList,linkList);
         }else{
@@ -160,11 +158,11 @@ public class GraphByProperty implements GraphQuery {
 
         Iterator<Graph> it;
         Graph next = null;
-        Collection<Actor> a;
-        Collection<Link> l;
+        SortedSet<Actor> a;
+        SortedSet<Link> l;
         boolean remaining = true;
 
-        public GraphIterator(Graph g, Collection<Actor> actorList, Collection<Link> linkList) {
+        public GraphIterator(Graph g, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
             it = graphQuery.executeIterator(g, actorList, linkList);
             a = actorList;
             l = linkList;

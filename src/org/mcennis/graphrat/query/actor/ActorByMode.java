@@ -23,11 +23,7 @@ package org.mcennis.graphrat.query.actor;
 
 import java.io.IOException;
 import java.io.Writer;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.mcennis.graphrat.graph.Graph;
@@ -47,8 +43,8 @@ public class ActorByMode implements ActorQuery {
     boolean not = false;
     transient State state = State.UNINITIALIZED;
 
-    public Collection<Actor> execute(Graph g, Collection<Actor> actorList, Collection<Link> linkList) {
-        HashSet<Actor> result = new HashSet<Actor>();
+    public SortedSet<Actor> execute(Graph g, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
+        TreeSet<Actor> result = new TreeSet<Actor>();
         if (g == null) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, "Null graph collection - empty set returned by default");
             return result;
@@ -129,7 +125,7 @@ public class ActorByMode implements ActorQuery {
         return new ActorByMode();
     }
 
-    public Iterator<Actor> executeIterator(Graph g, Collection<Actor> actorList, Collection<Link> linkList) {
+    public Iterator<Actor> executeIterator(Graph g, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
         if(!not){
             return new ActorIterator(g,actorList,linkList);
         }else{
@@ -155,7 +151,7 @@ public class ActorByMode implements ActorQuery {
         Iterator<String> modeMatches;
         Iterator<Actor> rIt;
 
-        public ActorIterator(Graph g, Collection<Actor> actorList, Collection<Link> linkList) {
+        public ActorIterator(Graph g, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
             LinkedList<String> modeList = new LinkedList<String>();
             Iterator<String> source = g.getActorTypes().iterator();
             while (source.hasNext()) {

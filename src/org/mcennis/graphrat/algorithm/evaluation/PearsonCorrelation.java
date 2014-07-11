@@ -26,6 +26,7 @@ package org.mcennis.graphrat.algorithm.evaluation;
 
 
 
+import java.util.TreeSet;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
@@ -265,8 +266,8 @@ public class PearsonCorrelation extends ModelShell implements Algorithm {
             int n=0;
             while (it.hasNext()) {
                 ++n;
-                LinkedList<Actor> s = new LinkedList<Actor>();
-                LinkedList<Actor> r = new LinkedList<Actor>();
+                TreeSet<Actor> s = new TreeSet<Actor>();
+                TreeSet<Actor> r = new TreeSet<Actor>();
                 try {
 
                     Actor actor = it.next();

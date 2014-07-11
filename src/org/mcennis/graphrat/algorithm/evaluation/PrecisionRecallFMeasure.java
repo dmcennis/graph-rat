@@ -24,6 +24,7 @@ package org.mcennis.graphrat.algorithm.evaluation;
 
 
 
+import java.util.TreeSet;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
@@ -269,8 +270,8 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
             while (it.hasNext()) {
                 ++n;
                 try {
-                    LinkedList<Actor> s = new LinkedList<Actor>();
-                    LinkedList<Actor> r = new LinkedList<Actor>();
+                    TreeSet<Actor> s = new TreeSet<Actor>();
+                    TreeSet<Actor> r = new TreeSet<Actor>();
                     s.add(it.next());
                     // determine given (ground truth) links
 
@@ -333,7 +334,7 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
                     precisionProperty.add(new Double(precision));
 
-                    s.get(0).add(precisionProperty);
+                    s.first().add(precisionProperty);
 
                     precisionSum += precision;
 
@@ -387,8 +388,8 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
             while (it.hasNext()) {
                 ++n;
 
-                    LinkedList<Actor> s = new LinkedList<Actor>();
-                    LinkedList<Actor> r = new LinkedList<Actor>();
+                    TreeSet<Actor> s = new TreeSet<Actor>();
+                    TreeSet<Actor> r = new TreeSet<Actor>();
                     s.add(it.next());
                     // determine given (ground truth) links
 
@@ -442,7 +443,7 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
                 precisionProperty.add(new Double(recall));
 
-                s.get(0).add(precisionProperty);
+                s.first().add(precisionProperty);
 
                 recallSum += recall;
 
@@ -491,8 +492,8 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
             int n=0;
             while (it.hasNext()) {
                 try {
-                    LinkedList<Actor> s = new LinkedList<Actor>();
-                    LinkedList<Actor> r = new LinkedList<Actor>();
+                    TreeSet<Actor> s = new TreeSet<Actor>();
+                    TreeSet<Actor> r = new TreeSet<Actor>();
                     s.add(it.next());
                     // determine given (ground truth) links
 
@@ -576,7 +577,7 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
                     precisionProperty.add(new Double(fMeasure));
 
-                    s.get(0).add(precisionProperty);
+                    s.first().add(precisionProperty);
 
                     fMeasureSum += fMeasure;
 
@@ -623,8 +624,8 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
             while (it.hasNext()) {
                 ++n;
                 try {
-                    LinkedList<Actor> s = new LinkedList<Actor>();
-                    LinkedList<Actor> r = new LinkedList<Actor>();
+                    TreeSet<Actor> s = new TreeSet<Actor>();
+                    TreeSet<Actor> r = new TreeSet<Actor>();
                     s.add(it.next());
                     // determine given (ground truth) links
 
@@ -687,7 +688,7 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
                     precisionProperty.add(new Double(precision));
 
-                    s.get(0).add(precisionProperty);
+                    s.first().add(precisionProperty);
 
                     precisionSum += precision;
 
@@ -740,8 +741,8 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
             while (it.hasNext()) {
                 ++n;
 
-                    LinkedList<Actor> s = new LinkedList<Actor>();
-                    LinkedList<Actor> r = new LinkedList<Actor>();
+                    TreeSet<Actor> s = new TreeSet<Actor>();
+                    TreeSet<Actor> r = new TreeSet<Actor>();
                     s.add(it.next());
                     // determine given (ground truth) links
 
@@ -795,7 +796,7 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
                 precisionProperty.add(new Double(recall));
 
-                s.get(0).add(precisionProperty);
+                s.first().add(precisionProperty);
 
                 recallSum += recall;
 
@@ -843,8 +844,8 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
             int n=0;
             while (it.hasNext()) {
                 try {
-                    LinkedList<Actor> s = new LinkedList<Actor>();
-                    LinkedList<Actor> r = new LinkedList<Actor>();
+                    TreeSet<Actor> s = new TreeSet<Actor>();
+                    TreeSet<Actor> r = new TreeSet<Actor>();
                     s.add(it.next());
                     // determine given (ground truth) links
 
@@ -928,7 +929,7 @@ public class PrecisionRecallFMeasure extends ModelShell implements Algorithm {
 
                     precisionProperty.add(new Double(fMeasure));
 
-                    s.get(0).add(precisionProperty);
+                    s.first().add(precisionProperty);
 
                     fMeasureSum += fMeasure;
 

@@ -26,7 +26,7 @@ import java.util.Iterator;
 
 import java.util.LinkedHashMap;
 
-import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 import java.util.LinkedList;
 
@@ -80,7 +80,7 @@ public class FindStronglyConnectedComponentsCore extends ModelShell{
 
     int actorCount = 0;
 
-    LinkedHashSet<Actor> component = new LinkedHashSet<Actor>();
+    TreeSet<Actor> component = new TreeSet<Actor>();
 
     String relation = "Knows";
 

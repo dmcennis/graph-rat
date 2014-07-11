@@ -4,7 +4,7 @@
 package org.mcennis.graphrat.algorithm.reusablecores;
 
 import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
+import java.util.LinkedTreeSet;
 import java.util.LinkedList;
 import java.util.Properties;
 import java.util.Stack;
@@ -29,7 +29,7 @@ public class FindStronglyConnectedComponentsCore extends ModelShell{
     LinkedHashMap<Actor, Integer> lowLink = new LinkedHashMap<Actor, Integer>();
     Stack<Actor> stack = new Stack<Actor>();
     int actorCount = 0;
-    LinkedHashSet<Actor> component = new LinkedHashSet<Actor>();
+    LinkedTreeSet<Actor> component = new LinkedTreeSet<Actor>();
     String relation = "Knows";
     String mode = "User";
     String graphPrefix = "Component ";

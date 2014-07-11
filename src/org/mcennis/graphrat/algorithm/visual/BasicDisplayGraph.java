@@ -26,16 +26,14 @@ package org.mcennis.graphrat.algorithm.visual;
 
 
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
 
 import javax.swing.JFrame;
 
+import org.dynamicfactory.descriptors.Properties;
 import org.mcennis.graphrat.graph.Graph;
 
 import org.mcennis.graphrat.actor.Actor;
@@ -132,7 +130,7 @@ public class BasicDisplayGraph extends ModelShell implements Algorithm {
         schema.addColumn("label", String.class, "");
 
         graph.getNodeTable().addColumns(schema);
-        Collection<Actor> actor = (AlgorithmMacros.filterActor(parameter, g, ((ActorQuery)parameter.get("Mode").get()).execute(g, null, null)));
+        SortedSet<Actor> actor = (AlgorithmMacros.filterActor(parameter, g, ((ActorQuery)parameter.get("Mode").get()).execute(g, null, null)));
         Actor[] a = actor.toArray(new Actor[]{});
         if (a != null) {
 

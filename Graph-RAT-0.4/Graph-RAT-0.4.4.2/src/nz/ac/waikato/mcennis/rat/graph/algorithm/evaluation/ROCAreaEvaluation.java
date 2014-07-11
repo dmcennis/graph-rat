@@ -4,7 +4,7 @@
  */
 package org.mcennis.graphrat.algorithm.evaluation;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Properties;
 
 import java.util.logging.Level;
@@ -98,7 +98,7 @@ public class ROCAreaEvaluation extends ModelShell implements Algorithm {
                     // acquire derived links
 
                     if ((dLink != null) && (gLink != null)) {
-                        HashSet<Actor> given = new HashSet<Actor>();
+                        TreeSet<Actor> given = new TreeSet<Actor>();
                         for (int i = 0; i < gLink.length; ++i) {
                             given.add(gLink[i].getDestination());
                         }

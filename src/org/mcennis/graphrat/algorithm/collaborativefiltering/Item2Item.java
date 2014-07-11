@@ -33,16 +33,15 @@ import cern.colt.matrix.impl.DenseDoubleMatrix1D;
 
 import cern.colt.matrix.impl.SparseDoubleMatrix2D;
 
-import java.util.HashMap;
+import java.util.*;
+
 import org.dynamicfactory.descriptors.*;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
 
+import org.dynamicfactory.descriptors.Properties;
 import org.mcennis.graphrat.graph.Graph;
 
 import org.mcennis.graphrat.actor.Actor;
@@ -243,11 +242,11 @@ public class Item2Item extends ModelShell implements Algorithm {
 
         // list of all users that have listened to artists
 
-        LinkedList<Actor> userBase = new LinkedList<Actor>();
+        TreeSet<Actor> userBase = new TreeSet<Actor>();
 
         // list of all artists that someone in the user list has listened to
 
-        LinkedList<Actor> artistBase = new LinkedList<Actor>();
+        TreeSet<Actor> artistBase = new TreeSet<Actor>();
 
 
 
@@ -261,7 +260,7 @@ public class Item2Item extends ModelShell implements Algorithm {
             // not listened to a song or is not listened to by a user.  This can
 
             // occur if this is a sub-graph of the root graph.
-            LinkedList<Actor> singleActorList = new LinkedList<Actor>();
+            TreeSet<Actor> singleActorList = new TreeSet<Actor>();
             while (user.hasNext()) {
                 singleActorList.add(user.next());
                 Iterator<Link> given = null;

@@ -36,7 +36,7 @@ import java.net.MalformedURLException;
 
 import java.net.URLEncoder;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 
 import org.mcennis.graphrat.crawler.Crawler;
 
@@ -128,7 +128,7 @@ public class LastFMUserExpansion {
 
     
 
-    static HashSet<String> seenUsernames = new HashSet<String>();
+    static TreeSet<String> seenUsernames = new TreeSet<String>();
 
     
 

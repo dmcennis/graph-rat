@@ -24,6 +24,7 @@ package org.mcennis.graphrat.algorithm.evaluation;
 
 
 
+import java.util.TreeSet;
 import java.util.logging.Level;
 
 import java.util.logging.Logger;
@@ -316,8 +317,8 @@ public class MeanErrorEvaluation extends ModelShell implements Algorithm {
         try {
 
 
-            LinkedList<Actor> a = new LinkedList<Actor>();
-            LinkedList<Actor> b = new LinkedList<Actor>();
+            TreeSet<Actor> a = new TreeSet<Actor>();
+            TreeSet<Actor> b = new TreeSet<Actor>();
             Iterator<Actor> it = AlgorithmMacros.filterActor(parameter, g, mode, null, null);
             LinkEnd end = (LinkEnd)parameter.get("Direction").get();
 
@@ -386,7 +387,7 @@ public class MeanErrorEvaluation extends ModelShell implements Algorithm {
 
                     Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean Error"),Double.class);
                     precisionProperty.add(new Double(precision));
-                    a.get(0).add(precisionProperty);
+                    a.first().add(precisionProperty);
                     a.clear();
 
 
@@ -436,8 +437,8 @@ public class MeanErrorEvaluation extends ModelShell implements Algorithm {
         try {
 
 
-            LinkedList<Actor> a = new LinkedList<Actor>();
-            LinkedList<Actor> b = new LinkedList<Actor>();
+            TreeSet<Actor> a = new TreeSet<Actor>();
+            TreeSet<Actor> b = new TreeSet<Actor>();
             Iterator<Actor> it = AlgorithmMacros.filterActor(parameter, g, mode, null, null);
             LinkEnd end = (LinkEnd)parameter.get("Direction").get();
 
@@ -506,7 +507,7 @@ public class MeanErrorEvaluation extends ModelShell implements Algorithm {
 
                     Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Mean Squared Error"),Double.class);
                     precisionProperty.add(new Double(precision));
-                    a.get(0).add(precisionProperty);
+                    a.first().add(precisionProperty);
                     a.clear();
 
 
@@ -553,8 +554,8 @@ public class MeanErrorEvaluation extends ModelShell implements Algorithm {
         try {
 
 
-            LinkedList<Actor> a = new LinkedList<Actor>();
-            LinkedList<Actor> b = new LinkedList<Actor>();
+            TreeSet<Actor> a = new TreeSet<Actor>();
+            TreeSet<Actor> b = new TreeSet<Actor>();
             Iterator<Actor> it = AlgorithmMacros.filterActor(parameter, g, mode, null, null);
             LinkEnd end = (LinkEnd)parameter.get("Direction").get();
 
@@ -623,7 +624,7 @@ public class MeanErrorEvaluation extends ModelShell implements Algorithm {
 
                     Property precisionProperty = PropertyFactory.newInstance().create("BasicProperty",AlgorithmMacros.getDestID(parameter, g, (String)parameter.get("DestinationProperty").get()+" Root Mean Squared Error"),Double.class);
                     precisionProperty.add(new Double(precision));
-                    a.get(0).add(precisionProperty);
+                    a.first().add(precisionProperty);
                     a.clear();
 
 

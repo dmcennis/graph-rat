@@ -124,13 +124,13 @@ public class BasicPathSetTest extends TestCase {
     BasicPathSet instance;
 
 
-    java.util.HashSet<Path> fullSet;
+    java.util.TreeSet<Path> fullSet;
 
 
-    java.util.HashSet<Path> aSource;
+    java.util.TreeSet<Path> aSource;
 
 
-    java.util.HashSet<Path> aDest;
+    java.util.TreeSet<Path> aDest;
 
 
     
@@ -347,13 +347,13 @@ public class BasicPathSetTest extends TestCase {
         
 
 
-        fullSet = new java.util.HashSet<Path>();
+        fullSet = new java.util.TreeSet<Path>();
 
 
-        aSource = new java.util.HashSet<Path>();
+        aSource = new java.util.TreeSet<Path>();
 
 
-        aDest = new java.util.HashSet<Path>();
+        aDest = new java.util.TreeSet<Path>();
 
 
         

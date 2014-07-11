@@ -32,6 +32,7 @@ import cern.colt.matrix.DoubleMatrix2D;
 import cern.colt.matrix.linalg.EigenvalueDecomposition;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.TreeSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -213,7 +214,7 @@ public class PageRankPrestige extends ModelShell implements Algorithm {
 //        }
 
             for (int i = 0; i < a.length; ++i) {
-                LinkedList<Actor> source = new LinkedList<Actor>();
+                TreeSet<Actor> source = new TreeSet<Actor>();
                 source.add(a[i]);
                 Link[] l = (AlgorithmMacros.filterLink(parameter, g, relation.execute(g, source, null, null))).toArray(new Link[]{});
 

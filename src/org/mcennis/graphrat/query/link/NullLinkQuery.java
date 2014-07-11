@@ -23,6 +23,8 @@ package org.mcennis.graphrat.query.link;
 
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.SortedSet;
+
 import org.mcennis.graphrat.graph.Graph;
 import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.link.Link;
@@ -35,11 +37,11 @@ import org.mcennis.graphrat.query.LinkQuery;
  */
 public class NullLinkQuery extends NullQuery implements LinkQuery{
 
-    public Collection<Link> execute(Graph g, Collection<Actor> sourceActorList, Collection<Actor> destinationActorList, Collection<Link> linkList) {
+    public SortedSet<Link> execute(Graph g, SortedSet<Actor> sourceActorList, SortedSet<Actor> destinationActorList, SortedSet<Link> linkList) {
         return super.execute();
     }
 
-    public Iterator<Link> executeIterator(Graph g, Collection<Actor> sourceActorList, Collection<Actor> destinationActorList, Collection<Link> linkList) {
+    public Iterator<Link> executeIterator(Graph g, SortedSet<Actor> sourceActorList, SortedSet<Actor> destinationActorList, SortedSet<Link> linkList) {
         return super.executeIterator();
     }
 

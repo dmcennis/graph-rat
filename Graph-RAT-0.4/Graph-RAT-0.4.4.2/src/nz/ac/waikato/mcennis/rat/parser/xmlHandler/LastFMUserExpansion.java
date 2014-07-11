@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URLEncoder;
-import java.util.HashSet;
+import java.util.TreeSet;
 import org.mcennis.graphrat.crawler.Crawler;
 import org.mcennis.graphrat.graph.Graph;
 import org.mcennis.graphrat.parser.Parser;
@@ -31,7 +31,7 @@ public class LastFMUserExpansion {
     String[] friendsParsers = null;
     String[] similarParsers = null;
     
-    static HashSet<String> seenUsernames = new HashSet<String>();
+    static TreeSet<String> seenUsernames = new TreeSet<String>();
     
     /**
      * Prevent the given username from being exapnded

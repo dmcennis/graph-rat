@@ -25,11 +25,7 @@ import java.io.IOException;
 import org.mcennis.graphrat.query.*;
 
 import java.io.Writer;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.mcennis.graphrat.graph.Graph;
@@ -63,8 +59,8 @@ public class LinkByProperty implements LinkQuery {
         }
     }
 
-    public Collection<Link> execute(Graph g,Collection<Actor> sourceActorList, Collection<Actor> destinationActorList, Collection<Link> linkList) {
-        HashSet<Link> result = new HashSet<Link>();
+    public SortedSet<Link> execute(Graph g,SortedSet<Actor> sourceActorList, SortedSet<Actor> destinationActorList, SortedSet<Link> linkList) {
+        TreeSet<Link> result = new TreeSet<Link>();
         if (g == null) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, "Null graph collection - empty set returned by default");
             return result;
@@ -150,7 +146,7 @@ public class LinkByProperty implements LinkQuery {
         return new LinkByProperty();
     }
 
-    public Iterator<Link> executeIterator(Graph g, Collection<Actor> sourceActorList, Collection<Actor> destinationActorList, Collection<Link> linkList) {
+    public Iterator<Link> executeIterator(Graph g, SortedSet<Actor> sourceActorList, SortedSet<Actor> destinationActorList, SortedSet<Link> linkList) {
         if(!not){
             return new LinkIterator(g,linkList);
         }else{
@@ -173,7 +169,7 @@ public class LinkByProperty implements LinkQuery {
         Link next = null;
         boolean remaining = true;
 
-        public LinkIterator(Graph g, Collection<Link> link) {
+        public LinkIterator(Graph g, SortedSet<Link> link) {
             if (link != null) {
                 LinkedList<Link> actor = new LinkedList<Link>();
                 actor.addAll(link);

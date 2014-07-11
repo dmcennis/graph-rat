@@ -20,12 +20,11 @@
  */
 package org.mcennis.graphrat.algorithm.machinelearning;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Vector;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import org.dynamicfactory.descriptors.Properties;
 import org.mcennis.graphrat.graph.Graph;
 import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.algorithm.Algorithm;
@@ -141,25 +140,25 @@ public class ClassifyPerActor extends ModelShell implements Algorithm {
         targetMode.buildQuery((String) parameter.get("TargetMode").get(),".*",false);
 
         // build a list of new artists
-        Vector<Actor> artists = new Vector<Actor>();
+        TreeSet<Actor> artists = new TreeSet<Actor>();
         artists.addAll(AlgorithmMacros.filterActor(parameter, g, targetMode.execute(g, artists, null)));
 
         // collect the instance variables from the properties to be the 
 
-        for (int i = 0; i < artists.size(); ++i) {
-            Property classifierProperty = artists.get(i).getProperty(AlgorithmMacros.getSourceID(parameter, g, (String) parameter.get("ClassifierProperty").get()));
+        for (Actor i : artists) {
+            Property classifierProperty = i.getProperty(AlgorithmMacros.getSourceID(parameter, g, (String) parameter.get("ClassifierProperty").get()));
             if (!classifierProperty.getValue().isEmpty()) {
                 Classifier classifier = (Classifier) classifierProperty.getValue().get(0);
-                LinkedList<Actor> artist = new LinkedList<Actor>();
-                artist.add(artists.get(i));
+                TreeSet<Actor> artist = new TreeSet<Actor>();
+                artist.add(i);
 
                 Iterator<Actor> users = AlgorithmMacros.filterActor(parameter, g, groundMode, null, null);
                 Instances dataSet = null;
                 boolean firstRun = true;
                 while (users.hasNext()) {
-                    LinkedList<Actor> user = new LinkedList<Actor>();
+                    TreeSet<Actor> user = new TreeSet<Actor>();
                     user.add(users.next());
-                    Property property = user.get(0).getProperty(AlgorithmMacros.getSourceID(parameter, g, (String) parameter.get("SourceProperty").get()));
+                    Property property = user.first().getProperty(AlgorithmMacros.getSourceID(parameter, g, (String) parameter.get("SourceProperty").get()));
                     if (property.getPropertyClass().getName().contentEquals(Instance.class.getName())) {
                         List values = property.getValue();
                         if (!values.isEmpty()) {
@@ -172,9 +171,9 @@ public class ClassifyPerActor extends ModelShell implements Algorithm {
                                 for (int j = 0; j < current.numAttributes(); ++j) {
                                     attributes.addElement(current.attribute(j));
                                 }
-                                Attribute classValue = new Attribute(artists.get(i).getID());
+                                Attribute classValue = new Attribute(i.getID());
                                 attributes.addElement(classValue);
-                                dataSet = new Instances(artists.get(i).getID(), attributes, 1000);
+                                dataSet = new Instances(i.getID(), attributes, 1000);
                                 dataSet.setClassIndex(dataSet.numAttributes() - 1);
                             }
 
@@ -190,9 +189,9 @@ public class ClassifyPerActor extends ModelShell implements Algorithm {
                                 if ((!Double.isNaN(strength))&&(strength != 0.0)) {
                                     Link link = LinkFactory.newInstance().create((String) parameter.get("Relation").get());
                                     if ((LinkEnd) parameter.get("LinkEnd").get() == LinkEnd.SOURCE) {
-                                        link.set(user.get(0), strength, artist.get(0));
+                                        link.set(user.first(), strength, artist.first());
                                     } else {
-                                        link.set(artist.get(0), strength, user.get(0));
+                                        link.set(artist.first(), strength, user.first());
                                     }
                                     g.add(link);
                                 }

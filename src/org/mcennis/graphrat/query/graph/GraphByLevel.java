@@ -24,10 +24,7 @@ package org.mcennis.graphrat.query.graph;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.mcennis.graphrat.graph.Graph;
@@ -43,7 +40,7 @@ public class GraphByLevel implements GraphQuery {
 
     int level = 1;
 
-    public Iterator<Graph> executeIterator(Graph g, Collection<Actor> actorList, Collection<Link> linkList) {
+    public Iterator<Graph> executeIterator(Graph g, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
         return execute(g,actorList,linkList).iterator();
     }
 
@@ -54,14 +51,13 @@ public class GraphByLevel implements GraphQuery {
     Operation op = Operation.EQ;
     transient State state = State.UNINITIALIZED;
 
-    public Collection<Graph> execute(Graph g, Collection<Actor> actorList, Collection<Link> linkList) {
-        LinkedList<Graph> result = new LinkedList<Graph>();
+    public SortedSet<Graph> execute(Graph g, SortedSet<Actor> actorList, SortedSet<Link> linkList) {
+        TreeSet<Graph> result = new TreeSet<Graph>();
         if (g == null) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, "Null graph collection - empty set returned by default");
             return result;
         }
         traverseChildren(g, result, 0);
-        Collections.sort(result);
         return result;
     }
 
@@ -74,7 +70,7 @@ public class GraphByLevel implements GraphQuery {
         }
     }
 
-    private void traverseChildren(Graph g, LinkedList<Graph> result, int count) {
+    private void traverseChildren(Graph g, TreeSet<Graph> result, int count) {
         Iterator<Graph> children = g.getChildren().iterator();
         while (children.hasNext()) {
             Graph child = children.next();
@@ -129,7 +125,7 @@ public class GraphByLevel implements GraphQuery {
         }
     }
 
-    private void operate(Graph graph, LinkedList<Graph> result, int count) {
+    private void operate(Graph graph, TreeSet<Graph> result, int count) {
         switch (op) {
             case EQ:
                 if (count == level) {
