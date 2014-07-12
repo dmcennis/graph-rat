@@ -2,131 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95bfe8ea-373e-4f89-9c30-3be2a1976d01" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/ActorByLink.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/ActorByLink.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/ActorByMode.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/ActorByMode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/ActorByProperty.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/ActorByProperty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/ActorQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/ActorQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/AddBasicGeodesicPaths.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/AddBasicGeodesicPaths.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/prestige/AddCombinedCloseness.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/prestige/AddCombinedCloseness.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/aggregators/AggregateByLinkProperty.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/aggregators/AggregateByLinkProperty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/aggregators/AggregateByLinkProperty.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/aggregators/AggregateByLinkProperty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/aggregators/AggregateLinks.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/aggregators/AggregateLinks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/aggregators/AggregateLinks.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/aggregators/AggregateLinks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/AlgorithmFactory.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/AlgorithmFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/AlgorithmMacros.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/AlgorithmMacros.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/AllGraphs.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/AllGraphs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/AndActorQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/AndActorQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/AndGraphQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/AndGraphQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/AndLinkQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/AndLinkQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/AndQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/AndQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/artist/decider/ArtistDeciderBase.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/artist/decider/ArtistDeciderBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/collaborativefiltering/AssociativeMining.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/collaborativefiltering/AssociativeMining.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/collaborativefiltering/AssociativeMining.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/collaborativefiltering/AssociativeMining.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/collaborativefiltering/AssociativeMiningItemSetGroup.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/collaborativefiltering/AssociativeMiningItemSetGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/collaborativefiltering/AssociativeMiningItemSetGroup.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/collaborativefiltering/AssociativeMiningItemSetGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/collaborativefiltering/AssociativeMiningItems.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/collaborativefiltering/AssociativeMiningItems.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/collaborativefiltering/AssociativeMiningItems.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/collaborativefiltering/AssociativeMiningItems.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/test/nz/ac/waikato/mcennis/rat/graph/algorithm/collaborativefiltering/AssociativeMiningItemsTest.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/test/nz/ac/waikato/mcennis/rat/graph/algorithm/collaborativefiltering/AssociativeMiningItemsTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/org/mcennis/graphrat/algorithm/collaborativefiltering/AssociativeMiningItemsTest.java" afterPath="$PROJECT_DIR$/test/org/mcennis/graphrat/algorithm/collaborativefiltering/AssociativeMiningItemsTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/visual/BasicDisplayGraph.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/visual/BasicDisplayGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/path/BasicPath.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/path/BasicPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/path/BasicPath.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/path/BasicPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/test/nz/ac/waikato/mcennis/rat/graph/path/BasicPathSetTest.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/test/nz/ac/waikato/mcennis/rat/graph/path/BasicPathSetTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/org/mcennis/graphrat/path/BasicPathSetTest.java" afterPath="$PROJECT_DIR$/test/org/mcennis/graphrat/path/BasicPathSetTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/jAudio/src/cern/jet/random/engine/Benchmark.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/jAudio/src/cern/jet/random/engine/Benchmark.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/clustering/BicomponentClusterer.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/clustering/BicomponentClusterer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/BicomponentClusterer.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/BicomponentClusterer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/machinelearning/BuildClassifierPerActor.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/machinelearning/BuildClassifierPerActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/machinelearning/BuildClassifierSingleAttribute.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/machinelearning/BuildClassifierSingleAttribute.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/reusablecores/distance/ChebyshevDistance.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/reusablecores/distance/ChebyshevDistance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/reusablecores/distance/ChebyshevDistance.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/reusablecores/distance/ChebyshevDistance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/machinelearning/ClassifyPerActor.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/machinelearning/ClassifyPerActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/machinelearning/ClassifySingleAttribute.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/machinelearning/ClassifySingleAttribute.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/Clique.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/Clique.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/graph/Clique.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/graph/Clique.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/visual/ColoredByPropertyGraph.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/visual/ColoredByPropertyGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/visual/ColoredByPropertyGraph.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/visual/ColoredByPropertyGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/DegreeGraphProperties.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/DegreeGraphProperties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/DerbyGraph.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/DerbyGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/transformToArray/DirectedTriplesHistogram.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/transformToArray/DirectedTriplesHistogram.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/clustering/EnumerateMaximalCliques.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/clustering/EnumerateMaximalCliques.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/EnumerateMaximalCliques.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/EnumerateMaximalCliques.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/ExtractMusicCoverage.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/ExtractMusicCoverage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/reusablecores/FindStronglyConnectedComponentsCore.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/reusablecores/FindStronglyConnectedComponentsCore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/reusablecores/FindStronglyConnectedComponentsCore.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/reusablecores/FindStronglyConnectedComponentsCore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/clustering/FindWeaklyConnectedComponents.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/clustering/FindWeaklyConnectedComponents.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/FindWeaklyConnectedComponents.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/FindWeaklyConnectedComponents.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/GeodesicPaths.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/GeodesicPaths.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/GraphByActor.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/GraphByActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/GraphByID.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/GraphByID.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/GraphByLevel.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/GraphByLevel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/GraphByLink.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/GraphByLink.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/GraphByProperty.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/GraphByProperty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/GraphIndex.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/GraphIndex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/graph/GraphIndex.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/graph/GraphIndex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/GraphQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/GraphQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/HITSPrestige.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/HITSPrestige.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/evaluation/HalfLife.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/evaluation/HalfLife.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/IdentifyBridges.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/IdentifyBridges.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/collaborativefiltering/Item2Item.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/collaborativefiltering/Item2Item.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/evaluation/KendallTau.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/evaluation/KendallTau.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/evaluation/KendallTau.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/evaluation/KendallTau.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/parser/xmlHandler/LastFMUserExpansion.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/parser/xmlHandler/LastFMUserExpansion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/parser/xmlHandler/LastFMUserExpansion.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/parser/xmlHandler/LastFMUserExpansion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/parser/xmlHandler/LastFMUserTopArtists.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/parser/xmlHandler/LastFMUserTopArtists.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/parser/xmlHandler/LastFMUserTopArtists.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/parser/xmlHandler/LastFMUserTopArtists.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/LinkByActor.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/LinkByActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/LinkByProperty.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/LinkByProperty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/LinkByRelation.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/LinkByRelation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/LinkQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/LinkQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/evaluation/MeanErrorEvaluation.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/evaluation/MeanErrorEvaluation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/clustering/NaiveImplementClique.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/clustering/NaiveImplementClique.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/clustering/NormanGirvanEdgeBetweenessClustering.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/clustering/NormanGirvanEdgeBetweenessClustering.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/NormanGirvanEdgeBetweenessClustering.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/NormanGirvanEdgeBetweenessClustering.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/NullActorQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/NullActorQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/NullGraphQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/NullGraphQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/NullLinkQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/NullLinkQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/NullQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/NullQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/OptimizedPathBase.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/OptimizedPathBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/OptimizedPathBase.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/OptimizedPathBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/OrActorQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/OrActorQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/OrGraphQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/OrGraphQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/OrLinkQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/OrLinkQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/OrQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/OrQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/PageRankPrestige.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/PageRankPrestige.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/bibliography/XMLParser/ParseBibliographyXML.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/bibliography/XMLParser/ParseBibliographyXML.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/parser/xmlHandler/ParseBibliographyXML.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/parser/xmlHandler/ParseBibliographyXML.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/bibliography/XMLParser/ParseClassLabel.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/bibliography/XMLParser/ParseClassLabel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/parser/xmlHandler/ParseClassLabel.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/parser/xmlHandler/ParseClassLabel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/reusablecores/PathBaseCore.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/reusablecores/PathBaseCore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/reusablecores/PathBaseCore.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/reusablecores/PathBaseCore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/evaluation/PearsonCorrelation.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/evaluation/PearsonCorrelation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/evaluation/PrecisionRecallFMeasure.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/evaluation/PrecisionRecallFMeasure.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/aggregators/PropertyToLink.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/aggregators/PropertyToLink.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/evaluation/ROCAreaEvaluation.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/evaluation/ROCAreaEvaluation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/evaluation/ROCAreaEvaluation.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/evaluation/ROCAreaEvaluation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/evaluation/RecommendationError.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/evaluation/RecommendationError.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/ScalableHitsPrestige.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/ScalableHitsPrestige.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/ScalablePageRankPrestige.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/ScalablePageRankPrestige.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/similarity/SimilarityByLink.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/similarity/SimilarityByLink.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/similarity/SimilarityByLink.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/similarity/SimilarityByLink.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/test/nz/ac/waikato/mcennis/rat/graph/algorithm/similarity/SimilarityByLinkTest.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/test/nz/ac/waikato/mcennis/rat/graph/algorithm/similarity/SimilarityByLinkTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/org/mcennis/graphrat/algorithm/similarity/SimilarityByLinkTest.java" afterPath="$PROJECT_DIR$/test/org/mcennis/graphrat/algorithm/similarity/SimilarityByLinkTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/similarity/SimilarityByProperty.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/similarity/SimilarityByProperty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/clustering/TraditionalEdgeBetweenessClustering.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/clustering/TraditionalEdgeBetweenessClustering.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/TraditionalEdgeBetweenessClustering.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/TraditionalEdgeBetweenessClustering.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/TrimEdgeUsers.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/TrimEdgeUsers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/transformToArray/UndirectedTriplesHistogram.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/transformToArray/UndirectedTriplesHistogram.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/collaborativefiltering/User2User.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/collaborativefiltering/User2User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/UserIDList.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/UserIDList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/crawler/WebCrawler.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/crawler/WebCrawler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/crawler/WebCrawler.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/crawler/WebCrawler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/clustering/WekaClassifierClusterer.java" afterPath="$PROJECT_DIR$/Graph-RAT-0.4/Graph-RAT-0.4.4.2/src/nz/ac/waikato/mcennis/rat/graph/algorithm/clustering/WekaClassifierClusterer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/WekaClassifierClusterer.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/WekaClassifierClusterer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/XorActorQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/XorActorQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/XorGraphQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/graph/XorGraphQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/XorLinkQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/XorLinkQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/XorQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/XorQuery.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/G.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByModeTest.java" afterPath="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByModeTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="graph-rat.git.iws" />
@@ -189,176 +66,43 @@
     <favorites_list name="graph-rat.git" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="SimilarityByProperty.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/similarity/SimilarityByProperty.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="779" max-vertical-offset="5423">
-              <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2637#2651#0" expanded="true" />
-                <element signature="e#2707#2721#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActorDistanceMatrix.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/transformToArray/ActorDistanceMatrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="813" max-vertical-offset="5712">
-              <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2317#2331#0" expanded="true" />
-                <element signature="e#2387#2401#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DirectedTriplesHistogram.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/transformToArray/DirectedTriplesHistogram.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1680" max-vertical-offset="17612">
-              <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3033#3047#0" expanded="true" />
-                <element signature="e#3103#3117#0" expanded="true" />
-                <element signature="e#6815#6822#0" expanded="true" />
-                <element signature="e#6902#6909#0" expanded="true" />
-                <element signature="e#6960#6967#0" expanded="true" />
-                <element signature="e#21381#21388#0" expanded="true" />
-                <element signature="e#21459#21466#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UndirectedTriplesHistogram.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/transformToArray/UndirectedTriplesHistogram.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1493" max-vertical-offset="7497">
-              <caret line="121" column="13" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3042#3056#0" expanded="true" />
-                <element signature="e#3112#3126#0" expanded="true" />
-                <element signature="e#6612#6619#0" expanded="true" />
-                <element signature="e#6699#6706#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicDisplayGraph.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/visual/BasicDisplayGraph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1697" max-vertical-offset="4624">
-              <caret line="132" column="17" selection-start-line="132" selection-start-column="17" selection-end-line="132" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2048#2062#0" expanded="true" />
-                <element signature="e#2118#2132#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlgorithmFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/AlgorithmFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2924" max-vertical-offset="6137">
-              <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#10097#10105#0" expanded="true" />
-                <element signature="e#10910#10918#0" expanded="true" />
-                <element signature="e#11381#11389#0" expanded="true" />
-                <element signature="e#11826#11834#0" expanded="true" />
-                <element signature="e#12780#12788#0" expanded="true" />
-                <element signature="e#13481#13489#0" expanded="true" />
-                <element signature="e#13934#13942#0" expanded="true" />
-                <element signature="e#14550#14558#0" expanded="true" />
-                <element signature="e#14872#14880#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DegreeGraphProperties.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/DegreeGraphProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2904" max-vertical-offset="7412">
-              <caret line="203" column="19" selection-start-line="203" selection-start-column="19" selection-end-line="203" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2363#2377#0" expanded="true" />
-                <element signature="e#2433#2447#0" expanded="true" />
-                <element signature="e#7505#7512#0" expanded="true" />
-                <element signature="e#9068#9075#0" expanded="true" />
-                <element signature="e#10668#10675#0" expanded="true" />
-                <element signature="e#12451#12458#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TrimEdgeUsers.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/TrimEdgeUsers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1765" max-vertical-offset="3859">
-              <caret line="136" column="18" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2130#2144#0" expanded="true" />
-                <element signature="e#2200#2214#0" expanded="true" />
-                <element signature="e#5228#5235#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BicomponentClusterer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/BicomponentClusterer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3236" max-vertical-offset="8704">
-              <caret line="219" column="25" selection-start-line="219" selection-start-column="25" selection-end-line="219" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3079#3093#0" expanded="true" />
-                <element signature="e#3149#3163#0" expanded="true" />
-                <element signature="e#7005#7023#0" expanded="true" />
-                <element signature="e#17465#17471#0" expanded="true" />
-                <element signature="e#17517#17524#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActorByModeTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByModeTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33238637" vertical-offset="5017" max-vertical-offset="6290">
-              <caret line="302" column="38" selection-start-line="302" selection-start-column="38" selection-end-line="302" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#11645#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#8252#8259#0" expanded="true" />
-                <element signature="e#8508#8515#0" expanded="true" />
-                <element signature="e#8764#8771#0" expanded="true" />
-                <element signature="e#9017#9024#0" expanded="true" />
-                <element signature="e#9271#9278#0" expanded="true" />
-                <element signature="e#9525#9532#0" expanded="true" />
-                <element signature="e#9779#9786#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="ActorByModeTest.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByModeTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.8011696" vertical-offset="30359" max-vertical-offset="30872">
+                  <caret line="1810" column="1" selection-start-line="1810" selection-start-column="1" selection-end-line="1810" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#0#73821#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="ActorByModeTest.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByModeTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.030195381" vertical-offset="544" max-vertical-offset="30872">
+                  <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#73821#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
+                    <marker date="1405176459130" expanded="true" signature="73813:73819" placeholder="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -378,9 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/XorLinkQuery.java" />
-        <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/XorActorQuery.java" />
-        <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/OrActorQuery.java" />
         <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/AndActorQuery.java" />
         <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/ScalablePageRankPrestige.java" />
         <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/machinelearning/BuildClassifierSingleAttribute.java" />
@@ -429,6 +170,9 @@
         <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/DegreeGraphProperties.java" />
         <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/TrimEdgeUsers.java" />
         <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/BicomponentClusterer.java" />
+        <option value="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/QueryGraphHelper.java" />
+        <option value="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/G.java" />
+        <option value="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByModeTest.java" />
       </list>
     </option>
   </component>
@@ -545,568 +289,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="property" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="link" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actor" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="visual" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transformToArray" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="similarity" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reusablecores" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reusablecores" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datavector" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reusablecores" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datavector" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reusablecores" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aggregator" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reusablecores" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aggregator" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prestige" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="machinelearning" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="evaluation" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="collaborativefiltering" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clustering" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph-rat.git" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphrat" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aggregators" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1757,7 +939,7 @@
       <workItem from="1404746647166" duration="4636000" />
       <workItem from="1404768469085" duration="474000" />
       <workItem from="1404863082611" duration="1228000" />
-      <workItem from="1404961295871" duration="21857000" />
+      <workItem from="1404961295871" duration="29045000" />
     </task>
     <task id="LOCAL-00001" summary="Graph-RAT git repository has disappeared.  I'm now uploading the least incomplete version I still have access to.  This is Graph-RAT 0.5.0.21 and Graph-RAT 0.4.5.0.">
       <created>1402596579066</created>
@@ -1803,11 +985,19 @@
       <created>1405039312437</created>
       <updated>1405039312437</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Queries are now restored to sorted output.">
+      <created>1405107988750</created>
+      <updated>1405107988750</updated>
+    </task>
+    <task id="LOCAL-00013" summary="est file updated">
+      <created>1405108032047</created>
+      <updated>1405108032047</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75143000" />
+    <option name="totallyTimeSpent" value="82331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="5" width="1215" height="736" extended-state="0" />
@@ -1827,7 +1017,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724252" sideWeight="0.49958298" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30232558" sideWeight="0.49791494" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30564785" sideWeight="0.49791494" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1853,8 +1043,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724252" sideWeight="0.49958298" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29274395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29274395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1864,7 +1054,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.49874896" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986711" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30232558" sideWeight="0.49791494" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30564785" sideWeight="0.49791494" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1899,7 +1089,9 @@
     <MESSAGE value="Links are now debugged" />
     <MESSAGE value="MemGraph and GraphCompare now debugged." />
     <MESSAGE value="Graphs are now restored to sorted output." />
-    <option name="LAST_COMMIT_MESSAGE" value="Graphs are now restored to sorted output." />
+    <MESSAGE value="Queries are now restored to sorted output." />
+    <MESSAGE value="est file updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="est file updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1919,28 +1111,16 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/machinelearning/BuildClassifierSingleAttribute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5304">
-          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-          <folding>
-            <element signature="e#2350#2364#0" expanded="true" />
-            <element signature="e#2420#2434#0" expanded="true" />
-            <element signature="e#8081#8088#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/machinelearning/ClassifyPerActor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2785" max-vertical-offset="4420">
           <caret line="195" column="48" selection-start-line="195" selection-start-column="48" selection-end-line="195" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2223#2237#0" expanded="true" />
-            <element signature="e#2293#2307#0" expanded="true" />
-            <element signature="e#6718#6725#0" expanded="true" />
-            <element signature="e#7046#7053#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2223#2237#0" expanded="false" />
+            <element signature="e#2293#2307#0" expanded="false" />
+            <element signature="e#6718#6725#0" expanded="false" />
+            <element signature="e#7046#7053#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1950,11 +1130,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3083" max-vertical-offset="4675">
           <caret line="207" column="75" selection-start-line="207" selection-start-column="75" selection-end-line="207" selection-end-column="75" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2337#2351#0" expanded="true" />
-            <element signature="e#2407#2421#0" expanded="true" />
-            <element signature="e#6730#6737#0" expanded="true" />
-            <element signature="e#7479#7486#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2337#2351#0" expanded="false" />
+            <element signature="e#2407#2421#0" expanded="false" />
+            <element signature="e#6730#6737#0" expanded="false" />
+            <element signature="e#7479#7486#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1988,10 +1168,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="728" max-vertical-offset="7089">
           <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2740#2754#0" expanded="true" />
-            <element signature="e#2810#2824#0" expanded="true" />
-            <element signature="e#7431#7438#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2740#2754#0" expanded="false" />
+            <element signature="e#2810#2824#0" expanded="false" />
+            <element signature="e#7431#7438#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2009,10 +1189,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3132" max-vertical-offset="6579">
           <caret line="216" column="22" selection-start-line="216" selection-start-column="22" selection-end-line="216" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2760#2774#0" expanded="true" />
-            <element signature="e#2830#2844#0" expanded="true" />
-            <element signature="e#7848#7855#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2760#2774#0" expanded="false" />
+            <element signature="e#2830#2844#0" expanded="false" />
+            <element signature="e#7848#7855#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2022,10 +1202,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="772" max-vertical-offset="8024">
           <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2764#2778#0" expanded="true" />
-            <element signature="e#2834#2848#0" expanded="true" />
-            <element signature="e#8069#8076#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2764#2778#0" expanded="false" />
+            <element signature="e#2834#2848#0" expanded="false" />
+            <element signature="e#8069#8076#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2035,9 +1215,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="6069">
           <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2819#2833#0" expanded="true" />
-            <element signature="e#2889#2903#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2819#2833#0" expanded="false" />
+            <element signature="e#2889#2903#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2231,9 +1411,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="638" max-vertical-offset="6834">
           <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1670#1677#0" expanded="true" />
-            <element signature="e#1958#1965#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1670#1677#0" expanded="false" />
+            <element signature="e#1958#1965#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2243,9 +1423,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="2686">
           <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2234#2244#0" expanded="true" />
-            <element signature="e#3731#3739#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2234#2244#0" expanded="false" />
+            <element signature="e#3731#3739#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2263,8 +1443,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="269" max-vertical-offset="5593">
           <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
           <folding>
-            <element signature="e#2650#2657#0" expanded="true" />
-            <element signature="e#4552#4559#0" expanded="true" />
+            <element signature="e#2650#2657#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2274,9 +1453,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="769" max-vertical-offset="5916">
           <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2551#2565#0" expanded="true" />
-            <element signature="e#2621#2635#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2551#2565#0" expanded="false" />
+            <element signature="e#2621#2635#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2294,10 +1473,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1000" max-vertical-offset="6137">
           <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2704#2718#0" expanded="true" />
-            <element signature="e#2774#2788#0" expanded="true" />
-            <element signature="e#8349#8356#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2704#2718#0" expanded="false" />
+            <element signature="e#2774#2788#0" expanded="false" />
+            <element signature="e#8349#8356#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2307,9 +1486,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="779" max-vertical-offset="5423">
           <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2637#2651#0" expanded="true" />
-            <element signature="e#2707#2721#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2637#2651#0" expanded="false" />
+            <element signature="e#2707#2721#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2319,9 +1498,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="813" max-vertical-offset="5712">
           <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2317#2331#0" expanded="true" />
-            <element signature="e#2387#2401#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2317#2331#0" expanded="false" />
+            <element signature="e#2387#2401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2331,14 +1510,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1680" max-vertical-offset="17612">
           <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3033#3047#0" expanded="true" />
-            <element signature="e#3103#3117#0" expanded="true" />
-            <element signature="e#6815#6822#0" expanded="true" />
-            <element signature="e#6902#6909#0" expanded="true" />
-            <element signature="e#6960#6967#0" expanded="true" />
-            <element signature="e#21381#21388#0" expanded="true" />
-            <element signature="e#21459#21466#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3033#3047#0" expanded="false" />
+            <element signature="e#3103#3117#0" expanded="false" />
+            <element signature="e#6815#6822#0" expanded="false" />
+            <element signature="e#6902#6909#0" expanded="false" />
+            <element signature="e#6960#6967#0" expanded="false" />
+            <element signature="e#21381#21388#0" expanded="false" />
+            <element signature="e#21459#21466#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2348,11 +1527,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1493" max-vertical-offset="7497">
           <caret line="121" column="13" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3042#3056#0" expanded="true" />
-            <element signature="e#3112#3126#0" expanded="true" />
-            <element signature="e#6612#6619#0" expanded="true" />
-            <element signature="e#6699#6706#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3042#3056#0" expanded="false" />
+            <element signature="e#3112#3126#0" expanded="false" />
+            <element signature="e#6612#6619#0" expanded="false" />
+            <element signature="e#6699#6706#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2362,9 +1541,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1697" max-vertical-offset="4624">
           <caret line="132" column="17" selection-start-line="132" selection-start-column="17" selection-end-line="132" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2048#2062#0" expanded="true" />
-            <element signature="e#2118#2132#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2048#2062#0" expanded="false" />
+            <element signature="e#2118#2132#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2374,16 +1553,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2924" max-vertical-offset="6137">
           <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#10097#10105#0" expanded="true" />
-            <element signature="e#10910#10918#0" expanded="true" />
-            <element signature="e#11381#11389#0" expanded="true" />
-            <element signature="e#11826#11834#0" expanded="true" />
-            <element signature="e#12780#12788#0" expanded="true" />
-            <element signature="e#13481#13489#0" expanded="true" />
-            <element signature="e#13934#13942#0" expanded="true" />
-            <element signature="e#14550#14558#0" expanded="true" />
-            <element signature="e#14872#14880#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#10097#10105#0" expanded="false" />
+            <element signature="e#10910#10918#0" expanded="false" />
+            <element signature="e#11381#11389#0" expanded="false" />
+            <element signature="e#11826#11834#0" expanded="false" />
+            <element signature="e#12780#12788#0" expanded="false" />
+            <element signature="e#13481#13489#0" expanded="false" />
+            <element signature="e#13934#13942#0" expanded="false" />
+            <element signature="e#14550#14558#0" expanded="false" />
+            <element signature="e#14872#14880#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2393,13 +1572,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2904" max-vertical-offset="7412">
           <caret line="203" column="19" selection-start-line="203" selection-start-column="19" selection-end-line="203" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2363#2377#0" expanded="true" />
-            <element signature="e#2433#2447#0" expanded="true" />
-            <element signature="e#7505#7512#0" expanded="true" />
-            <element signature="e#9068#9075#0" expanded="true" />
-            <element signature="e#10668#10675#0" expanded="true" />
-            <element signature="e#12451#12458#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2363#2377#0" expanded="false" />
+            <element signature="e#2433#2447#0" expanded="false" />
+            <element signature="e#7505#7512#0" expanded="false" />
+            <element signature="e#9068#9075#0" expanded="false" />
+            <element signature="e#10668#10675#0" expanded="false" />
+            <element signature="e#12451#12458#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2409,10 +1588,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1765" max-vertical-offset="3859">
           <caret line="136" column="18" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2130#2144#0" expanded="true" />
-            <element signature="e#2200#2214#0" expanded="true" />
-            <element signature="e#5228#5235#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2130#2144#0" expanded="false" />
+            <element signature="e#2200#2214#0" expanded="false" />
+            <element signature="e#5228#5235#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2422,30 +1601,33 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3236" max-vertical-offset="8704">
           <caret line="219" column="25" selection-start-line="219" selection-start-column="25" selection-end-line="219" selection-end-column="25" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#3079#3093#0" expanded="false" />
+            <element signature="e#3149#3163#0" expanded="false" />
+            <element signature="e#7005#7023#0" expanded="false" />
+            <element signature="e#17465#17471#0" expanded="false" />
+            <element signature="e#17517#17524#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/G.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1775" max-vertical-offset="2244">
+          <caret line="138" column="21" selection-start-line="138" selection-start-column="21" selection-end-line="138" selection-end-column="21" />
+          <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3079#3093#0" expanded="true" />
-            <element signature="e#3149#3163#0" expanded="true" />
-            <element signature="e#7005#7023#0" expanded="true" />
-            <element signature="e#17465#17471#0" expanded="true" />
-            <element signature="e#17517#17524#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByModeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33238637" vertical-offset="5017" max-vertical-offset="6290">
-          <caret line="302" column="38" selection-start-line="302" selection-start-column="38" selection-end-line="302" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.8011696" vertical-offset="30359" max-vertical-offset="30872">
+          <caret line="1810" column="1" selection-start-line="1810" selection-start-column="1" selection-end-line="1810" selection-end-column="1" />
           <folding>
-            <element signature="e#0#11645#0" expanded="true" />
+            <element signature="e#0#73821#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#8252#8259#0" expanded="true" />
-            <element signature="e#8508#8515#0" expanded="true" />
-            <element signature="e#8764#8771#0" expanded="true" />
-            <element signature="e#9017#9024#0" expanded="true" />
-            <element signature="e#9271#9278#0" expanded="true" />
-            <element signature="e#9525#9532#0" expanded="true" />
-            <element signature="e#9779#9786#0" expanded="true" />
           </folding>
         </state>
       </provider>

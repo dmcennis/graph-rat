@@ -27,310 +27,928 @@ import org.mcennis.graphrat.actor.Actor;
 import org.mcennis.graphrat.graph.MemGraph;
 import org.mcennis.graphrat.link.Link;
 import org.mcennis.graphrat.link.LinkFactory;
+import org.mcennis.graphrat.query.actor.ActorByMode;
+import org.mcennis.graphrat.query.actor.G;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.TreeSet;
-import java.util.Vector;
+import java.util.*;
 
 public class ActorByModeTest extends TestCase {
-
     ActorByMode mode;
-
-    MemGraph graph;
-
-    Actor a;
-    Actor b;
-    Actor c;
-    Actor d;
-    Actor e;
-    
-    Actor a1;
-    Actor a2;
-    Actor a3;
-    Actor a4;
-
-    Link ab;
-    Link ac;
-    Link bc;
-    Link cd;
-
-    Link a1a2;
-    Link a2a1;
-    Link a3a4;
-    Link a4a3;
-
+    G g;
+    TreeSet<Actor> actorSet;
+    TreeSet<Link> linkSet;
     public void setUp() throws Exception {
-        graph = new MemGraph();
-        a = ActorFactory.newInstance().create("A","a");
-        graph.add(a);
-        b = ActorFactory.newInstance().create("A","b");
-        graph.add(b);
-        c = ActorFactory.newInstance().create("A","c");
-        graph.add(c);
-        d = ActorFactory.newInstance().create("A","d");
-        graph.add(d);
-        e = ActorFactory.newInstance().create("A","e");
-        graph.add(e);
-
-        a1 = ActorFactory.newInstance().create("B","a1");
-        graph.add(a1);
-        a2 = ActorFactory.newInstance().create("B","a2");
-        graph.add(a2);
-        a3 = ActorFactory.newInstance().create("B","a3");
-        graph.add(a3);
-        a4 = ActorFactory.newInstance().create("B","a4");
-        graph.add(a4);
-
-        ab = LinkFactory.newInstance().create("Relation");
-        ab.set(a,1.0,b);
-        graph.add(ab);
-        bc = LinkFactory.newInstance().create("Relation");
-        bc.set(b, 1.0, c);
-        graph.add(bc);
-        cd = LinkFactory.newInstance().create("Relation");
-        cd.set(c, 1.0, d);
-        graph.add(cd);
-        ac = LinkFactory.newInstance().create("Relation");
-        ac.set(a,1.0,c);
-        graph.add(ac);
-
-        a1a2 = LinkFactory.newInstance().create("Links");
-        a1a2.set(a1,1.0,a2);
-        graph.add(a1a2);
-        a2a1 = LinkFactory.newInstance().create("Links");
-        a2a1.set(a2,1.0,a1);
-        graph.add(a2a1);
-        a3a4 = LinkFactory.newInstance().create("Links");
-        a3a4.set(a3,1.0,a4);
-        graph.add(a3a4);
-        a4a3 = LinkFactory.newInstance().create("Links");
-        a4a3.set(a4,1.0,a3);
-        graph.add(a4a3);
+        g = new G();
+        actorSet = new TreeSet<Actor>();
+        linkSet = new TreeSet<Link>();
+        actorSet.add(g.b);
+        actorSet.add(g.d);
+        actorSet.add(g.a1);
+        linkSet.add(g.a1a2);
+        linkSet.add(g.a2a1);
+        linkSet.add(g.bc);
     }
 
     public void testExecuteAAPAA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery(".*",".*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
-
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteSAPAA() throws Exception {
         mode = new ActorByMode();
-        mode.buildQuery("R.*",".*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        mode.buildQuery("A.*",".*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteNAPAA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery("Q.*",".*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteASPAA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery(".*","a.*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteSSPAA() throws Exception {
         mode = new ActorByMode();
-        mode.buildQuery("R.*","a.*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        mode.buildQuery("A.*","a.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteNSPAA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery("Q.*","a.*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteANPAA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery(".*","E.*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteSNPAA() throws Exception {
         mode = new ActorByMode();
-        mode.buildQuery("R.*","E.*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        mode.buildQuery("A.*","E.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteNNPAA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery("Q.*","E.*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteAANAA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery(".*",".*",true);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteSANAA() throws Exception {
         mode = new ActorByMode();
-        mode.buildQuery("R.*",".*",true);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        mode.buildQuery("A.*",".*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteNANAA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery("Q.*",".*",true);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteASNAA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery(".*","a.*",true);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteSSNAA() throws Exception {
         mode = new ActorByMode();
-        mode.buildQuery("R.*","a.*",true);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        mode.buildQuery("A.*","a.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteNSNAA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery("Q.*","a.*",true);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteANNAA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery(".*","E.*",true);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteSNNAA() throws Exception {
         mode = new ActorByMode();
-        mode.buildQuery("R.*","E.*",true);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        mode.buildQuery("A.*","E.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteNNNAA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery("Q.*","E.*",true);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteAAPLA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery(".*",".*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteSAPLA() throws Exception {
         mode = new ActorByMode();
-        mode.buildQuery("R.*",".*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        mode.buildQuery("A.*",".*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteNAPLA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery("Q.*",".*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteASPLA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery(".*","a.*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteSSPLA() throws Exception {
         mode = new ActorByMode();
-        mode.buildQuery("R.*","a.*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        mode.buildQuery("A.*","a.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteNSPLA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery("Q.*","a.*",false);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteANPLA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery(".*","E.*",false);
-        Vector<Actor> actors = new Vector<Actor>();
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteSNPLA() throws Exception {
         mode = new ActorByMode();
-        mode.buildQuery("R.*","E.*",false);
-        Vector<Actor> actors = new Vector<Actor>();
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        mode.buildQuery("A.*","E.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteNNPLA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery("Q.*","E.*",false);
-        Vector<Actor> actors = new Vector<Actor>();
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteAANLA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery(".*",".*",true);
-        Vector<Actor> actors = new Vector<Actor>();
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteSANLA() throws Exception {
         mode = new ActorByMode();
-        mode.buildQuery("R.*",".*",true);
-        Vector<Actor> actors = new Vector<Actor>();
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        mode.buildQuery("A.*",".*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteNANLA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery("Q.*",".*",true);
-        Vector<Actor> actors = new Vector<Actor>();
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteASNLA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery(".*","a.*",true);
-        TreeSet<Actor> actors = new TreeSet<Actor>();
-        Collection<Actor> actor = mode.execute(graph,actors,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteSSNLA() throws Exception {
         mode = new ActorByMode();
-        mode.buildQuery("R.*","a.*",true);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        mode.buildQuery("A.*","a.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteNSNLA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery("Q.*","a.*",true);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteANNLA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery(".*","E.*",true);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
     }
 
-    public void testExecuteSNNALA() throws Exception {
+    public void testExecuteSNNLA() throws Exception {
         mode = new ActorByMode();
-        mode.buildQuery("R.*","E.*",true);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        mode.buildQuery("A.*","E.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testExecuteNNNLA() throws Exception {
         mode = new ActorByMode();
         mode.buildQuery("Q.*","E.*",true);
-        Collection<Actor> actor = mode.execute(graph,null,null);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteAAPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*",".*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteSAPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*",".*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteNAPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*",".*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteASPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","a.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteSSPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","a.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteNSPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","a.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteANPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","E.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteSNPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","E.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteNNPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","E.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteAANAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*",".*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteSANAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*",".*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteNANAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*",".*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteASNAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","a.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteSSNAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","a.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteNSNAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","a.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteANNAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","E.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteSNNAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","E.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteNNNAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","E.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteAAPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*",".*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteSAPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*",".*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteNAPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*",".*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteASPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","a.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteSSPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","a.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteNSPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","a.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteANPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","E.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteSNPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","E.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteNNPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","E.*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteAANLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*",".*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteSANLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*",".*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteNANLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*",".*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteASNLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","a.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteSSNLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","a.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteNSNLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","a.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteANNLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","E.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteSNNLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","E.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteNNNLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","E.*",true);
+        SortedSet<Actor> actor = mode.execute(g.graph,actorSet,linkSet);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
     }
 
     public void testBuildQuery() throws Exception {
@@ -359,7 +977,835 @@ public class ActorByModeTest extends TestCase {
         assertEquals(ActorByMode.class,ret.getClass());
     }
 
-    public void testExecuteIterator() throws Exception {
+    public void testExecuteIteratorAAPAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*",".*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
+    }
 
+    public void testExecuteIteratorSAPAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*",".*",false);
+        SortedSet<Actor> actor = mode.execute(g.graph,null,null);
+        Iterator<Actor> actorIT = actor.iterator();
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAPAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*",".*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorASPAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","a.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSSPAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","a.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSPAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","a.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorANPAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","E.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSNPAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","E.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNPAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","E.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorAANAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*",".*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSANAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*",".*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*",".*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorASNAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","a.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSSNAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","a.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","a.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorANNAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","E.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSNNAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","E.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNAA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","E.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.e));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a3));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a4));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorAAPLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*",".*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSAPLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*",".*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAPLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*",".*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorASPLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","a.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSSPLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","a.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSPLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","a.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorANPLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","E.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSNPLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","E.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNPLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","E.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorAANLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*",".*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSANLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*",".*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*",".*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorASNLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","a.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSSNLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","a.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","a.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorANNLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","E.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSNNLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","E.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNLA() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","E.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,null);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.d));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorAAPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*",".*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSAPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*",".*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*",".*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorASPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","a.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSSPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","a.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","a.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorANPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","E.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSNPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","E.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNPAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","E.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorAANAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*",".*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSANAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*",".*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*",".*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorASNAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","a.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSSNAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","a.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","a.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorANNAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","E.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSNNAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","E.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNAL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","E.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,null,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.c));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a2));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorAAPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*",".*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSAPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*",".*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*",".*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorASPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","a.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSSPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","a.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","a.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorANPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","E.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSNPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","E.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNPLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","E.*",false);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorAANLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*",".*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSANLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*",".*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*",".*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorASNLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","a.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSSNLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","a.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","a.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorANNLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery(".*","E.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorSNNLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("A.*","E.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNLL() throws Exception {
+        mode = new ActorByMode();
+        mode.buildQuery("Q.*","E.*",true);
+        Iterator<Actor> actorIT = mode.executeIterator(g.graph,actorSet,linkSet);
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.b));
+        assertTrue(actorIT.hasNext());
+        assertEquals(0,actorIT.next().compareTo(g.a1));
+        assertFalse(actorIT.hasNext());
     }
 }
