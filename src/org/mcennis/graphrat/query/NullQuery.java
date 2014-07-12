@@ -37,14 +37,13 @@ public class NullQuery<Type extends Comparable> {
     
     String type = "Graph";
 
-    boolean passAll = false;
 
     protected SortedSet<Type> execute() {
-        return new TreeSet<Type>();
+            return new TreeSet<Type>();
     }
 
     protected Iterator<Type> executeIterator(){
-        return new LinkedList<Type>().iterator();
+        return new TreeSet<Type>().iterator();
     }
 
     public void exportQuery(Writer writer) throws IOException{
