@@ -74,11 +74,6 @@ public class G {
         a = ActorFactory.newInstance().create("A","a");
         aP1 = PropertyFactory.newInstance().create("BasicProperty","One",Double.class);
         a.add(aP1);
-        try {
-            aP1.add(2.0);
-        } catch (InvalidObjectTypeException e1) {
-            e1.printStackTrace();
-        }
         graph.add(a);
         b = ActorFactory.newInstance().create("A","b");
         bP1 = PropertyFactory.newInstance().create("BasicProperty","One",Double.class);
@@ -90,6 +85,11 @@ public class G {
         b.add(bP1);
         bP2 = PropertyFactory.newInstance().create("BasicProperty","Two",String.class);
         b.add(bP2);
+        try {
+            bP2.add("String");
+        } catch (InvalidObjectTypeException e1) {
+            e1.printStackTrace();
+        }
         graph.add(b);
         c = ActorFactory.newInstance().create("A","c");
         cP2 = PropertyFactory.newInstance().create("BasicProperty","Two",String.class);
