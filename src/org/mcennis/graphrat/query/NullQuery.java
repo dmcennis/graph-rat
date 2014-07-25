@@ -37,7 +37,6 @@ public class NullQuery<Type extends Comparable> {
     
     String type = "Graph";
 
-
     protected SortedSet<Type> execute() {
             return new TreeSet<Type>();
     }

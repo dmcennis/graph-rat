@@ -1617,10 +1617,14 @@ public class AndActorQueryTest extends TestCase {
     }
 
     public void testBuildQuery() throws Exception {
-
+        LinkedList<ActorQuery> list = new LinkedList<ActorQuery>();
+        list.add(none);
+        list.add(none);
+        query.buildQuery(list);
     }
 
-    public void testNrototype() throws Exception {
-
+    public void testPrototype() throws Exception {
+        assertNotNull(query.prototype());
+        assertEquals(AndActorQuery.class,query.prototype().getClass());
     }
 }

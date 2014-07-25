@@ -1278,11 +1278,13 @@ public class ActorByPropertyTest extends TestCase {
     }
 
     public void testBuildingStatus() throws Exception {
-
+        string.buildQuery(".*",false, StringQuery.Operation.MATCHES);
+        props.buildQuery(".*",false,string);
     }
 
     public void testPrototype() throws Exception {
-
+        assertNotNull(props.prototype());
+        assertEquals(ActorByProperty.class,props.prototype().getClass());
     }
 
     public void testExecuteIteratorAPASAA() throws Exception {

@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95bfe8ea-373e-4f89-9c30-3be2a1976d01" name="Default" comment="ActorByProperty">
+    <list default="true" id="95bfe8ea-373e-4f89-9c30-3be2a1976d01" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../jaudio-git/jAudioAndroid/jAudioAndroid.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByPropertyTest.java" afterPath="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByPropertyTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/AndActorQueryTest.java" afterPath="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/AndActorQueryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/NullActorQueryTest.java" afterPath="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/NullActorQueryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/NullQuery.java" afterPath="$PROJECT_DIR$/src/org/mcennis/graphrat/query/NullQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/OrActorQueryTest.java" afterPath="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/OrActorQueryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/XorActorQueryTest.java" afterPath="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/XorActorQueryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jaudio-git/.idea/misc.xml" afterPath="$PROJECT_DIR$/../jaudio-git/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jaudio-git/.idea/modules.xml" afterPath="$PROJECT_DIR$/../jaudio-git/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jaudio-git/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../jaudio-git/.idea/workspace.xml" />
     </list>
@@ -58,67 +66,46 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="graph-rat.git" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="ActorByPropertyTest.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByPropertyTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.40234375" vertical-offset="40594" max-vertical-offset="41106">
-                  <caret line="2400" column="0" selection-start-line="2400" selection-start-column="0" selection-end-line="2400" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#105469#0" expanded="true" />
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="ActorByModeTest.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByModeTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="30855">
-                  <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ActorByLinkTest.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByLinkTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="19397">
-                  <caret line="68" column="13" selection-start-line="53" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="G.java" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/G.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.03024911" vertical-offset="544" max-vertical-offset="2295">
-                  <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="ActorByModeTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByModeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="29.147272" vertical-offset="0" max-vertical-offset="30413">
+              <caret line="969" column="5" selection-start-line="969" selection-start-column="5" selection-end-line="969" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActorByPropertyTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByPropertyTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.72" vertical-offset="21080" max-vertical-offset="40698">
+              <caret line="1270" column="0" selection-start-line="1270" selection-start-column="0" selection-end-line="1270" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndActorQueryTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/AndActorQueryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="26710" max-vertical-offset="27370">
+              <caret line="1627" column="71" selection-start-line="1627" selection-start-column="71" selection-end-line="1627" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -144,11 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/machinelearning/BuildClassifierSingleAttribute.java" />
-        <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/aggregators/PropertyToLink.java" />
-        <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/clustering/WekaClassifierClusterer.java" />
-        <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/query/link/LinkByActor.java" />
-        <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/collaborativefiltering/AssociativeMining.java" />
         <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/collaborativefiltering/AssociativeMiningItems.java" />
         <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/transformToArray/DirectedTriplesHistogram.java" />
         <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/machinelearning/BuildClassifierPerActor.java" />
@@ -194,6 +176,11 @@
         <option value="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/G.java" />
         <option value="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByModeTest.java" />
         <option value="$PROJECT_DIR$/test/org/mcennis/graphrat/query/G.java" />
+        <option value="$PROJECT_DIR$/src/org/mcennis/graphrat/query/NullQuery.java" />
+        <option value="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/NullActorQueryTest.java" />
+        <option value="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/XorActorQueryTest.java" />
+        <option value="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/OrActorQueryTest.java" />
+        <option value="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/AndActorQueryTest.java" />
         <option value="$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByPropertyTest.java" />
       </list>
     </option>
@@ -224,7 +211,7 @@
     </ignored-problems>
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -235,7 +222,114 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph-rat.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph-rat.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraphRAT5" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph-rat.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraphRAT5" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphrat" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph-rat.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraphRAT5" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphrat" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph-rat.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraphRAT5" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphrat" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actor" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph-rat.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraphRAT5" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphrat" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToClass.includeLibraries" value="false" />
@@ -888,7 +982,10 @@
       <workItem from="1406060397358" duration="3689000" />
       <workItem from="1406256440876" duration="58000" />
       <workItem from="1406256564901" duration="36000" />
-      <workItem from="1406257076171" duration="660000" />
+      <workItem from="1406257076171" duration="2805000" />
+      <workItem from="1406262807435" duration="47000" />
+      <workItem from="1406280976301" duration="581000" />
+      <workItem from="1406311879771" duration="4616000" />
     </task>
     <task id="LOCAL-00001" summary="Graph-RAT git repository has disappeared.  I'm now uploading the least incomplete version I still have access to.  This is Graph-RAT 0.5.0.21 and Graph-RAT 0.4.5.0.">
       <created>1402596579066</created>
@@ -946,15 +1043,23 @@
       <created>1405488074886</created>
       <updated>1405488074886</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ActorByProperty tests now written">
+      <created>1406257752187</created>
+      <updated>1406257752187</updated>
+    </task>
+    <task id="LOCAL-00016" summary="AndActorQuery execute tests written">
+      <created>1406259814130</created>
+      <updated>1406259814130</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92340000" />
+    <option name="totallyTimeSpent" value="99729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="0" width="1215" height="736" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724252" sideWeight="0.49739313" order="7" side_tool="false" content_ui="tabs" />
@@ -974,7 +1079,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29274395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29274395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294412" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -985,13 +1090,13 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294412" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.49739313" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294412" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724252" sideWeight="0.49739313" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.50125104" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724252" sideWeight="0.49958298" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1001,16 +1106,16 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294412" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.49874896" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986711" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30564785" sideWeight="0.49791494" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30564785" sideWeight="0.49791494" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1046,7 +1151,9 @@
     <MESSAGE value="est file updated" />
     <MESSAGE value="Restoring GraphRAT repository." />
     <MESSAGE value="Setting up my ssh key." />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting up my ssh key." />
+    <MESSAGE value="ActorByProperty tests now written" />
+    <MESSAGE value="AndActorQuery execute tests written" />
+    <option name="LAST_COMMIT_MESSAGE" value="AndActorQuery execute tests written" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1066,55 +1173,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/Betweeness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="643" max-vertical-offset="5287">
-          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/Closeness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="371" max-vertical-offset="7820">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/DegreePrestige.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="65" max-vertical-offset="6137">
-          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/HITSPrestige.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="728" max-vertical-offset="7089">
-          <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/LinkBetweeness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="5627">
-          <caret line="99" column="13" selection-start-line="99" selection-start-column="13" selection-end-line="99" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/PageRankPrestige.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3132" max-vertical-offset="6579">
-          <caret line="216" column="22" selection-start-line="216" selection-start-column="22" selection-end-line="216" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/ScalableHitsPrestige.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="772" max-vertical-offset="8024">
-          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/algorithm/prestige/ScalablePageRankPrestige.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="6069">
@@ -1395,38 +1453,360 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByModeTest.java">
+    <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByLinkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="30413">
-          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.3024911" vertical-offset="697" max-vertical-offset="18904">
+          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByLinkTest.java">
+    <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/query/NullQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="18904">
-          <caret line="68" column="13" selection-start-line="53" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/NullActorQueryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81850535" vertical-offset="288" max-vertical-offset="935">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/NullActorQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36476868" vertical-offset="16" max-vertical-offset="663">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mcennis/graphrat/query/actor/AndActorQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33274022" vertical-offset="0" max-vertical-offset="1054">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/XorActorQueryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94086957" vertical-offset="513" max-vertical-offset="30634">
+          <caret line="62" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#71550#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1726#1738#0" expanded="true" />
+            <element signature="e#2093#2105#0" expanded="true" />
+            <element signature="e#2834#2846#0" expanded="true" />
+            <element signature="e#3674#3686#0" expanded="true" />
+            <element signature="e#4892#4904#0" expanded="true" />
+            <element signature="e#5633#5645#0" expanded="true" />
+            <element signature="e#5996#6008#0" expanded="true" />
+            <element signature="e#6458#6470#0" expanded="true" />
+            <element signature="e#7674#7686#0" expanded="true" />
+            <element signature="e#8514#8526#0" expanded="true" />
+            <element signature="e#9262#9274#0" expanded="true" />
+            <element signature="e#9635#9647#0" expanded="true" />
+            <element signature="e#10386#10398#0" expanded="true" />
+            <element signature="e#11604#11616#0" expanded="true" />
+            <element signature="e#12444#12456#0" expanded="true" />
+            <element signature="e#13195#13207#0" expanded="true" />
+            <element signature="e#13564#13576#0" expanded="true" />
+            <element signature="e#13937#13949#0" expanded="true" />
+            <element signature="e#14496#14508#0" expanded="true" />
+            <element signature="e#15060#15072#0" expanded="true" />
+            <element signature="e#15717#15729#0" expanded="true" />
+            <element signature="e#16276#16288#0" expanded="true" />
+            <element signature="e#16645#16657#0" expanded="true" />
+            <element signature="e#17019#17031#0" expanded="true" />
+            <element signature="e#17674#17686#0" expanded="true" />
+            <element signature="e#18238#18250#0" expanded="true" />
+            <element signature="e#18707#18719#0" expanded="true" />
+            <element signature="e#19086#19098#0" expanded="true" />
+            <element signature="e#19558#19570#0" expanded="true" />
+            <element signature="e#20215#20227#0" expanded="true" />
+            <element signature="e#20682#20694#0" expanded="true" />
+            <element signature="e#21154#21166#0" expanded="true" />
+            <element signature="e#21529#21541#0" expanded="true" />
+            <element signature="e#21901#21913#0" expanded="true" />
+            <element signature="e#22459#22471#0" expanded="true" />
+            <element signature="e#23022#23034#0" expanded="true" />
+            <element signature="e#23773#23785#0" expanded="true" />
+            <element signature="e#24331#24343#0" expanded="true" />
+            <element signature="e#24699#24711#0" expanded="true" />
+            <element signature="e#25166#25178#0" expanded="true" />
+            <element signature="e#25915#25927#0" expanded="true" />
+            <element signature="e#26478#26490#0" expanded="true" />
+            <element signature="e#27041#27053#0" expanded="true" />
+            <element signature="e#27419#27431#0" expanded="true" />
+            <element signature="e#27985#27997#0" expanded="true" />
+            <element signature="e#28736#28748#0" expanded="true" />
+            <element signature="e#29297#29309#0" expanded="true" />
+            <element signature="e#29863#29875#0" expanded="true" />
+            <element signature="e#30237#30249#0" expanded="true" />
+            <element signature="e#30615#30627#0" expanded="true" />
+            <element signature="e#31085#31097#0" expanded="true" />
+            <element signature="e#31560#31572#0" expanded="true" />
+            <element signature="e#32128#32140#0" expanded="true" />
+            <element signature="e#32598#32610#0" expanded="true" />
+            <element signature="e#32972#32984#0" expanded="true" />
+            <element signature="e#33351#33363#0" expanded="true" />
+            <element signature="e#33917#33929#0" expanded="true" />
+            <element signature="e#34392#34404#0" expanded="true" />
+            <element signature="e#34866#34878#0" expanded="true" />
+            <element signature="e#35250#35262#0" expanded="true" />
+            <element signature="e#35727#35739#0" expanded="true" />
+            <element signature="e#36295#36307#0" expanded="true" />
+            <element signature="e#36767#36779#0" expanded="true" />
+            <element signature="e#37244#37256#0" expanded="true" />
+            <element signature="e#37632#37644#0" expanded="true" />
+            <element signature="e#37962#37974#0" expanded="true" />
+            <element signature="e#38666#38678#0" expanded="true" />
+            <element signature="e#39469#39481#0" expanded="true" />
+            <element signature="e#40650#40662#0" expanded="true" />
+            <element signature="e#41354#41366#0" expanded="true" />
+            <element signature="e#41680#41692#0" expanded="true" />
+            <element signature="e#42105#42117#0" expanded="true" />
+            <element signature="e#43284#43296#0" expanded="true" />
+            <element signature="e#44087#44099#0" expanded="true" />
+            <element signature="e#44798#44810#0" expanded="true" />
+            <element signature="e#45134#45146#0" expanded="true" />
+            <element signature="e#45848#45860#0" expanded="true" />
+            <element signature="e#47029#47041#0" expanded="true" />
+            <element signature="e#47832#47844#0" expanded="true" />
+            <element signature="e#48546#48558#0" expanded="true" />
+            <element signature="e#48878#48890#0" expanded="true" />
+            <element signature="e#49214#49226#0" expanded="true" />
+            <element signature="e#49736#49748#0" expanded="true" />
+            <element signature="e#50263#50275#0" expanded="true" />
+            <element signature="e#50883#50895#0" expanded="true" />
+            <element signature="e#51405#51417#0" expanded="true" />
+            <element signature="e#51737#51749#0" expanded="true" />
+            <element signature="e#52074#52086#0" expanded="true" />
+            <element signature="e#52692#52704#0" expanded="true" />
+            <element signature="e#53219#53231#0" expanded="true" />
+            <element signature="e#53651#53663#0" expanded="true" />
+            <element signature="e#53993#54005#0" expanded="true" />
+            <element signature="e#54428#54440#0" expanded="true" />
+            <element signature="e#55048#55060#0" expanded="true" />
+            <element signature="e#55478#55490#0" expanded="true" />
+            <element signature="e#55913#55925#0" expanded="true" />
+            <element signature="e#56251#56263#0" expanded="true" />
+            <element signature="e#56586#56598#0" expanded="true" />
+            <element signature="e#57107#57119#0" expanded="true" />
+            <element signature="e#57633#57645#0" expanded="true" />
+            <element signature="e#58347#58359#0" expanded="true" />
+            <element signature="e#58868#58880#0" expanded="true" />
+            <element signature="e#59199#59211#0" expanded="true" />
+            <element signature="e#59629#59641#0" expanded="true" />
+            <element signature="e#60341#60353#0" expanded="true" />
+            <element signature="e#60867#60879#0" expanded="true" />
+            <element signature="e#61393#61405#0" expanded="true" />
+            <element signature="e#61734#61746#0" expanded="true" />
+            <element signature="e#62263#62275#0" expanded="true" />
+            <element signature="e#62977#62989#0" expanded="true" />
+            <element signature="e#63501#63513#0" expanded="true" />
+            <element signature="e#64030#64042#0" expanded="true" />
+            <element signature="e#64367#64379#0" expanded="true" />
+            <element signature="e#64708#64720#0" expanded="true" />
+            <element signature="e#65141#65153#0" expanded="true" />
+            <element signature="e#65579#65591#0" expanded="true" />
+            <element signature="e#66110#66122#0" expanded="true" />
+            <element signature="e#66543#66555#0" expanded="true" />
+            <element signature="e#66880#66892#0" expanded="true" />
+            <element signature="e#67222#67234#0" expanded="true" />
+            <element signature="e#67751#67763#0" expanded="true" />
+            <element signature="e#68189#68201#0" expanded="true" />
+            <element signature="e#68626#68638#0" expanded="true" />
+            <element signature="e#68973#68985#0" expanded="true" />
+            <element signature="e#69413#69425#0" expanded="true" />
+            <element signature="e#69944#69956#0" expanded="true" />
+            <element signature="e#70379#70391#0" expanded="true" />
+            <element signature="e#70819#70831#0" expanded="true" />
+            <element signature="e#71275#71287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/OrActorQueryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19921875" vertical-offset="17714" max-vertical-offset="34697">
+          <caret line="1066" column="0" selection-start-line="1066" selection-start-column="0" selection-end-line="1066" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1723#1735#0" expanded="true" />
+            <element signature="e#2940#2952#0" expanded="true" />
+            <element signature="e#4155#4167#0" expanded="true" />
+            <element signature="e#5375#5387#0" expanded="true" />
+            <element signature="e#6593#6605#0" expanded="true" />
+            <element signature="e#7808#7820#0" expanded="true" />
+            <element signature="e#8645#8657#0" expanded="true" />
+            <element signature="e#9487#9499#0" expanded="true" />
+            <element signature="e#10327#10339#0" expanded="true" />
+            <element signature="e#11547#11559#0" expanded="true" />
+            <element signature="e#12389#12401#0" expanded="true" />
+            <element signature="e#13142#13154#0" expanded="true" />
+            <element signature="e#13893#13905#0" expanded="true" />
+            <element signature="e#15111#15123#0" expanded="true" />
+            <element signature="e#15951#15963#0" expanded="true" />
+            <element signature="e#16702#16714#0" expanded="true" />
+            <element signature="e#17071#17083#0" expanded="true" />
+            <element signature="e#17727#17739#0" expanded="true" />
+            <element signature="e#18381#18393#0" expanded="true" />
+            <element signature="e#19040#19052#0" expanded="true" />
+            <element signature="e#19697#19709#0" expanded="true" />
+            <element signature="e#20351#20363#0" expanded="true" />
+            <element signature="e#20815#20827#0" expanded="true" />
+            <element signature="e#21284#21296#0" expanded="true" />
+            <element signature="e#21751#21763#0" expanded="true" />
+            <element signature="e#22410#22422#0" expanded="true" />
+            <element signature="e#22879#22891#0" expanded="true" />
+            <element signature="e#23353#23365#0" expanded="true" />
+            <element signature="e#23825#23837#0" expanded="true" />
+            <element signature="e#24482#24494#0" expanded="true" />
+            <element signature="e#24949#24961#0" expanded="true" />
+            <element signature="e#25421#25433#0" expanded="true" />
+            <element signature="e#25796#25808#0" expanded="true" />
+            <element signature="e#26546#26558#0" expanded="true" />
+            <element signature="e#27294#27306#0" expanded="true" />
+            <element signature="e#28047#28059#0" expanded="true" />
+            <element signature="e#28798#28810#0" expanded="true" />
+            <element signature="e#29546#29558#0" expanded="true" />
+            <element signature="e#30104#30116#0" expanded="true" />
+            <element signature="e#30667#30679#0" expanded="true" />
+            <element signature="e#31228#31240#0" expanded="true" />
+            <element signature="e#31981#31993#0" expanded="true" />
+            <element signature="e#32544#32556#0" expanded="true" />
+            <element signature="e#33112#33124#0" expanded="true" />
+            <element signature="e#33678#33690#0" expanded="true" />
+            <element signature="e#34429#34441#0" expanded="true" />
+            <element signature="e#34990#35002#0" expanded="true" />
+            <element signature="e#35556#35568#0" expanded="true" />
+            <element signature="e#35930#35942#0" expanded="true" />
+            <element signature="e#36452#36464#0" expanded="true" />
+            <element signature="e#36972#36984#0" expanded="true" />
+            <element signature="e#37497#37509#0" expanded="true" />
+            <element signature="e#38020#38032#0" expanded="true" />
+            <element signature="e#38540#38552#0" expanded="true" />
+            <element signature="e#38964#38976#0" expanded="true" />
+            <element signature="e#39393#39405#0" expanded="true" />
+            <element signature="e#39820#39832#0" expanded="true" />
+            <element signature="e#40345#40357#0" expanded="true" />
+            <element signature="e#40774#40786#0" expanded="true" />
+            <element signature="e#41208#41220#0" expanded="true" />
+            <element signature="e#41640#41652#0" expanded="true" />
+            <element signature="e#42163#42175#0" expanded="true" />
+            <element signature="e#42590#42602#0" expanded="true" />
+            <element signature="e#43022#43034#0" expanded="true" />
+            <element signature="e#43478#43490#0" expanded="true" />
+            <element signature="e#43863#43875#0" expanded="true" />
+            <element signature="e#45043#45055#0" expanded="true" />
+            <element signature="e#46221#46233#0" expanded="true" />
+            <element signature="e#47404#47416#0" expanded="true" />
+            <element signature="e#48585#48597#0" expanded="true" />
+            <element signature="e#49763#49775#0" expanded="true" />
+            <element signature="e#50563#50575#0" expanded="true" />
+            <element signature="e#51368#51380#0" expanded="true" />
+            <element signature="e#52171#52183#0" expanded="true" />
+            <element signature="e#53354#53366#0" expanded="true" />
+            <element signature="e#54159#54171#0" expanded="true" />
+            <element signature="e#54875#54887#0" expanded="true" />
+            <element signature="e#55589#55601#0" expanded="true" />
+            <element signature="e#56770#56782#0" expanded="true" />
+            <element signature="e#57573#57585#0" expanded="true" />
+            <element signature="e#58287#58299#0" expanded="true" />
+            <element signature="e#58619#58631#0" expanded="true" />
+            <element signature="e#59238#59250#0" expanded="true" />
+            <element signature="e#59855#59867#0" expanded="true" />
+            <element signature="e#60477#60489#0" expanded="true" />
+            <element signature="e#61097#61109#0" expanded="true" />
+            <element signature="e#61714#61726#0" expanded="true" />
+            <element signature="e#62141#62153#0" expanded="true" />
+            <element signature="e#62573#62585#0" expanded="true" />
+            <element signature="e#63003#63015#0" expanded="true" />
+            <element signature="e#63625#63637#0" expanded="true" />
+            <element signature="e#64057#64069#0" expanded="true" />
+            <element signature="e#64494#64506#0" expanded="true" />
+            <element signature="e#64929#64941#0" expanded="true" />
+            <element signature="e#65549#65561#0" expanded="true" />
+            <element signature="e#65979#65991#0" expanded="true" />
+            <element signature="e#66414#66426#0" expanded="true" />
+            <element signature="e#66752#66764#0" expanded="true" />
+            <element signature="e#67465#67477#0" expanded="true" />
+            <element signature="e#68176#68188#0" expanded="true" />
+            <element signature="e#68892#68904#0" expanded="true" />
+            <element signature="e#69606#69618#0" expanded="true" />
+            <element signature="e#70317#70329#0" expanded="true" />
+            <element signature="e#70838#70850#0" expanded="true" />
+            <element signature="e#71364#71376#0" expanded="true" />
+            <element signature="e#71888#71900#0" expanded="true" />
+            <element signature="e#72604#72616#0" expanded="true" />
+            <element signature="e#73130#73142#0" expanded="true" />
+            <element signature="e#73661#73673#0" expanded="true" />
+            <element signature="e#74190#74202#0" expanded="true" />
+            <element signature="e#74904#74916#0" expanded="true" />
+            <element signature="e#75428#75440#0" expanded="true" />
+            <element signature="e#75957#75969#0" expanded="true" />
+            <element signature="e#76294#76306#0" expanded="true" />
+            <element signature="e#76824#76836#0" expanded="true" />
+            <element signature="e#77352#77364#0" expanded="true" />
+            <element signature="e#77885#77897#0" expanded="true" />
+            <element signature="e#78416#78428#0" expanded="true" />
+            <element signature="e#78944#78956#0" expanded="true" />
+            <element signature="e#79376#79388#0" expanded="true" />
+            <element signature="e#79813#79825#0" expanded="true" />
+            <element signature="e#80248#80260#0" expanded="true" />
+            <element signature="e#80781#80793#0" expanded="true" />
+            <element signature="e#81218#81230#0" expanded="true" />
+            <element signature="e#81660#81672#0" expanded="true" />
+            <element signature="e#82100#82112#0" expanded="true" />
+            <element signature="e#82631#82643#0" expanded="true" />
+            <element signature="e#83066#83078#0" expanded="true" />
+            <element signature="e#83506#83518#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/G.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03024911" vertical-offset="544" max-vertical-offset="2295">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.40869564" vertical-offset="1720" max-vertical-offset="2295">
+          <caret line="142" column="19" selection-start-line="142" selection-start-column="19" selection-end-line="142" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/AndActorQueryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="26710" max-vertical-offset="27370">
+          <caret line="1627" column="71" selection-start-line="1627" selection-start-column="71" selection-end-line="1627" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByPropertyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40234375" vertical-offset="40594" max-vertical-offset="41106">
-          <caret line="2400" column="0" selection-start-line="2400" selection-start-column="0" selection-end-line="2400" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#105469#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-2.72" vertical-offset="21080" max-vertical-offset="40698">
+          <caret line="1270" column="0" selection-start-line="1270" selection-start-column="0" selection-end-line="1270" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/mcennis/graphrat/query/actor/ActorByModeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="29.147272" vertical-offset="0" max-vertical-offset="30413">
+          <caret line="969" column="5" selection-start-line="969" selection-start-column="5" selection-end-line="969" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

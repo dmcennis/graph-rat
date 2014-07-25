@@ -21,27 +21,48 @@
 package org.mcennis.graphrat.query.actor;
 
 import junit.framework.TestCase;
+import org.mcennis.graphrat.query.G;
 
 public class NullActorQueryTest extends TestCase {
 
+    NullActorQuery all;
+    NullActorQuery none;
+    G g;
     public void setUp() throws Exception {
-        super.setUp();
-
+        g = new G();
+        all = new NullActorQuery();
     }
 
-    public void testExecute() throws Exception {
-
+    public void testExecuteAll() throws Exception {
+        all.buildQuery();
+        assertNotNull(all.execute(g.graph,null,null));
+        assertEquals(0,all.execute(g.graph,null,null).size());
     }
 
-    public void testExecuteIterator() throws Exception {
+    public void testExecuteLimit() throws Exception {
+        all.buildQuery();
+        assertNotNull(all.execute(g.graph,g.actorSet,g.linkSet));
+        assertEquals(0,all.execute(g.graph,g.actorSet,g.linkSet).size());
+    }
 
+    public void testExecuteIteratorAll() throws Exception {
+        all.buildQuery();
+        assertNotNull(all.executeIterator(g.graph,null,null));
+        assertFalse(all.executeIterator(g.graph,null,null).hasNext());
+    }
+
+    public void testExecuteIteratorLimit() throws Exception {
+        all.buildQuery();
+        assertNotNull(all.executeIterator(g.graph,g.actorSet,g.linkSet));
+        assertFalse(all.executeIterator(g.graph,g.actorSet,g.linkSet).hasNext());
     }
 
     public void testBuildQuery() throws Exception {
-
+        all.buildQuery();
     }
 
     public void testPrototype() throws Exception {
-
+        assertNotNull(all.prototype());
+        assertEquals(NullActorQuery.class,all.prototype().getClass());
     }
 }
