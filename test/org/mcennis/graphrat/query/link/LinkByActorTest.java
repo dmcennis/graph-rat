@@ -4813,21 +4813,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -4835,10 +4825,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,all,LinkQuery.SetOperation.AND);
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -4854,25 +4840,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -4888,25 +4860,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -4915,15 +4873,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
         assertFalse(linkIT.hasNext());
     }
 
@@ -4932,15 +4884,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -4949,15 +4893,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
         assertFalse(linkIT.hasNext());
     }
 
@@ -4966,15 +4904,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -4990,25 +4920,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5024,25 +4940,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5058,25 +4960,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5092,25 +4980,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5126,25 +5000,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5160,25 +5020,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5194,25 +5040,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5228,25 +5060,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5262,25 +5080,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5296,25 +5100,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5323,25 +5113,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5357,25 +5133,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5391,25 +5153,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5425,25 +5173,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5459,25 +5193,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5493,21 +5213,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5515,10 +5225,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,some,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5527,15 +5233,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5544,15 +5244,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5561,15 +5253,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5578,15 +5264,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5595,25 +5273,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5629,21 +5293,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5651,10 +5305,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,none,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5670,25 +5320,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5704,25 +5340,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5731,25 +5353,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5765,21 +5373,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5787,10 +5385,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,null,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5806,25 +5400,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5840,25 +5420,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5874,25 +5440,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5900,10 +5452,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,some,all,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5912,21 +5460,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5935,25 +5473,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -5969,25 +5493,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6003,15 +5513,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6020,15 +5522,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6044,25 +5540,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6071,15 +5553,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6088,15 +5564,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6105,15 +5573,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6122,15 +5584,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6139,25 +5593,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6173,21 +5613,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6195,10 +5625,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,none,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6214,25 +5640,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6248,25 +5660,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6275,25 +5673,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6309,21 +5693,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6331,10 +5705,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,null,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6350,25 +5720,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6384,25 +5740,11 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a1a2));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a4a3));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6413,15 +5755,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6437,15 +5771,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6468,15 +5794,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6492,15 +5810,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6508,10 +5818,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,all,some,LinkQuery.SetOperation.AND);
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6520,11 +5826,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6532,10 +5834,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,some,some,LinkQuery.SetOperation.AND);
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6544,11 +5842,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6564,15 +5858,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6588,15 +5874,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6612,15 +5890,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6636,15 +5906,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6660,15 +5922,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6684,15 +5938,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6708,15 +5954,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6732,15 +5970,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6756,15 +5986,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6780,15 +6002,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6797,15 +6011,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6821,15 +6027,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6845,15 +6043,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6869,15 +6059,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6893,15 +6075,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6917,15 +6091,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6940,10 +6106,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,none,some,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6952,11 +6114,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6964,10 +6122,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,null,some,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6976,11 +6130,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -6989,15 +6139,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7013,15 +6155,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7044,15 +6178,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7068,15 +6194,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7085,15 +6203,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7109,15 +6219,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7140,15 +6242,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7164,15 +6258,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7188,15 +6274,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7212,15 +6290,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7229,15 +6299,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7253,15 +6315,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7277,11 +6331,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7289,10 +6339,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,all,some,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7308,15 +6354,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7324,10 +6362,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,none,some,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7336,11 +6370,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7348,10 +6378,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,null,some,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7360,11 +6386,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7373,15 +6395,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7397,15 +6411,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7428,15 +6434,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7452,15 +6450,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7469,15 +6459,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7493,15 +6475,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7524,15 +6498,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7548,15 +6514,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,null,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.aa2));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3a4));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.ac));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7571,13 +6529,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7593,8 +6547,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
@@ -7605,8 +6557,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,all,LinkQuery.SetOperation.AND);
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7622,13 +6572,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7644,13 +6590,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7668,11 +6610,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7690,11 +6628,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7710,13 +6644,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7732,13 +6662,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7754,13 +6680,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7776,13 +6698,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7798,13 +6716,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7820,13 +6734,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7842,13 +6752,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7864,13 +6770,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7886,13 +6788,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7908,13 +6806,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7923,13 +6817,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7945,13 +6835,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7967,13 +6853,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -7989,13 +6871,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8011,13 +6889,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8033,8 +6907,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
@@ -8045,8 +6917,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,some,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8064,11 +6934,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8086,11 +6952,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8099,13 +6961,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8121,8 +6979,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
@@ -8133,8 +6989,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,none,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8150,13 +7004,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.bc));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8172,13 +7022,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8187,13 +7033,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8209,8 +7051,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
@@ -8221,8 +7061,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,null,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8238,13 +7076,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8260,13 +7094,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8282,13 +7112,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8296,8 +7122,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,some,all,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8305,8 +7129,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,all,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
@@ -8319,13 +7141,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8341,13 +7159,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8363,11 +7177,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8392,13 +7202,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8416,11 +7222,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8438,11 +7240,7 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8451,13 +7249,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8473,8 +7267,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
@@ -8485,8 +7277,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,none,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8502,13 +7292,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8524,13 +7310,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8539,13 +7321,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8561,8 +7339,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
@@ -8573,8 +7349,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,null,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8590,13 +7364,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8612,13 +7382,9 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,null,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.a2a1));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.cd));
         assertFalse(linkIT.hasNext());
     }
 
@@ -8628,8 +7394,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,all,all,LinkQuery.SetOperation.AND);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -8646,8 +7410,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,some,all,LinkQuery.SetOperation.AND);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -8672,8 +7434,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -8689,8 +7449,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,null,all,LinkQuery.SetOperation.AND);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -8708,8 +7466,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -8725,8 +7481,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,some,LinkQuery.SetOperation.AND);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -8744,8 +7498,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -8761,8 +7513,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,null,some,LinkQuery.SetOperation.AND);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -8780,8 +7530,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -8797,8 +7545,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,none,LinkQuery.SetOperation.AND);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -8816,8 +7562,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -8833,8 +7577,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,null,none,LinkQuery.SetOperation.AND);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -8852,8 +7594,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -8869,8 +7609,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,some,null,LinkQuery.SetOperation.AND);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -8888,8 +7626,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -8906,8 +7642,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -8916,8 +7650,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,all,all,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -8935,8 +7667,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -8952,8 +7682,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,none,all,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -8971,8 +7699,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -8989,8 +7715,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9006,8 +7730,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,some,some,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -9032,8 +7754,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9050,8 +7770,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9060,8 +7778,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,all,none,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -9078,8 +7794,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,some,none,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -9104,8 +7818,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9122,8 +7834,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9132,8 +7842,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,all,null,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -9150,8 +7858,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,some,null,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -9176,8 +7882,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9193,8 +7897,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,null,null,LinkQuery.SetOperation.OR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -9212,8 +7914,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9230,8 +7930,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9240,8 +7938,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,none,all,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -9259,8 +7955,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9276,8 +7970,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,all,some,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -9302,8 +7994,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9319,8 +8009,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(true,none,some,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -9338,8 +8026,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9348,8 +8034,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,all,none,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -9366,8 +8050,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,some,none,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -9392,8 +8074,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9410,8 +8090,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9420,8 +8098,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,all,null,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -9438,8 +8114,6 @@ public class LinkByActorTest extends TestCase {
         query.buildQuery(false,some,null,LinkQuery.SetOperation.XOR);
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
-        assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
         assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
@@ -9464,8 +8138,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9482,8 +8154,6 @@ public class LinkByActorTest extends TestCase {
         SortedSet<Link> result = query.execute(g.graph,extraSet,g.actorSet,g.linkSet2);
         Iterator<Link> linkIT = result.iterator();
         assertTrue(linkIT.hasNext());
-        assertEquals(0,linkIT.next().compareTo(g.a3b));
-        assertTrue(linkIT.hasNext());
         assertEquals(0,linkIT.next().compareTo(g.ab));
         assertFalse(linkIT.hasNext());
     }
@@ -9499,7 +8169,7336 @@ public class LinkByActorTest extends TestCase {
         assertEquals(LinkByActor.class,query.prototype().getClass());
     }
 
-    public void testExecuteIterator() throws Exception {
 
+    public void testExecuteIteratorPAAAAAA() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
     }
+
+    public void testExecuteIteratorNAAAAAA() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAAAAA() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAAAAA() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAAAAA() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAAAAA() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAAAAA() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAAAAA() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASAAAA() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASAAAA() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSAAAA() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSAAAA() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSAAAA() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSAAAA() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSAAAA() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSAAAA() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANAAAA() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANAAAA() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNAAAA() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNAAAA() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNAAAA() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNAAAA() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNAAAA() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNAAAA() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUAAAA() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUAAAA() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUAAAA() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUAAAA() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUAAAA() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUAAAA() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUAAAA() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUAAAA() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAOAAA() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAOAAA() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAOAAA() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAOAAA() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAOAAA() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAOAAA() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAOAAA() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAOAAA() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASOAAA() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASOAAA() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSOAAA() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSOAAA() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSOAAA() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSOAAA() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSOAAA() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSOAAA() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANOAAA() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANOAAA() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNOAAA() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNOAAA() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNOAAA() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNOAAA() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNOAAA() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNOAAA() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUOAAA() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUOAAA() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUOAAA() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUOAAA() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUOAAA() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUOAAA() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUOAAA() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUOAAA() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAXAAA() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAXAAA() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAXAAA() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAXAAA() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAXAAA() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAXAAA() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAXAAA() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAXAAA() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASXAAA() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASXAAA() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSXAAA() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSXAAA() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSXAAA() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSXAAA() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSXAAA() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSXAAA() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANXAAA() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANXAAA() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNXAAA() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNXAAA() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNXAAA() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNXAAA() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNXAAA() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNXAAA() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUXAAA() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUXAAA() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUXAAA() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUXAAA() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUXAAA() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUXAAA() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUXAAA() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUXAAA() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a4a3));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+
+
+    public void testExecuteIteratorPAAALAA() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAALAA() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAALAA() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAALAA() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAALAA() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAALAA() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAALAA() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAALAA() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASALAA() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASALAA() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSALAA() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSALAA() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSALAA() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSALAA() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSALAA() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSALAA() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANALAA() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANALAA() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNALAA() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNALAA() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNALAA() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNALAA() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNALAA() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNALAA() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUALAA() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUALAA() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUALAA() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUALAA() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUALAA() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUALAA() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUALAA() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUALAA() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAOLAA() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAOLAA() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAOLAA() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAOLAA() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAOLAA() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAOLAA() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAOLAA() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAOLAA() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASOLAA() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASOLAA() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSOLAA() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSOLAA() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSOLAA() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSOLAA() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSOLAA() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSOLAA() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANOLAA() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANOLAA() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNOLAA() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNOLAA() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNOLAA() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNOLAA() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNOLAA() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNOLAA() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUOLAA() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUOLAA() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUOLAA() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUOLAA() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUOLAA() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUOLAA() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUOLAA() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUOLAA() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAXLAA() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAXLAA() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAXLAA() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAXLAA() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAXLAA() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAXLAA() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAXLAA() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAXLAA() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASXLAA() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASXLAA() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSXLAA() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSXLAA() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSXLAA() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSXLAA() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSXLAA() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSXLAA() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANXLAA() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANXLAA() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNXLAA() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNXLAA() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNXLAA() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNXLAA() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNXLAA() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNXLAA() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUXLAA() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUXLAA() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUXLAA() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUXLAA() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUXLAA() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUXLAA() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUXLAA() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUXLAA() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.aa2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3a4));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ac));
+        assertFalse(linkIT.hasNext());
+    }
+
+
+
+
+
+
+
+    public void testExecuteIteratorPAAAALA() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAAALA() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAAALA() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAAALA() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAAALA() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAAALA() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAAALA() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAAALA() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASAALA() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASAALA() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSAALA() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSAALA() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSAALA() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSAALA() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSAALA() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSAALA() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANAALA() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANAALA() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNAALA() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNAALA() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNAALA() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNAALA() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNAALA() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNAALA() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUAALA() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUAALA() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUAALA() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUAALA() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUAALA() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUAALA() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUAALA() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUAALA() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAOALA() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAOALA() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAOALA() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAOALA() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAOALA() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAOALA() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAOALA() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAOALA() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASOALA() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASOALA() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSOALA() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSOALA() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSOALA() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSOALA() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSOALA() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSOALA() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANOALA() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANOALA() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNOALA() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNOALA() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNOALA() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNOALA() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.bc));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNOALA() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNOALA() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUOALA() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUOALA() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUOALA() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUOALA() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUOALA() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUOALA() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUOALA() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUOALA() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAXALA() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAXALA() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAXALA() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAXALA() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAXALA() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAXALA() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAXALA() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAXALA() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASXALA() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASXALA() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSXALA() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSXALA() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSXALA() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSXALA() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSXALA() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSXALA() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANXALA() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANXALA() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNXALA() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNXALA() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNXALA() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNXALA() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNXALA() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNXALA() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUXALA() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUXALA() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUXALA() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUXALA() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUXALA() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUXALA() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUXALA() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUXALA() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.cd));
+        assertFalse(linkIT.hasNext());
+    }
+
+
+
+    public void testExecuteIteratorPAAALLA() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAALLA() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAALLA() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAALLA() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAALLA() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAALLA() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAALLA() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAALLA() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASALLA() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASALLA() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSALLA() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSALLA() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSALLA() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSALLA() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSALLA() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSALLA() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANALLA() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANALLA() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNALLA() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNALLA() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNALLA() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNALLA() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNALLA() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNALLA() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUALLA() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUALLA() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUALLA() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUALLA() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUALLA() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUALLA() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUALLA() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUALLA() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAOLLA() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAOLLA() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAOLLA() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAOLLA() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAOLLA() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAOLLA() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAOLLA() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAOLLA() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASOLLA() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASOLLA() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSOLLA() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSOLLA() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSOLLA() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSOLLA() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSOLLA() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSOLLA() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANOLLA() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANOLLA() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNOLLA() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNOLLA() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNOLLA() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNOLLA() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNOLLA() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNOLLA() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUOLLA() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUOLLA() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUOLLA() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUOLLA() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUOLLA() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUOLLA() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUOLLA() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUOLLA() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAXLLA() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAXLLA() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAXLLA() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAXLLA() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAXLLA() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAXLLA() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAXLLA() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAXLLA() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASXLLA() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASXLLA() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSXLLA() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSXLLA() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSXLLA() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSXLLA() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSXLLA() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSXLLA() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANXLLA() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANXLLA() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNXLLA() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNXLLA() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNXLLA() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNXLLA() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNXLLA() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNXLLA() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUXLLA() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUXLLA() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUXLLA() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUXLLA() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUXLLA() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUXLLA() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUXLLA() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUXLLA() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,null);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a3b));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public void testExecuteIteratorPAAAAAL() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAAAAL() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAAAAL() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAAAAL() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAAAAL() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAAAAL() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAAAAL() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAAAAL() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASAAAL() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASAAAL() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSAAAL() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSAAAL() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSAAAL() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSAAAL() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSAAAL() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSAAAL() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANAAAL() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANAAAL() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNAAAL() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNAAAL() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNAAAL() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNAAAL() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNAAAL() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNAAAL() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUAAAL() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUAAAL() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUAAAL() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUAAAL() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUAAAL() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUAAAL() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUAAAL() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUAAAL() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAOAAL() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAOAAL() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAOAAL() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAOAAL() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAOAAL() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAOAAL() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAOAAL() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAOAAL() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASOAAL() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASOAAL() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSOAAL() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSOAAL() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSOAAL() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSOAAL() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSOAAL() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSOAAL() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANOAAL() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANOAAL() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNOAAL() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNOAAL() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNOAAL() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNOAAL() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNOAAL() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNOAAL() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUOAAL() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUOAAL() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUOAAL() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUOAAL() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUOAAL() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUOAAL() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUOAAL() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUOAAL() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAXAAL() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAXAAL() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAXAAL() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAXAAL() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAXAAL() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAXAAL() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAXAAL() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAXAAL() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASXAAL() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASXAAL() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSXAAL() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSXAAL() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSXAAL() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSXAAL() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSXAAL() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSXAAL() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANXAAL() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANXAAL() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNXAAL() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNXAAL() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNXAAL() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNXAAL() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNXAAL() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNXAAL() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUXAAL() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUXAAL() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUXAAL() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUXAAL() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUXAAL() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUXAAL() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUXAAL() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUXAAL() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a1a2));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+
+
+    public void testExecuteIteratorPAAALAL() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAALAL() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAALAL() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAALAL() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAALAL() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAALAL() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAALAL() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAALAL() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASALAL() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASALAL() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSALAL() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSALAL() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSALAL() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSALAL() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSALAL() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSALAL() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANALAL() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANALAL() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNALAL() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNALAL() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNALAL() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNALAL() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNALAL() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNALAL() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUALAL() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUALAL() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUALAL() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUALAL() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUALAL() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUALAL() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUALAL() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUALAL() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAOLAL() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAOLAL() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAOLAL() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAOLAL() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAOLAL() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAOLAL() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAOLAL() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAOLAL() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASOLAL() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASOLAL() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSOLAL() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSOLAL() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSOLAL() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSOLAL() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSOLAL() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSOLAL() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANOLAL() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANOLAL() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNOLAL() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNOLAL() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNOLAL() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNOLAL() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNOLAL() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNOLAL() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUOLAL() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUOLAL() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUOLAL() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUOLAL() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUOLAL() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUOLAL() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUOLAL() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUOLAL() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAXLAL() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAXLAL() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAXLAL() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAXLAL() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAXLAL() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAXLAL() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAXLAL() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAXLAL() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASXLAL() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASXLAL() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSXLAL() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSXLAL() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSXLAL() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSXLAL() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSXLAL() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSXLAL() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANXLAL() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANXLAL() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNXLAL() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNXLAL() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNXLAL() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNXLAL() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNXLAL() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNXLAL() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUXLAL() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUXLAL() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUXLAL() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUXLAL() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUXLAL() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUXLAL() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUXLAL() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUXLAL() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,null,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+
+
+
+
+
+
+    public void testExecuteIteratorPAAAALL() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAAALL() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAAALL() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAAALL() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAAALL() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAAALL() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAAALL() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAAALL() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASAALL() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASAALL() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSAALL() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSAALL() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSAALL() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSAALL() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSAALL() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSAALL() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANAALL() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANAALL() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNAALL() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNAALL() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNAALL() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNAALL() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNAALL() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNAALL() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUAALL() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUAALL() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUAALL() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUAALL() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUAALL() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUAALL() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUAALL() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUAALL() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAOALL() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAOALL() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAOALL() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAOALL() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAOALL() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAOALL() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAOALL() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAOALL() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASOALL() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASOALL() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSOALL() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSOALL() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSOALL() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSOALL() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSOALL() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSOALL() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANOALL() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANOALL() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNOALL() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNOALL() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNOALL() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNOALL() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNOALL() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNOALL() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUOALL() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUOALL() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUOALL() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUOALL() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUOALL() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUOALL() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUOALL() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUOALL() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAXALL() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAXALL() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAXALL() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAXALL() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAXALL() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAXALL() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAXALL() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAXALL() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASXALL() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASXALL() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSXALL() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSXALL() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSXALL() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSXALL() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSXALL() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSXALL() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANXALL() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANXALL() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNXALL() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNXALL() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNXALL() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNXALL() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNXALL() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNXALL() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUXALL() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUXALL() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUXALL() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUXALL() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUXALL() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUXALL() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUXALL() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUXALL() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,null,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.a2a1));
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+
+
+    public void testExecuteIteratorPAAALLL() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAALLL() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAALLL() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAALLL() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAALLL() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAALLL() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAALLL() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAALLL() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASALLL() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASALLL() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSALLL() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSALLL() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSALLL() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSALLL() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSALLL() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSALLL() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANALLL() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANALLL() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNALLL() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNALLL() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNALLL() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNALLL() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNALLL() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNALLL() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUALLL() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUALLL() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUALLL() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUALLL() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUALLL() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUALLL() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUALLL() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUALLL() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.AND);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAOLLL() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAOLLL() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAOLLL() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAOLLL() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAOLLL() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAOLLL() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAOLLL() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAOLLL() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASOLLL() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASOLLL() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSOLLL() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSOLLL() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSOLLL() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSOLLL() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSOLLL() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSOLLL() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANOLLL() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANOLLL() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNOLLL() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNOLLL() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNOLLL() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNOLLL() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNOLLL() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNOLLL() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUOLLL() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUOLLL() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUOLLL() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUOLLL() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUOLLL() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUOLLL() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUOLLL() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUOLLL() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.OR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAAXLLL() throws Exception {
+        query.buildQuery(false,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAAXLLL() throws Exception {
+        query.buildQuery(true,all,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSAXLLL() throws Exception {
+        query.buildQuery(false,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSAXLLL() throws Exception {
+        query.buildQuery(true,some,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNAXLLL() throws Exception {
+        query.buildQuery(false,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNAXLLL() throws Exception {
+        query.buildQuery(true,none,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUAXLLL() throws Exception {
+        query.buildQuery(false,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUAXLLL() throws Exception {
+        query.buildQuery(true,null,all,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPASXLLL() throws Exception {
+        query.buildQuery(false,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNASXLLL() throws Exception {
+        query.buildQuery(true,all,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSSXLLL() throws Exception {
+        query.buildQuery(false,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSSXLLL() throws Exception {
+        query.buildQuery(true,some,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNSXLLL() throws Exception {
+        query.buildQuery(false,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNSXLLL() throws Exception {
+        query.buildQuery(true,none,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUSXLLL() throws Exception {
+        query.buildQuery(false,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUSXLLL() throws Exception {
+        query.buildQuery(true,null,some,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPANXLLL() throws Exception {
+        query.buildQuery(false,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNANXLLL() throws Exception {
+        query.buildQuery(true,all,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSNXLLL() throws Exception {
+        query.buildQuery(false,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSNXLLL() throws Exception {
+        query.buildQuery(true,some,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNNXLLL() throws Exception {
+        query.buildQuery(false,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNNXLLL() throws Exception {
+        query.buildQuery(true,none,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUNXLLL() throws Exception {
+        query.buildQuery(false,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUNXLLL() throws Exception {
+        query.buildQuery(true,null,none,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPAUXLLL() throws Exception {
+        query.buildQuery(false,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNAUXLLL() throws Exception {
+        query.buildQuery(true,all,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPSUXLLL() throws Exception {
+        query.buildQuery(false,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNSUXLLL() throws Exception {
+        query.buildQuery(true,some,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPNUXLLL() throws Exception {
+        query.buildQuery(false,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNNUXLLL() throws Exception {
+        query.buildQuery(true,none,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorPUUXLLL() throws Exception {
+        query.buildQuery(false,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertFalse(linkIT.hasNext());
+    }
+
+    public void testExecuteIteratorNUUXLLL() throws Exception {
+        query.buildQuery(true,null,null,LinkQuery.SetOperation.XOR);
+        Iterator<Link> linkIT = query.executeIterator(g.graph,extraSet,g.actorSet,g.linkSet2);
+        assertTrue(linkIT.hasNext());
+        assertEquals(0,linkIT.next().compareTo(g.ab));
+        assertFalse(linkIT.hasNext());
+    }
+
 }
