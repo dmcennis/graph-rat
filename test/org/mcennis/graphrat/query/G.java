@@ -68,6 +68,7 @@ public class G {
 
     public TreeSet<Actor> actorSet;
     public TreeSet<Link> linkSet;
+    public TreeSet<Link> linkSet2;
 
     public G(){
         graph = new MemGraph();
@@ -135,6 +136,9 @@ public class G {
         a3a4 = LinkFactory.newInstance().create("Links");
         a3a4.set(a3,1.0,a4);
         graph.add(a3a4);
+        a4a3 = LinkFactory.newInstance().create("Links");
+        a4a3.set(a3,1.0,a4);
+        graph.add(a4a3);
 
         aa2 = LinkFactory.newInstance().create("Crossover");
         aa2.set(a,1.0,a2);
@@ -151,6 +155,11 @@ public class G {
         linkSet.add(a1a2);
         linkSet.add(a2a1);
         linkSet.add(bc);
+
+        linkSet2 = new TreeSet<Link>();
+        linkSet2.add(ab);
+        linkSet2.add(a2a1);
+        linkSet2.add(a1a2);
 
     }
 }
